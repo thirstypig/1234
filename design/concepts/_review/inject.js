@@ -4,8 +4,13 @@ import { renderSidebar } from './sidebar.js';
 const API_BASE = 'https://1234-review-comments.jimmyc316.workers.dev';
 
 function currentConceptAndPage() {
-  const match = window.location.pathname.match(/\/concepts\/([A-E][^/]*)\/preview\/([^/]+)\//);
-  return match ? { concept: match[1], page: match[2] } : { concept: 'unknown', page: 'unknown' };
+  const previewMatch = window.location.pathname.match(/\/concepts\/([A-E][^/]*)\/preview\/([^/]+)\//);
+  if (previewMatch) return { concept: previewMatch[1], page: previewMatch[2] };
+
+  const homepageMatch = window.location.pathname.match(/\/concepts\/([A-E][^/]*)\/Concept[^/]*-homepage-([^/.]+)\.html/);
+  if (homepageMatch) return { concept: homepageMatch[1], page: `homepage-${homepageMatch[2]}` };
+
+  return { concept: 'unknown', page: 'unknown' };
 }
 
 async function loadComments(concept, page) {
@@ -38,18 +43,30 @@ function buildSidebarShell() {
   aside.style.cssText = 'position:fixed;top:0;right:0;width:320px;height:100vh;overflow-y:auto;background:#fafafa;border-left:1px solid #ddd;padding:16px;box-sizing:border-box;font-family:sans-serif;z-index:9998;';
 
   const heading = document.createElement('h3');
-  heading.textContent = 'Feedback';
+  heading.textContent = 'Leave feedback on this homepage';
+  heading.style.cssText = 'margin-top:0;';
+
+  const instructions = document.createElement('p');
+  instructions.style.cssText = 'font-size:13px;color:#555;line-height:1.5;background:#fff;border:1px solid #ddd;border-radius:6px;padding:10px;';
+  instructions.innerHTML =
+    'Comment here on <strong>this concept\'s look and feel</strong> — colors, ' +
+    'layout, tone, imagery, whether it feels right for the practice. ' +
+    'Be as specific as you can (e.g. "the hero photo feels too clinical" ' +
+    'rather than just "not a fan"). Comments are visible to everyone ' +
+    'reviewing this page and are timestamped automatically.';
+
   const list = document.createElement('div');
   list.id = 'review-comment-list';
   const textarea = document.createElement('textarea');
   textarea.id = 'review-comment-input';
-  textarea.style.cssText = 'width:100%;height:80px;margin-top:12px;';
+  textarea.placeholder = 'What do you think of this concept?';
+  textarea.style.cssText = 'width:100%;height:80px;margin-top:12px;box-sizing:border-box;';
   const submit = document.createElement('button');
   submit.id = 'review-comment-submit';
   submit.style.cssText = 'margin-top:8px;';
   submit.textContent = 'Add comment';
 
-  aside.append(heading, list, textarea, submit);
+  aside.append(heading, instructions, list, textarea, submit);
   document.body.appendChild(aside);
   return aside;
 }
