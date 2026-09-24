@@ -37,6 +37,33 @@ describe('POST /comments', () => {
   });
 });
 
+describe('POST /comments with a page position', () => {
+  it('stores and returns xPercent/yPercent when provided', async () => {
+    const kv = makeKvMock();
+    const req = new Request('https://worker/comments', {
+      method: 'POST',
+      body: JSON.stringify({ concept: 'A', page: 'home', text: 'Move this', xPercent: 42, yPercent: 17 }),
+    });
+    const res = await worker.fetch(req, env(kv), {} as ExecutionContext);
+    expect(res.status).toBe(201);
+    const body = await res.json();
+    expect(body.xPercent).toBe(42);
+    expect(body.yPercent).toBe(17);
+  });
+
+  it('omits xPercent/yPercent when not provided', async () => {
+    const kv = makeKvMock();
+    const req = new Request('https://worker/comments', {
+      method: 'POST',
+      body: JSON.stringify({ concept: 'A', page: 'home', text: 'General note' }),
+    });
+    const res = await worker.fetch(req, env(kv), {} as ExecutionContext);
+    const body = await res.json();
+    expect(body.xPercent).toBeUndefined();
+    expect(body.yPercent).toBeUndefined();
+  });
+});
+
 describe('GET /comments', () => {
   it('returns comments newest-first', async () => {
     const stored = JSON.stringify([

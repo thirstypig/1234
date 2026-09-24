@@ -6,6 +6,8 @@ export interface Env {
 interface Comment {
   text: string;
   createdAt: string;
+  xPercent?: number;
+  yPercent?: number;
 }
 
 function corsHeaders(origin: string) {
@@ -27,7 +29,13 @@ export default {
     const url = new URL(request.url);
 
     if (request.method === 'POST' && url.pathname === '/comments') {
-      const body = await request.json<{ concept?: string; page?: string; text?: string }>();
+      const body = await request.json<{
+        concept?: string;
+        page?: string;
+        text?: string;
+        xPercent?: number;
+        yPercent?: number;
+      }>();
       const concept = body.concept?.trim();
       const page = body.page?.trim();
       const text = body.text?.trim();
@@ -43,6 +51,10 @@ export default {
       const existingRaw = await env.COMMENTS_KV.get(key);
       const existing: Comment[] = existingRaw ? JSON.parse(existingRaw) : [];
       const comment: Comment = { text, createdAt: new Date().toISOString() };
+      if (typeof body.xPercent === 'number' && typeof body.yPercent === 'number') {
+        comment.xPercent = body.xPercent;
+        comment.yPercent = body.yPercent;
+      }
       existing.push(comment);
       await env.COMMENTS_KV.put(key, JSON.stringify(existing));
 

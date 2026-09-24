@@ -2,6 +2,29 @@ export function formatDate(iso) {
   return new Date(iso).toLocaleString();
 }
 
+function clampPercent(value) {
+  return Math.min(100, Math.max(0, value));
+}
+
+export function positionFromClick({ pageX, pageY, fullWidth, fullHeight }) {
+  return {
+    xPercent: clampPercent(Math.round((pageX / fullWidth) * 100)),
+    yPercent: clampPercent(Math.round((pageY / fullHeight) * 100)),
+  };
+}
+
+export function renderPins(container, comments) {
+  container.innerHTML = '';
+  for (const comment of comments) {
+    if (comment.xPercent === undefined || comment.yPercent === undefined) continue;
+    const pin = document.createElement('div');
+    pin.className = 'review-pin';
+    pin.title = `${comment.text} — ${formatDate(comment.createdAt)}`;
+    pin.style.cssText = `position:absolute;left:${comment.xPercent}%;top:${comment.yPercent}%;width:20px;height:20px;border-radius:50% 50% 50% 0;background:#e0524d;transform:translate(-50%,-100%) rotate(-45deg);border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4);cursor:pointer;z-index:9997;`;
+    container.appendChild(pin);
+  }
+}
+
 export function renderSidebar(container, comments) {
   container.innerHTML = '';
   if (comments.length === 0) {

@@ -1,5 +1,5 @@
 import { installGate } from './gate.js';
-import { renderSidebar } from './sidebar.js';
+import { renderSidebar, renderPins, positionFromClick } from './sidebar.js';
 
 const API_BASE = 'https://1234-review-comments.jimmyc316.workers.dev';
 
@@ -24,17 +24,25 @@ async function loadComments(concept, page) {
   }
 }
 
-async function submitComment(concept, page, text) {
+async function submitComment(concept, page, text, position) {
   try {
     await fetch(`${API_BASE}/comments`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ concept, page, text }),
+      body: JSON.stringify({ concept, page, text, ...position }),
     });
   } catch {
     // Network/backend unavailable — comment is silently dropped rather than
     // breaking the review page for the person leaving feedback.
   }
+}
+
+function buildPinLayer() {
+  const layer = document.createElement('div');
+  layer.id = 'review-pin-layer';
+  layer.style.cssText = `position:absolute;top:0;left:0;width:100%;height:${document.documentElement.scrollHeight}px;pointer-events:none;z-index:9996;`;
+  document.body.appendChild(layer);
+  return layer;
 }
 
 function buildSidebarShell() {
@@ -66,9 +74,26 @@ function buildSidebarShell() {
   submit.style.cssText = 'margin-top:8px;';
   submit.textContent = 'Add comment';
 
-  aside.append(heading, instructions, list, textarea, submit);
+  const pinButton = document.createElement('button');
+  pinButton.id = 'review-pin-button';
+  pinButton.style.cssText = 'margin-top:8px;margin-left:8px;';
+  pinButton.textContent = 'Pin on page instead';
+  pinButton.title = 'Click, then click anywhere on the page to attach your comment to that spot';
+
+  aside.append(heading, instructions, list, textarea, submit, pinButton);
   document.body.appendChild(aside);
   return aside;
+}
+
+function enablePinPlacementMode(onPick) {
+  document.body.style.cursor = 'crosshair';
+  const handler = (event) => {
+    document.body.style.cursor = '';
+    document.removeEventListener('click', handler, true);
+    onPick(event);
+  };
+  // Capture phase so this fires before any click handler on the page's own content.
+  document.addEventListener('click', handler, true);
 }
 
 async function init() {
@@ -76,8 +101,14 @@ async function init() {
   const { concept, page } = currentConceptAndPage();
   const aside = buildSidebarShell();
   const list = aside.querySelector('#review-comment-list');
+  const pinLayer = buildPinLayer();
 
-  const refresh = async () => renderSidebar(list, await loadComments(concept, page));
+  let comments = [];
+  const refresh = async () => {
+    comments = await loadComments(concept, page);
+    renderSidebar(list, comments);
+    renderPins(pinLayer, comments);
+  };
   await refresh();
 
   aside.querySelector('#review-comment-submit').addEventListener('click', async () => {
@@ -86,6 +117,21 @@ async function init() {
     await submitComment(concept, page, input.value);
     input.value = '';
     await refresh();
+  });
+
+  aside.querySelector('#review-pin-button').addEventListener('click', () => {
+    enablePinPlacementMode(async (event) => {
+      const text = window.prompt('Comment for this spot on the page:');
+      if (!text || !text.trim()) return;
+      const position = positionFromClick({
+        pageX: event.pageX,
+        pageY: event.pageY,
+        fullWidth: document.documentElement.scrollWidth,
+        fullHeight: document.documentElement.scrollHeight,
+      });
+      await submitComment(concept, page, text, position);
+      await refresh();
+    });
   });
 }
 
