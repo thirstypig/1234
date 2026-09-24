@@ -1,0 +1,10 @@
+name = "1234-review-comments"
+main = "src/index.ts"
+compatibility_date = "2026-09-24"
+
+kv_namespaces = [
+  { binding = "COMMENTS_KV", id = "REPLACE_WITH_REAL_KV_ID" }
+]
+
+[vars]
+ALLOWED_ORIGIN = "https://1234.pasadenaworks.com"
