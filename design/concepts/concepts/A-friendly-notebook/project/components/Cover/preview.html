@@ -1,0 +1,44 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept A · Friendly Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%}
+  body{background:var(--background);color:var(--text-primary);font-family:var(--font-en-heading);overflow:hidden}
+  .cover{position:relative;width:960px;height:300px;overflow:hidden}
+  .band{position:absolute;top:0;left:0;width:960px;height:112px}
+  .tomato{fill:var(--primary)} .ink{fill:var(--secondary)} .marker{fill:var(--accent)} .card{fill:var(--surface);stroke:var(--border);stroke-width:1}
+  .words{position:absolute;left:48px;right:48px;bottom:40px}
+  .name{margin:0;font-size:52px;line-height:.95;font-weight:800;letter-spacing:-.01em;color:var(--text-primary)}
+  .tag{margin:12px 0 0 2px;font-size:14px;line-height:20px;color:var(--text-secondary);max-width:440px}
+</style>
+</head>
+<body>
+<div class="cover">
+<svg class="band" viewBox="0 0 960 112" aria-hidden="true">
+<!--
+  blocks      primary (tomato) 288×96 slab bleeding off the top · secondary (ink) 144×64 · accent (marker) 336×48 strip · one surface card 112×80 — ~30% of the cover
+  arrangement a strip of unequal bands across the top (the top-band skeleton: the name is too wide for the 440px zone)
+  pattern     pills from the accent "marker" — highlighter strokes, space-2 tall at a space-4 pitch, laid over the marker strip and cut into the tomato slab in accent
+  scales      sides in space-2 multiples; gutters space-3; corners radius-lg (slab, card), radius-md (ink), pills rx = 8 (half of space-2)
+-->
+<rect class="tomato" x="48" y="-20" width="288" height="116" rx="20"/>
+<rect class="marker" x="96" y="56" width="120" height="16" rx="8"/>
+<rect class="marker" x="96" y="24" width="64" height="16" rx="8"/>
+<rect class="card" x="360" y="16" width="112" height="80" rx="20"/>
+<rect class="marker" x="496" y="48" width="336" height="48" rx="12"/>
+<rect class="tomato" x="512" y="64" width="96" height="16" rx="8"/>
+<rect class="ink" x="624" y="64" width="48" height="16" rx="8"/>
+<rect class="tomato" x="688" y="64" width="128" height="16" rx="8"/>
+<rect class="ink" x="856" y="-16" width="144" height="80" rx="12"/>
+</svg>
+<div class="words">
+<h1 class="name">Concept A · Friendly Notebook</h1>
+<p class="tag">Paper, ink and one tomato — a kind note from Dr. Woo to worried parents.</p>
+</div>
+</div>
+</body>
+</html>

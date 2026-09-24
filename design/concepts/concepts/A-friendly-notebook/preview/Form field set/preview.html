@@ -1,0 +1,32 @@
+<!-- @dsCard group="5 · Components" height=900 width=1100 -->
+<!doctype html>
+<html data-theme="day" lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Form field set</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:var(--background)}</style>
+<link rel="stylesheet" href="../../tokens.local.css"><link rel="stylesheet" href="../../project/components/bundle.css"></head>
+<body>
+<div class="nb-page"><div class="nb-spec" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px"><div><p class="nb-spec-label">Default · EN</p><form class="nb-form" onsubmit="return false">
+<div class="nb-field"><label class="nb-label" for="p-en-default">Parent name</label><input class="nb-input" id="p-en-default" autocomplete="name" value=""></div>
+<div class="nb-field"><label class="nb-label" for="t-en-default">Phone</label><input class="nb-input" id="t-en-default" type="tel" autocomplete="tel" placeholder="(626) 000-0000" >
+<p class="nb-hint">We'll text or call to confirm.</p></div>
+<div class="nb-field"><label class="nb-label" for="a-en-default">Child's age</label><select class="nb-input" id="a-en-default" style="max-width:200px"><option>Age</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+<fieldset class="nb-field" style="border:0;padding:0;margin:0"><legend class="nb-label" style="margin-bottom:8px">Preferred location</legend><div class="nb-radios">
+<label class="nb-radio is-checked"><input type="radio" name="l-en-default" checked>Alhambra</label><label class="nb-radio is-disabled"><input type="radio" disabled name="l-en-default">Walnut (opening soon)</label></div></fieldset>
+<div><button class="nb-btn nb-btn--primary" type="submit"><span class="nb-emoji" aria-hidden="true">📅</span><span>Send request</span></button></div></form></div><div><p class="nb-spec-label">Focus + error · EN</p><form class="nb-form" onsubmit="return false">
+<div class="nb-field"><label class="nb-label" for="p-en-error">Parent name</label><input class="nb-input is-focus" id="p-en-error" autocomplete="name" value="Mei-Ling Chen"></div>
+<div class="nb-field is-error"><label class="nb-label" for="t-en-error">Phone</label><input class="nb-input" id="t-en-error" type="tel" autocomplete="tel" placeholder="(626) 000-0000" aria-invalid="true">
+<p class="nb-error"><span class="nb-emoji" aria-hidden="true">❗</span>Please add a phone number so we can reach you.</p></div>
+<div class="nb-field"><label class="nb-label" for="a-en-error">Child's age</label><select class="nb-input" id="a-en-error" style="max-width:200px"><option>Age</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+<fieldset class="nb-field" style="border:0;padding:0;margin:0"><legend class="nb-label" style="margin-bottom:8px">Preferred location</legend><div class="nb-radios">
+<label class="nb-radio is-checked"><input type="radio" name="l-en-error" checked>Alhambra</label><label class="nb-radio is-disabled"><input type="radio" disabled name="l-en-error">Walnut (opening soon)</label></div></fieldset>
+<div><button class="nb-btn nb-btn--primary" type="submit"><span class="nb-emoji" aria-hidden="true">📅</span><span>Send request</span></button></div></form></div><div lang="zh-Hant"><p class="nb-spec-label">繁體</p><form class="nb-form" onsubmit="return false">
+<div class="nb-field"><label class="nb-label" for="p-zh-filled">家長姓名</label><input class="nb-input" id="p-zh-filled" autocomplete="name" value="陳美玲"></div>
+<div class="nb-field"><label class="nb-label" for="t-zh-filled">電話</label><input class="nb-input" id="t-zh-filled" type="tel" autocomplete="tel" placeholder="(626) 000-0000" >
+<p class="nb-hint">我們會以簡訊或電話確認。</p></div>
+<div class="nb-field"><label class="nb-label" for="a-zh-filled">孩子年齡</label><select class="nb-input" id="a-zh-filled" style="max-width:200px"><option>年齡</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+<fieldset class="nb-field" style="border:0;padding:0;margin:0"><legend class="nb-label" style="margin-bottom:8px">希望就診的診所</legend><div class="nb-radios">
+<label class="nb-radio is-checked"><input type="radio" name="l-zh-filled" checked>阿罕布拉診所</label><label class="nb-radio is-disabled"><input type="radio" disabled name="l-zh-filled">核桃市診所 （即將開放）</label></div></fieldset>
+<div><button class="nb-btn nb-btn--primary" type="submit"><span class="nb-emoji" aria-hidden="true">📅</span><span>送出預約</span></button></div></form></div></div></div>
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>1234 Ortho-K · Concept C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Chiron+GoRound+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:var(--background)}</style>
+<style>:root, [data-theme="light"]{--primary:#1F3563;--primary-hover:#2B4680;--primary-pressed:#172850;--on-primary:#FFFFFF;--secondary:#CFE6F5;--accent:#FBD3BC;--butter:#FCEBA8;--background:#FFF8EE;--surface:#FFFFFF;--wash:#F6EDDF;--wash-strong:#EFE2CD;--text-primary:#22304A;--text-secondary:#4F5B72;--border:#EADCC8;--border-strong:#8A8797;--on-night:#FFF8EE;--on-night-muted:#C9D5EC;--success:#2D6A4F;--error:#B03A2E;--shadow-soft:0 6px 18px rgba(31, 53, 99, 0.08);--shadow-float:0 14px 34px rgba(31, 53, 99, 0.18)}
+:root{--space-0-5:4px;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-6:48px;--space-8:64px;--space-10:80px;--space-12:96px;--page-max:1120px;--reading-max:680px;--gutter-mobile:20px;--grid-desktop:12;--grid-tablet:8;--grid-mobile:4;--radius-sm:10px;--radius-md:18px;--radius-lg:32px;--radius-xl:48px;--border-hairline:1px;--border-control:1.5px;--focus-width:3px;--font-en-heading:Quicksand, "Varela Round", ui-rounded, system-ui, sans-serif;--font-en-body:Quicksand, "Varela Round", ui-rounded, system-ui, sans-serif;--font-zh-heading:"Chiron GoRound TC", "jf-openhuninn", "PingFang TC", "Noto Sans TC", sans-serif;--font-zh-body:"Chiron GoRound TC", "PingFang TC", "Noto Sans TC", sans-serif}
+/* 1234 Ortho-K Vision Care — Concept C · Picture-Book. Structure is shared by concepts B–D; the skin below it is this concept's. */
+/* ===== STRUCTURE (identical in concepts B, C, D) ===== */
+.ui-page{background:var(--background);color:var(--text-primary);font-family:var(--font-en-body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.ui-page *,.ui-page *::before,.ui-page *::after{box-sizing:border-box}
+.ui-page :where(h1,h2,h3,p,ul,ol,figure){margin:0}
+.ui-page :where(a){color:inherit}
+.ui-page:lang(zh),[lang|="zh"] .ui-page{font-family:var(--font-zh-body);line-height:1.8;letter-spacing:.02em}
+.ui-ico{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.18em}
+.ui-ico--xl{width:48px;height:48px}
+.ui-nowrap{white-space:nowrap}
+.ui-muted{color:var(--text-secondary)}
+
+/* type scale */
+.ui-display,.ui-h1,.ui-h2,.ui-h3{font-family:var(--font-en-heading);font-weight:var(--w-head);color:var(--text-primary);text-wrap:balance}
+.ui-display{font-size:56px;line-height:1.08}
+.ui-h1{font-size:40px;line-height:1.15}
+.ui-h2{font-size:30px;line-height:1.2}
+.ui-h3{font-size:22px;line-height:1.3}
+.ui-body{font-size:18px;line-height:1.6}
+.ui-small{font-size:15px;line-height:1.5;color:var(--text-secondary)}
+.ui-lead{font-size:20px;line-height:1.6;max-width:var(--reading-max)}
+:lang(zh) :is(.ui-display,.ui-h1,.ui-h2,.ui-h3),:is(.ui-display,.ui-h1,.ui-h2,.ui-h3):lang(zh){font-family:var(--font-zh-heading);font-weight:var(--w-zh-head);letter-spacing:.03em}
+:lang(zh) .ui-display{font-size:52px;line-height:1.3}
+:lang(zh) .ui-h1{font-size:38px;line-height:1.35}
+:lang(zh) .ui-h2{font-size:30px;line-height:1.4}
+:lang(zh) .ui-h3{font-size:22px;line-height:1.5}
+:lang(zh) .ui-body{line-height:1.8}
+:lang(zh) .ui-small{line-height:1.7}
+:lang(zh) .ui-lead{line-height:1.8}
+@media (max-width:767px){
+  .ui-display{font-size:40px;line-height:1.12}.ui-h1{font-size:32px}.ui-h2{font-size:26px}.ui-h3{font-size:20px}
+  .ui-page,.ui-body{font-size:17px}.ui-small{font-size:14px}.ui-lead{font-size:18px}
+  :lang(zh) .ui-display{font-size:36px;line-height:1.35}:lang(zh) .ui-h1{font-size:30px}:lang(zh) .ui-h2{font-size:24px}:lang(zh) .ui-h3{font-size:20px}
+  :lang(zh) .ui-small{font-size:15px}
+}
+.ui-eyebrow{display:inline-flex;align-items:center;gap:var(--space-1);font-size:15px;font-weight:var(--w-label);color:var(--text-secondary);letter-spacing:.02em}
+:lang(zh) .ui-eyebrow{font-weight:var(--w-zh-label);letter-spacing:.08em}
+.ui-label-sm{font-size:15px;font-weight:var(--w-label);color:var(--text-secondary)}
+:lang(zh) .ui-label-sm{font-weight:var(--w-zh-label)}
+
+/* layout */
+.ui-wrap{max-width:calc(var(--page-max) + 48px);margin:0 auto;padding:0 24px;position:relative}
+.ui-section{padding:var(--space-10) 0;position:relative}
+.ui-stack>*+*{margin-top:var(--space-2)}
+.ui-stack-lg>*+*{margin-top:var(--space-3)}
+.ui-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--space-3)}
+.ui-span-5{grid-column:span 5}.ui-span-6{grid-column:span 6}.ui-at-7{grid-column:7 / span 6}.ui-at-8{grid-column:8 / span 5;align-self:end}
+.ui-row-wrap{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+@media (max-width:767px){.ui-wrap{padding:0 var(--gutter-mobile)}.ui-section{padding:var(--space-8) 0}.ui-grid{grid-template-columns:repeat(4,1fr);gap:var(--space-2)}.ui-span-5,.ui-span-6,.ui-at-7,.ui-at-8{grid-column:1 / -1}}
+
+/* focus */
+.ui-page :focus-visible,.ui-focus-demo{outline:var(--focus-width) solid var(--focus);outline-offset:3px}
+
+/* buttons */
+.ui-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 var(--space-3);border-radius:var(--radius-btn);border:var(--border-control) solid transparent;font-family:var(--font-en-heading);font-size:17px;font-weight:var(--w-label);line-height:1;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .12s,transform .06s,box-shadow .12s}
+:lang(zh) .ui-btn{font-family:var(--font-zh-heading);font-weight:var(--w-zh-label);letter-spacing:.06em}
+.ui-btn--primary{background:var(--btn-bg);color:var(--btn-fg)}
+.ui-btn--primary:hover,.ui-btn--primary.is-hover{background:var(--btn-bg-hover)}
+.ui-btn--primary:active,.ui-btn--primary.is-pressed{background:var(--btn-bg-pressed);transform:translateY(1px)}
+.ui-btn--secondary{background:var(--btn2-bg);color:var(--btn2-fg);border-color:var(--btn2-border)}
+.ui-btn--secondary:hover,.ui-btn--secondary.is-hover{background:var(--wash)}
+.ui-btn--secondary:active,.ui-btn--secondary.is-pressed{background:var(--wash-strong);transform:translateY(1px)}
+.ui-btn.is-disabled{background:transparent;color:var(--text-secondary);border:var(--border-hairline) dashed var(--border-strong);cursor:not-allowed;transform:none;box-shadow:none}
+.ui-btn--sm{min-height:44px;padding:0 var(--space-2);font-size:15px}
+.ui-btn--block{display:flex;width:100%}
+.ui-btn-row{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+
+/* language switcher */
+.ui-lang{display:inline-flex;align-items:center;gap:2px;font-size:15px;font-weight:var(--w-label)}
+.ui-lang a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 10px;color:var(--text-secondary);text-decoration:none;border-radius:var(--radius-sm);font-family:var(--font-en-heading),"PingFang TC","Noto Sans TC","PingFang SC","Noto Sans SC",sans-serif}
+.ui-lang a:hover,.ui-lang a.is-hover{color:var(--text-primary);background:var(--wash)}
+.ui-lang a:active,.ui-lang a.is-pressed{background:var(--wash-strong);color:var(--text-primary)}
+.ui-lang a[aria-current="page"]{color:var(--text-primary);box-shadow:inset 0 -3px 0 var(--lang-mark)}
+.ui-lang-sep{color:var(--border-strong);font-weight:400}
+
+/* header */
+.ui-utility{background:var(--utility-bg);border-bottom:var(--border-hairline) solid var(--border)}
+.ui-utility-in{display:flex;align-items:center;justify-content:flex-end;min-height:44px}
+.ui-header{background:var(--header-bg);border-bottom:var(--border-hairline) solid var(--border);position:relative;z-index:2}
+.ui-header-in{display:flex;align-items:center;gap:var(--space-3);min-height:76px}
+.ui-brand{font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:21px;line-height:1.15;color:var(--brand-ink);text-decoration:none;white-space:nowrap}
+.ui-brand small{display:block;font-family:var(--font-zh-heading);font-weight:var(--w-zh-label);font-size:14px;letter-spacing:.06em;color:var(--text-secondary);margin-top:2px}
+.ui-nav{display:flex;gap:2px;margin-left:auto}
+.ui-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:var(--radius-sm);font-weight:var(--w-label);font-size:16px;color:var(--text-primary);text-decoration:none;white-space:nowrap}
+:lang(zh) .ui-nav a{font-weight:var(--w-zh-label);font-size:17px}
+.ui-nav a:hover,.ui-nav a.is-hover{background:var(--wash)}
+.ui-nav a:active,.ui-nav a.is-pressed{background:var(--wash-strong)}
+.ui-nav--demo{margin:0}
+.ui-header-tools{display:flex;align-items:center;gap:var(--space-1)}
+.ui-menu-btn{display:none}
+@media (max-width:1023px){
+  .ui-nav,.ui-header-tools>a.ui-btn{display:none}
+  .ui-header-in{min-height:64px}.ui-header-tools{margin-left:auto}.ui-menu-btn{display:inline-flex}
+  .ui-utility-in{justify-content:flex-start}.ui-brand{font-size:19px}
+}
+.ui-phone{max-width:390px;border:var(--border-hairline) solid var(--border);border-radius:16px;overflow:hidden;background:var(--background)}
+.ui-sheet{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-float);padding:var(--space-2)}
+.ui-sheet-links{list-style:none;padding:0;margin:0}
+.ui-sheet-links a{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 var(--space-2);border-radius:var(--radius-md);text-decoration:none;font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:20px;color:var(--text-primary)}
+:lang(zh) .ui-sheet-links a{font-family:var(--font-zh-heading);font-weight:var(--w-zh-head)}
+.ui-sheet-links a:hover{background:var(--wash)}
+.ui-sheet-links li+li{border-top:var(--border-hairline) solid var(--border)}
+.ui-sheet-foot{border-top:var(--border-hairline) solid var(--border);margin-top:var(--space-1);padding-top:var(--space-2)}
+
+/* hero */
+.ui-hero{position:relative;padding:var(--space-10) 0 var(--space-8);overflow:hidden}
+.ui-hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--space-6);align-items:center}
+.ui-hero .ui-display{margin-top:var(--space-2)}
+.ui-hero .ui-lead{margin-top:var(--space-3)}
+.ui-hero .ui-btn-row{margin-top:var(--space-4)}
+.ui-hero-art{position:relative;min-width:0}
+@media (max-width:1023px){.ui-hero-grid{grid-template-columns:1fr;gap:var(--space-4)}.ui-hero{padding:var(--space-6) 0}}
+@media (max-width:767px){.ui-hero .ui-btn-row .ui-btn{flex:1 1 100%}}
+.ui-trust{list-style:none;padding:0;margin:0}
+.ui-trust li{display:grid;grid-template-columns:28px 1fr;gap:var(--space-1);align-items:start;padding:8px 0}
+.ui-trust .ui-ico{width:22px;height:22px;margin-top:3px;color:var(--icon)}
+
+/* how it works */
+.ui-how-head{display:flex;align-items:end;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-6)}
+.ui-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
+.ui-step{position:relative;background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-3)}
+@media (max-width:767px){.ui-how-head{flex-direction:column;align-items:stretch;margin-bottom:var(--space-4)}.ui-steps{grid-template-columns:1fr;gap:var(--space-2)}.ui-step{padding:var(--space-3);flex-direction:row;align-items:center;gap:var(--space-2)}}
+
+/* doctor */
+.ui-doctor{display:grid;grid-template-columns:5fr 7fr;gap:var(--space-6);align-items:center}
+.ui-chips{display:flex;flex-wrap:wrap;gap:var(--space-1);list-style:none;padding:0;margin:0}
+.ui-chip{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border:var(--border-hairline) solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);font-size:15px;font-weight:var(--w-label);color:var(--text-primary)}
+:lang(zh) .ui-chip{font-weight:var(--w-zh-label)}
+.ui-chip .ui-ico{color:var(--icon)}
+.ui-chip--lg{font-size:20px;min-height:48px;padding:0 18px}
+@media (max-width:767px){.ui-doctor{grid-template-columns:1fr;gap:var(--space-3)}}
+
+/* photo placeholder (base) */
+.ui-photo{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:8px;padding:var(--space-3);background:var(--photo-bg);color:var(--photo-fg);font-size:15px;font-weight:var(--w-label);aspect-ratio:4/5;width:100%}
+.ui-photo .ui-ico{width:32px;height:32px}
+.ui-photo small{display:block;font-weight:400;font-size:13px;opacity:.95;max-width:30ch}
+:lang(zh) .ui-photo{font-weight:var(--w-zh-label)}
+
+/* first visit */
+.ui-lines{list-style:none;padding:0;margin:0}
+.ui-lines li{display:grid;grid-template-columns:48px 1fr;gap:var(--space-2);padding:var(--space-2) 0;border-top:var(--border-hairline) solid var(--border);align-items:start}
+.ui-lines li:last-child{border-bottom:var(--border-hairline) solid var(--border)}
+.ui-n{font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:22px;line-height:1.3;color:var(--numeral)}
+.ui-draft{display:inline-block;font-size:13px;font-weight:var(--w-label);letter-spacing:.04em;text-transform:uppercase;color:var(--text-secondary);border:var(--border-hairline) dashed var(--border-strong);border-radius:var(--radius-sm);padding:2px 8px}
+:lang(zh) .ui-draft{font-weight:var(--w-zh-label);text-transform:none;font-size:14px}
+
+/* FAQ */
+.ui-faq-wrap{max-width:840px;margin:0 auto;display:grid;gap:var(--space-4)}
+.ui-faq{list-style:none;padding:0;margin:0;display:grid;gap:var(--space-1)}
+.ui-faq details{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-md)}
+.ui-faq summary{list-style:none;display:grid;grid-template-columns:32px 1fr 28px;gap:var(--space-1);align-items:center;min-height:64px;padding:var(--space-2) var(--space-3);cursor:pointer;border-radius:var(--radius-md);font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:20px;line-height:1.35}
+:lang(zh) .ui-faq summary{font-family:var(--font-zh-heading);font-weight:var(--w-zh-head);line-height:1.5}
+.ui-faq summary::-webkit-details-marker{display:none}
+.ui-faq summary:hover,.ui-faq summary.is-hover{background:var(--wash)}
+.ui-faq summary:active,.ui-faq summary.is-pressed{background:var(--wash-strong)}
+.ui-faq summary .ui-ico{width:24px;height:24px;color:var(--icon)}
+.ui-plus{justify-self:end;width:14px;height:14px;position:relative}
+.ui-plus::before,.ui-plus::after{content:"";position:absolute;left:0;top:6px;width:14px;height:2px;background:var(--text-secondary);border-radius:2px}
+.ui-plus::after{transform:rotate(90deg);transition:transform .15s}
+.ui-faq details[open] .ui-plus::after{transform:rotate(0)}
+.ui-faq details[open] summary{border-radius:var(--radius-md) var(--radius-md) 0 0;border-bottom:var(--border-hairline) solid var(--border)}
+.ui-answer{padding:var(--space-2) var(--space-3) var(--space-3) calc(var(--space-3) + 40px)}
+@media (max-width:767px){.ui-faq summary{padding:var(--space-2);font-size:18px}.ui-answer{padding:var(--space-2) var(--space-2) var(--space-3)}}
+
+/* booking band */
+.ui-section--band{padding-top:0}
+.ui-band{position:relative;overflow:hidden;background:var(--band-bg);color:var(--band-fg);border-radius:var(--radius-lg);padding:var(--space-6);display:grid;grid-template-columns:1fr auto;gap:var(--space-4);align-items:center}
+.ui-band .ui-h2{color:inherit;margin-bottom:var(--space-1)}
+@media (max-width:767px){.ui-band{grid-template-columns:1fr;padding:var(--space-3)}.ui-band .ui-btn{width:100%}}
+
+/* locations */
+.ui-locs{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);margin-top:var(--space-4)!important}
+.ui-loc{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
+.ui-map{aspect-ratio:16/8;background:var(--photo-bg);color:var(--photo-fg);display:flex;align-items:center;justify-content:center;gap:var(--space-1);font-size:15px;font-weight:var(--w-label);border-bottom:var(--border-hairline) solid var(--border)}
+:lang(zh) .ui-map{font-weight:var(--w-zh-label)}
+.ui-loc-body{padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);flex:1}
+.ui-loc-name{display:flex;align-items:baseline;gap:var(--space-1);flex-wrap:wrap}
+.ui-loc-alt{font-size:16px;color:var(--text-secondary)}
+.ui-kv{display:grid;grid-template-columns:28px 1fr;gap:var(--space-1);align-items:start}
+.ui-kv .ui-ico{width:22px;height:22px;margin-top:4px;color:var(--icon)}
+.ui-soon{color:var(--text-secondary);font-style:italic}
+:lang(zh) .ui-soon{font-style:normal}
+.ui-loc .ui-btn-row{margin-top:auto;padding-top:var(--space-1)}
+@media (max-width:767px){.ui-locs{grid-template-columns:1fr;gap:var(--space-2)}.ui-loc-body{padding:var(--space-3)}.ui-loc .ui-btn{flex:1}}
+
+/* contact row */
+.ui-contact{display:flex;flex-wrap:wrap;gap:var(--space-1);list-style:none;padding:0;margin:0}
+.ui-contact a{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 var(--space-2) 0 10px;border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-md);background:var(--surface);color:var(--text-primary);text-decoration:none;font-weight:var(--w-label);font-size:16px}
+:lang(zh) .ui-contact a{font-weight:var(--w-zh-label);font-size:17px}
+.ui-contact a:hover,.ui-contact a.is-hover{background:var(--wash)}
+.ui-contact a:active,.ui-contact a.is-pressed{background:var(--wash-strong)}
+.ui-cico{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:var(--radius-sm);color:var(--icon)}
+.ui-cico .ui-ico{width:24px;height:24px}
+.ui-cico--ph{border:var(--border-hairline) dashed var(--border-strong);font-family:var(--font-en-body);font-size:10px;font-weight:700;color:var(--text-secondary);letter-spacing:0}
+.ui-contact small{display:block;font-size:13px;font-weight:400;color:var(--text-secondary);line-height:1.2;letter-spacing:0}
+@media (max-width:767px){.ui-contact{display:grid;grid-template-columns:1fr 1fr}.ui-contact li:first-child{grid-column:1/-1}.ui-contact a{width:100%}}
+
+/* form */
+.ui-form{display:grid;gap:var(--space-3);max-width:560px}
+.ui-field{display:grid;gap:var(--space-1)}
+.ui-fieldset{border:0;padding:0;margin:0}
+.ui-fieldset legend{margin-bottom:8px}
+.ui-label{font-weight:var(--w-label);font-size:16px;color:var(--text-primary)}
+:lang(zh) .ui-label{font-weight:var(--w-zh-label);font-size:17px}
+.ui-hint{font-size:14px;color:var(--text-secondary)}
+.ui-input{width:100%;min-height:52px;padding:0 var(--space-2);border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-input);background:var(--surface);color:var(--text-primary);font:inherit;font-size:17px}
+.ui-input::placeholder{color:var(--text-secondary)}
+.ui-input:hover,.ui-input.is-hover{border-color:var(--text-primary)}
+.ui-input:focus,.ui-input.is-focus{outline:var(--focus-width) solid var(--focus);outline-offset:2px;border-color:var(--text-primary)}
+.ui-field.is-error .ui-input{border-color:var(--error);border-width:2px}
+.ui-error{display:flex;gap:6px;align-items:flex-start;font-size:15px;font-weight:var(--w-label);color:var(--error)}
+.ui-error .ui-ico{margin-top:3px}
+select.ui-input{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--text-secondary) 50%),linear-gradient(135deg,var(--text-secondary) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:44px}
+.ui-radios{display:flex;flex-wrap:wrap;gap:var(--space-1)}
+.ui-radio{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 var(--space-2);border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-input);background:var(--surface);font-weight:var(--w-label);cursor:pointer}
+:lang(zh) .ui-radio{font-weight:var(--w-zh-label)}
+.ui-radio input{width:20px;height:20px;accent-color:var(--btn-bg);margin:0}
+.ui-radio.is-checked{border-color:var(--text-primary);background:var(--wash)}
+.ui-radio.is-disabled{border-style:dashed;color:var(--text-secondary);cursor:not-allowed}
+.ui-form-demo{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px}
+
+/* footer */
+.ui-footer{background:var(--footer-bg);color:var(--footer-fg);padding:var(--space-8) 0 var(--space-4);font-size:15px;line-height:1.6}
+.ui-footer-grid{display:grid;grid-template-columns:4fr 3fr 3fr 2fr;gap:var(--space-4)}
+.ui-footer h3{font-family:var(--font-en-heading);font-weight:var(--w-label);font-size:15px;margin-bottom:var(--space-1);color:var(--footer-fg)}
+:lang(zh) .ui-footer h3{font-family:var(--font-zh-heading);font-weight:var(--w-zh-label)}
+.ui-footer p,.ui-footer li{color:var(--footer-muted)}
+.ui-footer ul{list-style:none;padding:0;margin:0}
+.ui-footer a{color:var(--footer-fg);text-underline-offset:3px}
+.ui-brand--footer{font-size:19px;color:var(--footer-fg)!important}
+.ui-footer-zh{margin-top:4px}
+.ui-footer .ui-lang a{color:var(--footer-muted)}
+.ui-footer .ui-lang a[aria-current="page"]{color:var(--footer-fg)}
+.ui-footer .ui-lang a:hover{background:transparent;color:var(--footer-fg);text-decoration:underline}
+.ui-footer-legal{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-3);margin-top:var(--space-6);padding-top:var(--space-3);border-top:var(--border-hairline) solid var(--footer-rule);color:var(--footer-muted);font-size:14px}
+.ui-footer-legal a{color:var(--footer-muted)}
+@media (max-width:767px){.ui-footer-grid{grid-template-columns:1fr;gap:var(--space-3)}.ui-footer{padding-bottom:120px}}
+
+/* sticky bar (mobile) */
+.ui-stickybar{display:none}
+@media (max-width:767px){
+  .ui-stickybar{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--space-1);position:sticky;bottom:12px;margin:0 12px;padding:8px;background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:calc(var(--radius-md) + 8px);box-shadow:var(--shadow-float);z-index:5}
+  .ui-stickybar .ui-btn{min-height:48px;padding:0 8px;font-size:15px;gap:6px}
+}
+
+/* spec sheets */
+.ui-spec{padding:var(--space-3);font-size:15px}
+.ui-spec-label{display:flex;align-items:center;gap:6px;font-family:var(--font-en-body);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 var(--space-1)}
+.ui-state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:var(--space-3);align-items:start}
+.ui-state{display:grid;gap:var(--space-1);justify-items:start}
+.ui-swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.ui-swatch{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--surface)}
+.ui-swatch-chip{height:72px;border-bottom:1px solid var(--border)}
+.ui-swatch-body{padding:12px}
+.ui-swatch-name{font-weight:700;font-size:15px}
+.ui-swatch-code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--text-secondary);margin-top:2px}
+.ui-swatch-use{font-size:13.5px;line-height:1.45;margin-top:6px;color:var(--text-secondary)}
+.ui-ct{border-collapse:collapse;width:100%;font-size:13px}
+.ui-ct th{font-size:13px;padding:6px;text-align:center;font-weight:700}
+.ui-ct th[scope=row]{text-align:left;font-size:14px;white-space:nowrap}
+.ui-ct td{text-align:center;padding:6px;vertical-align:top}
+.ui-ct-chip{display:inline-block;min-width:84px;padding:5px 8px;border-radius:6px;border:1px solid var(--border);font-weight:700;font-size:14px}
+.ui-ct-v{display:block;font-size:11.5px;font-weight:700;margin-top:3px}
+.ui-ct-v.ok{color:var(--success)}.ui-ct-v.mid{color:var(--text-secondary)}.ui-ct-v.bad{color:var(--error)}
+.ui-ct-na{color:var(--text-secondary)}
+.ui-fams{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-bottom:24px}
+.ui-fam{border:1px solid var(--border);border-radius:10px;padding:16px;background:var(--surface)}
+.ui-ts{border-collapse:collapse;width:100%;table-layout:fixed}
+.ui-ts th{text-align:left;padding:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary)}
+.ui-ts td{padding:16px 8px;vertical-align:top;border-top:1px solid var(--border)}
+.ui-ts-name{font-weight:700}
+.ui-sp-row{display:grid;grid-template-columns:110px 60px 1fr;align-items:center;gap:12px;padding:5px 0}
+.ui-sp-bar{height:16px;background:var(--btn-bg);border-radius:3px}
+.ui-cols{display:grid;height:72px}.ui-cols>div{background:var(--wash-strong);border-radius:3px}
+.ui-pagebox{border:1px dashed var(--border-strong);border-radius:8px;padding:12px}
+.ui-readbox{margin:0 auto;border:1px solid var(--border);background:var(--surface);border-radius:8px;padding:10px;text-align:center;font-size:14px;color:var(--text-secondary)}
+.ui-radbox{width:120px;height:80px;border:var(--border-control) solid var(--text-primary);background:var(--surface)}
+.ui-icongrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.ui-iconcard{border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;background:var(--surface);color:var(--icon)}
+.ui-iconcard p{color:var(--text-primary)}.ui-iconcard .ui-small{color:var(--text-secondary)}
+.ui-voice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ui-voice-card{border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;background:var(--surface);display:grid;gap:12px}
+.ui-voice-card--wrong{border-style:dashed}
+.ui-dodont{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ui-dodont ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ui-dodont li{display:grid;grid-template-columns:24px 1fr;gap:8px;font-size:16px}
+.ui-dodont .ok .ui-ico{color:var(--success)}.ui-dodont .no .ui-ico{color:var(--error)}
+@media (max-width:767px){.ui-voice,.ui-dodont{grid-template-columns:1fr}}
+
+/* ===== SKIN · Concept C · Picture-Book ===== */
+:root{--w-head:700;--w-label:700;--w-zh-head:700;--w-zh-label:500;
+ --radius-btn:var(--radius-md);--radius-input:var(--radius-md);--focus:var(--primary);
+ --btn-bg:var(--primary);--btn-fg:var(--on-primary);--btn-bg-hover:var(--primary-hover);--btn-bg-pressed:var(--primary-pressed);
+ --btn2-bg:var(--surface);--btn2-fg:var(--primary);--btn2-border:var(--primary);
+ --lang-mark:var(--accent);--utility-bg:var(--background);--header-bg:var(--background);--brand-ink:var(--primary);
+ --icon:var(--primary);--numeral:var(--primary);--photo-bg:var(--secondary);--photo-fg:var(--text-primary);
+ --band-bg:var(--butter);--band-fg:var(--text-primary);
+ --footer-bg:var(--primary);--footer-fg:var(--on-night);--footer-muted:var(--on-night-muted);--footer-rule:#3E5584}
+.ui-page{background-color:var(--background);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");font-weight:500}
+.ui-page:lang(zh),[lang|="zh"] .ui-page{font-weight:400;line-height:1.85;letter-spacing:.03em}
+.ui-display,.ui-h1,.ui-h2,.ui-h3{letter-spacing:0}
+:lang(zh) .ui-body{line-height:1.85}
+.ui-mark{background:none;color:inherit}
+.ui-step,.ui-faq details,.ui-loc{box-shadow:var(--shadow-soft)}
+.ui-step{border-radius:var(--radius-lg)}
+.ui-loc{border-radius:var(--radius-lg)}
+.ui-faq details{border-radius:var(--radius-md)}
+/* night band */
+.c-night{background:var(--primary);color:var(--on-night);padding-bottom:var(--space-12)!important;
+ --btn-bg:var(--butter);--btn-fg:var(--primary);--btn-bg-hover:#FFF4C9;--btn-bg-pressed:#F3DD86;--btn2-bg:transparent;--btn2-fg:var(--on-night);--btn2-border:var(--on-night);
+ --wash:rgba(255,248,238,.12);--wash-strong:rgba(255,248,238,.2);--focus:var(--on-night);--icon:var(--butter)}
+.c-night .ui-display{color:var(--on-night)}.c-night .ui-lead{color:var(--on-night)}.c-night .ui-eyebrow{color:var(--on-night-muted)}
+.c-night .ui-display .ui-mark{color:var(--butter)}
+.c-hills{position:absolute;left:0;right:0;bottom:-2px;height:64px;background:var(--background);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+ -webkit-mask:radial-gradient(120% 90px at 25% 100%,#000 60%,transparent 61%),radial-gradient(90% 80px at 80% 100%,#000 60%,transparent 61%);mask:radial-gradient(120% 90px at 25% 100%,#000 60%,transparent 61%),radial-gradient(90% 80px at 80% 100%,#000 60%,transparent 61%)}
+.c-trust-chip{display:inline-flex;align-items:center;gap:10px;margin-top:var(--space-3);padding:10px 16px;border-radius:var(--radius-pill,999px);background:rgba(255,248,238,.1);border:1px solid rgba(255,248,238,.35);color:var(--on-night);font-weight:600;font-size:16px}
+:lang(zh) .c-trust-chip{font-weight:500}
+.c-trust-chip .ui-ico{color:var(--butter)}
+.c-scene{display:block;width:100%;height:auto}
+.c-hero-art{position:relative}
+.c-story-cap{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-night-muted)}
+:lang(zh) .c-story-cap{letter-spacing:.2em}
+/* dawn band */
+.c-dawn{background:var(--secondary);border-radius:var(--radius-xl) var(--radius-xl) 0 0}
+.c-dawn .c-story-cap{color:var(--text-secondary)}
+.ui-how-head{display:grid;grid-template-columns:1fr minmax(0,360px);align-items:center;gap:var(--space-4)}
+.ui-step{align-items:flex-start}
+.c-stepnum{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--accent);color:var(--primary);font-family:var(--font-en-heading);font-weight:700;font-size:24px}
+.c-stepico{position:absolute;top:var(--space-4);right:var(--space-4);color:var(--primary)}
+.c-stepico .ui-ico{width:30px;height:30px}
+.ui-step.is-current{background:var(--butter)}
+@media (max-width:767px){.ui-how-head{grid-template-columns:1fr}.c-how-art{max-width:320px}.c-stepico{display:none}.c-stepnum{flex:none;width:44px;height:44px;font-size:20px}}
+/* doctor frame */
+.c-frame{position:relative;margin:0;padding:14px;background:var(--secondary);border-radius:var(--radius-xl);max-width:440px}
+.c-frame .ui-photo{border-radius:calc(var(--radius-xl) - 12px);background:#E4F1FA}
+.c-frame-doodle{position:absolute;width:64px;height:64px}
+.c-frame-doodle--tl{top:-22px;left:-18px}.c-frame-doodle--br{bottom:-24px;right:-20px}.c-frame-doodle--tr{top:24px;right:-18px;width:40px;height:40px}
+.c-paper{background:transparent}
+.ui-n{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--secondary);font-size:18px}
+/* band = day */
+.ui-band{grid-template-columns:260px 1fr auto;background:var(--butter);border-radius:var(--radius-xl)}
+.c-band-art{margin:-8px 0}
+@media (max-width:1023px){.ui-band{grid-template-columns:1fr}.c-band-art{max-width:280px}}
+.c-map{background:var(--secondary)}
+.ui-footer{border-radius:var(--radius-xl) var(--radius-xl) 0 0;background-image:radial-gradient(circle at 12% 30%,rgba(252,235,168,.9) 0 2px,transparent 3px),radial-gradient(circle at 78% 18%,rgba(252,235,168,.9) 0 2px,transparent 3px),radial-gradient(circle at 60% 70%,rgba(252,235,168,.7) 0 1.5px,transparent 2.5px)}
+.ui-footer .ui-brand{color:var(--on-night)}
+.ui-footer :focus-visible{outline-color:var(--on-night)}
+.c-scenes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.c-scenes figure{margin:0;display:grid;gap:8px}
+.c-img-grid{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:32px;align-items:start}
+.c-paperdemo{background-color:var(--background);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+@media (max-width:767px){.c-scenes,.c-img-grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="ui-page" lang="en">
+<div class="ui-utility"><div class="ui-wrap ui-utility-in"><nav class="ui-lang" aria-label="Language / 語言"><a href="#" hreflang="en" lang="en" aria-current="page" class="">EN</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hans" lang="zh-Hans" class="">简体</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hant" lang="zh-Hant" class="">繁體</a></nav></div></div>
+<header class="ui-header"><div class="ui-wrap ui-header-in"><a class="ui-brand" href="#">1234 Ortho-K Vision Care</a>
+<nav class="ui-nav" aria-label="Main"><a href="#how">How it works</a><a href="#doctor">Dr. Woo</a><a href="#visit">First visit</a><a href="#faq">Questions</a><a href="#locations">Locations</a></nav>
+<div class="ui-header-tools"><a href="#" class="ui-btn ui-btn--primary ui-btn--sm"><span>Book a consultation</span></a>
+<button type="button" class="ui-btn ui-btn--secondary ui-btn--sm ui-menu-btn" data-ui-menu aria-expanded="false" aria-controls="ui-menu-en"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button></div></div>
+<div class="ui-wrap" id="ui-menu-en" hidden style="padding-bottom:16px"><div class="ui-sheet"><ul class="ui-sheet-links"><li><a href="#how">How it works<svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#doctor">Dr. Woo<svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#visit">First visit<svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#faq">Questions<svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#locations">Locations<svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul>
+<div class="ui-sheet-foot ui-stack"><a href="#" class="ui-btn ui-btn--primary ui-btn--block"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary ui-btn--block"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg><span>Message us</span></a></div></div></div></header>
+<main><section class="ui-hero c-night"><div class="ui-wrap ui-hero-grid">
+<div class="ui-hero-text"><p class="ui-eyebrow"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Ortho-k for children, ages 7–18</span></p>
+<h1 class="ui-display ">Clear vision all day.<br><span class="ui-mark">No glasses at school.</span></h1>
+<p class="ui-lead">Your child wears special lenses while they sleep. In the morning, they take them out and see clearly. Ortho-k may also help slow down nearsightedness as they grow.</p>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg><span>Message us</span></a></div>
+<p class="c-trust-chip"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Dr. Paul T. Woo, OD · 30 years of ortho-k experience</span></p></div>
+<div class="ui-hero-art"><div class="c-hero-art"><svg class="c-scene" viewBox="0 0 480 360" role="img" aria-label="Illustration: a child asleep; the lens case waits on the nightstand.">
+<rect x="0" y="0" width="480" height="360" rx="40" fill="#2A4478"/>
+<rect x="286" y="36" width="156" height="128" rx="22" fill="#1F3563" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M364 36v128M286 100h156" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".55"/>
+<path d="M410 58a26 26 0 1 0 18 40 20 20 0 1 1-18-40z" fill="#FCEBA8"/>
+<path d="M318 60Q319.08 64.92 324 66Q319.08 67.08 318 72Q316.92 67.08 312 66Q316.92 64.92 318 60Z" fill="#FCEBA8"/><path d="M338 129Q338.9 133.1 343 134Q338.9 134.9 338 139Q337.1 134.9 333 134Q337.1 133.1 338 129Z" fill="#FCEBA8"/><path d="M392 134Q392.72 137.28 396 138Q392.72 138.72 392 142Q391.28 138.72 388 138Q391.28 137.28 392 134Z" fill="#FCEBA8"/><path d="M80 46Q81.08 50.92 86 52Q81.08 53.08 80 58Q78.92 53.08 74 52Q78.92 50.92 80 46Z" fill="#FCEBA8"/><path d="M150 30Q150.72 33.28 154 34Q150.72 34.72 150 38Q149.28 34.72 146 34Q149.28 33.28 150 30Z" fill="#FCEBA8"/><path d="M214 67Q214.9 71.1 219 72Q214.9 72.9 214 77Q213.1 72.9 209 72Q213.1 71.1 214 67Z" fill="#FCEBA8"/>
+<rect x="30" y="170" width="46" height="138" rx="20" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="44" y="236" width="300" height="72" rx="26" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58 308v22M330 308v22" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="116" cy="226" rx="46" ry="20" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="122" cy="206" r="27" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96 200c2-18 18-28 34-24 12 3 20 12 19 22-9-8-24-9-36-3-6 3-12 5-17 5z" fill="#3A3350"/>
+<path d="M112 210q5 4 10 0M130 210q5 4 10 0" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2.6"/>
+<circle cx="112" cy="219" r="4.5" fill="#F4A98E"/><circle cx="142" cy="219" r="4.5" fill="#F4A98E"/>
+<path d="M146 214c30-10 70-12 110-8 40 4 76 14 86 28 4 6 2 14-6 16H150c-10 0-16-10-14-20 1-6 5-12 10-16z" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="200" cy="232" r="4" fill="#FFF8EE"/><circle cx="246" cy="226" r="4" fill="#FFF8EE"/><circle cx="290" cy="236" r="4" fill="#FFF8EE"/><circle cx="226" cy="246" r="3" fill="#FFF8EE"/><circle cx="270" cy="250" r="3" fill="#FFF8EE"/>
+<rect x="362" y="238" width="86" height="80" rx="14" fill="#FCEBA8" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M376 276h58" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="405" cy="296" r="4" fill="#16264A"/>
+<rect x="380" y="214" width="50" height="24" rx="12" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="396" cy="226" r="6" fill="#CFE6F5" stroke="#16264A" stroke-width="2"/><circle cx="414" cy="226" r="6" fill="#CFE6F5" stroke="#16264A" stroke-width="2"/>
+<path d="M170 160c6-3 12-3 16 0M190 140c6-3 12-3 16 0M214 120c6-3 12-3 16 0" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/>
+</svg><p class="c-story-cap"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.6 6.6 0 0 0 10.6 10.6z"/></svg><span>Night</span></p></div></div>
+</div><div class="c-hills" aria-hidden="true"></div></section><section class="ui-section c-paper"><div class="ui-wrap ui-grid">
+<div class="ui-span-6"><h2 class="ui-h1 ">Is your child's prescription going up every year?</h2></div>
+<p class="ui-lead ui-at-8">Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don't slow the change.</p></div></section><section class="ui-section c-dawn" id="how"><div class="ui-wrap">
+<div class="ui-how-head"><h2 class="ui-h2 ">How ortho-k works</h2><div class="c-how-art"><svg class="c-scene" viewBox="0 0 480 360" role="img" aria-label="Illustration: morning — the child wakes up and sees clearly.">
+<rect x="0" y="0" width="480" height="360" rx="40" fill="#E4F1FA"/>
+<rect x="286" y="36" width="156" height="128" rx="22" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="404" cy="84" r="22" fill="#FCEBA8" stroke="#16264A" stroke-width="2.5"/>
+<path d="M404 50v-8M404 126v-8M370 84h-8M446 84h-8M380 60l-6-6M428 108l6 6M380 108l-6 6M428 60l6-6" stroke="#16264A" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M290 140c24-8 48-10 70-2" stroke="#16264A" stroke-width="3" stroke-linecap="round" fill="none"/>
+<ellipse cx="326" cy="126" rx="13" ry="10" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="334" cy="116" r="7" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M340 116l7 2-7 3" fill="#FCEBA8" stroke="#16264A" stroke-width="2" stroke-linejoin="round"/><circle cx="335" cy="115" r="1.6" fill="#16264A"/>
+<path d="M364 36v128M286 100h156" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".35"/>
+<rect x="30" y="170" width="46" height="138" rx="20" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="44" y="236" width="300" height="72" rx="26" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58 308v22M330 308v22" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 240c40-10 110-12 170-2 14 2 22 10 20 18l-2 8H146c-8 0-12-10-8-16 3-4 7-7 12-8z" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M112 244v-54c0-14 10-24 24-24h14c14 0 24 10 24 24v54z" fill="#FCEBA8" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M116 186c-10-14-16-30-14-48M170 186c10-14 16-30 14-48" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="100" cy="134" r="8" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="186" cy="134" r="8" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="143" cy="140" r="28" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M116 134c2-18 18-28 34-24 12 3 20 12 19 22-9-8-24-9-36-3-6 3-12 5-17 5z" fill="#3A3350"/>
+<circle cx="133" cy="143" r="3.4" fill="#16264A"/><circle cx="153" cy="143" r="3.4" fill="#16264A"/>
+<path d="M134 155q9 7 18 0" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2.6"/>
+<circle cx="126" cy="153" r="4.5" fill="#F4A98E"/><circle cx="161" cy="153" r="4.5" fill="#F4A98E"/>
+<path d="M200 112Q201.44 118.56 208 120Q201.44 121.44 200 128Q198.56 121.44 192 120Q198.56 118.56 200 112Z" fill="#FCEBA8"/><path d="M214 145Q214.9 149.1 219 150Q214.9 150.9 214 155Q213.1 150.9 209 150Q213.1 149.1 214 145Z" fill="#FCEBA8"/><path d="M86 98Q87.08 102.92 92 104Q87.08 105.08 86 110Q84.92 105.08 80 104Q84.92 102.92 86 98Z" fill="#FCEBA8"/>
+<rect x="362" y="238" width="86" height="80" rx="14" fill="#FCEBA8" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M376 276h58" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="405" cy="296" r="4" fill="#16264A"/>
+<rect x="374" y="214" width="62" height="24" rx="12" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M378 214c4-14 22-18 30-10" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="394" cy="226" r="6" fill="#CFE6F5" stroke="#16264A" stroke-width="2"/><circle cx="414" cy="226" r="6" fill="#CFE6F5" stroke="#16264A" stroke-width="2"/>
+</svg><p class="c-story-cap"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><span>Morning</span></p></div></div><ol class="ui-steps"><li class="ui-step"><span class="c-stepnum" aria-hidden="true">1</span><span class="c-stepico"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h3 class="ui-h3">Full eye exam and a map of the eye</h3></li><li class="ui-step"><span class="c-stepnum" aria-hidden="true">2</span><span class="c-stepico"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 13.5c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5c-2.5 1.6-5.4 2.5-8.5 2.5s-6-.9-8.5-2.5z"/><path d="M7.5 11.5c.8-1.7 2.5-2.8 4.5-2.8"/></svg></span><h3 class="ui-h3">Custom lenses made for your child</h3></li><li class="ui-step"><span class="c-stepnum" aria-hidden="true">3</span><span class="c-stepico"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.6 6.6 0 0 0 10.6 10.6z"/></svg></span><h3 class="ui-h3">Wear at night. See clearly all day.</h3></li></ol></div></section>
+<section class="ui-section c-paper" id="doctor"><div class="ui-wrap"><div class="ui-doctor"><figure class="c-frame"><div class="ui-photo" role="img" aria-label="Photo: Dr. Woo with a child patient"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg><span>Photo: Dr. Woo with a child patient<small>Real photo, natural light</small></span></div>
+<svg class="c-frame-doodle c-frame-doodle--tl" viewBox="0 0 60 60" aria-hidden="true"><path d="M40 8a20 20 0 1 0 14 30 15 15 0 1 1-14-30z" fill="#FCEBA8" stroke="#16264A" stroke-width="3" stroke-linejoin="round"/></svg>
+<svg class="c-frame-doodle c-frame-doodle--br" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="12" fill="#FCEBA8" stroke="#16264A" stroke-width="3"/><path d="M30 6v6M30 48v6M6 30h6M48 30h6M13 13l4 4M43 43l4 4M13 47l4-4M43 17l4-4" stroke="#16264A" stroke-width="3" stroke-linecap="round"/></svg>
+<svg class="c-frame-doodle c-frame-doodle--tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6Q22.52 17.48 34 20Q22.52 22.52 20 34Q17.48 22.52 6 20Q17.48 17.48 20 6Z" fill="#FBD3BC"/></svg></figure>
+<div class="ui-doctor-text ui-stack-lg"><p class="ui-eyebrow"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Meet the doctor</span></p><h2 class="ui-h1 ">Dr. Paul T. Woo, OD</h2><p class="ui-lead">30 years of ortho-k experience.</p><p class="ui-lead">Speaks English, Mandarin, Cantonese, and Taiwanese.</p><ul class="ui-chips" aria-label="Languages"><li class="ui-chip"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg>English</li><li class="ui-chip"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg>Mandarin</li><li class="ui-chip"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg>Cantonese</li><li class="ui-chip"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg>Taiwanese</li></ul>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book a consultation</span></a></div></div></div></div></section>
+<section class="ui-section c-paper" id="visit"><div class="ui-wrap ui-grid">
+<div class="ui-span-5"><h2 class="ui-h2 ">What happens at the first visit</h2><p style="margin-top:var(--space-2)"><span class="ui-draft">Placeholder copy</span></p></div>
+<ol class="ui-lines ui-at-7"><li><span class="ui-n">1</span><p class="ui-body">We talk with you about your child's eyes and daily routine.</p></li><li><span class="ui-n">2</span><p class="ui-body">Your child has a full eye exam and a map of the front of the eye.</p></li><li><span class="ui-n">3</span><p class="ui-body">Dr. Woo explains the results and answers your questions.</p></li></ol></div></section><section class="ui-section c-paper" id="faq"><div class="ui-wrap"><div class="ui-faq-wrap"><h2 class="ui-h2 ">Parent questions</h2><ul class="ui-faq"><li><details open><summary><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></svg><span>Is ortho-k safe for kids?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></svg><span>What age can my child start?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></svg><span>Is it hard for kids to put in the lenses?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></svg><span>How much does it cost?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li></ul></div></div></section><section class="ui-section c-paper" id="locations"><div class="ui-wrap ui-stack-lg">
+<h2 class="ui-h1 ">Book a visit at either clinic</h2>
+<p class="ui-label-sm">Book or message — whatever is easiest</p><ul class="ui-contact" aria-label="Contact"><li><a href="#" class=""><span class="ui-cico"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg></span><span>Call<small>(800) 991-8881</small></span></a></li><li><a href="#" class=""><span class="ui-cico"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span>Book online</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">WC</span><span>WeChat</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">LINE</span><span>LINE</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">WA</span><span>WhatsApp</span></a></li></ul>
+<div class="ui-locs"><article class="ui-loc"><div class="ui-map c-map" role="img" aria-label="Map"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg><span>Map</span></div>
+<div class="ui-loc-body"><div class="ui-loc-name"><h3 class="ui-h3">Alhambra</h3><span class="ui-loc-alt" lang="zh-Hant">阿罕布拉診所</span></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></svg><p class="ui-body">1234 S. Garfield Ave., #105<br>Alhambra, CA 91801</p></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg><p class="ui-body">Tue & Fri 12–6 pm, Sat 12–4 pm</p></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><p class="ui-body"><span class="ui-nowrap">(800) 991-8881</span> · <span class="ui-nowrap">(626) 282-5388</span></p></div>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary ui-btn--sm"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book here</span></a><a href="#" class="ui-btn ui-btn--secondary ui-btn--sm"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg><span>Directions</span></a></div></div></article><article class="ui-loc"><div class="ui-map c-map" role="img" aria-label="Map coming soon"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg><span>Map coming soon</span></div>
+<div class="ui-loc-body"><div class="ui-loc-name"><h3 class="ui-h3">Walnut</h3><span class="ui-loc-alt" lang="zh-Hant">核桃市診所</span></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></svg><p class="ui-body ui-soon">Address coming soon</p></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg><p class="ui-body ui-soon">Hours coming soon</p></div>
+<div class="ui-kv"><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><p class="ui-body"><span class="ui-nowrap">(800) 991-8881</span> · <span class="ui-nowrap">(626) 282-5388</span></p></div>
+<div class="ui-btn-row"><span class="ui-btn ui-btn--secondary ui-btn--sm is-disabled" aria-disabled="true">Opening soon</span></div></div></article></div></div></section>
+<section class="ui-section ui-section--band c-paper"><div class="ui-wrap"><div class="ui-band"><div class="c-band-art"><svg class="c-scene" viewBox="0 0 480 360" role="img" aria-label="Illustration: off to school, no glasses.">
+<rect x="0" y="0" width="480" height="360" rx="40" fill="#FCEBA8"/>
+<path d="M60 70c0-12 12-20 24-16 4-12 22-16 30-4 12-2 20 8 16 18H64c-3 0-4-1-4 2z" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M330 56c0-10 10-16 20-13 4-10 18-12 24-3 10-2 17 6 14 14H334c-3 0-4 0-4 2z" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="250" y="130" width="190" height="150" rx="16" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M238 136l107-58 107 58z" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M345 78V36" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M345 38h34l-8 10 8 10h-34z" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="320" y="206" width="50" height="74" rx="12" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="270" y="160" width="36" height="30" rx="8" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="384" y="160" width="36" height="30" rx="8" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="345" cy="112" r="12" fill="#FFF8EE" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M345 105v7l5 3" stroke="#16264A" stroke-width="2" stroke-linecap="round" fill="none"/>
+<path d="M0 290c80-14 170-18 250-10 80 8 160 6 230-4v44c0 22-18 40-40 40H40c-22 0-40-18-40-40z" fill="#FBD3BC"/>
+<path d="M20 292c90-12 180-14 250-6 70 8 140 6 200-2" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="100" y="176" width="46" height="62" rx="14" fill="#FBD3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M126 196h58c10 0 16 6 16 16v18c0 8-6 14-14 14h-56z" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="132" y="186" width="56" height="68" rx="22" fill="#CFE6F5" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M146 254l-14 38M172 254l12 38" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M124 292h14M178 292h14" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M186 204c14-8 22-22 24-36" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="212" cy="164" r="8" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="164" cy="152" r="28" fill="#F5D3BC" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M137 146c2-18 18-28 34-24 12 3 20 12 19 22-9-8-24-9-36-3-6 3-12 5-17 5z" fill="#3A3350"/>
+<circle cx="164" cy="156" r="3.4" fill="#16264A"/><circle cx="182" cy="156" r="3.4" fill="#16264A"/>
+<path d="M165 168q8 6 16 0" stroke="#16264A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2.6"/>
+<circle cx="157" cy="165" r="4.5" fill="#F4A98E"/><circle cx="189" cy="165" r="4.5" fill="#F4A98E"/>
+<path d="M222 115Q223.26 120.74 229 122Q223.26 123.26 222 129Q220.74 123.26 215 122Q220.74 120.74 222 115Z" fill="#FFF8EE"/><path d="M60 144Q61.08 148.92 66 150Q61.08 151.08 60 156Q58.92 151.08 54 150Q58.92 148.92 60 144Z" fill="#FFF8EE"/>
+</svg></div><div class="ui-band-text"><h2 class="ui-h2 ">Book a consultation</h2><p class="ui-body ui-muted">Book online, or message us on WeChat, LINE, or WhatsApp.</p></div>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg><span>Message us</span></a></div></div></div></section></main>
+<footer class="ui-footer"><div class="ui-wrap"><div class="ui-footer-grid">
+<div><p class="ui-brand ui-brand--footer">1234 Ortho-K Vision Care</p><p lang="zh-Hant" class="ui-footer-zh">1234兒童視力矯正中心</p><div style="margin-top:var(--space-2)"><h3>Language</h3><nav class="ui-lang" aria-label="Language / 語言"><a href="#" hreflang="en" lang="en" aria-current="page" class="">EN</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hans" lang="zh-Hans" class="">简体</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hant" lang="zh-Hant" class="">繁體</a></nav></div></div>
+<div><h3>Alhambra</h3><p>1234 S. Garfield Ave., #105<br>Alhambra, CA 91801<br>Tue & Fri 12–6 pm, Sat 12–4 pm</p></div>
+<div><h3>Walnut</h3><p>Address coming soon<br>Hours coming soon</p></div>
+<div><h3>Contact</h3><ul><li><a href="tel:18009918881">(800) 991-8881</a></li><li><a href="tel:16262825388">(626) 282-5388</a></li></ul></div>
+</div><div class="ui-footer-legal"><span>© 2026 1234 Ortho-K Vision Care</span><a href="#">Privacy policy</a><a href="#">Notice of privacy practices</a><a href="#">Accessibility</a><a href="#">Terms</a></div></div></footer><div class="ui-stickybar" role="region" aria-label="Book a consultation"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico c-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></svg><span>Message us</span></a></div></div>
+<script>document.querySelectorAll('[data-ui-menu]').forEach(function(b){b.addEventListener('click',function(){var s=document.getElementById(b.getAttribute('aria-controls'));var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);s.hidden=o;});});</script>
+</body>
+</html>
