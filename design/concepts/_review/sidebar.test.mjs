@@ -21,6 +21,28 @@ test('renderSidebar shows a placeholder when there are no comments', () => {
   assert.ok(container.textContent.includes('No comments yet'));
 });
 
+test('renderSidebar marks pinned comments distinctly from general ones', () => {
+  const container = document.createElement('div');
+  renderSidebar(container, [
+    { text: 'Pinned one', createdAt: '2026-09-24T10:00:00.000Z', xPercent: 10, yPercent: 10 },
+    { text: 'General one', createdAt: '2026-09-24T11:00:00.000Z' },
+  ]);
+  const items = container.querySelectorAll('.review-comment');
+  assert.strictEqual(items.length, 2);
+  assert.ok(items[0].querySelector('.review-comment-pin-badge'));
+  assert.strictEqual(items[1].querySelector('.review-comment-pin-badge'), null);
+});
+
+test('renderPins wires a click handler that receives the comment', () => {
+  const container = document.createElement('div');
+  let clicked = null;
+  renderPins(container, [
+    { text: 'Move this down', createdAt: '2026-09-24T10:00:00.000Z', xPercent: 50, yPercent: 20 },
+  ], (comment) => { clicked = comment; });
+  container.querySelector('.review-pin').dispatchEvent(new Event('click', { bubbles: true }));
+  assert.strictEqual(clicked.text, 'Move this down');
+});
+
 test('positionFromClick converts a click point to page-relative percentages', () => {
   const pos = positionFromClick({
     pageX: 300,

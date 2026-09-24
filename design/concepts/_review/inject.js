@@ -107,7 +107,9 @@ async function init() {
   const refresh = async () => {
     comments = await loadComments(concept, page);
     renderSidebar(list, comments);
-    renderPins(pinLayer, comments);
+    renderPins(pinLayer, comments, (comment) => {
+      window.alert(`${comment.text}\n\n— ${new Date(comment.createdAt).toLocaleString()}`);
+    });
   };
   await refresh();
 
