@@ -1,7 +1,7 @@
 import { installGate } from './gate.js';
 import { renderSidebar } from './sidebar.js';
 
-const API_BASE = 'https://1234-review-comments.pasadenaworks.workers.dev';
+const API_BASE = 'https://1234-review-comments.jimmyc316.workers.dev';
 
 function currentConceptAndPage() {
   const match = window.location.pathname.match(/\/concepts\/([A-E][^/]*)\/preview\/([^/]+)\//);
