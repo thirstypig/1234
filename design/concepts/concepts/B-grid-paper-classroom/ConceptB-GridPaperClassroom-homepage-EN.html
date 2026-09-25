@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>1234 Ortho-K · Concept B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:var(--background)}</style>
+<style>:root, [data-theme="light"]{--primary:#1D6A48;--primary-hover:#175A3C;--primary-pressed:#104530;--on-primary:#FFFFFF;--secondary:#C2272D;--accent:#F7CB46;--background:#FFFFFF;--paper:#F6FAF7;--surface:#FFFFFF;--wash:#EEF5F0;--wash-strong:#DDEBE2;--text-primary:#18241E;--text-secondary:#4B5A52;--border:#D3DDD6;--border-strong:#7B8B82;--grid-line:#C9E0D1;--grid-line-strong:#8DBFA2;--success:#1D6A48;--error:#A3171C;--footer:#16392A;--shadow-none:none;--shadow-sticker:0 1px 0 rgba(24, 36, 30, 0.10), 0 3px 6px rgba(24, 36, 30, 0.14);--shadow-float:0 10px 28px rgba(24, 36, 30, 0.16)}
+:root{--space-0-5:4px;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-6:48px;--space-8:64px;--space-10:80px;--space-12:96px;--page-max:1120px;--reading-max:680px;--gutter-mobile:20px;--grid-desktop:12;--grid-tablet:8;--grid-mobile:4;--radius-sm:3px;--radius-md:6px;--radius-lg:8px;--radius-sticker:999px;--border-hairline:1px;--border-control:1.5px;--focus-width:3px;--grid-cell:24px;--grid-major:96px;--box-size:1.25em;--font-en-heading:Fredoka, "Varela Round", ui-rounded, system-ui, sans-serif;--font-en-body:"Atkinson Hyperlegible", system-ui, sans-serif;--font-zh-heading:"LXGW WenKai TC", "Kaiti TC", BiauKai, DFKai-SB, serif;--font-zh-body:"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif}
+/* 1234 Ortho-K Vision Care — Concept B · Grid-Paper Classroom. Structure is shared by concepts B–D; the skin below it is this concept's. */
+/* ===== STRUCTURE (identical in concepts B, C, D) ===== */
+.ui-page{background:var(--background);color:var(--text-primary);font-family:var(--font-en-body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.ui-page *,.ui-page *::before,.ui-page *::after{box-sizing:border-box}
+.ui-page :where(h1,h2,h3,p,ul,ol,figure){margin:0}
+.ui-page :where(a){color:inherit}
+.ui-page:lang(zh),[lang|="zh"] .ui-page{font-family:var(--font-zh-body);line-height:1.8;letter-spacing:.02em}
+.ui-ico{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.18em}
+.ui-ico--xl{width:48px;height:48px}
+.ui-nowrap{white-space:nowrap}
+.ui-muted{color:var(--text-secondary)}
+
+/* type scale */
+.ui-display,.ui-h1,.ui-h2,.ui-h3{font-family:var(--font-en-heading);font-weight:var(--w-head);color:var(--text-primary);text-wrap:balance}
+.ui-display{font-size:56px;line-height:1.08}
+.ui-h1{font-size:40px;line-height:1.15}
+.ui-h2{font-size:30px;line-height:1.2}
+.ui-h3{font-size:22px;line-height:1.3}
+.ui-body{font-size:18px;line-height:1.6}
+.ui-small{font-size:15px;line-height:1.5;color:var(--text-secondary)}
+.ui-lead{font-size:20px;line-height:1.6;max-width:var(--reading-max)}
+:lang(zh) :is(.ui-display,.ui-h1,.ui-h2,.ui-h3),:is(.ui-display,.ui-h1,.ui-h2,.ui-h3):lang(zh){font-family:var(--font-zh-heading);font-weight:var(--w-zh-head);letter-spacing:.03em}
+:lang(zh) .ui-display{font-size:52px;line-height:1.3}
+:lang(zh) .ui-h1{font-size:38px;line-height:1.35}
+:lang(zh) .ui-h2{font-size:30px;line-height:1.4}
+:lang(zh) .ui-h3{font-size:22px;line-height:1.5}
+:lang(zh) .ui-body{line-height:1.8}
+:lang(zh) .ui-small{line-height:1.7}
+:lang(zh) .ui-lead{line-height:1.8}
+@media (max-width:767px){
+  .ui-display{font-size:40px;line-height:1.12}.ui-h1{font-size:32px}.ui-h2{font-size:26px}.ui-h3{font-size:20px}
+  .ui-page,.ui-body{font-size:17px}.ui-small{font-size:14px}.ui-lead{font-size:18px}
+  :lang(zh) .ui-display{font-size:36px;line-height:1.35}:lang(zh) .ui-h1{font-size:30px}:lang(zh) .ui-h2{font-size:24px}:lang(zh) .ui-h3{font-size:20px}
+  :lang(zh) .ui-small{font-size:15px}
+}
+.ui-eyebrow{display:inline-flex;align-items:center;gap:var(--space-1);font-size:15px;font-weight:var(--w-label);color:var(--text-secondary);letter-spacing:.02em}
+:lang(zh) .ui-eyebrow{font-weight:var(--w-zh-label);letter-spacing:.08em}
+.ui-label-sm{font-size:15px;font-weight:var(--w-label);color:var(--text-secondary)}
+:lang(zh) .ui-label-sm{font-weight:var(--w-zh-label)}
+
+/* layout */
+.ui-wrap{max-width:calc(var(--page-max) + 48px);margin:0 auto;padding:0 24px;position:relative}
+.ui-section{padding:var(--space-10) 0;position:relative}
+.ui-stack>*+*{margin-top:var(--space-2)}
+.ui-stack-lg>*+*{margin-top:var(--space-3)}
+.ui-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--space-3)}
+.ui-span-5{grid-column:span 5}.ui-span-6{grid-column:span 6}.ui-at-7{grid-column:7 / span 6}.ui-at-8{grid-column:8 / span 5;align-self:end}
+.ui-row-wrap{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+@media (max-width:767px){.ui-wrap{padding:0 var(--gutter-mobile)}.ui-section{padding:var(--space-8) 0}.ui-grid{grid-template-columns:repeat(4,1fr);gap:var(--space-2)}.ui-span-5,.ui-span-6,.ui-at-7,.ui-at-8{grid-column:1 / -1}}
+
+/* focus */
+.ui-page :focus-visible,.ui-focus-demo{outline:var(--focus-width) solid var(--focus);outline-offset:3px}
+
+/* buttons */
+.ui-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 var(--space-3);border-radius:var(--radius-btn);border:var(--border-control) solid transparent;font-family:var(--font-en-heading);font-size:17px;font-weight:var(--w-label);line-height:1;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .12s,transform .06s,box-shadow .12s}
+:lang(zh) .ui-btn{font-family:var(--font-zh-heading);font-weight:var(--w-zh-label);letter-spacing:.06em}
+.ui-btn--primary{background:var(--btn-bg);color:var(--btn-fg)}
+.ui-btn--primary:hover,.ui-btn--primary.is-hover{background:var(--btn-bg-hover)}
+.ui-btn--primary:active,.ui-btn--primary.is-pressed{background:var(--btn-bg-pressed);transform:translateY(1px)}
+.ui-btn--secondary{background:var(--btn2-bg);color:var(--btn2-fg);border-color:var(--btn2-border)}
+.ui-btn--secondary:hover,.ui-btn--secondary.is-hover{background:var(--wash)}
+.ui-btn--secondary:active,.ui-btn--secondary.is-pressed{background:var(--wash-strong);transform:translateY(1px)}
+.ui-btn.is-disabled{background:transparent;color:var(--text-secondary);border:var(--border-hairline) dashed var(--border-strong);cursor:not-allowed;transform:none;box-shadow:none}
+.ui-btn--sm{min-height:44px;padding:0 var(--space-2);font-size:15px}
+.ui-btn--block{display:flex;width:100%}
+.ui-btn-row{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+
+/* language switcher */
+.ui-lang{display:inline-flex;align-items:center;gap:2px;font-size:15px;font-weight:var(--w-label)}
+.ui-lang a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 10px;color:var(--text-secondary);text-decoration:none;border-radius:var(--radius-sm);font-family:var(--font-en-heading),"PingFang TC","Noto Sans TC","PingFang SC","Noto Sans SC",sans-serif}
+.ui-lang a:hover,.ui-lang a.is-hover{color:var(--text-primary);background:var(--wash)}
+.ui-lang a:active,.ui-lang a.is-pressed{background:var(--wash-strong);color:var(--text-primary)}
+.ui-lang a[aria-current="page"]{color:var(--text-primary);box-shadow:inset 0 -3px 0 var(--lang-mark)}
+.ui-lang-sep{color:var(--border-strong);font-weight:400}
+
+/* header */
+.ui-utility{background:var(--utility-bg);border-bottom:var(--border-hairline) solid var(--border)}
+.ui-utility-in{display:flex;align-items:center;justify-content:flex-end;min-height:44px}
+.ui-header{background:var(--header-bg);border-bottom:var(--border-hairline) solid var(--border);position:relative;z-index:2}
+.ui-header-in{display:flex;align-items:center;gap:var(--space-3);min-height:76px}
+.ui-brand{font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:21px;line-height:1.15;color:var(--brand-ink);text-decoration:none;white-space:nowrap}
+.ui-brand small{display:block;font-family:var(--font-zh-heading);font-weight:var(--w-zh-label);font-size:14px;letter-spacing:.06em;color:var(--text-secondary);margin-top:2px}
+.ui-nav{display:flex;gap:2px;margin-left:auto}
+.ui-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:var(--radius-sm);font-weight:var(--w-label);font-size:16px;color:var(--text-primary);text-decoration:none;white-space:nowrap}
+:lang(zh) .ui-nav a{font-weight:var(--w-zh-label);font-size:17px}
+.ui-nav a:hover,.ui-nav a.is-hover{background:var(--wash)}
+.ui-nav a:active,.ui-nav a.is-pressed{background:var(--wash-strong)}
+.ui-nav--demo{margin:0}
+.ui-header-tools{display:flex;align-items:center;gap:var(--space-1)}
+.ui-menu-btn{display:none}
+@media (max-width:1023px){
+  .ui-nav,.ui-header-tools>a.ui-btn{display:none}
+  .ui-header-in{min-height:64px}.ui-header-tools{margin-left:auto}.ui-menu-btn{display:inline-flex}
+  .ui-utility-in{justify-content:flex-start}.ui-brand{font-size:19px}
+}
+.ui-phone{max-width:390px;border:var(--border-hairline) solid var(--border);border-radius:16px;overflow:hidden;background:var(--background)}
+.ui-sheet{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-float);padding:var(--space-2)}
+.ui-sheet-links{list-style:none;padding:0;margin:0}
+.ui-sheet-links a{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 var(--space-2);border-radius:var(--radius-md);text-decoration:none;font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:20px;color:var(--text-primary)}
+:lang(zh) .ui-sheet-links a{font-family:var(--font-zh-heading);font-weight:var(--w-zh-head)}
+.ui-sheet-links a:hover{background:var(--wash)}
+.ui-sheet-links li+li{border-top:var(--border-hairline) solid var(--border)}
+.ui-sheet-foot{border-top:var(--border-hairline) solid var(--border);margin-top:var(--space-1);padding-top:var(--space-2)}
+
+/* hero */
+.ui-hero{position:relative;padding:var(--space-10) 0 var(--space-8);overflow:hidden}
+.ui-hero-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--space-6);align-items:center}
+.ui-hero .ui-display{margin-top:var(--space-2)}
+.ui-hero .ui-lead{margin-top:var(--space-3)}
+.ui-hero .ui-btn-row{margin-top:var(--space-4)}
+.ui-hero-art{position:relative;min-width:0}
+@media (max-width:1023px){.ui-hero-grid{grid-template-columns:1fr;gap:var(--space-4)}.ui-hero{padding:var(--space-6) 0}}
+@media (max-width:767px){.ui-hero .ui-btn-row .ui-btn{flex:1 1 100%}}
+.ui-trust{list-style:none;padding:0;margin:0}
+.ui-trust li{display:grid;grid-template-columns:28px 1fr;gap:var(--space-1);align-items:start;padding:8px 0}
+.ui-trust .ui-ico{width:22px;height:22px;margin-top:3px;color:var(--icon)}
+
+/* how it works */
+.ui-how-head{display:flex;align-items:end;justify-content:space-between;gap:var(--space-4);margin-bottom:var(--space-6)}
+.ui-steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)}
+.ui-step{position:relative;background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-3)}
+@media (max-width:767px){.ui-how-head{flex-direction:column;align-items:stretch;margin-bottom:var(--space-4)}.ui-steps{grid-template-columns:1fr;gap:var(--space-2)}.ui-step{padding:var(--space-3);flex-direction:row;align-items:center;gap:var(--space-2)}}
+
+/* doctor */
+.ui-doctor{display:grid;grid-template-columns:5fr 7fr;gap:var(--space-6);align-items:center}
+.ui-chips{display:flex;flex-wrap:wrap;gap:var(--space-1);list-style:none;padding:0;margin:0}
+.ui-chip{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border:var(--border-hairline) solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);font-size:15px;font-weight:var(--w-label);color:var(--text-primary)}
+:lang(zh) .ui-chip{font-weight:var(--w-zh-label)}
+.ui-chip .ui-ico{color:var(--icon)}
+.ui-chip--lg{font-size:20px;min-height:48px;padding:0 18px}
+@media (max-width:767px){.ui-doctor{grid-template-columns:1fr;gap:var(--space-3)}}
+
+/* photo placeholder (base) */
+.ui-photo{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:8px;padding:var(--space-3);background:var(--photo-bg);color:var(--photo-fg);font-size:15px;font-weight:var(--w-label);aspect-ratio:4/5;width:100%}
+.ui-photo .ui-ico{width:32px;height:32px}
+.ui-photo small{display:block;font-weight:400;font-size:13px;opacity:.95;max-width:30ch}
+:lang(zh) .ui-photo{font-weight:var(--w-zh-label)}
+
+/* first visit */
+.ui-lines{list-style:none;padding:0;margin:0}
+.ui-lines li{display:grid;grid-template-columns:48px 1fr;gap:var(--space-2);padding:var(--space-2) 0;border-top:var(--border-hairline) solid var(--border);align-items:start}
+.ui-lines li:last-child{border-bottom:var(--border-hairline) solid var(--border)}
+.ui-n{font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:22px;line-height:1.3;color:var(--numeral)}
+.ui-draft{display:inline-block;font-size:13px;font-weight:var(--w-label);letter-spacing:.04em;text-transform:uppercase;color:var(--text-secondary);border:var(--border-hairline) dashed var(--border-strong);border-radius:var(--radius-sm);padding:2px 8px}
+:lang(zh) .ui-draft{font-weight:var(--w-zh-label);text-transform:none;font-size:14px}
+
+/* FAQ */
+.ui-faq-wrap{max-width:840px;margin:0 auto;display:grid;gap:var(--space-4)}
+.ui-faq{list-style:none;padding:0;margin:0;display:grid;gap:var(--space-1)}
+.ui-faq details{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-md)}
+.ui-faq summary{list-style:none;display:grid;grid-template-columns:32px 1fr 28px;gap:var(--space-1);align-items:center;min-height:64px;padding:var(--space-2) var(--space-3);cursor:pointer;border-radius:var(--radius-md);font-family:var(--font-en-heading);font-weight:var(--w-head);font-size:20px;line-height:1.35}
+:lang(zh) .ui-faq summary{font-family:var(--font-zh-heading);font-weight:var(--w-zh-head);line-height:1.5}
+.ui-faq summary::-webkit-details-marker{display:none}
+.ui-faq summary:hover,.ui-faq summary.is-hover{background:var(--wash)}
+.ui-faq summary:active,.ui-faq summary.is-pressed{background:var(--wash-strong)}
+.ui-faq summary .ui-ico{width:24px;height:24px;color:var(--icon)}
+.ui-plus{justify-self:end;width:14px;height:14px;position:relative}
+.ui-plus::before,.ui-plus::after{content:"";position:absolute;left:0;top:6px;width:14px;height:2px;background:var(--text-secondary);border-radius:2px}
+.ui-plus::after{transform:rotate(90deg);transition:transform .15s}
+.ui-faq details[open] .ui-plus::after{transform:rotate(0)}
+.ui-faq details[open] summary{border-radius:var(--radius-md) var(--radius-md) 0 0;border-bottom:var(--border-hairline) solid var(--border)}
+.ui-answer{padding:var(--space-2) var(--space-3) var(--space-3) calc(var(--space-3) + 40px)}
+@media (max-width:767px){.ui-faq summary{padding:var(--space-2);font-size:18px}.ui-answer{padding:var(--space-2) var(--space-2) var(--space-3)}}
+
+/* booking band */
+.ui-section--band{padding-top:0}
+.ui-band{position:relative;overflow:hidden;background:var(--band-bg);color:var(--band-fg);border-radius:var(--radius-lg);padding:var(--space-6);display:grid;grid-template-columns:1fr auto;gap:var(--space-4);align-items:center}
+.ui-band .ui-h2{color:inherit;margin-bottom:var(--space-1)}
+@media (max-width:767px){.ui-band{grid-template-columns:1fr;padding:var(--space-3)}.ui-band .ui-btn{width:100%}}
+
+/* locations */
+.ui-locs{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);margin-top:var(--space-4)!important}
+.ui-loc{background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
+.ui-map{aspect-ratio:16/8;background:var(--photo-bg);color:var(--photo-fg);display:flex;align-items:center;justify-content:center;gap:var(--space-1);font-size:15px;font-weight:var(--w-label);border-bottom:var(--border-hairline) solid var(--border)}
+:lang(zh) .ui-map{font-weight:var(--w-zh-label)}
+.ui-loc-body{padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);flex:1}
+.ui-loc-name{display:flex;align-items:baseline;gap:var(--space-1);flex-wrap:wrap}
+.ui-loc-alt{font-size:16px;color:var(--text-secondary)}
+.ui-kv{display:grid;grid-template-columns:28px 1fr;gap:var(--space-1);align-items:start}
+.ui-kv .ui-ico{width:22px;height:22px;margin-top:4px;color:var(--icon)}
+.ui-soon{color:var(--text-secondary);font-style:italic}
+:lang(zh) .ui-soon{font-style:normal}
+.ui-loc .ui-btn-row{margin-top:auto;padding-top:var(--space-1)}
+@media (max-width:767px){.ui-locs{grid-template-columns:1fr;gap:var(--space-2)}.ui-loc-body{padding:var(--space-3)}.ui-loc .ui-btn{flex:1}}
+
+/* contact row */
+.ui-contact{display:flex;flex-wrap:wrap;gap:var(--space-1);list-style:none;padding:0;margin:0}
+.ui-contact a{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 var(--space-2) 0 10px;border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-md);background:var(--surface);color:var(--text-primary);text-decoration:none;font-weight:var(--w-label);font-size:16px}
+:lang(zh) .ui-contact a{font-weight:var(--w-zh-label);font-size:17px}
+.ui-contact a:hover,.ui-contact a.is-hover{background:var(--wash)}
+.ui-contact a:active,.ui-contact a.is-pressed{background:var(--wash-strong)}
+.ui-cico{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:var(--radius-sm);color:var(--icon)}
+.ui-cico .ui-ico{width:24px;height:24px}
+.ui-cico--ph{border:var(--border-hairline) dashed var(--border-strong);font-family:var(--font-en-body);font-size:10px;font-weight:700;color:var(--text-secondary);letter-spacing:0}
+.ui-contact small{display:block;font-size:13px;font-weight:400;color:var(--text-secondary);line-height:1.2;letter-spacing:0}
+@media (max-width:767px){.ui-contact{display:grid;grid-template-columns:1fr 1fr}.ui-contact li:first-child{grid-column:1/-1}.ui-contact a{width:100%}}
+
+/* form */
+.ui-form{display:grid;gap:var(--space-3);max-width:560px}
+.ui-field{display:grid;gap:var(--space-1)}
+.ui-fieldset{border:0;padding:0;margin:0}
+.ui-fieldset legend{margin-bottom:8px}
+.ui-label{font-weight:var(--w-label);font-size:16px;color:var(--text-primary)}
+:lang(zh) .ui-label{font-weight:var(--w-zh-label);font-size:17px}
+.ui-hint{font-size:14px;color:var(--text-secondary)}
+.ui-input{width:100%;min-height:52px;padding:0 var(--space-2);border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-input);background:var(--surface);color:var(--text-primary);font:inherit;font-size:17px}
+.ui-input::placeholder{color:var(--text-secondary)}
+.ui-input:hover,.ui-input.is-hover{border-color:var(--text-primary)}
+.ui-input:focus,.ui-input.is-focus{outline:var(--focus-width) solid var(--focus);outline-offset:2px;border-color:var(--text-primary)}
+.ui-field.is-error .ui-input{border-color:var(--error);border-width:2px}
+.ui-error{display:flex;gap:6px;align-items:flex-start;font-size:15px;font-weight:var(--w-label);color:var(--error)}
+.ui-error .ui-ico{margin-top:3px}
+select.ui-input{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--text-secondary) 50%),linear-gradient(135deg,var(--text-secondary) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:44px}
+.ui-radios{display:flex;flex-wrap:wrap;gap:var(--space-1)}
+.ui-radio{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 var(--space-2);border:var(--border-control) solid var(--border-strong);border-radius:var(--radius-input);background:var(--surface);font-weight:var(--w-label);cursor:pointer}
+:lang(zh) .ui-radio{font-weight:var(--w-zh-label)}
+.ui-radio input{width:20px;height:20px;accent-color:var(--btn-bg);margin:0}
+.ui-radio.is-checked{border-color:var(--text-primary);background:var(--wash)}
+.ui-radio.is-disabled{border-style:dashed;color:var(--text-secondary);cursor:not-allowed}
+.ui-form-demo{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px}
+
+/* footer */
+.ui-footer{background:var(--footer-bg);color:var(--footer-fg);padding:var(--space-8) 0 var(--space-4);font-size:15px;line-height:1.6}
+.ui-footer-grid{display:grid;grid-template-columns:4fr 3fr 3fr 2fr;gap:var(--space-4)}
+.ui-footer h3{font-family:var(--font-en-heading);font-weight:var(--w-label);font-size:15px;margin-bottom:var(--space-1);color:var(--footer-fg)}
+:lang(zh) .ui-footer h3{font-family:var(--font-zh-heading);font-weight:var(--w-zh-label)}
+.ui-footer p,.ui-footer li{color:var(--footer-muted)}
+.ui-footer ul{list-style:none;padding:0;margin:0}
+.ui-footer a{color:var(--footer-fg);text-underline-offset:3px}
+.ui-brand--footer{font-size:19px;color:var(--footer-fg)!important}
+.ui-footer-zh{margin-top:4px}
+.ui-footer .ui-lang a{color:var(--footer-muted)}
+.ui-footer .ui-lang a[aria-current="page"]{color:var(--footer-fg)}
+.ui-footer .ui-lang a:hover{background:transparent;color:var(--footer-fg);text-decoration:underline}
+.ui-footer-legal{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-3);margin-top:var(--space-6);padding-top:var(--space-3);border-top:var(--border-hairline) solid var(--footer-rule);color:var(--footer-muted);font-size:14px}
+.ui-footer-legal a{color:var(--footer-muted)}
+@media (max-width:767px){.ui-footer-grid{grid-template-columns:1fr;gap:var(--space-3)}.ui-footer{padding-bottom:120px}}
+
+/* sticky bar (mobile) */
+.ui-stickybar{display:none}
+@media (max-width:767px){
+  .ui-stickybar{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--space-1);position:sticky;bottom:12px;margin:0 12px;padding:8px;background:var(--surface);border:var(--border-hairline) solid var(--border);border-radius:calc(var(--radius-md) + 8px);box-shadow:var(--shadow-float);z-index:5}
+  .ui-stickybar .ui-btn{min-height:48px;padding:0 8px;font-size:15px;gap:6px}
+}
+
+/* spec sheets */
+.ui-spec{padding:var(--space-3);font-size:15px}
+.ui-spec-label{display:flex;align-items:center;gap:6px;font-family:var(--font-en-body);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 var(--space-1)}
+.ui-state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:var(--space-3);align-items:start}
+.ui-state{display:grid;gap:var(--space-1);justify-items:start}
+.ui-swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.ui-swatch{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--surface)}
+.ui-swatch-chip{height:72px;border-bottom:1px solid var(--border)}
+.ui-swatch-body{padding:12px}
+.ui-swatch-name{font-weight:700;font-size:15px}
+.ui-swatch-code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--text-secondary);margin-top:2px}
+.ui-swatch-use{font-size:13.5px;line-height:1.45;margin-top:6px;color:var(--text-secondary)}
+.ui-ct{border-collapse:collapse;width:100%;font-size:13px}
+.ui-ct th{font-size:13px;padding:6px;text-align:center;font-weight:700}
+.ui-ct th[scope=row]{text-align:left;font-size:14px;white-space:nowrap}
+.ui-ct td{text-align:center;padding:6px;vertical-align:top}
+.ui-ct-chip{display:inline-block;min-width:84px;padding:5px 8px;border-radius:6px;border:1px solid var(--border);font-weight:700;font-size:14px}
+.ui-ct-v{display:block;font-size:11.5px;font-weight:700;margin-top:3px}
+.ui-ct-v.ok{color:var(--success)}.ui-ct-v.mid{color:var(--text-secondary)}.ui-ct-v.bad{color:var(--error)}
+.ui-ct-na{color:var(--text-secondary)}
+.ui-fams{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-bottom:24px}
+.ui-fam{border:1px solid var(--border);border-radius:10px;padding:16px;background:var(--surface)}
+.ui-ts{border-collapse:collapse;width:100%;table-layout:fixed}
+.ui-ts th{text-align:left;padding:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary)}
+.ui-ts td{padding:16px 8px;vertical-align:top;border-top:1px solid var(--border)}
+.ui-ts-name{font-weight:700}
+.ui-sp-row{display:grid;grid-template-columns:110px 60px 1fr;align-items:center;gap:12px;padding:5px 0}
+.ui-sp-bar{height:16px;background:var(--btn-bg);border-radius:3px}
+.ui-cols{display:grid;height:72px}.ui-cols>div{background:var(--wash-strong);border-radius:3px}
+.ui-pagebox{border:1px dashed var(--border-strong);border-radius:8px;padding:12px}
+.ui-readbox{margin:0 auto;border:1px solid var(--border);background:var(--surface);border-radius:8px;padding:10px;text-align:center;font-size:14px;color:var(--text-secondary)}
+.ui-radbox{width:120px;height:80px;border:var(--border-control) solid var(--text-primary);background:var(--surface)}
+.ui-icongrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.ui-iconcard{border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;background:var(--surface);color:var(--icon)}
+.ui-iconcard p{color:var(--text-primary)}.ui-iconcard .ui-small{color:var(--text-secondary)}
+.ui-voice{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ui-voice-card{border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;background:var(--surface);display:grid;gap:12px}
+.ui-voice-card--wrong{border-style:dashed}
+.ui-dodont{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ui-dodont ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ui-dodont li{display:grid;grid-template-columns:24px 1fr;gap:8px;font-size:16px}
+.ui-dodont .ok .ui-ico{color:var(--success)}.ui-dodont .no .ui-ico{color:var(--error)}
+@media (max-width:767px){.ui-voice,.ui-dodont{grid-template-columns:1fr}}
+
+/* ===== SKIN · Concept B · Grid-Paper Classroom ===== */
+:root{--w-head:600;--w-label:600;--w-zh-head:700;--w-zh-label:500;
+ --radius-btn:var(--radius-md);--radius-input:var(--radius-md);--focus:var(--text-primary);
+ --btn-bg:var(--primary);--btn-fg:var(--on-primary);--btn-bg-hover:var(--primary-hover);--btn-bg-pressed:var(--primary-pressed);
+ --btn2-bg:var(--surface);--btn2-fg:var(--text-primary);--btn2-border:var(--text-primary);
+ --lang-mark:var(--secondary);--utility-bg:var(--background);--header-bg:var(--background);--brand-ink:var(--text-primary);
+ --icon:var(--primary);--numeral:var(--secondary);--photo-bg:#E9EFEA;--photo-fg:var(--text-secondary);
+ --band-bg:var(--paper);--band-fg:var(--text-primary);
+ --footer-bg:var(--footer);--footer-fg:#FFFFFF;--footer-muted:#D6E6DC;--footer-rule:#3E6452}
+.ui-page:lang(zh) .ui-btn,:lang(zh) .ui-btn,:lang(zh) .ui-nav a,:lang(zh) .ui-sheet-links a{font-family:var(--font-zh-body)}
+:lang(zh) .ui-sheet-links a{font-weight:500}
+.ui-display,.ui-h1,.ui-h2{letter-spacing:-.005em}
+.ui-mark{background:linear-gradient(transparent 55%,var(--accent) 55%,var(--accent) 92%,transparent 92%);padding:0 .08em}
+/* grid pattern — allowed zones only */
+.b-gridbg{background-color:var(--paper);background-image:
+ linear-gradient(var(--grid-line-strong) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line-strong) 1px,transparent 1px),
+ linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
+ background-size:var(--grid-major) var(--grid-major),var(--grid-major) var(--grid-major),var(--grid-cell) var(--grid-cell),var(--grid-cell) var(--grid-cell);background-position:-1px -1px}
+.b-section-rule{border-top:2px solid var(--grid-line-strong)}
+.ui-hero.b-gridbg{border-bottom:2px solid var(--grid-line-strong)}
+/* 田字格 boxed headlines */
+.b-boxed{display:flex;flex-direction:column;gap:6px}
+.b-boxline{display:flex;flex-wrap:wrap;gap:0}
+.b-box{position:relative;display:inline-flex;align-items:center;justify-content:center;width:var(--box-size);height:var(--box-size);margin:0 -1px -1px 0;border:1.5px solid var(--grid-line-strong);background:var(--surface);
+ background-image:linear-gradient(90deg,transparent calc(50% - .5px),var(--grid-line) calc(50% - .5px),var(--grid-line) calc(50% + .5px),transparent calc(50% + .5px)),linear-gradient(transparent calc(50% - .5px),var(--grid-line) calc(50% - .5px),var(--grid-line) calc(50% + .5px),transparent calc(50% + .5px));line-height:1}
+.b-boxline--hl .b-box{background-color:var(--accent)}
+.ui-h2.b-boxed{font-size:26px}
+@media (max-width:767px){.ui-display.b-boxed{font-size:30px}.ui-h2.b-boxed{font-size:22px}}
+/* hero */
+.b-hero-art{position:relative;max-width:400px;margin-left:auto;padding:18px 18px 0 0}
+.b-hero-stickers{position:absolute;inset:auto 0 -18px -20px;display:flex;justify-content:space-between;align-items:flex-end;pointer-events:none}
+.b-hero-stickers .b-sticker--round{transform:rotate(var(--tilt)) translate(18px,-8px)}
+@media (max-width:1023px){.b-hero-art{margin:0 auto 24px;max-width:340px}}
+/* pasted photos */
+.b-pasted{position:relative;background:#fff;padding:10px 10px 12px;box-shadow:var(--shadow-sticker);transform:rotate(var(--tilt));margin:0}
+.b-pasted .ui-photo{background:var(--photo-bg);border-radius:0}
+.b-tape{position:absolute;top:-12px;width:84px;height:26px;background:rgba(247,203,70,.55);border-left:2px dotted rgba(255,255,255,.6);border-right:2px dotted rgba(255,255,255,.6)}
+.b-tape--l{left:-16px;transform:rotate(-28deg)}.b-tape--r{right:-16px;transform:rotate(26deg)}
+/* stickers */
+.b-sticker{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-en-heading);font-weight:600;font-size:16px;line-height:1.2;border:3px solid #fff;box-shadow:var(--shadow-sticker);transform:rotate(var(--tilt))}
+:lang(zh) .b-sticker{font-family:var(--font-zh-body);font-weight:700;letter-spacing:.04em}
+.b-sticker .ui-ico{width:20px;height:20px}
+.b-sticker--round{border-radius:var(--radius-sticker);width:132px;height:132px;padding:14px;justify-content:center;text-align:center;font-size:16px}
+.b-sticker--tag{border-radius:var(--radius-md);padding:10px 16px;max-width:260px}
+@media (max-width:767px){.b-hero-stickers{left:-8px}.b-sticker--tag{max-width:210px;font-size:15px}.b-sticker--round{width:116px;height:116px;font-size:14px}}
+.b-sticker--yellow{background:var(--accent);color:var(--text-primary)}
+.b-sticker--red{background:var(--secondary);color:var(--on-primary)}
+.b-sticker--green{background:var(--primary);color:var(--on-primary)}
+/* checked list */
+.b-checklist{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.b-checklist li{display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:center;padding:6px 0;border-bottom:1px dashed var(--border)}
+.b-checklist li:last-child{border-bottom:0}
+.b-check{width:30px;height:24px;color:var(--secondary)}
+.b-checklist--compact .b-mobile-only{display:none}@media (max-width:1023px){.b-checklist--compact .b-mobile-only{display:grid}}
+.b-checklist--compact{margin-top:var(--space-3);max-width:520px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:6px 16px}
+/* how it works = checked homework list */
+.ui-steps{grid-template-columns:1fr;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:8px 24px}
+.ui-step{flex-direction:row;align-items:center;gap:var(--space-3);border:0;border-radius:0;background:transparent;padding:18px 56px 18px 0;border-bottom:1px dashed var(--border)}
+.ui-step:last-child{border-bottom:0}
+.ui-step::after{content:"";position:absolute;right:4px;top:50%;width:40px;height:32px;margin-top:-16px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32'%3E%3Cpath d='M3 17c4 2.5 7 6 9.5 11C18 16 26 7 37 3' fill='none' stroke='%23C2272D' stroke-width='4.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.ui-step.is-current{background:var(--wash)}
+.b-numbox{position:relative;flex:none;display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border:1.5px solid var(--grid-line-strong);border-radius:var(--radius-sm);background-color:var(--surface);
+ background-image:linear-gradient(90deg,transparent 27.5px,var(--grid-line) 27.5px,var(--grid-line) 28.5px,transparent 28.5px),linear-gradient(transparent 27.5px,var(--grid-line) 27.5px,var(--grid-line) 28.5px,transparent 28.5px);
+ font-family:var(--font-en-heading);font-weight:700;font-size:30px;color:var(--primary)}
+.b-step-ico{color:var(--primary);display:inline-flex}.b-step-ico .ui-ico{width:30px;height:30px}
+@media (max-width:767px){.ui-steps{padding:4px 16px}.ui-step{padding:14px 44px 14px 0;gap:12px}.b-numbox{width:48px;height:48px;font-size:26px;background-image:linear-gradient(90deg,transparent 23.5px,var(--grid-line) 23.5px,var(--grid-line) 24.5px,transparent 24.5px),linear-gradient(transparent 23.5px,var(--grid-line) 23.5px,var(--grid-line) 24.5px,transparent 24.5px)}.b-step-ico{display:none}.ui-step::after{width:32px;height:26px;margin-top:-13px}}
+.ui-how-head{align-items:center}
+/* doctor, first visit, faq */
+.ui-doctor .b-pasted{max-width:420px}
+.ui-n{font-family:var(--font-en-heading)}
+.ui-faq details{border-color:var(--border-strong)}
+/* band: last page of the notebook */
+.ui-band{background-color:var(--paper);border:1px solid var(--border);border-top:6px solid var(--primary);border-radius:var(--radius-lg)}
+.ui-band-text,.ui-band .ui-btn-row{position:relative;background:var(--surface);border-radius:var(--radius-md);padding:0}
+.ui-band{background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);background-size:var(--grid-cell) var(--grid-cell)}
+.ui-band-text{padding:16px 20px;border:1px solid var(--border)}
+.ui-band .ui-btn-row{background:transparent}
+.b-map{background-color:#EEF3EF}
+.b-map .ui-ico{width:26px;height:26px}
+.ui-footer .ui-brand{color:#fff}
+.b-spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.b-swatchgrid{height:144px;border:1px solid var(--border);border-radius:6px;margin-bottom:8px}
+</style></head>
+<body>
+<div class="ui-page" lang="en">
+<div class="ui-utility"><div class="ui-wrap ui-utility-in"><nav class="ui-lang" aria-label="Language / 語言"><a href="#" hreflang="en" lang="en" aria-current="page" class="">EN</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hans" lang="zh-Hans" class="">简体</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hant" lang="zh-Hant" class="">繁體</a></nav></div></div>
+<header class="ui-header"><div class="ui-wrap ui-header-in"><a class="ui-brand" href="#">1234 Ortho-K Vision Care</a>
+<nav class="ui-nav" aria-label="Main"><a href="#how">How it works</a><a href="#doctor">Dr. Woo</a><a href="#visit">First visit</a><a href="#faq">Questions</a><a href="#locations">Locations</a></nav>
+<div class="ui-header-tools"><a href="#" class="ui-btn ui-btn--primary ui-btn--sm"><span>Book a consultation</span></a>
+<button type="button" class="ui-btn ui-btn--secondary ui-btn--sm ui-menu-btn" data-ui-menu aria-expanded="false" aria-controls="ui-menu-en"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4 7h16M4 12h16M4 17h16"/></g><g stroke-width="2.3"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg><span>Menu</span></button></div></div>
+<div class="ui-wrap" id="ui-menu-en" hidden style="padding-bottom:16px"><div class="ui-sheet"><ul class="ui-sheet-links"><li><a href="#how">How it works<svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5 12h14M13 6l6 6-6 6"/></g><g stroke-width="2.3"><path d="M5 12h14M13 6l6 6-6 6"/></g></svg></a></li><li><a href="#doctor">Dr. Woo<svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5 12h14M13 6l6 6-6 6"/></g><g stroke-width="2.3"><path d="M5 12h14M13 6l6 6-6 6"/></g></svg></a></li><li><a href="#visit">First visit<svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5 12h14M13 6l6 6-6 6"/></g><g stroke-width="2.3"><path d="M5 12h14M13 6l6 6-6 6"/></g></svg></a></li><li><a href="#faq">Questions<svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5 12h14M13 6l6 6-6 6"/></g><g stroke-width="2.3"><path d="M5 12h14M13 6l6 6-6 6"/></g></svg></a></li><li><a href="#locations">Locations<svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5 12h14M13 6l6 6-6 6"/></g><g stroke-width="2.3"><path d="M5 12h14M13 6l6 6-6 6"/></g></svg></a></li></ul>
+<div class="ui-sheet-foot ui-stack"><a href="#" class="ui-btn ui-btn--primary ui-btn--block"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary ui-btn--block"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg><span>Message us</span></a></div></div></div></header>
+<main><section class="ui-hero b-gridbg"><div class="ui-wrap ui-hero-grid">
+<div class="ui-hero-text"><p class="ui-eyebrow"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g><g stroke-width="2.3"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><span>Ortho-k for children, ages 7–18</span></p>
+<h1 class="ui-display ">Clear vision all day.<br><span class="ui-mark">No glasses at school.</span></h1>
+<p class="ui-lead">Your child wears special lenses while they sleep. In the morning, they take them out and see clearly. Ortho-k may also help slow down nearsightedness as they grow.</p>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg><span>Message us</span></a></div>
+<ul class="b-checklist b-checklist--compact"><li class="b-mobile-only"><svg class="b-check" viewBox="0 0 40 32" aria-hidden="true"><path d="M3 17c4 2.5 7 6 9.5 11C18 16 26 7 37 3" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Dr. Paul T. Woo, OD</span></li><li class="b-mobile-only"><svg class="b-check" viewBox="0 0 40 32" aria-hidden="true"><path d="M3 17c4 2.5 7 6 9.5 11C18 16 26 7 37 3" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>30 years of ortho-k experience</span></li><li class=""><svg class="b-check" viewBox="0 0 40 32" aria-hidden="true"><path d="M3 17c4 2.5 7 6 9.5 11C18 16 26 7 37 3" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Speaks English, Mandarin, Cantonese, and Taiwanese</span></li><li class=""><svg class="b-check" viewBox="0 0 40 32" aria-hidden="true"><path d="M3 17c4 2.5 7 6 9.5 11C18 16 26 7 37 3" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Two clinics: Alhambra and Walnut</span></li></ul></div>
+<div class="ui-hero-art"><div class="b-hero-art"><figure class="b-pasted" style="--tilt:2deg"><span class="b-tape b-tape--l" aria-hidden="true"></span><span class="b-tape b-tape--r" aria-hidden="true"></span><div class="ui-photo" style="aspect-ratio:4/5" role="img" aria-label="Photo: a child at school, no glasses"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></g><g stroke-width="2.3"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></g></svg><span>Photo: a child at school, no glasses<small>Real patient, parent's consent, natural light</small></span></div></figure>
+<div class="b-hero-stickers"><span class="b-sticker b-sticker--red b-sticker--tag" style="--tilt:-5deg"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g><g stroke-width="2.3"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><span>Dr. Paul T. Woo, OD</span></span><span class="b-sticker b-sticker--yellow b-sticker--round" style="--tilt:4deg"><span>30 years of ortho-k experience</span></span></div></div></div>
+</div></section><section class="ui-section b-section-rule"><div class="ui-wrap ui-grid">
+<div class="ui-span-6"><h2 class="ui-h1 ">Is your child's prescription going up every year?</h2></div>
+<p class="ui-lead ui-at-8">Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don't slow the change.</p></div></section><section class="ui-section b-gridbg b-section-rule" id="how"><div class="ui-wrap">
+<div class="ui-how-head"><h2 class="ui-h2 ">How ortho-k works</h2><span class="b-sticker b-sticker--green b-sticker--tag" style="--tilt:-3deg"><span>3 steps</span></span></div><ol class="ui-steps"><li class="ui-step"><span class="b-numbox" aria-hidden="true"><span>1</span></span><span class="b-step-ico"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g><g stroke-width="2.3"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg></span><h3 class="ui-h3">Full eye exam and a map of the eye</h3></li><li class="ui-step"><span class="b-numbox" aria-hidden="true"><span>2</span></span><span class="b-step-ico"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M3.5 13.5c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5c-2.5 1.6-5.4 2.5-8.5 2.5s-6-.9-8.5-2.5z"/><path d="M7.5 11.5c.8-1.7 2.5-2.8 4.5-2.8"/></g><g stroke-width="2.3"><path d="M3.5 13.5c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5c-2.5 1.6-5.4 2.5-8.5 2.5s-6-.9-8.5-2.5z"/><path d="M7.5 11.5c.8-1.7 2.5-2.8 4.5-2.8"/></g></svg></span><h3 class="ui-h3">Custom lenses made for your child</h3></li><li class="ui-step"><span class="b-numbox" aria-hidden="true"><span>3</span></span><span class="b-step-ico"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.6 6.6 0 0 0 10.6 10.6z"/></g><g stroke-width="2.3"><path d="M20 14.6A8.2 8.2 0 1 1 9.4 4a6.6 6.6 0 0 0 10.6 10.6z"/></g></svg></span><h3 class="ui-h3">Wear at night. See clearly all day.</h3></li></ol></div></section>
+<section class="ui-section b-section-rule" id="doctor"><div class="ui-wrap"><div class="ui-doctor"><figure class="b-pasted" style="--tilt:-2deg"><span class="b-tape b-tape--l" aria-hidden="true"></span><span class="b-tape b-tape--r" aria-hidden="true"></span><div class="ui-photo" style="aspect-ratio:4/5" role="img" aria-label="Photo: Dr. Woo with a child patient"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></g><g stroke-width="2.3"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></g></svg><span>Photo: Dr. Woo with a child patient<small>Dr. Woo at eye level with the child, natural light</small></span></div></figure>
+<div class="ui-doctor-text ui-stack-lg"><p class="ui-eyebrow"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g><g stroke-width="2.3"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></g></svg><span>Meet the doctor</span></p><h2 class="ui-h1 ">Dr. Paul T. Woo, OD</h2><p class="ui-lead">30 years of ortho-k experience.</p><p class="ui-lead">Speaks English, Mandarin, Cantonese, and Taiwanese.</p><ul class="ui-chips" aria-label="Languages"><li class="ui-chip"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg>English</li><li class="ui-chip"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg>Mandarin</li><li class="ui-chip"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg>Cantonese</li><li class="ui-chip"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg>Taiwanese</li></ul>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book a consultation</span></a></div></div></div></div></section>
+<section class="ui-section b-section-rule" id="visit"><div class="ui-wrap ui-grid">
+<div class="ui-span-5"><h2 class="ui-h2 ">What happens at the first visit</h2><p style="margin-top:var(--space-2)"><span class="ui-draft">Placeholder copy</span></p></div>
+<ol class="ui-lines ui-at-7"><li><span class="ui-n">1</span><p class="ui-body">We talk with you about your child's eyes and daily routine.</p></li><li><span class="ui-n">2</span><p class="ui-body">Your child has a full eye exam and a map of the front of the eye.</p></li><li><span class="ui-n">3</span><p class="ui-body">Dr. Woo explains the results and answers your questions.</p></li></ol></div></section><section class="ui-section b-section-rule" id="faq"><div class="ui-wrap"><div class="ui-faq-wrap"><h2 class="ui-h2 ">Parent questions</h2><ul class="ui-faq"><li><details open><summary><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g></svg><span>Is ortho-k safe for kids?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g></svg><span>What age can my child start?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g></svg><span>Is it hard for kids to put in the lenses?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li><li><details><summary><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.4a2.8 2.8 0 1 1 3.8 2.6c-.7.3-1.1.9-1.1 1.6v.5"/><path d="M12 17.2v.1"/></g></svg><span>How much does it cost?</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">Placeholder answer. Dr. Woo's team will write this in plain words for parents.</p></div></details></li></ul></div></div></section><section class="ui-section b-section-rule" id="locations"><div class="ui-wrap ui-stack-lg">
+<h2 class="ui-h1 ">Book a visit at either clinic</h2>
+<p class="ui-label-sm">Book or message — whatever is easiest</p><ul class="ui-contact" aria-label="Contact"><li><a href="#" class=""><span class="ui-cico"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g><g stroke-width="2.3"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g></svg></span><span>Call<small>(800) 991-8881</small></span></a></li><li><a href="#" class=""><span class="ui-cico"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg></span><span>Book online</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">WC</span><span>WeChat</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">LINE</span><span>LINE</span></a></li><li><a href="#" class=""><span class="ui-cico ui-cico--ph" title="Official app icon goes here">WA</span><span>WhatsApp</span></a></li></ul>
+<div class="ui-locs"><article class="ui-loc"><div class="ui-map b-map" role="img" aria-label="Map"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g><g stroke-width="2.3"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g></svg><span>Map</span></div>
+<div class="ui-loc-body"><div class="ui-loc-name"><h3 class="ui-h3">Alhambra</h3><span class="ui-loc-alt" lang="zh-Hant">阿罕布拉診所</span></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></g><g stroke-width="2.3"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></g></svg><p class="ui-body">1234 S. Garfield Ave., #105<br>Alhambra, CA 91801</p></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></svg><p class="ui-body">Tue & Fri 12–6 pm, Sat 12–4 pm</p></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g><g stroke-width="2.3"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g></svg><p class="ui-body"><span class="ui-nowrap">(800) 991-8881</span> · <span class="ui-nowrap">(626) 282-5388</span></p></div>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary ui-btn--sm"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book here</span></a><a href="#" class="ui-btn ui-btn--secondary ui-btn--sm"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g><g stroke-width="2.3"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g></svg><span>Directions</span></a></div></div></article><article class="ui-loc"><div class="ui-map b-map" role="img" aria-label="Map coming soon"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g><g stroke-width="2.3"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></g></svg><span>Map coming soon</span></div>
+<div class="ui-loc-body"><div class="ui-loc-name"><h3 class="ui-h3">Walnut</h3><span class="ui-loc-alt" lang="zh-Hant">核桃市診所</span></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></g><g stroke-width="2.3"><path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.5"/></g></svg><p class="ui-body ui-soon">Address coming soon</p></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g><g stroke-width="2.3"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></g></svg><p class="ui-body ui-soon">Hours coming soon</p></div>
+<div class="ui-kv"><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g><g stroke-width="2.3"><path d="M5.2 3.5h3.4l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.3 4.6 1.8v3.4a1.8 1.8 0 0 1-1.9 1.8A16.4 16.4 0 0 1 3.4 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></g></svg><p class="ui-body"><span class="ui-nowrap">(800) 991-8881</span> · <span class="ui-nowrap">(626) 282-5388</span></p></div>
+<div class="ui-btn-row"><span class="ui-btn ui-btn--secondary ui-btn--sm is-disabled" aria-disabled="true">Opening soon</span></div></div></article></div></div></section>
+<section class="ui-section ui-section--band "><div class="ui-wrap"><div class="ui-band"><div class="ui-band-text"><h2 class="ui-h2 ">Book a consultation</h2><p class="ui-body ui-muted">Book online, or message us on WeChat, LINE, or WhatsApp.</p></div>
+<div class="ui-btn-row"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg><span>Message us</span></a></div></div></div></section></main>
+<footer class="ui-footer"><div class="ui-wrap"><div class="ui-footer-grid">
+<div><p class="ui-brand ui-brand--footer">1234 Ortho-K Vision Care</p><p lang="zh-Hant" class="ui-footer-zh">1234兒童視力矯正中心</p><div style="margin-top:var(--space-2)"><h3>Language</h3><nav class="ui-lang" aria-label="Language / 語言"><a href="#" hreflang="en" lang="en" aria-current="page" class="">EN</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hans" lang="zh-Hans" class="">简体</a><span class="ui-lang-sep" aria-hidden="true">/</span><a href="#" hreflang="zh-Hant" lang="zh-Hant" class="">繁體</a></nav></div></div>
+<div><h3>Alhambra</h3><p>1234 S. Garfield Ave., #105<br>Alhambra, CA 91801<br>Tue & Fri 12–6 pm, Sat 12–4 pm</p></div>
+<div><h3>Walnut</h3><p>Address coming soon<br>Hours coming soon</p></div>
+<div><h3>Contact</h3><ul><li><a href="tel:18009918881">(800) 991-8881</a></li><li><a href="tel:16262825388">(626) 282-5388</a></li></ul></div>
+</div><div class="ui-footer-legal"><span>© 2026 1234 Ortho-K Vision Care</span><a href="#">Privacy policy</a><a href="#">Notice of privacy practices</a><a href="#">Accessibility</a><a href="#">Terms</a></div></div></footer><div class="ui-stickybar" role="region" aria-label="Book a consultation"><a href="#" class="ui-btn ui-btn--primary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g><g stroke-width="2.3"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></svg><span>Book a consultation</span></a><a href="#" class="ui-btn ui-btn--secondary "><svg class="ui-ico b-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><g stroke-width="3.6" opacity=".18" transform="translate(.5 .6)"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g><g stroke-width="2.3"><path d="M4.5 4.5h15a1.5 1.5 0 0 1 1.5 1.5v10a1.5 1.5 0 0 1-1.5 1.5H10l-5 3.5v-3.5h-.5A1.5 1.5 0 0 1 3 16V6a1.5 1.5 0 0 1 1.5-1.5z"/></g></svg><span>Message us</span></a></div></div>
+<script>document.querySelectorAll('[data-ui-menu]').forEach(function(b){b.addEventListener('click',function(){var s=document.getElementById(b.getAttribute('aria-controls'));var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);s.hidden=o;});});</script>
+<script type="module" src="/_review/inject.js"></script></body>
+</html>

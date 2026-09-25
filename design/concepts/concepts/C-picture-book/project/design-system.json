@@ -1,0 +1,25 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-24T01:17:57Z"
+ },
+ "title": "Concept C · Picture-Book",
+ "namespace": "PictureBookC",
+ "libraries": [],
+ "sections": {},
+ "groups": [],
+ "assetGroups": {},
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Jimmy",
+  "at": "2026-09-24T01:17:57Z",
+  "via": "Cowork",
+  "note": "Concept C · Picture-Book: design system, EN + 繁體 homepages, desktop + mobile"
+ }
+}

@@ -1,0 +1,41 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept D · Calm Clinical</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%}
+  body{background:var(--background);color:var(--text-primary);font-family:var(--font-en-heading);overflow:hidden}
+  .cover{position:relative;width:960px;height:300px;overflow:hidden}
+  .art{position:absolute;top:0;left:480px;width:480px;height:300px}
+  .teal{fill:var(--primary)} .tint{fill:var(--secondary)} .apricot{fill:var(--accent)} .warm{fill:var(--photo-ground)}
+  .ring{fill:none;stroke:var(--primary);stroke-width:1.4}
+  .words{position:absolute;left:48px;bottom:44px;max-width:440px}
+  .name{margin:0;font-size:56px;line-height:.98;font-weight:700;letter-spacing:-.02em;color:var(--text-primary)}
+  .tag{margin:14px 0 0 2px;font-size:14px;line-height:20px;color:var(--text-secondary)}
+</style>
+<link rel="stylesheet" href="../../tokens.local.css"></head>
+<body>
+<div class="cover">
+<svg class="art" viewBox="0 0 480 300" aria-hidden="true">
+<!--
+  blocks      primary (deep teal) 224×300 slab bleeding off top and bottom · photo-ground (warm neutral) 176×224 — the photo slot, 4:5 · secondary (teal tint) 112×112 · accent (apricot) 112×40 button — ~40% of the cover
+  arrangement a flush modular grid on 16px steps: the photo slot overlapping the teal slab, the tint square and the one apricot button beside it
+  pattern     a literal motif (the lens / the eye map): three concentric hairline rings in the stroke weight of the icons (1.4px), centred on the tint square
+  scales      sides in space-2 multiples; corners radius-lg 10 on blocks, radius-md 6 on the button
+-->
+<rect class="teal" x="256" y="-10" width="224" height="320" rx="10"/>
+<rect class="warm" x="176" y="40" width="176" height="220" rx="10"/>
+<rect class="tint" x="48" y="40" width="112" height="112" rx="10"/>
+<circle class="ring" cx="104" cy="96" r="18"/><circle class="ring" cx="104" cy="96" r="32"/><circle class="ring" cx="104" cy="96" r="46"/>
+<rect class="apricot" x="48" y="220" width="112" height="40" rx="6"/>
+</svg>
+<div class="words">
+<h1 class="name">Concept D ·<br>Calm Clinical</h1>
+<p class="tag">Specialist-led and calm: white space, deep teal, large real photographs.</p>
+</div>
+</div>
+</body>
+</html>
