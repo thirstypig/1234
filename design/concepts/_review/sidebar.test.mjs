@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { formatDate, renderSidebar, positionFromClick, renderPins } from './sidebar.js';
+import { formatDate, renderSidebar, positionFromClick, renderPins, createPinComposer, createPinViewer } from './sidebar.js';
 
 test('formatDate renders a readable date', () => {
   assert.strictEqual(formatDate('2026-09-24T10:00:00.000Z'), new Date('2026-09-24T10:00:00.000Z').toLocaleString());
@@ -70,4 +70,52 @@ test('renderPins places one pin element per comment that has a position', () => 
   assert.strictEqual(pins.length, 1);
   assert.strictEqual(pins[0].style.left, '50%');
   assert.strictEqual(pins[0].style.top, '20%');
+});
+
+test('createPinComposer positions itself at the given point and submits typed text', () => {
+  let submitted = null;
+  const composer = createPinComposer({ xPercent: 40, yPercent: 60 }, {
+    onSubmit: (text) => { submitted = text; },
+    onCancel: () => {},
+  });
+  assert.strictEqual(composer.style.left, '40%');
+  assert.strictEqual(composer.style.top, '60%');
+
+  const textarea = composer.querySelector('textarea');
+  textarea.value = 'Needs more contrast here';
+  composer.querySelector('.review-pin-composer-save').dispatchEvent(new Event('click', { bubbles: true }));
+  assert.strictEqual(submitted, 'Needs more contrast here');
+});
+
+test('createPinComposer does not submit blank text', () => {
+  let submitted = 'unchanged';
+  const composer = createPinComposer({ xPercent: 10, yPercent: 10 }, {
+    onSubmit: (text) => { submitted = text; },
+    onCancel: () => {},
+  });
+  composer.querySelector('.review-pin-composer-save').dispatchEvent(new Event('click', { bubbles: true }));
+  assert.strictEqual(submitted, 'unchanged');
+});
+
+test('createPinComposer calls onCancel from the cancel button', () => {
+  let cancelled = false;
+  const composer = createPinComposer({ xPercent: 10, yPercent: 10 }, {
+    onSubmit: () => {},
+    onCancel: () => { cancelled = true; },
+  });
+  composer.querySelector('.review-pin-composer-cancel').dispatchEvent(new Event('click', { bubbles: true }));
+  assert.strictEqual(cancelled, true);
+});
+
+test('createPinViewer shows the comment text and date, and calls onClose', () => {
+  let closed = false;
+  const viewer = createPinViewer(
+    { text: 'Love the color', createdAt: '2026-09-24T10:00:00.000Z', xPercent: 30, yPercent: 40 },
+    { onClose: () => { closed = true; } },
+  );
+  assert.ok(viewer.textContent.includes('Love the color'));
+  assert.ok(viewer.textContent.includes(formatDate('2026-09-24T10:00:00.000Z')));
+  assert.strictEqual(viewer.style.left, '30%');
+  viewer.querySelector('.review-pin-viewer-close').dispatchEvent(new Event('click', { bubbles: true }));
+  assert.strictEqual(closed, true);
 });

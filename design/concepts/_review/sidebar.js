@@ -28,6 +28,58 @@ export function renderPins(container, comments, onPinClick) {
   }
 }
 
+export function createPinComposer({ xPercent, yPercent }, { onSubmit, onCancel }) {
+  const composer = document.createElement('div');
+  composer.className = 'review-pin-composer';
+  composer.style.cssText = `position:absolute;left:${xPercent}%;top:${yPercent}%;transform:translate(-10px,10px);background:#fff;border:1px solid #ccc;border-radius:6px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,0.3);z-index:10000;width:220px;font-family:sans-serif;pointer-events:auto;`;
+
+  const textarea = document.createElement('textarea');
+  textarea.style.cssText = 'width:100%;height:60px;box-sizing:border-box;';
+  textarea.placeholder = 'Comment for this spot...';
+
+  const saveButton = document.createElement('button');
+  saveButton.className = 'review-pin-composer-save';
+  saveButton.textContent = 'Save';
+  saveButton.style.cssText = 'margin-top:6px;';
+  saveButton.addEventListener('click', () => {
+    const text = textarea.value.trim();
+    if (!text) return;
+    onSubmit(text);
+  });
+
+  const cancelButton = document.createElement('button');
+  cancelButton.className = 'review-pin-composer-cancel';
+  cancelButton.textContent = 'Cancel';
+  cancelButton.style.cssText = 'margin-top:6px;margin-left:6px;';
+  cancelButton.addEventListener('click', () => onCancel());
+
+  composer.append(textarea, saveButton, cancelButton);
+  return composer;
+}
+
+export function createPinViewer(comment, { onClose }) {
+  const viewer = document.createElement('div');
+  viewer.className = 'review-pin-viewer';
+  viewer.style.cssText = `position:absolute;left:${comment.xPercent}%;top:${comment.yPercent}%;transform:translate(-10px,10px);background:#fff;border:1px solid #ccc;border-radius:6px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,0.3);z-index:10000;width:220px;font-family:sans-serif;pointer-events:auto;`;
+
+  const date = document.createElement('div');
+  date.style.cssText = 'font-size:12px;color:#777;';
+  date.textContent = formatDate(comment.createdAt);
+
+  const text = document.createElement('div');
+  text.style.cssText = 'margin-top:4px;';
+  text.textContent = comment.text;
+
+  const closeButton = document.createElement('button');
+  closeButton.className = 'review-pin-viewer-close';
+  closeButton.textContent = 'Close';
+  closeButton.style.cssText = 'margin-top:6px;';
+  closeButton.addEventListener('click', () => onClose());
+
+  viewer.append(date, text, closeButton);
+  return viewer;
+}
+
 export function renderSidebar(container, comments) {
   container.innerHTML = '';
   if (comments.length === 0) {

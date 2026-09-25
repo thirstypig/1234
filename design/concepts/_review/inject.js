@@ -1,5 +1,5 @@
 import { installGate } from './gate.js';
-import { renderSidebar, renderPins, positionFromClick } from './sidebar.js';
+import { renderSidebar, renderPins, positionFromClick, createPinComposer, createPinViewer } from './sidebar.js';
 
 const API_BASE = 'https://1234-review-comments.jimmyc316.workers.dev';
 
@@ -104,11 +104,22 @@ async function init() {
   const pinLayer = buildPinLayer();
 
   let comments = [];
+  let openOverlay = null;
+
+  const closeOverlay = () => {
+    if (openOverlay) {
+      openOverlay.remove();
+      openOverlay = null;
+    }
+  };
+
   const refresh = async () => {
     comments = await loadComments(concept, page);
     renderSidebar(list, comments);
     renderPins(pinLayer, comments, (comment) => {
-      window.alert(`${comment.text}\n\n— ${new Date(comment.createdAt).toLocaleString()}`);
+      closeOverlay();
+      openOverlay = createPinViewer(comment, { onClose: closeOverlay });
+      pinLayer.appendChild(openOverlay);
     });
   };
   await refresh();
@@ -122,17 +133,23 @@ async function init() {
   });
 
   aside.querySelector('#review-pin-button').addEventListener('click', () => {
-    enablePinPlacementMode(async (event) => {
-      const text = window.prompt('Comment for this spot on the page:');
-      if (!text || !text.trim()) return;
+    enablePinPlacementMode((event) => {
+      closeOverlay();
       const position = positionFromClick({
         pageX: event.pageX,
         pageY: event.pageY,
         fullWidth: document.documentElement.scrollWidth,
         fullHeight: document.documentElement.scrollHeight,
       });
-      await submitComment(concept, page, text, position);
-      await refresh();
+      openOverlay = createPinComposer(position, {
+        onSubmit: async (text) => {
+          closeOverlay();
+          await submitComment(concept, page, text, position);
+          await refresh();
+        },
+        onCancel: closeOverlay,
+      });
+      pinLayer.appendChild(openOverlay);
     });
   });
 }
