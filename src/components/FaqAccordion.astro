@@ -1,0 +1,18 @@
+---
+import Icon from './Icon.astro';
+
+interface Props { title: string; items: { q: string; a: string }[] }
+const { title, items } = Astro.props;
+---
+<section class="ui-section c-paper" id="faq">
+  <div class="ui-wrap">
+    <div class="ui-faq-wrap">
+      <h2 class="ui-h2">{title}</h2>
+      <ul class="ui-faq">
+        {items.map((it, i) => (
+          <li><details open={i === 0}><summary><Icon name="question" /><span>{it.q}</span><span class="ui-plus" aria-hidden="true"></span></summary><div class="ui-answer"><p class="ui-body">{it.a}</p></div></details></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -104,3 +104,9 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **F-testimonials-38** (superlative): During my most recent visit I met with a female doctor who is attentive to my chronic dry eye issue and suggested preservative-free eye drops.
 - [ ] **F-testimonials-39** (number): Thank you to the 1234 Vision Care team!
 
+## Changes from the Concept C mockup text
+
+- [ ] **M-1** Booking band: mockup says "Book online, or message us on WeChat, LINE, or WhatsApp." Site says "Book online, or give us a call." — no chat accounts are confirmed yet.
+- [ ] **M-2** WeChat / LINE / WhatsApp buttons left out of "Book a visit at either clinic" until the client gives the account links.
+- [ ] **M-3** "Dr. Paul T. Woo, OD · 30 years of ortho-k experience" (hero badge and doctor section) shows only after **F-home-1** is approved.
+- [ ] **M-4** The zh-Hant mockup gives Dr. Woo's Chinese name as 胡超 — please confirm before any Chinese page uses it.

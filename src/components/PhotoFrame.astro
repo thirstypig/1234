@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Icon from './Icon.astro';
+
+interface Props { image?: ImageMetadata; alt: string; placeholder: string; placeholderNote?: string }
+const { image, alt, placeholder, placeholderNote } = Astro.props;
+---
+<figure class="c-frame">
+  {image ? (
+    <div class="ui-photo c-photo-real"><Image src={image} alt={alt} widths={[400, 800]} sizes="(max-width: 767px) 90vw, 420px" /></div>
+  ) : (
+    <div class="ui-photo" role="img" aria-label={placeholder}><Icon name="camera" /><span>{placeholder}{placeholderNote && <small>{placeholderNote}</small>}</span></div>
+  )}
+  <svg class="c-frame-doodle c-frame-doodle--tl" viewBox="0 0 60 60" aria-hidden="true"><path d="M40 8a20 20 0 1 0 14 30 15 15 0 1 1-14-30z" fill="#FCEBA8" stroke="#16264A" stroke-width="3" stroke-linejoin="round"/></svg>
+  <svg class="c-frame-doodle c-frame-doodle--br" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="12" fill="#FCEBA8" stroke="#16264A" stroke-width="3"/><path d="M30 6v6M30 48v6M6 30h6M48 30h6M13 13l4 4M43 43l4 4M13 47l4-4M43 17l4-4" stroke="#16264A" stroke-width="3" stroke-linecap="round"/></svg>
+  <svg class="c-frame-doodle c-frame-doodle--tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6Q22.52 17.48 34 20Q22.52 22.52 20 34Q17.48 22.52 6 20Q17.48 17.48 20 6Z" fill="#FBD3BC"/></svg>
+</figure>
+<style>
+  .c-photo-real { padding: 0; overflow: hidden; }
+  .c-photo-real img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+</style>

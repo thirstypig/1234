@@ -1,0 +1,34 @@
+---
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref } from '../lib/cta';
+
+interface Props { lang: Lang; id: 'alhambra' | 'walnut' }
+const { lang, id } = Astro.props;
+const t = makeT(lang);
+const en = makeT('en');
+const zh = makeT('zh-hant');
+const open = id === 'alhambra';
+const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('1234 S. Garfield Ave. #105, Alhambra, CA 91801');
+---
+<article class="ui-loc">
+  <div class="ui-map c-map" role="img" aria-label={open ? t('locations.map') : t('locations.mapSoon')}><Icon name="map" /><span>{open ? t('locations.map') : t('locations.mapSoon')}</span></div>
+  <div class="ui-loc-body">
+    <div class="ui-loc-name"><h3 class="ui-h3">{en(`locations.${id}.name`)}</h3><span class="ui-loc-alt" lang="zh-Hant">{zh(`locations.${id}.name`)}</span></div>
+    <div class="ui-kv"><Icon name="pin" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.street`)}{open && <Fragment><br />{t('locations.alhambra.city')}</Fragment>}</p></div>
+    <div class="ui-kv"><Icon name="clock" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.hours`)}</p></div>
+    <div class="ui-kv"><Icon name="phone" /><p class="ui-body"><a class="ui-nowrap" href="tel:18009918881">(800) 991-8881</a> · <a class="ui-nowrap" href="tel:16262825388">(626) 282-5388</a></p></div>
+    <div class="ui-btn-row">
+      {open ? (
+        <Fragment>
+          <Button href={bookHref(lang)} size="sm" icon="calendar">{t('locations.bookHere')}</Button>
+          <Button href={directions} variant="secondary" size="sm" icon="map">{t('locations.directions')}</Button>
+        </Fragment>
+      ) : (
+        <span class="ui-btn ui-btn--secondary ui-btn--sm is-disabled" aria-disabled="true">{t('locations.openingSoon')}</span>
+      )}
+    </div>
+  </div>
+</article>

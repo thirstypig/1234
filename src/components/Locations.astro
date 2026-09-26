@@ -1,0 +1,22 @@
+---
+import Icon from './Icon.astro';
+import LocationCard from './LocationCard.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref } from '../lib/cta';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = makeT(lang);
+---
+<section class="ui-section c-paper" id="locations">
+  <div class="ui-wrap ui-stack-lg">
+    <h2 class="ui-h1">{t('locations.title')}</h2>
+    <p class="ui-label-sm">{t('locations.contactLead')}</p>
+    <ul class="ui-contact" aria-label={t('footer.contact')}>
+      <li><a href="tel:18009918881"><span class="ui-cico"><Icon name="phone" /></span><span>{t('locations.call')}<small>(800) 991-8881</small></span></a></li>
+      <li><a href={bookHref(lang)}><span class="ui-cico"><Icon name="calendar" /></span><span>{t('locations.bookOnline')}</span></a></li>
+    </ul>
+    <div class="ui-locs"><LocationCard lang={lang} id="alhambra" /><LocationCard lang={lang} id="walnut" /></div>
+  </div>
+</section>

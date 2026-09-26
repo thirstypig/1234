@@ -35,7 +35,16 @@
       "name": "Walnut",
       "street": "Address coming soon",
       "hours": "Hours coming soon"
-    }
+    },
+    "title": "〔中文内容待提供〕",
+    "contactLead": "〔中文内容待提供〕",
+    "call": "〔中文内容待提供〕",
+    "bookOnline": "〔中文内容待提供〕",
+    "map": "〔中文内容待提供〕",
+    "mapSoon": "〔中文内容待提供〕",
+    "bookHere": "〔中文内容待提供〕",
+    "directions": "〔中文内容待提供〕",
+    "openingSoon": "〔中文内容待提供〕"
   },
   "meta": {
     "home": "1234 Ortho-K Vision Care",
@@ -47,5 +56,53 @@
   "band": {
     "sceneLabel": "〔中文内容待提供〕",
     "body": "〔中文内容待提供〕"
+  },
+  "scenes": {
+    "night": "〔中文内容待提供〕",
+    "nightCap": "〔中文内容待提供〕",
+    "morning": "〔中文内容待提供〕",
+    "morningCap": "〔中文内容待提供〕"
+  },
+  "home": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "〔中文内容待提供〕",
+    "mark": "〔中文内容待提供〕",
+    "lead": "〔中文内容待提供〕",
+    "trust": "〔中文内容待提供〕",
+    "introTitle": "〔中文内容待提供〕",
+    "introLead": "〔中文内容待提供〕",
+    "visitTitle": "〔中文内容待提供〕",
+    "visitDraft": "〔中文内容待提供〕",
+    "visit1": "〔中文内容待提供〕",
+    "visit2": "〔中文内容待提供〕",
+    "visit3": "〔中文内容待提供〕"
+  },
+  "how": {
+    "title": "〔中文内容待提供〕",
+    "step1": "〔中文内容待提供〕",
+    "step2": "〔中文内容待提供〕",
+    "step3": "〔中文内容待提供〕"
+  },
+  "doctor": {
+    "photoAlt": "〔中文内容待提供〕",
+    "eyebrow": "〔中文内容待提供〕",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "〔中文内容待提供〕",
+    "languages": "〔中文内容待提供〕",
+    "languagesLabel": "〔中文内容待提供〕",
+    "lang": {
+      "english": "English",
+      "mandarin": "Mandarin",
+      "cantonese": "Cantonese",
+      "taiwanese": "Taiwanese"
+    }
+  },
+  "faq": {
+    "title": "〔中文内容待提供〕",
+    "q1": "〔中文内容待提供〕",
+    "q2": "〔中文内容待提供〕",
+    "q3": "〔中文内容待提供〕",
+    "q4": "〔中文内容待提供〕",
+    "placeholder": "〔中文内容待提供〕"
   }
 }

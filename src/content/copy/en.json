@@ -35,7 +35,16 @@
       "name": "Walnut",
       "street": "Address coming soon",
       "hours": "Hours coming soon"
-    }
+    },
+    "title": "Book a visit at either clinic",
+    "contactLead": "Book or call — whatever is easiest",
+    "call": "Call",
+    "bookOnline": "Book online",
+    "map": "Map",
+    "mapSoon": "Map coming soon",
+    "bookHere": "Book here",
+    "directions": "Directions",
+    "openingSoon": "Opening soon"
   },
   "meta": {
     "home": "1234 Ortho-K Vision Care",
@@ -47,5 +56,53 @@
   "band": {
     "sceneLabel": "Illustration: off to school, no glasses.",
     "body": "Book online, or give us a call."
+  },
+  "scenes": {
+    "night": "Illustration: a child asleep; the lens case waits on the nightstand.",
+    "nightCap": "Night",
+    "morning": "Illustration: morning — the child wakes up and sees clearly.",
+    "morningCap": "Morning"
+  },
+  "home": {
+    "eyebrow": "Ortho-k for children, ages 7–18",
+    "title": "Clear vision all day.",
+    "mark": "No glasses at school.",
+    "lead": "Your child wears special lenses while they sleep. In the morning, they take them out and see clearly. Ortho-k may also help slow down nearsightedness as they grow.",
+    "trust": "Dr. Paul T. Woo, OD",
+    "introTitle": "Is your child's prescription going up every year?",
+    "introLead": "Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don't slow the change.",
+    "visitTitle": "What happens at the first visit",
+    "visitDraft": "Placeholder copy",
+    "visit1": "We talk with you about your child's eyes and daily routine.",
+    "visit2": "Your child has a full eye exam and a map of the front of the eye.",
+    "visit3": "Dr. Woo explains the results and answers your questions."
+  },
+  "how": {
+    "title": "How ortho-k works",
+    "step1": "Full eye exam and a map of the eye",
+    "step2": "Custom lenses made for your child",
+    "step3": "Wear at night. See clearly all day."
+  },
+  "doctor": {
+    "photoAlt": "Dr. Paul T. Woo, OD, in his white coat",
+    "eyebrow": "Meet the doctor",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "30 years of ortho-k experience.",
+    "languages": "Speaks English, Mandarin, Cantonese, and Taiwanese.",
+    "languagesLabel": "Languages",
+    "lang": {
+      "english": "English",
+      "mandarin": "Mandarin",
+      "cantonese": "Cantonese",
+      "taiwanese": "Taiwanese"
+    }
+  },
+  "faq": {
+    "title": "Parent questions",
+    "q1": "Is ortho-k safe for kids?",
+    "q2": "What age can my child start?",
+    "q3": "Is it hard for kids to put in the lenses?",
+    "q4": "How much does it cost?",
+    "placeholder": "Placeholder answer. Dr. Woo's team will write this in plain words for parents."
   }
 }

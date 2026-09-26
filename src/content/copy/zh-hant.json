@@ -35,7 +35,16 @@
       "name": "核桃市診所",
       "street": "地址即將公佈",
       "hours": "門診時間即將公佈"
-    }
+    },
+    "title": "〔中文內容待提供〕",
+    "contactLead": "〔中文內容待提供〕",
+    "call": "打電話",
+    "bookOnline": "線上預約",
+    "map": "地圖",
+    "mapSoon": "地圖即將公佈",
+    "bookHere": "在此預約",
+    "directions": "路線導航",
+    "openingSoon": "即將開放"
   },
   "meta": {
     "home": "1234兒童視力矯正中心",
@@ -47,5 +56,53 @@
   "band": {
     "sceneLabel": "〔中文內容待提供〕",
     "body": "〔中文內容待提供〕"
+  },
+  "scenes": {
+    "night": "〔中文內容待提供〕",
+    "nightCap": "晚上",
+    "morning": "〔中文內容待提供〕",
+    "morningCap": "早上"
+  },
+  "home": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "mark": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "trust": "〔中文內容待提供〕",
+    "introTitle": "〔中文內容待提供〕",
+    "introLead": "〔中文內容待提供〕",
+    "visitTitle": "〔中文內容待提供〕",
+    "visitDraft": "〔中文內容待提供〕",
+    "visit1": "〔中文內容待提供〕",
+    "visit2": "〔中文內容待提供〕",
+    "visit3": "〔中文內容待提供〕"
+  },
+  "how": {
+    "title": "〔中文內容待提供〕",
+    "step1": "〔中文內容待提供〕",
+    "step2": "〔中文內容待提供〕",
+    "step3": "〔中文內容待提供〕"
+  },
+  "doctor": {
+    "photoAlt": "〔中文內容待提供〕",
+    "eyebrow": "〔中文內容待提供〕",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "〔中文內容待提供〕",
+    "languages": "〔中文內容待提供〕",
+    "languagesLabel": "〔中文內容待提供〕",
+    "lang": {
+      "english": "英語",
+      "mandarin": "普通話",
+      "cantonese": "粵語",
+      "taiwanese": "台語"
+    }
+  },
+  "faq": {
+    "title": "〔中文內容待提供〕",
+    "q1": "〔中文內容待提供〕",
+    "q2": "〔中文內容待提供〕",
+    "q3": "〔中文內容待提供〕",
+    "q4": "〔中文內容待提供〕",
+    "placeholder": "〔中文內容待提供〕"
   }
 }
