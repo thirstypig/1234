@@ -15,7 +15,8 @@
     "predev": "node scripts/sync-review.mjs",
     "prebuild": "node scripts/sync-review.mjs",
     "test:e2e": "playwright test",
-    "test": "npm run test:unit && npm run test:e2e"
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:deploy": "playwright test -c playwright.deploy.config.ts"
   },
   "dependencies": {
     "astro": "^7.3.5"

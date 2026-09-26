@@ -1,10 +1,8 @@
-name: Deploy review site to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
-    branches: [design/concepts-import, main]
-    paths:
-      - 'design/concepts/**'
+    branches: [site/concept-c, main]
 
 permissions:
   contents: read
@@ -23,8 +21,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:unit
+      - run: bash scripts/assemble.sh
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: design/concepts
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
