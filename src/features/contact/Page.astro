@@ -1,10 +1,45 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import Icon from '../../components/Icon.astro';
+import Locations from '../../components/Locations.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
+const f = (k: string) => t(`contact.form.${k}`);
 ---
-<BaseLayout lang={lang} page="contact" title={t('meta.contact')}><main><h1 class="ui-wrap ui-h1">{t('meta.contact')}</h1><BookingBand lang={lang} /></main></BaseLayout>
+<BaseLayout lang={lang} page="contact" title={t('meta.contact')}>
+  <main>
+    <Hero lang={lang} short eyebrow={t('contact.eyebrow')} title={t('contact.title')} lead={t('contact.lead')} />
+    <section class="ui-section c-paper" id="book">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('contact.formTitle')}</h2>
+        <p class="ui-body"><span class="ui-draft">{t('contact.previewLabel')}</span> {t('contact.previewNotice')}</p>
+        <form class="ui-form" data-booking novalidate
+          data-success={f('success')} data-invalid={f('invalid')} data-ratelimited={f('ratelimited')}
+          data-network={f('network')} data-sending={f('sending')}>
+          <div class="ui-field"><label class="ui-label" for="bk-name">{f('parentName')}</label><input class="ui-input" id="bk-name" name="parentName" autocomplete="name" required maxlength="100" /></div>
+          <div class="ui-field"><label class="ui-label" for="bk-phone">{f('phone')}</label><input class="ui-input" id="bk-phone" name="phone" type="tel" autocomplete="tel" placeholder="(626) 000-0000" required aria-describedby="bk-phone-hint" /><p class="ui-hint" id="bk-phone-hint">{f('phoneHint')}</p></div>
+          <fieldset class="ui-field ui-fieldset">
+            <legend class="ui-label">{f('location')}</legend>
+            <div class="ui-radios">
+              <label class="ui-radio is-checked"><input type="radio" name="location" value="alhambra" checked />{f('alhambra')}</label>
+              <label class="ui-radio is-disabled"><input type="radio" name="location" value="walnut" disabled />{f('walnut')}</label>
+            </div>
+          </fieldset>
+          <div class="ui-field"><label class="ui-label" for="bk-time">{f('preferredTime')}</label><input class="ui-input" id="bk-time" name="preferredTime" maxlength="100" aria-describedby="bk-time-hint" /><p class="ui-hint" id="bk-time-hint">{f('preferredTimeHint')}</p></div>
+          <div hidden aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off" /></label></div>
+          <p class="ui-error" role="alert" hidden><Icon name="alert" /><span></span></p>
+          <p class="ui-body" role="status" aria-live="polite"></p>
+          <div><button class="ui-btn ui-btn--primary" type="submit"><Icon name="calendar" /><span>{f('submit')}</span></button></div>
+        </form>
+      </div>
+    </section>
+    <Locations lang={lang} />
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<script src="./booking.js"></script>

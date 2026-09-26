@@ -130,5 +130,29 @@
     "r2": "〔中文內容待提供〕",
     "r3": "〔中文內容待提供〕",
     "r4": "〔中文內容待提供〕"
+  },
+  "contact": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "formTitle": "〔中文內容待提供〕",
+    "previewNotice": "〔中文內容待提供〕",
+    "form": {
+      "parentName": "家長姓名",
+      "phone": "電話",
+      "phoneHint": "〔中文內容待提供〕",
+      "location": "〔中文內容待提供〕",
+      "alhambra": "〔中文內容待提供〕",
+      "walnut": "〔中文內容待提供〕",
+      "preferredTime": "〔中文內容待提供〕",
+      "preferredTimeHint": "〔中文內容待提供〕",
+      "submit": "〔中文內容待提供〕",
+      "sending": "〔中文內容待提供〕",
+      "success": "〔中文內容待提供〕",
+      "invalid": "〔中文內容待提供〕",
+      "ratelimited": "〔中文內容待提供〕",
+      "network": "〔中文內容待提供〕"
+    },
+    "previewLabel": "〔中文內容待提供〕"
   }
 }

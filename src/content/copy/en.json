@@ -130,5 +130,29 @@
     "r2": "I've been going here for 16 years, ever since I was a blind-as-a-bat 4th grader. Now I've graduated from college and am working full time in Seattle and I still come back for Dr. Woo's appointments! The ortho-k lenses have always been really important to me because it's made my life so much easier! I don't have to struggle to see presentations in class and at work, and I'm never freaking out about misplacing my glasses! I highly recommend you stop by here and give Dr. Woo a shot! He's very easy to work with and you won't regret it!",
     "r3": "Dr. Woo has been my optometrist for half a decade, and I've only ever had positive experiences! I used to get new glasses here every year before switching to contact lenses, and they always have tons of pretty frames in lots of styles and colors. Not to mention the nose rests actually fit Asian faces (if you've ever had sunglasses slide down your face all day, you know how non-negotiable this is!) Everyone here is always very friendly and professional when I come in, and all my appointments have been super smooth and efficient. Plus, the whole staff speaks various dialects of Chinese in addition to English.",
     "r4": "The staff is friendly and Dr. Woo answers all my questions. I feel comfortable making an appointment whenever I have eye issues, and they are happy to accommodate my schedule. The wait is short even on Saturday, and the staff is efficient so I don't waste a lot of time waiting to see a doctor."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Book a consultation",
+    "lead": "Send a request and the office will call you to set a time. Or call us directly.",
+    "formTitle": "Request a consultation",
+    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
+    "form": {
+      "parentName": "Parent name",
+      "phone": "Phone",
+      "phoneHint": "We'll call to confirm.",
+      "location": "Preferred location",
+      "alhambra": "Alhambra",
+      "walnut": "Walnut (opening soon)",
+      "preferredTime": "Preferred day or time (optional)",
+      "preferredTimeHint": "For example: Tuesday afternoon",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you. The office will call you to confirm a time.",
+      "invalid": "Please check the highlighted fields.",
+      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
+      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
+    },
+    "previewLabel": "Preview"
   }
 }
