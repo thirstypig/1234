@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
 import DoctorCard from '../../components/DoctorCard.astro';
+import FirstVisit from '../../components/FirstVisit.astro';
 import FaqAccordion from '../../components/FaqAccordion.astro';
 import Hero from '../../components/Hero.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
@@ -26,14 +27,7 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder'
     </section>
     <HowItWorks lang={lang} />
     <DoctorCard lang={lang} />
-    <section class="ui-section c-paper" id="visit">
-      <div class="ui-wrap ui-grid">
-        <div class="ui-span-5"><h2 class="ui-h2">{t('home.visitTitle')}</h2><p style="margin-top:var(--space-2)"><span class="ui-draft">{t('home.visitDraft')}</span></p></div>
-        <ol class="ui-lines ui-at-7">
-          {[1, 2, 3].map((n) => <li><span class="ui-n">{n}</span><p class="ui-body">{t(`home.visit${n}`)}</p></li>)}
-        </ol>
-      </div>
-    </section>
+    <FirstVisit lang={lang} />
     <FaqAccordion title={t('faq.title')} items={faq} />
     <Locations lang={lang} />
     <BookingBand lang={lang} />

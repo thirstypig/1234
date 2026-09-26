@@ -110,3 +110,6 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **M-2** WeChat / LINE / WhatsApp buttons left out of "Book a visit at either clinic" until the client gives the account links.
 - [ ] **M-3** "Dr. Paul T. Woo, OD · 30 years of ortho-k experience" (hero badge and doctor section) shows only after **F-home-1** is approved.
 - [ ] **M-4** The zh-Hant mockup gives Dr. Woo's Chinese name as 胡超 — please confirm before any Chinese page uses it.
+- [ ] **M-5** Testimonials page shows 4 reviews that describe the visit experience only. Reviews with outcome claims ("saving my vision", a child's 20/20 result, a failed LASIK story) and the 9 flagged ones are held back; see `docs/legacy-copy/testimonials.reviews.txt`.
+- [ ] **M-6** About page leaves out outcome sentences from the old bio ("more confident and outgoing", "do better in school", "successful in their profession and careers").
+- [ ] **M-7** About → "Our team" uses photo #074, which shows an "iDream Space" sign — confirm that's the practice's building.

@@ -1,10 +1,46 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import Icon from '../../components/Icon.astro';
+import PhotoFrame from '../../components/PhotoFrame.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
+import { legacyImage } from '../../lib/images';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
+const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
 ---
-<BaseLayout lang={lang} page="about" title={t('meta.about')}><main><h1 class="ui-wrap ui-h1">{t('meta.about')}</h1><BookingBand lang={lang} /></main></BaseLayout>
+<BaseLayout lang={lang} page="about" title={t('meta.about')}>
+  <main>
+    <Hero lang={lang} short eyebrow={t('about.eyebrow')} title={t('about.title')} lead={t('about.lead')} />
+    <section class="ui-section c-paper" id="doctor">
+      <div class="ui-wrap">
+        <div class="ui-doctor">
+          <PhotoFrame image={legacyImage('1234orthok-com-003.jpg')} alt={t('doctor.photoAlt')} placeholder={t('doctor.photoAlt')} />
+          <div class="ui-doctor-text ui-stack-lg">
+            <h2 class="ui-h2">{t('about.bioTitle')}</h2>
+            {[1, 2, 3, 4].map((n) => <p class="ui-body">{t(`about.bio${n}`)}</p>)}
+            <p class="ui-lead">{t('doctor.languages')}</p>
+            <ul class="ui-chips" aria-label={t('doctor.languagesLabel')}>
+              {LANGS.map((l) => <li class="ui-chip"><Icon name="chat" />{t(`doctor.lang.${l}`)}</li>)}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ui-section c-dawn" id="team">
+      <div class="ui-wrap">
+        <div class="ui-doctor">
+          <PhotoFrame image={legacyImage('1234orthok-com-074.jpg')} alt={t('about.teamAlt')} placeholder={t('about.teamAlt')} />
+          <div class="ui-doctor-text ui-stack-lg">
+            <h2 class="ui-h2">{t('about.staffTitle')}</h2>
+            <p class="ui-lead">{t('about.staff')}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>

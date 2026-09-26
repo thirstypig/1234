@@ -1,10 +1,29 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import FirstVisit from '../../components/FirstVisit.astro';
+import Hero from '../../components/Hero.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
+const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder') }));
 ---
-<BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')}><main><h1 class="ui-wrap ui-h1">{t('meta.ortho-k')}</h1><BookingBand lang={lang} /></main></BaseLayout>
+<BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')}>
+  <main>
+    <Hero lang={lang} title={t('ortho.title')} lead={t('home.lead')} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap ui-grid">
+        <div class="ui-span-6"><h2 class="ui-h1">{t('home.introTitle')}</h2></div>
+        <p class="ui-lead ui-at-8">{t('home.introLead')}</p>
+      </div>
+    </section>
+    <HowItWorks lang={lang} />
+    <FirstVisit lang={lang} />
+    <FaqAccordion title={t('faq.title')} items={faq} />
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
