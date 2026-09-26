@@ -13,7 +13,9 @@
     "harvest": "node scripts/harvest/crawl.mjs",
     "test:unit": "node --import tsx --test \"scripts/**/*.test.mjs\" \"src/**/*.test.mjs\"",
     "predev": "node scripts/sync-review.mjs",
-    "prebuild": "node scripts/sync-review.mjs"
+    "prebuild": "node scripts/sync-review.mjs",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "dependencies": {
     "astro": "^7.3.5"
@@ -22,6 +24,8 @@
     "esbuild": true
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
     "happy-dom": "^20.14.5",
     "image-size": "^2.0.4",
     "playwright": "^1.63.0",

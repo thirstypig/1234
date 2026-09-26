@@ -1,0 +1,14 @@
+---
+import { LOCALES, HTML_LANG, SWITCHER_LABEL, pathFor, type Lang, type PageId } from '../i18n/locales';
+
+interface Props { lang: Lang; page: PageId }
+const { lang, page } = Astro.props;
+---
+<nav class="ui-lang" aria-label="Language / 語言">
+  {LOCALES.map((l, i) => (
+    <Fragment>
+      {i > 0 && <span class="ui-lang-sep" aria-hidden="true">/</span>}
+      <a href={pathFor(l, page)} hreflang={HTML_LANG[l]} lang={HTML_LANG[l]} aria-current={l === lang ? 'page' : undefined}>{SWITCHER_LABEL[l]}</a>
+    </Fragment>
+  ))}
+</nav>

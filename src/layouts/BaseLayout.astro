@@ -1,6 +1,8 @@
 ---
 import '../styles/site.css';
 import { LOCALES, HTML_LANG, pathFor, type Lang, type PageId } from '../i18n/locales';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 
 interface Props {
   lang: Lang;
@@ -25,6 +27,10 @@ const site = Astro.site?.origin ?? 'https://1234.pasadenaworks.com';
     <script type="module" src="/_review/gate-only.js" is:inline></script>
   </head>
   <body>
-    <slot />
+    <div class="ui-page" lang={HTML_LANG[lang]}>
+      <SiteHeader lang={lang} page={page} />
+      <slot />
+      <SiteFooter lang={lang} page={page} />
+    </div>
   </body>
 </html>

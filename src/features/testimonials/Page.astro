@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
 ---
-<BaseLayout lang={lang} page="testimonials" title={t('meta.testimonials')}><main><h1>{t('meta.testimonials')}</h1></main></BaseLayout>
+<BaseLayout lang={lang} page="testimonials" title={t('meta.testimonials')}><main><h1 class="ui-wrap ui-h1">{t('meta.testimonials')}</h1><BookingBand lang={lang} /></main></BaseLayout>

@@ -1,0 +1,48 @@
+---
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { pathFor, type Lang, type PageId } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref, MESSAGE_HREF } from '../lib/cta';
+
+interface Props { lang: Lang; page: PageId }
+const { lang, page } = Astro.props;
+const t = makeT(lang);
+const NAV: PageId[] = ['about', 'ortho-k', 'testimonials', 'contact'];
+const menuId = `ui-menu-${lang}`;
+---
+<div class="ui-utility"><div class="ui-wrap ui-utility-in"><LanguageSwitcher lang={lang} page={page} /></div></div>
+<header class="ui-header">
+  <div class="ui-wrap ui-header-in">
+    <a class="ui-brand" href={pathFor(lang, 'home')}>{t('site.name')}{lang !== 'en' && <span lang="zh-Hant" class="ui-footer-zh" style="display:block;font-size:14px">{t('site.nameZh')}</span>}</a>
+    <nav class="ui-nav" aria-label="Main">
+      {NAV.map((p) => <a href={pathFor(lang, p)} aria-current={p === page ? 'page' : undefined}>{t(`nav.${p}`)}</a>)}
+    </nav>
+    <div class="ui-header-tools">
+      <Button href={bookHref(lang)} size="sm" cta="book">{t('cta.book')}</Button>
+      <button type="button" class="ui-btn ui-btn--secondary ui-btn--sm ui-menu-btn" data-ui-menu aria-expanded="false" aria-controls={menuId}><Icon name="menu" /><span>{t('nav.menu')}</span></button>
+    </div>
+  </div>
+  <div class="ui-wrap" id={menuId} hidden style="padding-bottom:16px">
+    <div class="ui-sheet">
+      <ul class="ui-sheet-links">
+        {(['home', ...NAV] as PageId[]).map((p) => <li><a href={pathFor(lang, p)} aria-current={p === page ? 'page' : undefined}>{t(`nav.${p}`)}<Icon name="arrow" /></a></li>)}
+      </ul>
+      <div class="ui-sheet-foot ui-stack">
+        <Button href={bookHref(lang)} block icon="calendar" cta="book">{t('cta.book')}</Button>
+        <Button href={MESSAGE_HREF} variant="secondary" block icon="chat" cta="message">{t('cta.message')}</Button>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  document.querySelectorAll('[data-ui-menu]').forEach((b) => {
+    b.addEventListener('click', () => {
+      const sheet = document.getElementById(b.getAttribute('aria-controls') ?? '');
+      const open = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', String(!open));
+      if (sheet) sheet.hidden = open;
+    });
+  });
+</script>
