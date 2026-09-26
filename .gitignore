@@ -29,3 +29,6 @@ design/legacy-catalog/img/
 public/_review/*
 !public/_review/gate-only.js
 test-results/
+
+# Legacy originals stay local: the repo is public and many are patient photos.
+assets/legacy/originals/

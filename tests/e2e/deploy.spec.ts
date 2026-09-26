@@ -30,3 +30,8 @@ test('site root redirects to /en/ and is gated', async ({ page }) => {
   await expect(page).toHaveURL(/\/en\/$/);
   await expect(page.locator('#review-gate-overlay')).toBeVisible();
 });
+
+test('patient photos are not published', async ({ request }) => {
+  const res = await request.get('/concepts/legacy-images/img/1234orthok-com-016.jpg');
+  expect(res.status()).toBe(404);
+});

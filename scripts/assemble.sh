@@ -16,5 +16,5 @@ rm -f dist/_review/*.test.mjs dist/_review/test-setup.mjs
 rm -rf dist/concepts/legacy-images
 mkdir -p dist/concepts/legacy-images/img
 cp design/legacy-catalog/index.html dist/concepts/legacy-images/
-cp assets/legacy/originals/* dist/concepts/legacy-images/img/
+cp assets/legacy/site/* dist/concepts/legacy-images/img/   # cleared images only
 cp design/concepts/CNAME dist/CNAME
