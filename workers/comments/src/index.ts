@@ -12,6 +12,10 @@ interface Comment {
   yPercent?: number;
 }
 
+// Comment keys are `<concept folder>:<page>`; concept folders start with A–E. Anything else
+// (e.g. the booking and rate-limit keys, which share this KV namespace) is off-limits here.
+const CONCEPT = /^[A-E][^:/]*$/;
+
 function corsHeaders(origin: string) {
   return {
     'Access-Control-Allow-Origin': origin,
@@ -42,7 +46,7 @@ export default {
       const page = body.page?.trim();
       const text = body.text?.trim();
 
-      if (!concept || !page || !text) {
+      if (!concept || !page || !text || !CONCEPT.test(concept)) {
         return new Response(JSON.stringify({ error: 'concept, page, and text are required' }), {
           status: 400,
           headers: { ...headers, 'Content-Type': 'application/json' },
@@ -69,7 +73,7 @@ export default {
     if (request.method === 'GET' && url.pathname === '/comments') {
       const concept = url.searchParams.get('concept');
       const page = url.searchParams.get('page');
-      if (!concept || !page) {
+      if (!concept || !page || !CONCEPT.test(concept)) {
         return new Response(JSON.stringify({ error: 'concept and page query params are required' }), {
           status: 400,
           headers: { ...headers, 'Content-Type': 'application/json' },

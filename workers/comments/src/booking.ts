@@ -12,7 +12,8 @@ export async function handleBooking(request: Request, env: Env, headers: Record<
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
   const rlKey = `rl:${ip}`;
   const count = Number((await env.COMMENTS_KV.get(rlKey)) || 0);
-  if (count >= MAX_PER_HOUR) return json(429, { error: 'Too many requests. Please call the office.' });
+  // A non-numeric counter means someone tampered with it: fail closed.
+  if (!Number.isFinite(count) || count >= MAX_PER_HOUR) return json(429, { error: 'Too many requests. Please call the office.' });
 
   let body: Record<string, unknown>;
   try {

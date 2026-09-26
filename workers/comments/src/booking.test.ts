@@ -58,3 +58,22 @@ describe('POST /booking', () => {
     expect((await worker.fetch(req, env(kv()))).status).toBe(400);
   });
 });
+
+describe('booking storage is isolated from comments', () => {
+  it('POST /comments rejects keys outside the concept namespace', async () => {
+    const k = kv();
+    const req = new Request('https://w/comments', { method: 'POST', body: JSON.stringify({ concept: 'rl', page: '9.9.9.9', text: 'x' }) });
+    expect((await worker.fetch(req, env(k))).status).toBe(400);
+    expect(k.put).not.toHaveBeenCalled();
+  });
+
+  it('GET /comments cannot read booking or rate-limit keys', async () => {
+    const req = new Request('https://w/comments?concept=rl&page=9.9.9.9');
+    expect((await worker.fetch(req, env(kv({ 'rl:9.9.9.9': '1' })))).status).toBe(400);
+  });
+
+  it('a corrupted rate-limit counter fails closed', async () => {
+    const res = await worker.fetch(post(good, '8.8.8.8'), env(kv({ 'rl:8.8.8.8': '[{"text":"x"}]' })));
+    expect(res.status).toBe(429);
+  });
+});
