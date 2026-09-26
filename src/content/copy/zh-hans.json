@@ -1,0 +1,47 @@
+{
+  "site": {
+    "name": "1234 Ortho-K Vision Care",
+    "nameZh": "1234兒童視力矯正中心"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Dr. Woo",
+    "ortho-k": "How it works",
+    "testimonials": "Stories",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "cta": {
+    "book": "Book a consultation",
+    "message": "Message us"
+  },
+  "footer": {
+    "contact": "Contact",
+    "copyright": "© 2026 1234 Ortho-K Vision Care",
+    "privacy": "Privacy policy",
+    "privacyNotice": "Notice of privacy practices",
+    "accessibility": "Accessibility",
+    "terms": "Terms"
+  },
+  "locations": {
+    "alhambra": {
+      "name": "Alhambra",
+      "street": "1234 S. Garfield Ave., #105",
+      "city": "Alhambra, CA 91801",
+      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm"
+    },
+    "walnut": {
+      "name": "Walnut",
+      "street": "Address coming soon",
+      "hours": "Hours coming soon"
+    }
+  },
+  "meta": {
+    "home": "1234 Ortho-K Vision Care",
+    "about": "Dr. Woo · 1234 Ortho-K Vision Care",
+    "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
+    "contact": "Contact · 1234 Ortho-K Vision Care",
+    "testimonials": "Stories · 1234 Ortho-K Vision Care"
+  }
+}

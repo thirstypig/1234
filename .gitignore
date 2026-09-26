@@ -26,3 +26,5 @@ pnpm-debug.log*
 # design concept review QA screenshots
 design/concepts/_qa/
 design/legacy-catalog/img/
+public/_review/*
+!public/_review/gate-only.js

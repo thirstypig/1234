@@ -1,15 +1,28 @@
 ---
+import '../styles/site.css';
+import { LOCALES, HTML_LANG, pathFor, type Lang, type PageId } from '../i18n/locales';
+
 interface Props {
+  lang: Lang;
+  page: PageId;
   title: string;
 }
-const { title } = Astro.props;
+const { lang, page, title } = Astro.props;
+const site = Astro.site?.origin ?? 'https://1234.pasadenaworks.com';
 ---
 <!doctype html>
-<html lang="en">
+<html lang={HTML_LANG[lang]}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
     <title>{title}</title>
+    {LOCALES.map((l) => <link rel="alternate" hreflang={HTML_LANG[l]} href={site + pathFor(l, page)} />)}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Chiron+GoRound+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="/_review/gate-only.js" is:inline></script>
   </head>
   <body>
     <slot />

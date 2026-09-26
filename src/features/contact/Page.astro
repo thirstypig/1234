@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { makeT } from '../../i18n/t';
+import type { Lang } from '../../i18n/locales';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = makeT(lang);
+---
+<BaseLayout lang={lang} page="contact" title={t('meta.contact')}><main><h1>{t('meta.contact')}</h1></main></BaseLayout>

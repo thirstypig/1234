@@ -1,0 +1,11 @@
+{
+  "site": { "name": "1234 Ortho-K Vision Care", "nameZh": "1234兒童視力矯正中心" },
+  "nav": { "home": "Home", "about": "認識胡醫師", "ortho-k": "如何運作", "testimonials": "Stories", "contact": "聯絡我們", "menu": "選單", "language": "語言" },
+  "cta": { "book": "預約諮詢", "message": "傳訊息給我們" },
+  "footer": { "contact": "聯絡我們", "copyright": "© 2026 1234 Ortho-K Vision Care", "privacy": "隱私權政策", "privacyNotice": "病患隱私權通知", "accessibility": "無障礙聲明", "terms": "使用條款" },
+  "locations": {
+    "alhambra": { "name": "阿罕布拉診所", "street": "1234 S. Garfield Ave., #105", "city": "Alhambra, CA 91801", "hours": "週二及週五 中午12點至下午6點，週六 中午12點至下午4點" },
+    "walnut": { "name": "核桃市診所", "street": "地址即將公佈", "hours": "門診時間即將公佈" }
+  },
+  "meta": { "home": "1234兒童視力矯正中心", "about": "認識胡醫師 · 1234兒童視力矯正中心", "ortho-k": "如何運作 · 1234兒童視力矯正中心", "contact": "聯絡我們 · 1234兒童視力矯正中心", "testimonials": "Stories · 1234兒童視力矯正中心" }
+}
