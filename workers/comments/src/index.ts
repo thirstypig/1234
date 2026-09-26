@@ -1,3 +1,5 @@
+import { handleBooking } from './booking';
+
 export interface Env {
   COMMENTS_KV: KVNamespace;
   ALLOWED_ORIGIN: string;
@@ -82,6 +84,10 @@ export default {
         status: 200,
         headers: { ...headers, 'Content-Type': 'application/json' },
       });
+    }
+
+    if (request.method === 'POST' && url.pathname === '/booking') {
+      return handleBooking(request, env, headers);
     }
 
     return new Response('Not found', { status: 404, headers });
