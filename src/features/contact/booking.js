@@ -49,7 +49,8 @@ if (form) {
         el?.setAttribute('aria-invalid', 'true');
         el?.closest('.ui-field')?.classList.add('is-error');
       });
-      alertBox.querySelector('span').textContent = res.status === 429 ? form.dataset.ratelimited : form.dataset.invalid;
+      const msg = res.status === 400 ? 'invalid' : res.status === 429 ? 'ratelimited' : 'network';
+      alertBox.querySelector('span').textContent = form.dataset[msg];
       alertBox.hidden = false;
     } catch {
       alertBox.querySelector('span').textContent = form.dataset.network;

@@ -57,3 +57,20 @@ test('error box is not shown before any submit', async ({ page }) => {
   await page.goto('/en/contact/');
   await expect(page.locator('#book [role=alert]')).toBeHidden();
 });
+
+test('a server error (not a validation error) shows the call-us message', async ({ page }) => {
+  await page.route('**/booking', (r) => r.fulfill({ status: 404, body: 'Not found' }));
+  await fill(page);
+  await page.click('#book [type=submit]');
+  await expect(page.locator('#book [role=alert]')).toContainText('(800) 991-8881');
+});
+
+for (const lang of ['zh-hant', 'zh-hans']) {
+  test(`/${lang}/contact/ form is usable: no placeholder text in the form`, async ({ page }) => {
+    await page.goto(`/${lang}/contact/`);
+    const text = await page.locator('#book').evaluate((el) => el.textContent + ' ' +
+      [...el.querySelectorAll('[data-success],[data-invalid],[data-network],[data-ratelimited],[data-sending]')]
+        .flatMap((f) => Object.values((f as HTMLElement).dataset)).join(' '));
+    expect(text).not.toMatch(/待提供/);
+  });
+}

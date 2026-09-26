@@ -135,24 +135,24 @@
     "eyebrow": "〔中文內容待提供〕",
     "title": "〔中文內容待提供〕",
     "lead": "〔中文內容待提供〕",
-    "formTitle": "〔中文內容待提供〕",
-    "previewNotice": "〔中文內容待提供〕",
+    "formTitle": "Request a consultation",
+    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
     "form": {
       "parentName": "家長姓名",
       "phone": "電話",
-      "phoneHint": "〔中文內容待提供〕",
-      "location": "〔中文內容待提供〕",
-      "alhambra": "〔中文內容待提供〕",
-      "walnut": "〔中文內容待提供〕",
-      "preferredTime": "〔中文內容待提供〕",
-      "preferredTimeHint": "〔中文內容待提供〕",
-      "submit": "〔中文內容待提供〕",
-      "sending": "〔中文內容待提供〕",
-      "success": "〔中文內容待提供〕",
-      "invalid": "〔中文內容待提供〕",
-      "ratelimited": "〔中文內容待提供〕",
-      "network": "〔中文內容待提供〕"
+      "phoneHint": "We'll call to confirm.",
+      "location": "Preferred location",
+      "alhambra": "Alhambra",
+      "walnut": "Walnut (opening soon)",
+      "preferredTime": "Preferred day or time (optional)",
+      "preferredTimeHint": "For example: Tuesday afternoon",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you. The office will call you to confirm a time.",
+      "invalid": "Please check the highlighted fields.",
+      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
+      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
     },
-    "previewLabel": "〔中文內容待提供〕"
+    "previewLabel": "Preview"
   }
 }

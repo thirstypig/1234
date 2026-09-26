@@ -113,3 +113,5 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **M-5** Testimonials page shows 4 reviews that describe the visit experience only. Reviews with outcome claims ("saving my vision", a child's 20/20 result, a failed LASIK story) and the 9 flagged ones are held back; see `docs/legacy-copy/testimonials.reviews.txt`.
 - [ ] **M-6** About page leaves out outcome sentences from the old bio ("more confident and outgoing", "do better in school", "successful in their profession and careers").
 - [ ] **M-7** About → "Our team" uses photo #074, which shows an "iDream Space" sign — confirm that's the practice's building.
+- [ ] **M-8** English text taken from the Concept C mockup (not from the old site) makes outcome statements. Please approve or rewrite: "Clear vision all day. No glasses at school." (homepage hero), "Ortho-k may also help slow down nearsightedness as they grow." (hero lead), and "Wear at night. See clearly all day." (how-it-works step 3).
+- [ ] **M-9** The booking form on the Chinese pages is in English until Chinese text is supplied, so parents can still use it and see the "call to book" notice.
