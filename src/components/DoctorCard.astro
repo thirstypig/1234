@@ -1,0 +1,34 @@
+---
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+import PhotoFrame from './PhotoFrame.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref } from '../lib/cta';
+import { isApproved } from '../lib/claims';
+import { legacyImage } from '../lib/images';
+
+interface Props { lang: Lang; headingTag?: 'h1' | 'h2' }
+const { lang, headingTag = 'h2' } = Astro.props;
+const t = makeT(lang);
+const Heading = headingTag;
+const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
+---
+<section class="ui-section c-paper" id="doctor">
+  <div class="ui-wrap">
+    <div class="ui-doctor">
+      <PhotoFrame image={legacyImage('1234orthok-com-003.jpg')} alt={t('doctor.photoAlt')} placeholder={t('doctor.photoAlt')} />
+      <div class="ui-doctor-text ui-stack-lg">
+        <p class="ui-eyebrow"><Icon name="eye" /><span>{t('doctor.eyebrow')}</span></p>
+        <Heading class="ui-h1">{t('doctor.name')}</Heading>
+        {isApproved('F-home-1') && <p class="ui-lead">{t('doctor.years')}</p>}
+        <p class="ui-lead">{t('doctor.languages')}</p>
+        <ul class="ui-chips" aria-label={t('doctor.languagesLabel')}>
+          {LANGS.map((l) => <li class="ui-chip"><Icon name="chat" />{t(`doctor.lang.${l}`)}</li>)}
+        </ul>
+        <slot />
+        <div class="ui-btn-row"><Button href={bookHref(lang)} icon="calendar" cta="book">{t('cta.book')}</Button></div>
+      </div>
+    </div>
+  </div>
+</section>

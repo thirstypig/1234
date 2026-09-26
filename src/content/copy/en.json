@@ -1,0 +1,158 @@
+{
+  "site": {
+    "name": "1234 Ortho-K Vision Care",
+    "nameZh": "1234兒童視力矯正中心"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Dr. Woo",
+    "ortho-k": "How it works",
+    "testimonials": "Stories",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "cta": {
+    "book": "Book a consultation",
+    "message": "Message us"
+  },
+  "footer": {
+    "contact": "Contact",
+    "copyright": "© 2026 1234 Ortho-K Vision Care",
+    "privacy": "Privacy policy",
+    "privacyNotice": "Notice of privacy practices",
+    "accessibility": "Accessibility",
+    "terms": "Terms"
+  },
+  "locations": {
+    "alhambra": {
+      "name": "Alhambra",
+      "street": "1234 S. Garfield Ave., #105",
+      "city": "Alhambra, CA 91801",
+      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm"
+    },
+    "walnut": {
+      "name": "Walnut",
+      "street": "Address coming soon",
+      "hours": "Hours coming soon"
+    },
+    "title": "Book a visit at either clinic",
+    "contactLead": "Book or call — whatever is easiest",
+    "call": "Call",
+    "bookOnline": "Book online",
+    "map": "Map",
+    "mapSoon": "Map coming soon",
+    "bookHere": "Book here",
+    "directions": "Directions",
+    "openingSoon": "Opening soon"
+  },
+  "meta": {
+    "home": "1234 Ortho-K Vision Care",
+    "about": "Dr. Woo · 1234 Ortho-K Vision Care",
+    "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
+    "contact": "Contact · 1234 Ortho-K Vision Care",
+    "testimonials": "Stories · 1234 Ortho-K Vision Care"
+  },
+  "band": {
+    "sceneLabel": "Illustration: off to school, no glasses.",
+    "body": "Book online, or give us a call."
+  },
+  "scenes": {
+    "night": "Illustration: a child asleep; the lens case waits on the nightstand.",
+    "nightCap": "Night",
+    "morning": "Illustration: morning — the child wakes up and sees clearly.",
+    "morningCap": "Morning"
+  },
+  "home": {
+    "eyebrow": "Ortho-k for children, ages 7–18",
+    "title": "Clear vision all day.",
+    "mark": "No glasses at school.",
+    "lead": "Your child wears special lenses while they sleep. In the morning, they take them out and see clearly. Ortho-k may also help slow down nearsightedness as they grow.",
+    "trust": "Dr. Paul T. Woo, OD",
+    "introTitle": "Is your child's prescription going up every year?",
+    "introLead": "Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don't slow the change.",
+    "visitTitle": "What happens at the first visit",
+    "visitDraft": "Placeholder copy",
+    "visit1": "We talk with you about your child's eyes and daily routine.",
+    "visit2": "Your child has a full eye exam and a map of the front of the eye.",
+    "visit3": "Dr. Woo explains the results and answers your questions."
+  },
+  "how": {
+    "title": "How ortho-k works",
+    "step1": "Full eye exam and a map of the eye",
+    "step2": "Custom lenses made for your child",
+    "step3": "Wear at night. See clearly all day."
+  },
+  "doctor": {
+    "photoAlt": "Dr. Paul T. Woo, OD, in his white coat",
+    "eyebrow": "Meet the doctor",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "30 years of ortho-k experience.",
+    "languages": "Speaks English, Mandarin, Cantonese, and Taiwanese.",
+    "languagesLabel": "Languages",
+    "lang": {
+      "english": "English",
+      "mandarin": "Mandarin",
+      "cantonese": "Cantonese",
+      "taiwanese": "Taiwanese"
+    }
+  },
+  "faq": {
+    "title": "Parent questions",
+    "q1": "Is ortho-k safe for kids?",
+    "q2": "What age can my child start?",
+    "q3": "Is it hard for kids to put in the lenses?",
+    "q4": "How much does it cost?",
+    "placeholder": "Placeholder answer. Dr. Woo's team will write this in plain words for parents."
+  },
+  "about": {
+    "eyebrow": "Meet the doctor",
+    "title": "Dr. Paul T. Woo, OD",
+    "lead": "Dr. Woo is the founder and clinical director of 1234 Ortho-K Vision Care.",
+    "bioTitle": "About Dr. Woo",
+    "bio1": "Dr. Woo graduated with a bachelor’s degree from University of California, Irvine and continued to get his Doctor of Optometry degree from Southern California College of Optometry.",
+    "bio2": "As Orthokeratology evolved from day wear to night wear so did Dr. Woo. And now Dr. Woo is treating children who want to control their myopia from progressing and are able to see well all day by just wearing lenses when they sleep.",
+    "bio3": "Former president of the San Gabriel Valley Optometric Association.",
+    "bio4": "He wants to continue to work with other doctors to expand the acceptance and success of Orthokeratology.",
+    "staffTitle": "Our team",
+    "staff": "Our friendly, dedicated and highly trained staff is always happy to serve and help our patients through every step of the process.",
+    "teamAlt": "The 1234 Ortho-K Vision Care team outside the clinic"
+  },
+  "ortho": {
+    "title": "Ortho-k for children, ages 7–18"
+  },
+  "stories": {
+    "eyebrow": "Stories",
+    "title": "What families say",
+    "lead": "Reviews from patients and parents of 1234 Ortho-K Vision Care.",
+    "listTitle": "Reviews",
+    "r1": "I am a user of the CRT lenses and it's tough to find an optometry office that knows them well. It's even harder to find an office that specializes in them, so I was lucky to have been introduced to 1234 Ortho-K. I actually had no idea what an ortho-k lens was, but it turns out it’s just a different name for the CRT lenses. At 1234 the staff and Dr. Woo walked me through the pros and cons and the benefits of newer lenses. The staff seems well trained and all are very attentive and quick to answer questions or call for help from other members. Dr. Woo is thoughtful, knowledgeable, and doesn't mind explaining what he's doing and why. He also has a good sense of humor and bedside manner.",
+    "r2": "I've been going here for 16 years, ever since I was a blind-as-a-bat 4th grader. Now I've graduated from college and am working full time in Seattle and I still come back for Dr. Woo's appointments! The ortho-k lenses have always been really important to me because it's made my life so much easier! I don't have to struggle to see presentations in class and at work, and I'm never freaking out about misplacing my glasses! I highly recommend you stop by here and give Dr. Woo a shot! He's very easy to work with and you won't regret it!",
+    "r3": "Dr. Woo has been my optometrist for half a decade, and I've only ever had positive experiences! I used to get new glasses here every year before switching to contact lenses, and they always have tons of pretty frames in lots of styles and colors. Not to mention the nose rests actually fit Asian faces (if you've ever had sunglasses slide down your face all day, you know how non-negotiable this is!) Everyone here is always very friendly and professional when I come in, and all my appointments have been super smooth and efficient. Plus, the whole staff speaks various dialects of Chinese in addition to English.",
+    "r4": "The staff is friendly and Dr. Woo answers all my questions. I feel comfortable making an appointment whenever I have eye issues, and they are happy to accommodate my schedule. The wait is short even on Saturday, and the staff is efficient so I don't waste a lot of time waiting to see a doctor."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Book a consultation",
+    "lead": "Send a request and the office will call you to set a time. Or call us directly.",
+    "formTitle": "Request a consultation",
+    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
+    "form": {
+      "parentName": "Parent name",
+      "phone": "Phone",
+      "phoneHint": "We'll call to confirm.",
+      "location": "Preferred location",
+      "alhambra": "Alhambra",
+      "walnut": "Walnut (opening soon)",
+      "preferredTime": "Preferred day or time (optional)",
+      "preferredTimeHint": "For example: Tuesday afternoon",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you. The office will call you to confirm a time.",
+      "invalid": "Please check the highlighted fields.",
+      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
+      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
+    },
+    "previewLabel": "Preview"
+  }
+}

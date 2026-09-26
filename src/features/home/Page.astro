@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import DoctorCard from '../../components/DoctorCard.astro';
+import FirstVisit from '../../components/FirstVisit.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import Hero from '../../components/Hero.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import Locations from '../../components/Locations.astro';
+import { makeT } from '../../i18n/t';
+import type { Lang } from '../../i18n/locales';
+import { isApproved } from '../../lib/claims';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = makeT(lang);
+const trust = isApproved('F-home-1') ? `${t('home.trust')} · ${t('doctor.years')}` : t('home.trust');
+const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder') }));
+---
+<BaseLayout lang={lang} page="home" title={t('meta.home')}>
+  <main>
+    <Hero lang={lang} eyebrow={t('home.eyebrow')} title={t('home.title')} mark={t('home.mark')} lead={t('home.lead')} trust={trust} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap ui-grid">
+        <div class="ui-span-6"><h2 class="ui-h1">{t('home.introTitle')}</h2></div>
+        <p class="ui-lead ui-at-8">{t('home.introLead')}</p>
+      </div>
+    </section>
+    <HowItWorks lang={lang} />
+    <DoctorCard lang={lang} />
+    <FirstVisit lang={lang} />
+    <FaqAccordion title={t('faq.title')} items={faq} />
+    <Locations lang={lang} />
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>

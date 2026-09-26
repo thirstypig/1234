@@ -1,0 +1,36 @@
+---
+import Button from './Button.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import type { Lang, PageId } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref, MESSAGE_HREF } from '../lib/cta';
+
+interface Props { lang: Lang; page: PageId }
+const { lang, page } = Astro.props;
+const t = makeT(lang);
+---
+<footer class="ui-footer">
+  <div class="ui-wrap">
+    <div class="ui-footer-grid">
+      <div>
+        <p class="ui-brand ui-brand--footer">{t('site.name')}</p>
+        <p lang="zh-Hant" class="ui-footer-zh">{t('site.nameZh')}</p>
+        <div style="margin-top:var(--space-2)"><h3>{t('nav.language')}</h3><LanguageSwitcher lang={lang} page={page} /></div>
+      </div>
+      <div><h3>{t('locations.alhambra.name')}</h3><p>{t('locations.alhambra.street')}<br />{t('locations.alhambra.city')}<br />{t('locations.alhambra.hours')}</p></div>
+      <div><h3>{t('locations.walnut.name')}</h3><p>{t('locations.walnut.street')}<br />{t('locations.walnut.hours')}</p></div>
+      <div><h3>{t('footer.contact')}</h3><ul><li><a href="tel:18009918881">(800) 991-8881</a></li><li><a href="tel:16262825388">(626) 282-5388</a></li></ul></div>
+    </div>
+    <div class="ui-footer-legal">
+      <span>{t('footer.copyright')}</span>
+      <span aria-disabled="true">{t('footer.privacy')}</span>
+      <span aria-disabled="true">{t('footer.privacyNotice')}</span>
+      <span aria-disabled="true">{t('footer.accessibility')}</span>
+      <span aria-disabled="true">{t('footer.terms')}</span>
+    </div>
+  </div>
+</footer>
+<div class="ui-stickybar" role="region" aria-label={t('cta.book')} data-sticky-bar>
+  <Button href={bookHref(lang)} icon="calendar" cta="book">{t('cta.book')}</Button>
+  <Button href={MESSAGE_HREF} variant="secondary" icon="chat" cta="message">{t('cta.message')}</Button>
+</div>

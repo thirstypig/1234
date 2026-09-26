@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import { makeT } from '../../i18n/t';
+import type { Lang } from '../../i18n/locales';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = makeT(lang);
+---
+<BaseLayout lang={lang} page="testimonials" title={t('meta.testimonials')}>
+  <main>
+    <Hero lang={lang} short eyebrow={t('stories.eyebrow')} title={t('stories.title')} lead={t('stories.lead')} />
+    <section class="ui-section c-paper" id="reviews">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('stories.listTitle')}</h2>
+        <div class="c-quotes">
+          {[1, 2, 3, 4].map((n) => <blockquote class="c-quote"><p class="ui-body">{t(`stories.r${n}`)}</p></blockquote>)}
+        </div>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-quotes { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .c-quote { margin: 0; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
+</style>

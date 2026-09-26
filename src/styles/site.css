@@ -1,0 +1,11 @@
+/* Concept C, imported unmodified from its design folder */
+@import '../../design/concepts/concepts/C-picture-book/tokens.local.css';
+@import '../../design/concepts/concepts/C-picture-book/project/components/bundle.css';
+
+html, body { margin: 0; background: var(--background); }
+
+/* CLAUDE.md floor for Chinese body text */
+:lang(zh) main p, :lang(zh) main li, :lang(zh) main dd { font-size: max(17px, 1em); line-height: 1.8; }
+
+/* Concept C sets display on some components (e.g. .ui-error), which would override [hidden]. */
+[hidden] { display: none !important; }

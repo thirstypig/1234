@@ -1,0 +1,158 @@
+{
+  "site": {
+    "name": "1234 Ortho-K Vision Care",
+    "nameZh": "1234兒童視力矯正中心"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Dr. Woo",
+    "ortho-k": "How it works",
+    "testimonials": "Stories",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "cta": {
+    "book": "Book a consultation",
+    "message": "Message us"
+  },
+  "footer": {
+    "contact": "Contact",
+    "copyright": "© 2026 1234 Ortho-K Vision Care",
+    "privacy": "Privacy policy",
+    "privacyNotice": "Notice of privacy practices",
+    "accessibility": "Accessibility",
+    "terms": "Terms"
+  },
+  "locations": {
+    "alhambra": {
+      "name": "Alhambra",
+      "street": "1234 S. Garfield Ave., #105",
+      "city": "Alhambra, CA 91801",
+      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm"
+    },
+    "walnut": {
+      "name": "Walnut",
+      "street": "Address coming soon",
+      "hours": "Hours coming soon"
+    },
+    "title": "〔中文内容待提供〕",
+    "contactLead": "〔中文内容待提供〕",
+    "call": "〔中文内容待提供〕",
+    "bookOnline": "〔中文内容待提供〕",
+    "map": "〔中文内容待提供〕",
+    "mapSoon": "〔中文内容待提供〕",
+    "bookHere": "〔中文内容待提供〕",
+    "directions": "〔中文内容待提供〕",
+    "openingSoon": "〔中文内容待提供〕"
+  },
+  "meta": {
+    "home": "1234 Ortho-K Vision Care",
+    "about": "Dr. Woo · 1234 Ortho-K Vision Care",
+    "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
+    "contact": "Contact · 1234 Ortho-K Vision Care",
+    "testimonials": "Stories · 1234 Ortho-K Vision Care"
+  },
+  "band": {
+    "sceneLabel": "〔中文内容待提供〕",
+    "body": "〔中文内容待提供〕"
+  },
+  "scenes": {
+    "night": "〔中文内容待提供〕",
+    "nightCap": "〔中文内容待提供〕",
+    "morning": "〔中文内容待提供〕",
+    "morningCap": "〔中文内容待提供〕"
+  },
+  "home": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "〔中文内容待提供〕",
+    "mark": "〔中文内容待提供〕",
+    "lead": "〔中文内容待提供〕",
+    "trust": "〔中文内容待提供〕",
+    "introTitle": "〔中文内容待提供〕",
+    "introLead": "〔中文内容待提供〕",
+    "visitTitle": "〔中文内容待提供〕",
+    "visitDraft": "〔中文内容待提供〕",
+    "visit1": "〔中文内容待提供〕",
+    "visit2": "〔中文内容待提供〕",
+    "visit3": "〔中文内容待提供〕"
+  },
+  "how": {
+    "title": "〔中文内容待提供〕",
+    "step1": "〔中文内容待提供〕",
+    "step2": "〔中文内容待提供〕",
+    "step3": "〔中文内容待提供〕"
+  },
+  "doctor": {
+    "photoAlt": "〔中文内容待提供〕",
+    "eyebrow": "〔中文内容待提供〕",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "〔中文内容待提供〕",
+    "languages": "〔中文内容待提供〕",
+    "languagesLabel": "〔中文内容待提供〕",
+    "lang": {
+      "english": "English",
+      "mandarin": "Mandarin",
+      "cantonese": "Cantonese",
+      "taiwanese": "Taiwanese"
+    }
+  },
+  "faq": {
+    "title": "〔中文内容待提供〕",
+    "q1": "〔中文内容待提供〕",
+    "q2": "〔中文内容待提供〕",
+    "q3": "〔中文内容待提供〕",
+    "q4": "〔中文内容待提供〕",
+    "placeholder": "〔中文内容待提供〕"
+  },
+  "about": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "Dr. Paul T. Woo, OD",
+    "lead": "〔中文内容待提供〕",
+    "bioTitle": "〔中文内容待提供〕",
+    "bio1": "〔中文内容待提供〕",
+    "bio2": "〔中文内容待提供〕",
+    "bio3": "〔中文内容待提供〕",
+    "bio4": "〔中文内容待提供〕",
+    "staffTitle": "〔中文内容待提供〕",
+    "staff": "〔中文内容待提供〕",
+    "teamAlt": "〔中文内容待提供〕"
+  },
+  "ortho": {
+    "title": "〔中文内容待提供〕"
+  },
+  "stories": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "〔中文内容待提供〕",
+    "lead": "〔中文内容待提供〕",
+    "listTitle": "〔中文内容待提供〕",
+    "r1": "〔中文内容待提供〕",
+    "r2": "〔中文内容待提供〕",
+    "r3": "〔中文内容待提供〕",
+    "r4": "〔中文内容待提供〕"
+  },
+  "contact": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "〔中文内容待提供〕",
+    "lead": "〔中文内容待提供〕",
+    "formTitle": "Request a consultation",
+    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
+    "form": {
+      "parentName": "Parent name",
+      "phone": "Phone",
+      "phoneHint": "We'll call to confirm.",
+      "location": "Preferred location",
+      "alhambra": "Alhambra",
+      "walnut": "Walnut (opening soon)",
+      "preferredTime": "Preferred day or time (optional)",
+      "preferredTimeHint": "For example: Tuesday afternoon",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you. The office will call you to confirm a time.",
+      "invalid": "Please check the highlighted fields.",
+      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
+      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
+    },
+    "previewLabel": "Preview"
+  }
+}

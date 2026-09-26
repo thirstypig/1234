@@ -1,0 +1,23 @@
+---
+import Button from './Button.astro';
+import SchoolScene from './scenes/SchoolScene.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref, MESSAGE_HREF } from '../lib/cta';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = makeT(lang);
+---
+<section class="ui-section ui-section--band c-paper" data-cta-bottom>
+  <div class="ui-wrap">
+    <div class="ui-band">
+      <div class="c-band-art"><SchoolScene label={t('band.sceneLabel')} /></div>
+      <div class="ui-band-text"><h2 class="ui-h2">{t('cta.book')}</h2><p class="ui-body ui-muted">{t('band.body')}</p></div>
+      <div class="ui-btn-row">
+        <Button href={bookHref(lang)} icon="calendar" cta="book">{t('cta.book')}</Button>
+        <Button href={MESSAGE_HREF} variant="secondary" icon="chat" cta="message">{t('cta.message')}</Button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,158 @@
+{
+  "site": {
+    "name": "1234 Ortho-K Vision Care",
+    "nameZh": "1234兒童視力矯正中心"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "認識胡醫師",
+    "ortho-k": "如何運作",
+    "testimonials": "Stories",
+    "contact": "聯絡我們",
+    "menu": "選單",
+    "language": "語言"
+  },
+  "cta": {
+    "book": "預約諮詢",
+    "message": "傳訊息給我們"
+  },
+  "footer": {
+    "contact": "聯絡我們",
+    "copyright": "© 2026 1234 Ortho-K Vision Care",
+    "privacy": "隱私權政策",
+    "privacyNotice": "病患隱私權通知",
+    "accessibility": "無障礙聲明",
+    "terms": "使用條款"
+  },
+  "locations": {
+    "alhambra": {
+      "name": "阿罕布拉診所",
+      "street": "1234 S. Garfield Ave., #105",
+      "city": "Alhambra, CA 91801",
+      "hours": "週二及週五 中午12點至下午6點，週六 中午12點至下午4點"
+    },
+    "walnut": {
+      "name": "核桃市診所",
+      "street": "地址即將公佈",
+      "hours": "門診時間即將公佈"
+    },
+    "title": "〔中文內容待提供〕",
+    "contactLead": "〔中文內容待提供〕",
+    "call": "打電話",
+    "bookOnline": "線上預約",
+    "map": "地圖",
+    "mapSoon": "地圖即將公佈",
+    "bookHere": "在此預約",
+    "directions": "路線導航",
+    "openingSoon": "即將開放"
+  },
+  "meta": {
+    "home": "1234兒童視力矯正中心",
+    "about": "認識胡醫師 · 1234兒童視力矯正中心",
+    "ortho-k": "如何運作 · 1234兒童視力矯正中心",
+    "contact": "聯絡我們 · 1234兒童視力矯正中心",
+    "testimonials": "Stories · 1234兒童視力矯正中心"
+  },
+  "band": {
+    "sceneLabel": "〔中文內容待提供〕",
+    "body": "〔中文內容待提供〕"
+  },
+  "scenes": {
+    "night": "〔中文內容待提供〕",
+    "nightCap": "晚上",
+    "morning": "〔中文內容待提供〕",
+    "morningCap": "早上"
+  },
+  "home": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "mark": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "trust": "〔中文內容待提供〕",
+    "introTitle": "〔中文內容待提供〕",
+    "introLead": "〔中文內容待提供〕",
+    "visitTitle": "〔中文內容待提供〕",
+    "visitDraft": "〔中文內容待提供〕",
+    "visit1": "〔中文內容待提供〕",
+    "visit2": "〔中文內容待提供〕",
+    "visit3": "〔中文內容待提供〕"
+  },
+  "how": {
+    "title": "〔中文內容待提供〕",
+    "step1": "〔中文內容待提供〕",
+    "step2": "〔中文內容待提供〕",
+    "step3": "〔中文內容待提供〕"
+  },
+  "doctor": {
+    "photoAlt": "〔中文內容待提供〕",
+    "eyebrow": "〔中文內容待提供〕",
+    "name": "Dr. Paul T. Woo, OD",
+    "years": "〔中文內容待提供〕",
+    "languages": "〔中文內容待提供〕",
+    "languagesLabel": "〔中文內容待提供〕",
+    "lang": {
+      "english": "英語",
+      "mandarin": "普通話",
+      "cantonese": "粵語",
+      "taiwanese": "台語"
+    }
+  },
+  "faq": {
+    "title": "〔中文內容待提供〕",
+    "q1": "〔中文內容待提供〕",
+    "q2": "〔中文內容待提供〕",
+    "q3": "〔中文內容待提供〕",
+    "q4": "〔中文內容待提供〕",
+    "placeholder": "〔中文內容待提供〕"
+  },
+  "about": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "Dr. Paul T. Woo, OD",
+    "lead": "〔中文內容待提供〕",
+    "bioTitle": "〔中文內容待提供〕",
+    "bio1": "〔中文內容待提供〕",
+    "bio2": "〔中文內容待提供〕",
+    "bio3": "〔中文內容待提供〕",
+    "bio4": "〔中文內容待提供〕",
+    "staffTitle": "〔中文內容待提供〕",
+    "staff": "〔中文內容待提供〕",
+    "teamAlt": "〔中文內容待提供〕"
+  },
+  "ortho": {
+    "title": "〔中文內容待提供〕"
+  },
+  "stories": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "listTitle": "〔中文內容待提供〕",
+    "r1": "〔中文內容待提供〕",
+    "r2": "〔中文內容待提供〕",
+    "r3": "〔中文內容待提供〕",
+    "r4": "〔中文內容待提供〕"
+  },
+  "contact": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "formTitle": "Request a consultation",
+    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
+    "form": {
+      "parentName": "家長姓名",
+      "phone": "電話",
+      "phoneHint": "We'll call to confirm.",
+      "location": "Preferred location",
+      "alhambra": "Alhambra",
+      "walnut": "Walnut (opening soon)",
+      "preferredTime": "Preferred day or time (optional)",
+      "preferredTimeHint": "For example: Tuesday afternoon",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Thank you. The office will call you to confirm a time.",
+      "invalid": "Please check the highlighted fields.",
+      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
+      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
+    },
+    "previewLabel": "Preview"
+  }
+}
