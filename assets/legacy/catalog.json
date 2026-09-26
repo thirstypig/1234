@@ -10,7 +10,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -25,9 +25,10 @@
     "height": 2767,
     "alt": "",
     "context": "046.png\" > <div id=\"el-0600\" class=\"inner-pic preview",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "Dr. Woo portrait"
   },
   {
     "file": "1234orthok-com-004.jpg",
@@ -40,9 +41,10 @@
     "height": 1836,
     "alt": "",
     "context": "046.png\" > <div id=\"el-0207\" class=\"inner-pic preview-",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "TV studio interview — broadcaster may own rights"
   },
   {
     "file": "1234orthok-com-005.jpg",
@@ -55,9 +57,10 @@
     "height": 1836,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "TV studio interview — broadcaster may own rights"
   },
   {
     "file": "1234orthok-com-006.png",
@@ -68,7 +71,7 @@
     "height": 13,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": true
   },
@@ -83,7 +86,7 @@
     "height": 725,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -98,7 +101,7 @@
     "height": 720,
     "alt": "",
     "context": "-046.png\" > <div id=\"el-0561\" class=\"inner-pic preview",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -113,7 +116,7 @@
     "height": 2560,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -137,7 +140,7 @@
     "height": 50,
     "alt": "",
     "context": "mated\"> var loadDeferredStyles = function() { var addStylesNode = document.getElementById(\"deferred-styles\"); var replacement = document.createEl",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -152,7 +155,7 @@
     "height": 1440,
     "alt": "",
     "context": "046.png\" > <div id=\"el-0253\" class=\"inner-pic preview-",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -167,7 +170,7 @@
     "height": 1350,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -184,9 +187,10 @@
     "height": 400,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "adult patient; old phone/Rowland Heights banner visible"
   },
   {
     "file": "1234orthok-com-014.jpg",
@@ -199,7 +203,7 @@
     "height": 332,
     "alt": "",
     "context": "m-046.png\" > <div id=\"el-0072\" class=\"inner-pic preview",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -214,7 +218,7 @@
     "height": 1080,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -229,7 +233,7 @@
     "height": 3264,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -244,7 +248,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -268,7 +272,7 @@
     "height": 50,
     "alt": "",
     "context": "var loadDeferredStyles = function() { var addStylesNode = document.getElementById(\"deferred-styles\"); var replacement = document.createElement(\"div\"); replacement.innerHTML = addStylesNode.textContent; document.body.appendChild(replacement) addStylesNode.parentElement.remov",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -283,7 +287,7 @@
     "height": 153,
     "alt": "",
     "context": "Toll-Free: 1-800-991-8881 Call: 626-282-5388",
-    "tag": null,
+    "tag": "practice-logo",
     "approved": false,
     "orphan": false
   },
@@ -307,9 +311,10 @@
     "height": 566,
     "alt": "",
     "context": "-046.png\" > <div id=\"el-0101\" class=\"inner-pic previe",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "banner with Dr. Woo and \"Since 1996\""
   },
   {
     "file": "1234orthok-com-021.jpg",
@@ -324,7 +329,7 @@
     "height": 1000,
     "alt": "",
     "context": "046.png\" > <div id=\"el-0192\" class=\"inner-pic preview-",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -339,9 +344,10 @@
     "height": 1067,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "staff training, but a $499 price banner is visible"
   },
   {
     "file": "1234orthok-com-023.jpg",
@@ -356,7 +362,7 @@
     "height": 375,
     "alt": "",
     "context": "<a class=\"image-link top-",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -380,7 +386,7 @@
     "height": 256,
     "alt": "",
     "context": "class=\"layout-settings\" style=\"display:none;\" data-type=\"footer\"> <link rel=\"style",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -397,9 +403,10 @@
     "height": 800,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "staff training, but a $499 price banner is visible"
   },
   {
     "file": "1234orthok-com-026.jpg",
@@ -414,7 +421,7 @@
     "height": 400,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -438,7 +445,7 @@
     "height": 1480,
     "alt": "",
     "context": "oad-high-res\" data-menu-name=\"PREVIEW_DRAGGABLE_PIC\" style=\"background-image:url(images/1234orthok-com-071.png);\" src=\"images/1234orthok-com-071.png\" data-orig-width=\"1345\" data-orig-height=\"1480\"> <div id=\"el-0103\" class=\"draggable-pic preview-element magic-circle-holder load-high-res\" data-menu-na",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -453,7 +460,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -468,7 +475,7 @@
     "height": 646,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "third-party-logo",
     "approved": false,
     "orphan": false
   },
@@ -483,7 +490,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -498,7 +505,7 @@
     "height": 533,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -513,7 +520,7 @@
     "height": 600,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -528,7 +535,7 @@
     "height": 1280,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -545,7 +552,7 @@
     "height": 334,
     "alt": "",
     "context": "<div id=\"element-0bd29c92",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -560,7 +567,7 @@
     "height": 1067,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -573,7 +580,7 @@
     "height": 13,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": true
   },
@@ -597,7 +604,7 @@
     "height": 94,
     "alt": "",
     "context": "raggable-pic preview-element magic-circle-holder load-high-res\" data-menu-name=\"PREVIEW_DRAGGABLE_PIC\" style=\"background-image:url(images/1234orthok-com-048.png);\" src=\"images/1234orthok-com-048.png\" data-orig-width=\"1345\" data-orig-height=\"1480\"> ​Over 30 years of Ortho-K treatment experience. Form",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -612,7 +619,7 @@
     "height": 1280,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -636,7 +643,7 @@
     "height": 30,
     "alt": "",
     "context": "class=\"light-box-wrapper space-layer\" style=\"display:none;\" tabindex=\"0\">",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -653,7 +660,7 @@
     "height": 274,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "third-party-logo",
     "approved": false,
     "orphan": false
   },
@@ -670,9 +677,10 @@
     "height": 148,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "third-party-logo",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "VIPOK Inc. logo"
   },
   {
     "file": "1234orthok-com-042.jpg",
@@ -685,7 +693,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -700,7 +708,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -715,7 +723,7 @@
     "height": 1080,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -732,7 +740,7 @@
     "height": 400,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -745,7 +753,7 @@
     "height": 50,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": true
   },
@@ -760,7 +768,7 @@
     "height": 1129,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -784,7 +792,7 @@
     "height": 1480,
     "alt": "",
     "context": "oad-high-res\" data-menu-name=\"PREVIEW_DRAGGABLE_PIC\" style=\"background-image:url(images/1234orthok-com-027.png);\" src=\"images/1234orthok-com-027.png\" data-orig-width=\"1345\" data-orig-height=\"1480\"> <br class=",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -799,9 +807,10 @@
     "height": 1651,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "event flyer with text and faces"
   },
   {
     "file": "1234orthok-com-050.jpg",
@@ -814,7 +823,7 @@
     "height": 600,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -838,7 +847,7 @@
     "height": 234,
     "alt": "",
     "context": "a-orig-thumb-height=\"\" data-orig-thumb-width=\"\" data-vbid=\"el-0491\" data-bgimg=\"\"> HOME",
-    "tag": null,
+    "tag": "practice-logo",
     "approved": false,
     "orphan": false
   },
@@ -855,7 +864,7 @@
     "height": 148,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": false
   },
@@ -868,7 +877,7 @@
     "height": 25,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "decorative",
     "approved": false,
     "orphan": true
   },
@@ -883,7 +892,7 @@
     "height": 600,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -898,9 +907,10 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "office sign — shows the logo (no-logo rule)"
   },
   {
     "file": "1234orthok-com-056.jpg",
@@ -913,7 +923,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -928,7 +938,7 @@
     "height": 2560,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -945,7 +955,7 @@
     "height": 148,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "third-party-logo",
     "approved": false,
     "orphan": false
   },
@@ -962,7 +972,7 @@
     "height": 332,
     "alt": "",
     "context": "m-046.png\" > <div id=\"element-4a5af57e",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -977,9 +987,10 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "branded car — shows the logo (no-logo rule)"
   },
   {
     "file": "1234orthok-com-061.png",
@@ -1001,7 +1012,7 @@
     "height": 1480,
     "alt": "",
     "context": "/div> <div id=\"el-0106\" class=\"draggable-pic preview-element magic-circle-holder load-high-res\" data-menu-name=\"PREVIEW_DRAGGABLE_PIC\" style=\"background-image:url(images/1234orthok-com-071.png);\" src=\"images/1234orthok-com-071.png\" data-orig-width=\"1345\" dat",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -1016,7 +1027,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -1031,7 +1042,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -1046,7 +1057,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -1061,7 +1072,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -1076,7 +1087,7 @@
     "height": 1080,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -1091,7 +1102,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -1106,7 +1117,7 @@
     "height": 1080,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "patient-photo",
     "approved": false,
     "orphan": false
   },
@@ -1121,7 +1132,7 @@
     "height": 1080,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   },
@@ -1138,7 +1149,7 @@
     "height": 148,
     "alt": "",
     "context": "",
-    "tag": null,
+    "tag": "third-party-logo",
     "approved": false,
     "orphan": false
   },
@@ -1162,7 +1173,7 @@
     "height": 1480,
     "alt": "",
     "context": "oad-high-res\" data-menu-name=\"PREVIEW_DRAGGABLE_PIC\" style=\"background-image:url(images/1234orthok-com-061.png);\" src=\"images/1234orthok-com-061.png\" data-orig-width=\"1345\" data-orig-height=\"1480\"> <div id=\"el-0100\" class=\"draggable-pic preview-element magic-circle-holder load-high-res\" data-menu-na",
-    "tag": null,
+    "tag": "likely-stock",
     "approved": false,
     "orphan": false
   },
@@ -1177,9 +1188,10 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "unclear whether the people are patients"
   },
   {
     "file": "1234orthok-com-073.jpg",
@@ -1194,7 +1206,7 @@
     "height": 380,
     "alt": "",
     "context": "m-046.png\" > <div id=\"el-0161\" class=\"inner-pic preview",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -1209,7 +1221,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false
   },
@@ -1224,9 +1236,10 @@
     "height": 1440,
     "alt": "",
     "context": "046.png\" > <a class=\"image-link top-layer not-wrappi",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
-    "orphan": false
+    "orphan": false,
+    "note": "pets, possibly from the Memories page"
   },
   {
     "file": "orthokintroductionbook.pdf",
@@ -1241,7 +1254,7 @@
     "height": null,
     "alt": "",
     "context": "ble-parent order-handle\"> Read through our Introduction book to know more about our mission and all about Ortho-k. Learn More <div",
-    "tag": null,
+    "tag": "needs-review",
     "approved": false,
     "orphan": false
   }

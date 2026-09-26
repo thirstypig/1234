@@ -51,3 +51,11 @@ export function findNumberGaps(filenames) {
   }
   return gaps;
 }
+
+export function suggestTag({ bytes = 0, width, height, alt = '', context = '', file = '' }) {
+  if (/\.pdf$/i.test(file)) return 'needs-review';
+  if (bytes < 5000 || (width && height && width * height < 80 * 80)) return 'decorative';
+  if (/\blogo\b|certif|paragon|euclid|bausch|menicon|fda|aoa|association/i.test(`${alt} ${context}`)) return 'third-party-logo';
+  // Practice vs patient vs stock requires eyes on the image — never guessed.
+  return 'needs-review';
+}
