@@ -115,3 +115,9 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **M-7** About → "Our team" uses photo #074, which shows an "iDream Space" sign — confirm that's the practice's building.
 - [ ] **M-8** English text taken from the Concept C mockup (not from the old site) makes outcome statements. Please approve or rewrite: "Clear vision all day. No glasses at school." (homepage hero), "Ortho-k may also help slow down nearsightedness as they grow." (hero lead), and "Wear at night. See clearly all day." (how-it-works step 3).
 - [ ] **M-9** The booking form on the Chinese pages is in English until Chinese text is supplied, so parents can still use it and see the "call to book" notice.
+
+## Photos
+
+- [ ] **P-1** Chinese alt text (the description screen readers read out) for the new photos is still a placeholder: the About gallery (8 photos), the Ortho-K exam room, and the Alhambra clinic sign. English versions are in `src/content/copy/en.json` under `about.gallery`, `ortho.examAlt` and `locations.alhambra.photoAlt`.
+- [ ] **P-2** Patient photos are not on the site. To use any, the practice needs a signed photo release (and HIPAA marketing authorization) for each patient, from a parent for anyone under 18. The photo of a girl holding her lens record card would also need the card blurred, since it shows visit dates and prescription values. The photos, the reason they're held back, and the release form (English, 繁體, 简体) are on the private patient-photos page; ask Jimmy for the link and password.
+- [ ] **P-3** The Walnut clinic card has no photo yet — please send one when the office is ready.
