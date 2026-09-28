@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import Button from './Button.astro';
 import Icon from './Icon.astro';
 import type { Lang } from '../i18n/locales';
 import { makeT } from '../i18n/t';
 import { bookHref } from '../lib/cta';
+import { legacyImage } from '../lib/images';
 
 interface Props { lang: Lang; id: 'alhambra' | 'walnut' }
 const { lang, id } = Astro.props;
@@ -14,7 +16,11 @@ const open = id === 'alhambra';
 const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('1234 S. Garfield Ave. #105, Alhambra, CA 91801');
 ---
 <article class="ui-loc">
-  <div class="ui-map c-map" role="img" aria-label={open ? t('locations.map') : t('locations.mapSoon')}><Icon name="map" /><span>{open ? t('locations.map') : t('locations.mapSoon')}</span></div>
+  {open ? (
+    <Image class="ui-map c-loc-photo" src={legacyImage('1234orthok-com-055.jpg')} alt={t(`locations.${id}.photoAlt`)} widths={[400, 800]} sizes="(max-width: 767px) 90vw, 560px" />
+  ) : (
+    <div class="ui-map c-map" role="img" aria-label={t('locations.mapSoon')}><Icon name="map" /><span>{t('locations.mapSoon')}</span></div>
+  )}
   <div class="ui-loc-body">
     <div class="ui-loc-name"><h3 class="ui-h3">{en(`locations.${id}.name`)}</h3><span class="ui-loc-alt" lang="zh-Hant">{zh(`locations.${id}.name`)}</span></div>
     <div class="ui-kv"><Icon name="pin" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.street`)}{open && <Fragment><br />{t('locations.alhambra.city')}</Fragment>}</p></div>
@@ -32,3 +38,6 @@ const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeUR
     </div>
   </div>
 </article>
+<style>
+  .c-loc-photo { display: block; width: 100%; height: auto; object-fit: cover; padding: 0; }
+</style>

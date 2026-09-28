@@ -1,15 +1,21 @@
 ---
+import type { ImageMetadata } from 'astro';
+import PhotoFrame from './PhotoFrame.astro';
 import type { Lang } from '../i18n/locales';
 import { makeT } from '../i18n/t';
 
-interface Props { lang: Lang }
+interface Props { lang: Lang; photo?: { image: ImageMetadata; alt: string } }
+const { photo } = Astro.props;
 const t = makeT(Astro.props.lang);
 ---
 <section class="ui-section c-paper" id="visit">
   <div class="ui-wrap ui-grid">
-    <div class="ui-span-5"><h2 class="ui-h2">{t('home.visitTitle')}</h2><p style="margin-top:var(--space-2)"><span class="ui-draft">{t('home.visitDraft')}</span></p></div>
+    <div class="ui-span-5 ui-stack-lg"><h2 class="ui-h2">{t('home.visitTitle')}</h2><p style="margin-top:var(--space-2)"><span class="ui-draft">{t('home.visitDraft')}</span></p>{photo && <div class="c-visit-photo"><PhotoFrame image={photo.image} alt={photo.alt} placeholder={photo.alt} /></div>}</div>
     <ol class="ui-lines ui-at-7">
       {[1, 2, 3].map((n) => <li><span class="ui-n">{n}</span><p class="ui-body">{t(`home.visit${n}`)}</p></li>)}
     </ol>
   </div>
 </section>
+<style>
+  .c-visit-photo :global(.ui-photo) { aspect-ratio: 4 / 3; }
+</style>

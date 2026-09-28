@@ -29,7 +29,8 @@
       "name": "Alhambra",
       "street": "1234 S. Garfield Ave., #105",
       "city": "Alhambra, CA 91801",
-      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm"
+      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm",
+      "photoAlt": "〔中文内容待提供〕"
     },
     "walnut": {
       "name": "Walnut",
@@ -116,10 +117,22 @@
     "bio4": "〔中文内容待提供〕",
     "staffTitle": "〔中文内容待提供〕",
     "staff": "〔中文内容待提供〕",
-    "teamAlt": "〔中文内容待提供〕"
+    "teamAlt": "〔中文内容待提供〕",
+    "gallery": {
+      "label": "〔中文内容待提供〕",
+      "frontDesk": "〔中文内容待提供〕",
+      "consult": "〔中文内容待提供〕",
+      "training": "〔中文内容待提供〕",
+      "doctors": "〔中文内容待提供〕",
+      "huddle": "〔中文内容待提供〕",
+      "car": "〔中文内容待提供〕",
+      "cake": "〔中文内容待提供〕",
+      "flowers": "〔中文内容待提供〕"
+    }
   },
   "ortho": {
-    "title": "〔中文内容待提供〕"
+    "title": "〔中文内容待提供〕",
+    "examAlt": "〔中文内容待提供〕"
   },
   "stories": {
     "eyebrow": "〔中文内容待提供〕",

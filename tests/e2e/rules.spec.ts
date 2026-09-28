@@ -26,9 +26,12 @@ for (const path of ALL) {
       await expect(page.locator('[data-cta-bottom] [data-cta="book"]').first()).toBeAttached();
     });
 
-    test('no logo image in header', async ({ page }) => {
+    test('header logo links home and names the practice', async ({ page }) => {
       await page.goto(path);
-      await expect(page.locator('header img, header svg.logo')).toHaveCount(0);
+      const logo = page.locator('header .ui-brand img');
+      await expect(logo).toHaveCount(1);
+      await expect(logo).toHaveAttribute('alt', /1234 Ortho-K Vision Care/);
+      await expect(page.locator('header .ui-brand')).toHaveAttribute('href', `/${path.split('/')[1]}/`);
     });
 
     test('WCAG AA (axe)', async ({ page }) => {

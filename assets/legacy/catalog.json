@@ -848,7 +848,7 @@
     "alt": "",
     "context": "a-orig-thumb-height=\"\" data-orig-thumb-width=\"\" data-vbid=\"el-0491\" data-bgimg=\"\"> HOME",
     "tag": "practice-logo",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -907,7 +907,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": "needs-review",
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false,
     "note": "office sign — shows the logo (no-logo rule)"
@@ -987,7 +987,7 @@
     "height": 1440,
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
-    "tag": "needs-review",
+    "tag": "practice-photo",
     "approved": false,
     "orphan": false,
     "note": "branded car — shows the logo (no-logo rule)"

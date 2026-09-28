@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import Button from './Button.astro';
 import Icon from './Icon.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import { pathFor, type Lang, type PageId } from '../i18n/locales';
 import { makeT } from '../i18n/t';
 import { bookHref, MESSAGE_HREF } from '../lib/cta';
+import { legacyImage } from '../lib/images';
 
 interface Props { lang: Lang; page: PageId }
 const { lang, page } = Astro.props;
@@ -15,7 +17,7 @@ const menuId = `ui-menu-${lang}`;
 <div class="ui-utility"><div class="ui-wrap ui-utility-in"><LanguageSwitcher lang={lang} page={page} /></div></div>
 <header class="ui-header">
   <div class="ui-wrap ui-header-in">
-    <a class="ui-brand" href={pathFor(lang, 'home')}>{t('site.name')}{lang !== 'en' && <span lang="zh-Hant" class="ui-footer-zh" style="display:block;font-size:14px">{t('site.nameZh')}</span>}</a>
+    <a class="ui-brand c-brand-logo" href={pathFor(lang, 'home')}><Image src={legacyImage('1234orthok-com-051.png')} alt={lang === 'en' ? t('site.name') : `${t('site.name')} ${t('site.nameZh')}`} widths={[180, 360, 540]} sizes="(max-width: 767px) 134px, 174px" loading="eager" /></a>
     <nav class="ui-nav" aria-label="Main">
       {NAV.map((p) => <a href={pathFor(lang, p)} aria-current={p === page ? 'page' : undefined}>{t(`nav.${p}`)}</a>)}
     </nav>
@@ -46,3 +48,9 @@ const menuId = `ui-menu-${lang}`;
     });
   });
 </script>
+<style>
+  /* Old-site PNG logo until the client supplies a vector file */
+  .c-brand-logo { display: block; line-height: 0; }
+  .c-brand-logo img { display: block; height: 52px; width: auto; }
+  @media (max-width: 767px) { .c-brand-logo img { height: 40px; } }
+</style>

@@ -9,7 +9,8 @@ truth is `concepts/<X>/project/` (`tokens.json`, `README.md`,
 Rules:
 - EN / 简体 / 繁體 as separate pages with the switcher always visible.
 - Chinese body >= 17px, line height >= 1.7.
-- No logo (plain-text name).
+- Header logo: the old-site PNG (`1234orthok-com-051.png`) until the
+  client supplies a vector file; the footer keeps the plain-text name.
 - Use only client-provided copy.
 - Never add statistics, success rates, patient counts, or
   "best/most effective" claims.

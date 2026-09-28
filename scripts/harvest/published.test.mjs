@@ -12,3 +12,12 @@ test('only practice-photo or approved legacy images are tracked in git', () => {
     .split('\n').filter((f) => /\.(png|jpe?g|gif|webp|pdf)$/i.test(f));
   assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
 });
+
+// Client-supplied photos: every tracked image must be listed as a staff or office photo.
+test('only listed staff or office photos are tracked in assets/practice', () => {
+  const list = JSON.parse(readFileSync('assets/practice/photos.json', 'utf8'));
+  const ok = new Set(list.filter((e) => ['staff', 'office'].includes(e.subject)).map((e) => e.file));
+  const tracked = execSync('git ls-files --cached --others --exclude-standard assets/practice', { encoding: 'utf8' })
+    .split('\n').filter((f) => /\.(png|jpe?g|gif|webp|heic)$/i.test(f));
+  assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
+});

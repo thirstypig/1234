@@ -29,7 +29,8 @@
       "name": "Alhambra",
       "street": "1234 S. Garfield Ave., #105",
       "city": "Alhambra, CA 91801",
-      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm"
+      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm",
+      "photoAlt": "The 1234 Ortho-K Vision Care sign on the handprint wall at the Alhambra clinic"
     },
     "walnut": {
       "name": "Walnut",
@@ -116,10 +117,22 @@
     "bio4": "He wants to continue to work with other doctors to expand the acceptance and success of Orthokeratology.",
     "staffTitle": "Our team",
     "staff": "Our friendly, dedicated and highly trained staff is always happy to serve and help our patients through every step of the process.",
-    "teamAlt": "The 1234 Ortho-K Vision Care team outside the clinic"
+    "teamAlt": "The 1234 Ortho-K Vision Care team outside the clinic",
+    "gallery": {
+      "label": "Photos from the Alhambra clinic",
+      "frontDesk": "Dr. Woo and two team members at the front desk",
+      "consult": "Dr. Woo going over a report with another doctor",
+      "training": "Dr. Woo training the team on an eye-scanning machine",
+      "doctors": "Dr. Woo with two other doctors in an exam room",
+      "huddle": "The team cheering together in a circle",
+      "car": "The clinic car with the 1234 Ortho-K logo",
+      "cake": "Six team members sharing cake at the front desk",
+      "flowers": "Three team members celebrating with flowers and a cake"
+    }
   },
   "ortho": {
-    "title": "Ortho-k for children, ages 7–18"
+    "title": "Ortho-k for children, ages 7–18",
+    "examAlt": "An exam room at the Alhambra clinic, with a handprint mural on the wall"
   },
   "stories": {
     "eyebrow": "Stories",

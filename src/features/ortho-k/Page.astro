@@ -6,6 +6,7 @@ import FirstVisit from '../../components/FirstVisit.astro';
 import Hero from '../../components/Hero.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import { makeT } from '../../i18n/t';
+import { legacyImage } from '../../lib/images';
 import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
@@ -22,7 +23,7 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder'
       </div>
     </section>
     <HowItWorks lang={lang} />
-    <FirstVisit lang={lang} />
+    <FirstVisit lang={lang} photo={{ image: legacyImage('1234orthok-com-043.jpg'), alt: t('ortho.examAlt') }} />
     <FaqAccordion title={t('faq.title')} items={faq} />
     <BookingBand lang={lang} />
   </main>
