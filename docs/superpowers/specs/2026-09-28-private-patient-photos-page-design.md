@@ -13,7 +13,7 @@ built with, the public site.
 
 Success looks like: staff open a link, type one password, see every
 held-back photo with a number, read a short plain-English explanation, and
-download a trilingual release form they can print and have families sign.
+download the release form (English, 繁體 or 简体) to print and have families sign.
 
 ## Constraints
 
@@ -36,7 +36,7 @@ browser ──► Cloudflare Worker "1234-patient-photos" (workers.dev)
               │  GET /            → password form (no content) or the page
               │  POST /login      → compare to secret, set cookie
               │  GET /img/<n>     → R2 object, only with valid cookie
-              │  GET /release.pdf → R2 object, only with valid cookie
+              │  GET /release-<lang>.pdf → R2 object, only with valid cookie
               ▼
            R2 bucket "1234-patient-photos" (private, no public URL)
 ```
@@ -48,7 +48,8 @@ browser ──► Cloudflare Worker "1234-patient-photos" (workers.dev)
 - **Password** — a two-word password stored with `wrangler secret put
   PAGE_PASSWORD`. Never in code, config, git, or this spec.
 - **Session** — on a correct password the Worker sets an `HttpOnly; Secure;
-  SameSite=Strict` cookie holding an HMAC-signed expiry (12 hours), signed
+  SameSite=Lax` cookie (Lax, not Strict, so a logged-in person who taps the
+  link in an email isn't asked again) holding an HMAC-signed expiry (12 hours), signed
   with a second secret `SESSION_KEY`. No server-side session store needed.
 - **Brute-force limit** — failed logins counted per IP in a small KV
   namespace; after 10 failures in 15 minutes, `/login` returns 429.
@@ -75,11 +76,16 @@ browser ──► Cloudflare Worker "1234-patient-photos" (workers.dev)
 2. **The photos** — a numbered grid (P-01 … P-23): the 9 client photos from
    2026-09-28 and the 14 old-site photos tagged `patient-photo`. Numbers are
    what staff write on the form.
-3. **Download the release form** — button for `release.pdf`.
+3. **Download the release form** — one button per language:
+   `release-en.pdf`, `release-zh-hant.pdf`, `release-zh-hans.pdf`.
 
 ## Release form (PDF)
 
-One printable form, English + 繁體 + 简体, Letter size, 2 pages max:
+Three printable versions of the same form — English, 繁體, 简体 — one PDF
+each, Letter size. California Civil Code §56.11 (CMIA) requires a medical
+authorization to be handwritten or set in type no smaller than 14 point, so
+every PDF uses 14 pt or larger throughout; a family signs the version in
+their language. (Attorney to confirm the §56.11 reading.)
 
 - Practice name and address (1234 Ortho-K Vision Care, 1234 S. Garfield
   Ave. #105, Alhambra, CA 91801).
@@ -95,13 +101,14 @@ One printable form, English + 繁體 + 简体, Letter size, 2 pages max:
 - Footer: "Draft — have this reviewed by the practice's legal/HIPAA contact
   before use."
 
-Generated from an HTML template with Playwright's `page.pdf()` (already a dev
-dependency here), so the three languages render with system CJK fonts.
+Generated from one HTML template and a per-language text file with
+Playwright's `page.pdf()`, so the Chinese versions render with system CJK
+fonts. The build fails if any CSS font size is under 14 pt.
 
 ## Testing
 
 - Worker unit tests (vitest calling the fetch handler with fake R2/KV bindings, as in `workers/comments/`):
-  - No cookie → `/`, `/img/1`, `/release.pdf` return the login form or 401,
+  - No cookie → `/`, `/img/P-01`, `/release-en.pdf` return the login form or 401,
     never content.
   - Wrong password → 401; correct → 303 with cookie; expired or tampered
     cookie → rejected.
