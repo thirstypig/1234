@@ -12,7 +12,7 @@ import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
-const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder') }));
+const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1' : 'faq.placeholder') }));
 ---
 <BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')}>
   <main>

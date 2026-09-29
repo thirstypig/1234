@@ -290,8 +290,44 @@
         "text": "Irritation from something on the eye’s surface (corneal foreign bodies, ingrown eyelashes, conjunctival stones)"
       },
       {
+        "type": "h3",
+        "text": "How tears protect the eye"
+      },
+      {
         "type": "p",
-        "text": "Tears are made by the tear glands under the eyelids. They flow across the surface of the eye, and each blink pushes them into the tear ducts to drain. Problems on the eye’s surface (a foreign body on the cornea, ingrown eyelashes, conjunctival stones) are treated according to their cause: removing the foreign body, surgery to correct an outward-turning eyelid, medication for keratoconjunctivitis, and treatment of dry eye based on its cause. For blocked tear ducts, a narrow tear-duct opening can be widened slightly with minor surgery, and a narrowed tear canal or nasolacrimal duct is best treated by placing a silicone tube."
+        "text": "Tears are made by the tear glands under the eyelids. They flow across the surface of the eye, and each blink pushes them into the tear ducts to drain."
+      },
+      {
+        "type": "h3",
+        "text": "Treating eye-surface problems"
+      },
+      {
+        "type": "p",
+        "text": "Problems on the eye’s surface (a foreign body on the cornea, ingrown eyelashes, conjunctival stones) are treated according to their cause:"
+      },
+      {
+        "type": "li",
+        "text": "Removing the foreign body"
+      },
+      {
+        "type": "li",
+        "text": "Surgery to correct an outward-turning eyelid"
+      },
+      {
+        "type": "li",
+        "text": "Medication for keratoconjunctivitis"
+      },
+      {
+        "type": "li",
+        "text": "Treating dry eye based on its cause"
+      },
+      {
+        "type": "p",
+        "text": "For blocked tear ducts, a narrow tear-duct opening can be widened slightly with minor surgery, and a narrowed tear canal or nasolacrimal duct is best treated by placing a silicone tube."
+      },
+      {
+        "type": "h3",
+        "text": "What are eye stones?"
       },
       {
         "type": "p",
@@ -299,19 +335,83 @@
       },
       {
         "type": "p",
-        "text": "Eye stones, also called conjunctival stones, are a very common eye condition. They form mainly under the conjunctiva that lines the inside of the eyelids and look like tiny white or yellow dots, which is why they are called stones. They form when the conjunctiva is irritated or inflamed over a long time: surface cells multiply, the conjunctival glands change, and shed cell debris mixes with mucus to form clear clumps. That is why eye stones are made of phospholipids and elastin, unlike most stones in the body, which contain a lot of calcium."
+        "text": "Eye stones, also called conjunctival stones, are a very common eye condition. They form mainly under the conjunctiva that lines the inside of the eyelids and look like tiny white or yellow dots, which is why they are called stones."
       },
       {
         "type": "p",
-        "text": "Doctors note that people who work outdoors, commute by scooter, live in windy or dusty areas, wear contact lenses often, or lose eyelashes easily are more likely to develop eye stones, because wind, dust or particles often irritate their eyes. People with allergic conjunctivitis, trachoma or dry eye, people who use eye drops for a long time, and older adults are also at higher risk."
+        "text": "They form when the conjunctiva is irritated or inflamed over a long time: surface cells multiply, the conjunctival glands change, and shed cell debris mixes with mucus to form clear clumps. That is why eye stones are made of phospholipids and elastin, unlike most stones in the body, which contain a lot of calcium."
+      },
+      {
+        "type": "h3",
+        "text": "Who is more likely to get eye stones?"
       },
       {
         "type": "p",
-        "text": "In general, stones that stay under the conjunctiva without breaking through the surface can’t be felt and don’t necessarily need treatment. But when a stone grows and rubs against the cornea, it starts to cause symptoms: stinging, a feeling that something is in the eye, and irritation that tears can’t wash away. In severe cases it can scratch the cornea. At that point, see an eye doctor to have the stone removed with a fine needle, then use the prescribed medication and return for follow-up visits. Before removing a stone, the doctor also considers its size and whether it is suitable to remove, to avoid a large wound that could scar and leave the surface of the conjunctiva uneven."
+        "text": "Doctors note that people whose eyes are often irritated by wind, dust or particles are more likely to develop eye stones, including:"
+      },
+      {
+        "type": "li",
+        "text": "People who work outdoors or commute by scooter"
+      },
+      {
+        "type": "li",
+        "text": "People who live in windy or dusty areas"
+      },
+      {
+        "type": "li",
+        "text": "People who wear contact lenses often or lose eyelashes easily"
       },
       {
         "type": "p",
-        "text": "Eye stones are not a serious condition, but if they are ignored, long-term inflammation can create a vicious cycle, so be sure to see a doctor when symptoms appear. You can also help prevent eye stones in daily life by protecting your eyes from frequent irritation: clean and care for contact lenses properly, wear a full-face helmet with a clear visor when riding a scooter, and treat eye conditions promptly. All of these help lower the chance of eye stones forming."
+        "text": "These groups are also at higher risk:"
+      },
+      {
+        "type": "li",
+        "text": "People with allergic conjunctivitis, trachoma or dry eye"
+      },
+      {
+        "type": "li",
+        "text": "People who use eye drops for a long time"
+      },
+      {
+        "type": "li",
+        "text": "Older adults"
+      },
+      {
+        "type": "h3",
+        "text": "Symptoms and treatment"
+      },
+      {
+        "type": "p",
+        "text": "In general, stones that stay under the conjunctiva without breaking through the surface can’t be felt and don’t necessarily need treatment."
+      },
+      {
+        "type": "p",
+        "text": "But when a stone grows and rubs against the cornea, it starts to cause symptoms: stinging, a feeling that something is in the eye, and irritation that tears can’t wash away. In severe cases it can scratch the cornea. At that point, see an eye doctor to have the stone removed with a fine needle, then use the prescribed medication and return for follow-up visits."
+      },
+      {
+        "type": "p",
+        "text": "Before removing a stone, the doctor considers its size and whether it is suitable to remove, to avoid a large wound that could scar and leave the surface of the conjunctiva uneven."
+      },
+      {
+        "type": "h3",
+        "text": "Prevention"
+      },
+      {
+        "type": "p",
+        "text": "Eye stones are not a serious condition, but if they are ignored, long-term inflammation can create a vicious cycle, so be sure to see a doctor when symptoms appear. Protecting your eyes from frequent irritation in daily life also helps prevent them:"
+      },
+      {
+        "type": "li",
+        "text": "Clean and care for contact lenses properly"
+      },
+      {
+        "type": "li",
+        "text": "Wear a full-face helmet with a clear visor when riding a scooter"
+      },
+      {
+        "type": "li",
+        "text": "Treat eye conditions promptly"
       }
     ],
     "zh-hans": [
@@ -320,8 +420,44 @@
         "text": "眼睛表面异物的刺激（角膜异物、倒睫毛、结膜结石等）"
       },
       {
+        "type": "h3",
+        "text": "泪水如何保护眼睛"
+      },
+      {
         "type": "p",
-        "text": "泪水由眼皮下的泪腺分泌，流经眼球表面，眨眼时再由眼皮挤压进入泪道排出。眼表异物（角膜异物、倒睫毛、结膜结石）要根据发生原因来治疗：移除异物、眼睑外翻矫正手术、以药物治疗角结膜炎，干眼症则依病因治疗。泪道阻塞方面：泪小点狭窄可以手术将开口稍微扩大；泪小管或鼻泪管狭窄，则宜采用硅胶管置入术治疗。"
+        "text": "泪水由眼皮下的泪腺分泌，流经眼球表面，眨眼时再由眼皮挤压进入泪道排出。"
+      },
+      {
+        "type": "h3",
+        "text": "眼表问题的治疗"
+      },
+      {
+        "type": "p",
+        "text": "眼表异物（角膜异物、倒睫毛、结膜结石）要根据发生原因来治疗："
+      },
+      {
+        "type": "li",
+        "text": "移除异物"
+      },
+      {
+        "type": "li",
+        "text": "以手术矫正眼睑外翻"
+      },
+      {
+        "type": "li",
+        "text": "以药物治疗角结膜炎"
+      },
+      {
+        "type": "li",
+        "text": "干眼症则依病因治疗"
+      },
+      {
+        "type": "p",
+        "text": "泪道阻塞方面：泪小点狭窄可以手术将开口稍微扩大；泪小管或鼻泪管狭窄，则宜采用硅胶管置入术治疗。"
+      },
+      {
+        "type": "h3",
+        "text": "什么是眼结石？"
       },
       {
         "type": "p",
@@ -329,19 +465,83 @@
       },
       {
         "type": "p",
-        "text": "眼结石也称为结膜结石，因为主要分布在眼睑结膜底下，是相当常见的眼科疾病。所谓的结石，外观是一颗颗细小、呈白色或黄色的圆点，因为看起来像石头而得名。结石形成的原因，是结膜受到慢性刺激或慢性发炎，导致上皮细胞增生与结膜腺体改变，脱落的细胞碎片与黏液性分泌物混合，形成透明状的结膜凝块。因此，眼结石的成分是磷脂质（phospholipid）和弹性蛋白（elastin），与一般人体结石含有大量钙质不同。"
+        "text": "眼结石也称为结膜结石，主要分布在眼睑结膜底下，是相当常见的眼科疾病。它的外观是一颗颗细小、呈白色或黄色的圆点，因为看起来像石头而得名。"
       },
       {
         "type": "p",
-        "text": "医生表示，在户外工作、骑电动车通勤、住在风沙多的地方、常戴隐形眼镜或容易掉睫毛的人，由于眼睛经常受到风沙或异物刺激，很容易产生眼结石；另外，过敏性结膜炎、砂眼、干眼症患者、长期点眼药水的人以及年长者，也都是眼结石的高危险群。"
+        "text": "结石形成的原因，是结膜受到慢性刺激或慢性发炎，导致上皮细胞增生与结膜腺体改变，脱落的细胞碎片与黏液性分泌物混合，形成透明状的结膜凝块。因此，眼结石的成分是磷脂质（phospholipid）和弹性蛋白（elastin），与一般人体结石含有大量钙质不同。"
+      },
+      {
+        "type": "h3",
+        "text": "哪些人容易长眼结石？"
       },
       {
         "type": "p",
-        "text": "一般而言，结石藏在结膜下、没有突出结膜表面时，并不会有感觉，也不一定需要找医生处理。但是当结石变大、摩擦到角膜时，便会开始出现症状，例如眼睛刺痛、有异物感，而且无法随泪水排出，严重时甚至会造成角膜破皮。这时就需要请眼科医生用针头将结石挑除，并遵照医生指示用药与回诊。另外，挑除结石时还要注意结石的大小、是否适合挑除，避免伤口过大而结疤，造成结膜表面不平整。"
+        "text": "医生表示，眼睛经常受到风沙或异物刺激的人，很容易产生眼结石，例如："
+      },
+      {
+        "type": "li",
+        "text": "在户外工作或骑电动车通勤的人"
+      },
+      {
+        "type": "li",
+        "text": "住在风沙多的地方的人"
+      },
+      {
+        "type": "li",
+        "text": "常戴隐形眼镜或容易掉睫毛的人"
       },
       {
         "type": "p",
-        "text": "医生提醒，眼结石并不是严重的疾病，但若置之不理，可能因长期发炎而形成恶性循环，因此出现症状时一定要记得就医。眼结石的预防也可以从日常生活做起：保护好眼睛，避免眼睛经常受到刺激，就能减少结石产生。例如正确清洁与保养隐形眼镜、骑电动车时选择全罩式透明面罩的头盔、积极治疗眼疾等，都有助于降低眼结石产生的概率。"
+        "text": "另外，以下族群也是眼结石的高危险群："
+      },
+      {
+        "type": "li",
+        "text": "过敏性结膜炎、砂眼或干眼症患者"
+      },
+      {
+        "type": "li",
+        "text": "长期点眼药水的人"
+      },
+      {
+        "type": "li",
+        "text": "年长者"
+      },
+      {
+        "type": "h3",
+        "text": "症状与治疗"
+      },
+      {
+        "type": "p",
+        "text": "一般而言，结石藏在结膜下、没有突出结膜表面时，并不会有感觉，也不一定需要找医生处理。"
+      },
+      {
+        "type": "p",
+        "text": "但是当结石变大、摩擦到角膜时，便会开始出现症状，例如眼睛刺痛、有异物感，而且无法随泪水排出，严重时甚至会造成角膜破皮。这时就需要请眼科医生用针头将结石挑除，并遵照医生指示用药与回诊。"
+      },
+      {
+        "type": "p",
+        "text": "挑除结石时，医生也会考量结石的大小、是否适合挑除，避免伤口过大而结疤，造成结膜表面不平整。"
+      },
+      {
+        "type": "h3",
+        "text": "预防"
+      },
+      {
+        "type": "p",
+        "text": "医生提醒，眼结石并不是严重的疾病，但若置之不理，可能因长期发炎而形成恶性循环，因此出现症状时一定要记得就医。日常生活中保护好眼睛、避免眼睛经常受到刺激，就能减少结石产生，例如："
+      },
+      {
+        "type": "li",
+        "text": "正确清洁与保养隐形眼镜"
+      },
+      {
+        "type": "li",
+        "text": "骑电动车时选择全罩式透明面罩的头盔"
+      },
+      {
+        "type": "li",
+        "text": "积极治疗眼疾"
       }
     ],
     "zh-hant": [
@@ -350,8 +550,44 @@
         "text": "眼睛表面異物的刺激（角膜異物、倒睫毛、結膜結石等）"
       },
       {
+        "type": "h3",
+        "text": "淚水如何保護眼睛"
+      },
+      {
         "type": "p",
-        "text": "淚水由眼皮下的淚腺分泌，流經眼球表面，眨眼時再由眼皮擠壓進入淚道排出。眼表異物（角膜異物、倒睫毛、結膜結石）要根據發生原因來治療：移除異物、眼瞼外翻矯正手術、以藥物治療角結膜炎，乾眼症則依病因治療。淚道阻塞方面：淚小點狹窄可以手術將開口稍微擴大；淚小管或鼻淚管狹窄，則宜採用矽管置放術治療。"
+        "text": "淚水由眼皮下的淚腺分泌，流經眼球表面，眨眼時再由眼皮擠壓進入淚道排出。"
+      },
+      {
+        "type": "h3",
+        "text": "眼表問題的治療"
+      },
+      {
+        "type": "p",
+        "text": "眼表異物（角膜異物、倒睫毛、結膜結石）要根據發生原因來治療："
+      },
+      {
+        "type": "li",
+        "text": "移除異物"
+      },
+      {
+        "type": "li",
+        "text": "以手術矯正眼瞼外翻"
+      },
+      {
+        "type": "li",
+        "text": "以藥物治療角結膜炎"
+      },
+      {
+        "type": "li",
+        "text": "乾眼症則依病因治療"
+      },
+      {
+        "type": "p",
+        "text": "淚道阻塞方面：淚小點狹窄可以手術將開口稍微擴大；淚小管或鼻淚管狹窄，則宜採用矽管置放術治療。"
+      },
+      {
+        "type": "h3",
+        "text": "什麼是眼結石？"
       },
       {
         "type": "p",
@@ -359,19 +595,83 @@
       },
       {
         "type": "p",
-        "text": "眼結石也稱為結膜結石，因為主要分布在眼瞼結膜底下，是相當常見的眼科疾病。所謂的結石，外觀是一顆顆細小、呈白色或黃色的圓點，因為看起來像石頭而得名。結石形成的原因，是結膜受到慢性刺激或慢性發炎，導致上皮細胞增生與結膜腺體改變，脫落的細胞碎片與黏液性分泌物混合，形成透明狀的結膜凝塊。因此，眼結石的成分是磷脂質（phospholipid）和彈性蛋白（elastin），與一般人體結石含有大量鈣質不同。"
+        "text": "眼結石也稱為結膜結石，主要分布在眼瞼結膜底下，是相當常見的眼科疾病。它的外觀是一顆顆細小、呈白色或黃色的圓點，因為看起來像石頭而得名。"
       },
       {
         "type": "p",
-        "text": "醫師表示，在戶外工作、騎機車通勤、住在風沙多的地方、常戴隱形眼鏡或容易掉睫毛的人，由於眼睛經常受到風沙或異物刺激，很容易產生眼結石；另外，過敏性結膜炎、砂眼、乾眼症患者、長期點眼藥水的人以及年長者，也都是眼結石的高危險群。"
+        "text": "結石形成的原因，是結膜受到慢性刺激或慢性發炎，導致上皮細胞增生與結膜腺體改變，脫落的細胞碎片與黏液性分泌物混合，形成透明狀的結膜凝塊。因此，眼結石的成分是磷脂質（phospholipid）和彈性蛋白（elastin），與一般人體結石含有大量鈣質不同。"
+      },
+      {
+        "type": "h3",
+        "text": "哪些人容易長眼結石？"
       },
       {
         "type": "p",
-        "text": "一般而言，結石藏在結膜下、沒有突出結膜表面時，並不會有感覺，也不一定需要找醫師處理。但是當結石變大、摩擦到角膜時，便會開始出現症狀，例如眼睛刺痛、有異物感，而且無法隨淚水排出，嚴重時甚至會造成角膜破皮。這時就需要請眼科醫師用針頭將結石挑除，並遵照醫師指示用藥與回診。另外，挑除結石時還要注意結石的大小、是否適合挑除，避免傷口過大而結疤，造成結膜表面不平整。"
+        "text": "醫師表示，眼睛經常受到風沙或異物刺激的人，很容易產生眼結石，例如："
+      },
+      {
+        "type": "li",
+        "text": "在戶外工作或騎機車通勤的人"
+      },
+      {
+        "type": "li",
+        "text": "住在風沙多的地方的人"
+      },
+      {
+        "type": "li",
+        "text": "常戴隱形眼鏡或容易掉睫毛的人"
       },
       {
         "type": "p",
-        "text": "醫師提醒，眼結石並不是嚴重的疾病，但若置之不理，可能因長期發炎而形成惡性循環，因此出現症狀時一定要記得就醫。眼結石的預防也可以從日常生活做起：保護好眼睛，避免眼睛經常受到刺激，就能減少結石產生。例如正確清潔與保養隱形眼鏡、騎機車時選擇全罩式透明面罩的安全帽、積極治療眼疾等，都有助於降低眼結石產生的機率。"
+        "text": "另外，以下族群也是眼結石的高危險群："
+      },
+      {
+        "type": "li",
+        "text": "過敏性結膜炎、砂眼或乾眼症患者"
+      },
+      {
+        "type": "li",
+        "text": "長期點眼藥水的人"
+      },
+      {
+        "type": "li",
+        "text": "年長者"
+      },
+      {
+        "type": "h3",
+        "text": "症狀與治療"
+      },
+      {
+        "type": "p",
+        "text": "一般而言，結石藏在結膜下、沒有突出結膜表面時，並不會有感覺，也不一定需要找醫師處理。"
+      },
+      {
+        "type": "p",
+        "text": "但是當結石變大、摩擦到角膜時，便會開始出現症狀，例如眼睛刺痛、有異物感，而且無法隨淚水排出，嚴重時甚至會造成角膜破皮。這時就需要請眼科醫師用針頭將結石挑除，並遵照醫師指示用藥與回診。"
+      },
+      {
+        "type": "p",
+        "text": "挑除結石時，醫師也會考量結石的大小、是否適合挑除，避免傷口過大而結疤，造成結膜表面不平整。"
+      },
+      {
+        "type": "h3",
+        "text": "預防"
+      },
+      {
+        "type": "p",
+        "text": "醫師提醒，眼結石並不是嚴重的疾病，但若置之不理，可能因長期發炎而形成惡性循環，因此出現症狀時一定要記得就醫。日常生活中保護好眼睛、避免眼睛經常受到刺激，就能減少結石產生，例如："
+      },
+      {
+        "type": "li",
+        "text": "正確清潔與保養隱形眼鏡"
+      },
+      {
+        "type": "li",
+        "text": "騎機車時選擇全罩式透明面罩的安全帽"
+      },
+      {
+        "type": "li",
+        "text": "積極治療眼疾"
       }
     ]
   }

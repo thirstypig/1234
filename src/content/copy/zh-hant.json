@@ -4,18 +4,18 @@
     "nameZh": "1234兒童視力矯正中心"
   },
   "nav": {
-    "home": "Home",
+    "home": "首頁",
     "about": "認識胡醫師",
     "ortho-k": "如何運作",
-    "testimonials": "Stories",
+    "testimonials": "心得分享",
     "contact": "聯絡我們",
     "menu": "選單",
     "language": "語言",
-    "community": "〔中文內容待提供〕"
+    "community": "社區活動"
   },
   "cta": {
     "book": "預約諮詢",
-    "message": "傳訊息給我們"
+    "message": "致電預約"
   },
   "footer": {
     "contact": "聯絡我們",
@@ -23,180 +23,185 @@
     "privacy": "隱私權政策",
     "privacyNotice": "病患隱私權通知",
     "accessibility": "無障礙聲明",
-    "terms": "使用條款"
+    "terms": "使用條款",
+    "nondiscrimination": "反歧視聲明"
   },
   "locations": {
     "alhambra": {
       "name": "阿罕布拉診所",
       "street": "1234 S. Garfield Ave., #105",
       "city": "Alhambra, CA 91801",
-      "hours": "週二及週五 中午12點至下午6點，週六 中午12點至下午4點",
-      "photoAlt": "〔中文內容待提供〕"
+      "hours": "週二、週五：中午 12 點至下午 6 點；週六：中午 12 點至下午 4 點",
+      "photoAlt": "阿罕布拉診所手印牆上的 1234 Ortho-K Vision Care 招牌"
     },
     "walnut": {
       "name": "核桃市診所",
       "street": "地址即將公佈",
       "hours": "門診時間即將公佈"
     },
-    "title": "〔中文內容待提供〕",
-    "contactLead": "〔中文內容待提供〕",
-    "call": "打電話",
+    "title": "兩間診所都可以預約",
+    "contactLead": "線上預約或來電，選您方便的方式即可",
+    "call": "撥打電話",
     "bookOnline": "線上預約",
     "map": "地圖",
-    "mapSoon": "地圖即將公佈",
+    "mapSoon": "地圖即將提供",
     "bookHere": "在此預約",
     "directions": "路線導航",
-    "openingSoon": "即將開放"
+    "openingSoon": "即將開業"
   },
   "meta": {
     "home": "1234兒童視力矯正中心",
     "about": "認識胡醫師 · 1234兒童視力矯正中心",
-    "ortho-k": "如何運作 · 1234兒童視力矯正中心",
+    "ortho-k": "角膜塑型如何運作 · 1234兒童視力矯正中心",
     "contact": "聯絡我們 · 1234兒童視力矯正中心",
-    "testimonials": "Stories · 1234兒童視力矯正中心",
-    "community": "〔中文內容待提供〕",
-    "eye-exams": "兒童視力檢查 · 1234 Ortho-K Vision Care",
-    "eye-surface": "眼表治療 · 1234 Ortho-K Vision Care"
+    "testimonials": "心得分享 · 1234兒童視力矯正中心",
+    "community": "社區活動 · 1234兒童視力矯正中心",
+    "eye-exams": "兒童視力檢查 · 1234兒童視力矯正中心",
+    "eye-surface": "眼表治療 · 1234兒童視力矯正中心"
   },
   "band": {
-    "sceneLabel": "〔中文內容待提供〕",
-    "body": "〔中文內容待提供〕"
+    "sceneLabel": "插圖：孩子不戴眼鏡去上學。",
+    "body": "歡迎線上預約，或直接打電話給我們。"
   },
   "scenes": {
-    "night": "〔中文內容待提供〕",
+    "night": "插圖：孩子正在睡覺，鏡片盒放在床頭櫃上。",
     "nightCap": "晚上",
-    "morning": "〔中文內容待提供〕",
+    "morning": "插圖：早上孩子醒來，看得很清楚。",
     "morningCap": "早上"
   },
   "home": {
-    "eyebrow": "〔中文內容待提供〕",
-    "title": "〔中文內容待提供〕",
-    "mark": "〔中文內容待提供〕",
-    "lead": "〔中文內容待提供〕",
-    "trust": "〔中文內容待提供〕",
-    "introTitle": "〔中文內容待提供〕",
-    "introLead": "〔中文內容待提供〕",
-    "visitTitle": "〔中文內容待提供〕",
-    "visitDraft": "〔中文內容待提供〕",
-    "visit1": "〔中文內容待提供〕",
-    "visit2": "〔中文內容待提供〕",
-    "visit3": "〔中文內容待提供〕"
+    "eyebrow": "兒童角膜塑型 · 7–18 歲",
+    "title": "整天都看得清楚。",
+    "mark": "上學不用戴眼鏡。",
+    "lead": "孩子睡覺時戴上特製的鏡片，早上起床取下後，就能看得清楚。在孩子成長的過程中，角膜塑型也可能有助於減緩近視加深。",
+    "trust": "胡醫師（Dr. Paul T. Woo, OD）",
+    "introTitle": "孩子的近視度數每年都在增加嗎？",
+    "introLead": "近視常在求學階段越來越深。配度數更高的眼鏡能解決看不清楚的問題，卻無法減緩度數的變化。",
+    "visitTitle": "第一次看診會做什麼",
+    "visitDraft": "暫定文字",
+    "visit1": "我們會先和您聊聊孩子的眼睛狀況和日常作息。",
+    "visit2": "孩子會接受完整的眼睛檢查，並拍攝角膜地形圖（眼睛前表面的立體圖）。",
+    "visit3": "胡醫師會說明檢查結果，並回答您的問題。"
   },
   "how": {
-    "title": "〔中文內容待提供〕",
-    "step1": "〔中文內容待提供〕",
-    "step2": "〔中文內容待提供〕",
-    "step3": "〔中文內容待提供〕"
+    "title": "角膜塑型如何運作",
+    "step1": "完整的眼睛檢查與角膜地形圖",
+    "step2": "為孩子量身訂做鏡片",
+    "step3": "晚上配戴，白天整天看得清楚。"
   },
   "doctor": {
-    "photoAlt": "〔中文內容待提供〕",
-    "eyebrow": "〔中文內容待提供〕",
-    "name": "Dr. Paul T. Woo, OD",
-    "years": "〔中文內容待提供〕",
-    "languages": "〔中文內容待提供〕",
-    "languagesLabel": "〔中文內容待提供〕",
+    "photoAlt": "身穿白袍的胡醫師（Dr. Paul T. Woo, OD）",
+    "eyebrow": "認識醫師",
+    "name": "胡醫師（Dr. Paul T. Woo, OD）",
+    "years": "擁有 30 年角膜塑型經驗。",
+    "languages": "胡醫師能以英語、華語、粵語和台語溝通。",
+    "languagesLabel": "使用語言",
     "lang": {
       "english": "英語",
-      "mandarin": "普通話",
+      "mandarin": "華語",
       "cantonese": "粵語",
       "taiwanese": "台語"
     }
   },
   "faq": {
-    "title": "〔中文內容待提供〕",
-    "q1": "〔中文內容待提供〕",
-    "q2": "〔中文內容待提供〕",
-    "q3": "〔中文內容待提供〕",
-    "q4": "〔中文內容待提供〕",
-    "placeholder": "〔中文內容待提供〕"
+    "title": "家長常見問題",
+    "q1": "角膜塑型對孩子安全嗎？",
+    "q2": "孩子幾歲可以開始配戴？",
+    "q3": "孩子自己戴鏡片會很難嗎？",
+    "q4": "費用是多少？",
+    "placeholder": "暫定答案。胡醫師的團隊會用淺顯易懂的文字，為家長撰寫這一段。",
+    "a1": "只要由專業醫師驗配鏡片，而且家人完全依照指示照顧鏡片，角膜塑型對孩子來說可以是安全的選擇。和所有戴著過夜的隱形眼鏡一樣，角膜塑型也有少許眼睛感染的風險，而感染可能很嚴重。您可以把這個風險降到很低：碰觸鏡片前先洗手；只用我們提供的保養液清潔和存放鏡片，絕對不要用自來水；按時更換鏡片盒和鏡片；並且每次回診都要到，讓胡醫師檢查孩子的眼睛。如果孩子出現眼睛疼痛、發紅、怕光、有分泌物，或視力模糊一直沒有改善，請立刻取下鏡片，並馬上撥打 (626) 282-5388 與我們聯絡。"
   },
   "about": {
-    "eyebrow": "〔中文內容待提供〕",
-    "title": "Dr. Paul T. Woo, OD",
-    "lead": "〔中文內容待提供〕",
-    "bioTitle": "〔中文內容待提供〕",
-    "bio1": "〔中文內容待提供〕",
-    "bio2": "〔中文內容待提供〕",
-    "bio3": "〔中文內容待提供〕",
-    "bio4": "〔中文內容待提供〕",
-    "staffTitle": "〔中文內容待提供〕",
-    "staff": "〔中文內容待提供〕",
-    "teamAlt": "〔中文內容待提供〕",
+    "eyebrow": "認識醫師",
+    "title": "胡醫師（Dr. Paul T. Woo, OD）",
+    "lead": "胡醫師是 1234兒童視力矯正中心的創辦人暨臨床主任。",
+    "bioTitle": "關於胡醫師",
+    "bio1": "胡醫師畢業於加州大學爾灣分校，取得學士學位，之後在南加州視光學院（Southern California College of Optometry）取得視光學博士（Doctor of Optometry）學位。",
+    "bio2": "角膜塑型從日戴型發展到夜戴型，胡醫師也隨之與時俱進。現在，胡醫師為想控制近視加深的孩子提供治療，孩子只要在睡覺時配戴鏡片，白天就能看得清楚。",
+    "bio3": "胡醫師曾任聖蓋博谷視光協會（San Gabriel Valley Optometric Association）會長。",
+    "bio4": "胡醫師希望繼續與其他醫師合作，讓角膜塑型更廣為接受，也更加成功。",
+    "staffTitle": "我們的團隊",
+    "staff": "我們的團隊親切、用心，而且訓練有素，總是樂意為病患服務，在每一個步驟給予協助。",
+    "teamAlt": "1234兒童視力矯正中心團隊在診所外合影",
     "gallery": {
-      "label": "〔中文內容待提供〕",
-      "frontDesk": "〔中文內容待提供〕",
-      "consult": "〔中文內容待提供〕",
-      "training": "〔中文內容待提供〕",
-      "doctors": "〔中文內容待提供〕",
-      "huddle": "〔中文內容待提供〕",
-      "car": "〔中文內容待提供〕",
-      "cake": "〔中文內容待提供〕",
-      "flowers": "〔中文內容待提供〕",
-      "birthday": "〔中文內容待提供〕",
-      "teamBanner": "〔中文內容待提供〕"
+      "label": "阿罕布拉診所照片",
+      "frontDesk": "胡醫師和兩位團隊成員在櫃檯",
+      "consult": "胡醫師和另一位醫師一起查看報告",
+      "training": "胡醫師教團隊操作眼睛掃描儀器",
+      "doctors": "胡醫師和另外兩位醫師在診間",
+      "huddle": "團隊成員圍成一圈一起歡呼",
+      "car": "印有 1234 Ortho-K 標誌的診所用車",
+      "cake": "六位團隊成員在櫃檯一起分享蛋糕",
+      "flowers": "三位團隊成員拿著花束和蛋糕一起慶祝",
+      "birthday": "一位團隊成員在櫃檯慶祝生日",
+      "teamBanner": "團隊在櫃檯合影，上方是 1234 Ortho-K 招牌"
     }
   },
   "ortho": {
-    "title": "〔中文內容待提供〕",
-    "examAlt": "〔中文內容待提供〕",
+    "title": "兒童角膜塑型（7–18 歲）",
+    "examAlt": "阿罕布拉診所的診間，牆上有手印壁畫",
     "other": {
       "title": "其他眼睛照護",
-      "examsDesc": "孩子學校視力檢查沒通過時，檢查會做些什麼。",
-      "surfaceDesc": "角膜異物、倒睫毛與結膜結石。"
+      "examsDesc": "孩子沒通過學校視力篩檢時，接下來會怎麼進行。",
+      "surfaceDesc": "眼睛異物、倒睫與結膜結石。"
     }
   },
   "stories": {
-    "eyebrow": "〔中文內容待提供〕",
-    "title": "〔中文內容待提供〕",
-    "lead": "〔中文內容待提供〕",
-    "listTitle": "〔中文內容待提供〕"
+    "eyebrow": "心得分享",
+    "title": "聽聽家長怎麼說",
+    "lead": "1234兒童視力矯正中心病患與家長的評語。",
+    "listTitle": "評語",
+    "disclaimer": "以下評語是病患與家長用自己的話分享的就診經驗。每個孩子的眼睛狀況不同，效果也因人而異。"
   },
   "contact": {
-    "eyebrow": "〔中文內容待提供〕",
-    "title": "〔中文內容待提供〕",
-    "lead": "〔中文內容待提供〕",
-    "formTitle": "Request a consultation",
-    "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
+    "eyebrow": "聯絡我們",
+    "title": "預約諮詢",
+    "lead": "送出預約申請後，診所會打電話和您約定時間。您也可以直接來電。",
+    "formTitle": "申請預約諮詢",
+    "previewNotice": "目前申請還不會傳送到診所。請撥打 (800) 991-8881 預約。",
     "form": {
       "parentName": "家長姓名",
       "phone": "電話",
-      "phoneHint": "We'll call to confirm.",
-      "location": "Preferred location",
-      "alhambra": "Alhambra",
-      "walnut": "Walnut (opening soon)",
-      "preferredTime": "Preferred day or time (optional)",
-      "preferredTimeHint": "For example: Tuesday afternoon",
-      "submit": "Send request",
-      "sending": "Sending…",
-      "success": "Thank you. The office will call you to confirm a time.",
-      "invalid": "Please check the highlighted fields.",
-      "ratelimited": "Too many requests from this device. Please call (800) 991-8881.",
-      "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
+      "phoneHint": "我們會打電話和您確認。",
+      "location": "希望就診的地點",
+      "alhambra": "阿罕布拉",
+      "walnut": "核桃市（即將開業）",
+      "preferredTime": "希望的日期或時段（選填）",
+      "preferredTimeHint": "例如：週二下午",
+      "submit": "送出申請",
+      "sending": "傳送中…",
+      "success": "謝謝您。診所會打電話和您確認時間。",
+      "invalid": "請檢查標示出來的欄位。",
+      "ratelimited": "這個裝置送出的申請次數過多。請撥打 (800) 991-8881。",
+      "network": "無法送出您的申請。請再試一次，或撥打 (800) 991-8881。"
     },
-    "previewLabel": "Preview"
+    "previewLabel": "預覽",
+    "callTitle": "致電預約",
+    "callLead": "預約諮詢最快的方式，就是直接打電話給我們。我們會為您找出全家都方便的時間。"
   },
   "community": {
-    "eyebrow": "〔中文內容待提供〕",
-    "title": "〔中文內容待提供〕",
-    "lead": "〔中文內容待提供〕",
-    "label": "〔中文內容待提供〕",
-    "tv": "〔中文內容待提供〕",
-    "signing": "〔中文內容待提供〕",
-    "expoTalk": "〔中文內容待提供〕",
-    "expoStage": "〔中文內容待提供〕",
-    "auditorium": "〔中文內容待提供〕",
-    "lionsAward": "〔中文內容待提供〕",
-    "colleagues": "〔中文內容待提供〕",
-    "screening": "〔中文內容待提供〕",
-    "lecture": "〔中文內容待提供〕",
-    "banner": "〔中文內容待提供〕",
-    "book": "〔中文內容待提供〕",
-    "training": "〔中文內容待提供〕",
-    "booth": "〔中文內容待提供〕",
-    "expoDuo": "〔中文內容待提供〕",
-    "consultant": "〔中文內容待提供〕",
-    "flyer": "〔中文內容待提供〕",
-    "dogs": "〔中文內容待提供〕"
+    "eyebrow": "社區活動",
+    "title": "走入社區",
+    "lead": "胡醫師與團隊參與講座、視力篩檢和各項活動的照片。",
+    "label": "社區活動照片",
+    "tv": "胡醫師在電視攝影棚接受訪問",
+    "signing": "美中青少年近視預防合作計畫的簽約儀式",
+    "expoTalk": "胡醫師在博覽會舞台上演講",
+    "expoStage": "胡醫師在博覽會上向參觀民眾講解",
+    "auditorium": "一位團隊成員和一位來賓在學校禮堂的活動上",
+    "lionsAward": "獅子會會員出席地區頒獎活動，一位學生手持證書",
+    "colleagues": "胡醫師和兩位同事在辦公室",
+    "screening": "團隊成員與獅子會志工在 KidSight 視力篩檢活動中",
+    "lecture": "團隊中的一位醫師為社區團體演講",
+    "banner": "診所舊網站上的橫幅圖片",
+    "book": "診所角膜塑型介紹書的封面",
+    "training": "團隊在訓練課程中學習操作新儀器",
+    "booth": "團隊在社區博覽會的攤位",
+    "expoDuo": "兩位團隊成員在博覽會現場",
+    "consultant": "一位視力顧問和團隊在診所內",
+    "flyer": "與獅子會一起進行的「I Love My Eyes」兒童眼睛篩檢活動傳單",
+    "dogs": "兩隻狗在草地上悠閒休息"
   },
   "oldPages": {
     "eye-exams": {

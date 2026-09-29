@@ -14,6 +14,16 @@ const f = (k: string) => t(`contact.form.${k}`);
 <BaseLayout lang={lang} page="contact" title={t('meta.contact')}>
   <main>
     <Hero lang={lang} short eyebrow={t('contact.eyebrow')} title={t('contact.title')} lead={t('contact.lead')} />
+    <section class="ui-section c-dawn" id="call">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('contact.callTitle')}</h2>
+        <p class="ui-lead">{t('contact.callLead')}</p>
+        <div class="ui-btn-row">
+          <a class="ui-btn ui-btn--primary" href="tel:+16262825388" data-call><Icon name="phone" /><span>(626) 282-5388</span></a>
+          <a class="ui-btn ui-btn--secondary" href="tel:+18009918881" data-call><Icon name="phone" /><span>(800) 991-8881</span></a>
+        </div>
+      </div>
+    </section>
     <section class="ui-section c-paper" id="book">
       <div class="ui-wrap ui-stack-lg">
         <h2 class="ui-h2">{t('contact.formTitle')}</h2>

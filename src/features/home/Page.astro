@@ -14,7 +14,7 @@ import { isApproved } from '../../lib/claims';
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
 const trust = isApproved('F-home-1') ? `${t('home.trust')} · ${t('doctor.years')}` : t('home.trust');
-const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t('faq.placeholder') }));
+const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1' : 'faq.placeholder') }));
 ---
 <BaseLayout lang={lang} page="home" title={t('meta.home')}>
   <main>
