@@ -11,7 +11,12 @@ Rules:
 - Chinese body >= 17px, line height >= 1.7.
 - Header logo: the old-site PNG (`1234orthok-com-051.png`) until the
   client supplies a vector file; the footer keeps the plain-text name.
-- Use only client-provided copy.
+- Use only client-provided copy. Exception (owner direction,
+  2026-09-28): Claude drafted the Chinese translations of all site copy,
+  the English and Simplified versions of the two eye-care pages, the
+  safety FAQ answer and the five required notices (`src/content/legal/`).
+  All are drafts for the practice (and its attorney, for the notices)
+  to approve; see `docs/copy-review.md`.
 - Never add statistics, success rates, patient counts, or
   "best/most effective" claims. Exceptions (owner decisions,
   2026-09-28), kept word for word from the old site, claims included:
