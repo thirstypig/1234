@@ -1,0 +1,41 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept E · Modern Practice</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%}
+  body{background:var(--background);color:var(--text-primary);font-family:var(--font-en-heading);overflow:hidden}
+  .cover{position:relative;width:960px;height:300px;overflow:hidden}
+  .art{position:absolute;top:0;left:480px;width:480px;height:300px}
+  .navy{fill:var(--primary)} .stone{fill:var(--secondary)} .brass{fill:var(--accent)} .pale{fill:var(--accent-light)}
+  .rule{stroke:var(--accent-light);stroke-width:1}
+  .words{position:absolute;left:48px;bottom:44px;max-width:440px}
+  .name{margin:0;font-size:52px;line-height:1;font-weight:500;letter-spacing:-.01em;color:var(--primary)}
+  .tag{margin:14px 0 0 2px;font-size:14px;line-height:20px;color:var(--text-secondary);font-family:var(--font-en-body)}
+</style>
+</head>
+<body>
+<div class="cover">
+<svg class="art" viewBox="0 0 480 300" aria-hidden="true">
+<!--
+  blocks      primary (midnight navy) 336×300 slab bleeding off top, right and bottom · secondary (stone) 144×200 · accent (brass) 48×2 section rule ×1 and a 96×48 pale-brass button — ~45% of the cover
+  arrangement one tall navy slab with a stone panel overlapping its left edge, like the appointment card over the hero photo
+  pattern     editorial hairlines: four 1px pale-brass rules on the navy slab at a space-6 (48px) baseline pitch — "borders, not shadows"
+  scales      sides in space-2 multiples; corners radius-sm 2 / radius-lg 4; rule = the 48 × 2 section rule
+-->
+<rect class="navy" x="144" y="-10" width="346" height="320" rx="0"/>
+<path class="rule" d="M240 96H464M240 144H464M240 192H464M240 240H464"/>
+<rect class="stone" x="48" y="64" width="160" height="192" rx="4"/>
+<rect class="brass" x="72" y="96" width="48" height="2"/>
+<rect class="pale" x="72" y="200" width="112" height="32" rx="2"/>
+</svg>
+<div class="words">
+<h1 class="name">Concept E ·<br>Modern Practice</h1>
+<p class="tag">The familiar practice website, done with restraint: navy, stone, a touch of brass.</p>
+</div>
+</div>
+</body>
+</html>

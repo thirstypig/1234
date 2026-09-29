@@ -1,0 +1,41 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept C · Picture-Book</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%}
+  body{background:var(--background);color:var(--text-primary);font-family:var(--font-en-heading);overflow:hidden}
+  .cover{position:relative;width:960px;height:300px;overflow:hidden}
+  .art{position:absolute;top:0;left:480px;width:480px;height:300px}
+  .night{fill:var(--primary)} .sky{fill:var(--secondary)} .peach{fill:var(--accent)} .butter{fill:var(--butter)} .cream{fill:var(--background)}
+  .words{position:absolute;left:48px;bottom:44px;max-width:440px}
+  .name{margin:0;font-size:60px;line-height:.98;font-weight:700;color:var(--primary)}
+  .tag{margin:14px 0 0 2px;font-size:14px;line-height:20px;color:var(--text-secondary)}
+</style>
+<link rel="stylesheet" href="../../tokens.local.css"></head>
+<body>
+<div class="cover">
+<svg class="art" viewBox="0 0 480 300" aria-hidden="true">
+<!--
+  blocks      primary (night blue) 256×300 slab bleeding off top, bottom and right · secondary (sky) 176×176 disc · accent (peach) half-round hill 288×96 · butter moon disc r40 — ~40% of the cover
+  arrangement one tall night slab with satellites: the sky disc rising behind it, a peach hill across the bottom, the moon on the slab
+  pattern     discs and half-rounds, from "large radii, soft shapes": a few small butter dots (stars) at a space-4 pitch on the night slab
+  scales      sides in space-2 multiples; radius-xl 48 on the slab's open corner; discs = half their side
+-->
+<rect class="night" x="224" y="-40" width="296" height="380" rx="48"/>
+<circle class="sky" cx="160" cy="150" r="88"/>
+<circle class="butter" cx="336" cy="96" r="40"/>
+<circle class="night" cx="356" cy="84" r="34"/>
+<path class="peach" d="M0 300c40-64 120-96 208-96s168 32 208 96z"/>
+<circle class="butter" cx="272" cy="176" r="4"/><circle class="butter" cx="432" cy="144" r="4"/><circle class="butter" cx="400" cy="208" r="3"/><circle class="butter" cx="304" cy="48" r="3"/><circle class="butter" cx="448" cy="64" r="4"/>
+</svg>
+<div class="words">
+<h1 class="name">Concept C ·<br>Picture-Book</h1>
+<p class="tag">Night, morning, school — a gentle story for worried parents.</p>
+</div>
+</div>
+</body>
+</html>
