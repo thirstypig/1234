@@ -10,7 +10,8 @@
     "testimonials": "Stories",
     "contact": "Contact",
     "menu": "Menu",
-    "language": "Language"
+    "language": "Language",
+    "community": "〔中文内容待提供〕"
   },
   "cta": {
     "book": "Book a consultation",
@@ -52,7 +53,8 @@
     "about": "Dr. Woo · 1234 Ortho-K Vision Care",
     "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
     "contact": "Contact · 1234 Ortho-K Vision Care",
-    "testimonials": "Stories · 1234 Ortho-K Vision Care"
+    "testimonials": "Stories · 1234 Ortho-K Vision Care",
+    "community": "〔中文内容待提供〕"
   },
   "band": {
     "sceneLabel": "〔中文内容待提供〕",
@@ -138,11 +140,7 @@
     "eyebrow": "〔中文内容待提供〕",
     "title": "〔中文内容待提供〕",
     "lead": "〔中文内容待提供〕",
-    "listTitle": "〔中文内容待提供〕",
-    "r1": "〔中文内容待提供〕",
-    "r2": "〔中文内容待提供〕",
-    "r3": "〔中文内容待提供〕",
-    "r4": "〔中文内容待提供〕"
+    "listTitle": "〔中文内容待提供〕"
   },
   "contact": {
     "eyebrow": "〔中文内容待提供〕",
@@ -167,5 +165,20 @@
       "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
     },
     "previewLabel": "Preview"
+  },
+  "community": {
+    "eyebrow": "〔中文内容待提供〕",
+    "title": "〔中文内容待提供〕",
+    "lead": "〔中文内容待提供〕",
+    "label": "〔中文内容待提供〕",
+    "tv": "〔中文内容待提供〕",
+    "signing": "〔中文内容待提供〕",
+    "expoTalk": "〔中文内容待提供〕",
+    "expoStage": "〔中文内容待提供〕",
+    "auditorium": "〔中文内容待提供〕",
+    "lionsAward": "〔中文内容待提供〕",
+    "colleagues": "〔中文内容待提供〕",
+    "screening": "〔中文内容待提供〕",
+    "lecture": "〔中文内容待提供〕"
   }
 }

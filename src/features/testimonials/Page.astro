@@ -4,6 +4,7 @@ import BookingBand from '../../components/BookingBand.astro';
 import Hero from '../../components/Hero.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
+import reviews from '../../content/reviews.json';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
@@ -15,7 +16,9 @@ const t = makeT(lang);
       <div class="ui-wrap ui-stack-lg">
         <h2 class="ui-h2">{t('stories.listTitle')}</h2>
         <div class="c-quotes">
-          {[1, 2, 3, 4].map((n) => <blockquote class="c-quote"><p class="ui-body">{t(`stories.r${n}`)}</p></blockquote>)}
+          {reviews.map((r) => (
+            <blockquote class="c-quote" lang={r.lang}>{r.text.split('\n').map((para) => <p class="ui-body">{para}</p>)}</blockquote>
+          ))}
         </div>
       </div>
     </section>
@@ -24,5 +27,6 @@ const t = makeT(lang);
 </BaseLayout>
 <style>
   .c-quotes { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .c-quote p + p { margin-top: var(--space-2); }
   .c-quote { margin: 0; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
 </style>

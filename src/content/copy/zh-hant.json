@@ -10,7 +10,8 @@
     "testimonials": "Stories",
     "contact": "聯絡我們",
     "menu": "選單",
-    "language": "語言"
+    "language": "語言",
+    "community": "〔中文內容待提供〕"
   },
   "cta": {
     "book": "預約諮詢",
@@ -52,7 +53,8 @@
     "about": "認識胡醫師 · 1234兒童視力矯正中心",
     "ortho-k": "如何運作 · 1234兒童視力矯正中心",
     "contact": "聯絡我們 · 1234兒童視力矯正中心",
-    "testimonials": "Stories · 1234兒童視力矯正中心"
+    "testimonials": "Stories · 1234兒童視力矯正中心",
+    "community": "〔中文內容待提供〕"
   },
   "band": {
     "sceneLabel": "〔中文內容待提供〕",
@@ -138,11 +140,7 @@
     "eyebrow": "〔中文內容待提供〕",
     "title": "〔中文內容待提供〕",
     "lead": "〔中文內容待提供〕",
-    "listTitle": "〔中文內容待提供〕",
-    "r1": "〔中文內容待提供〕",
-    "r2": "〔中文內容待提供〕",
-    "r3": "〔中文內容待提供〕",
-    "r4": "〔中文內容待提供〕"
+    "listTitle": "〔中文內容待提供〕"
   },
   "contact": {
     "eyebrow": "〔中文內容待提供〕",
@@ -167,5 +165,20 @@
       "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
     },
     "previewLabel": "Preview"
+  },
+  "community": {
+    "eyebrow": "〔中文內容待提供〕",
+    "title": "〔中文內容待提供〕",
+    "lead": "〔中文內容待提供〕",
+    "label": "〔中文內容待提供〕",
+    "tv": "〔中文內容待提供〕",
+    "signing": "〔中文內容待提供〕",
+    "expoTalk": "〔中文內容待提供〕",
+    "expoStage": "〔中文內容待提供〕",
+    "auditorium": "〔中文內容待提供〕",
+    "lionsAward": "〔中文內容待提供〕",
+    "colleagues": "〔中文內容待提供〕",
+    "screening": "〔中文內容待提供〕",
+    "lecture": "〔中文內容待提供〕"
   }
 }

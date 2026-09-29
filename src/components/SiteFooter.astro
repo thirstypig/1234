@@ -1,7 +1,7 @@
 ---
 import Button from './Button.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
-import type { Lang, PageId } from '../i18n/locales';
+import { pathFor, type Lang, type PageId } from '../i18n/locales';
 import { makeT } from '../i18n/t';
 import { bookHref, MESSAGE_HREF } from '../lib/cta';
 
@@ -16,6 +16,7 @@ const t = makeT(lang);
         <p class="ui-brand ui-brand--footer">{t('site.name')}</p>
         <p lang="zh-Hant" class="ui-footer-zh">{t('site.nameZh')}</p>
         <div style="margin-top:var(--space-2)"><h3>{t('nav.language')}</h3><LanguageSwitcher lang={lang} page={page} /></div>
+        <p style="margin-top:var(--space-2)"><a href={pathFor(lang, 'community')}>{t('nav.community')}</a></p>
       </div>
       <div><h3>{t('locations.alhambra.name')}</h3><p>{t('locations.alhambra.street')}<br />{t('locations.alhambra.city')}<br />{t('locations.alhambra.hours')}</p></div>
       <div><h3>{t('locations.walnut.name')}</h3><p>{t('locations.walnut.street')}<br />{t('locations.walnut.hours')}</p></div>

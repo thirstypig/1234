@@ -10,7 +10,8 @@
     "testimonials": "Stories",
     "contact": "Contact",
     "menu": "Menu",
-    "language": "Language"
+    "language": "Language",
+    "community": "Community"
   },
   "cta": {
     "book": "Book a consultation",
@@ -52,7 +53,8 @@
     "about": "Dr. Woo · 1234 Ortho-K Vision Care",
     "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
     "contact": "Contact · 1234 Ortho-K Vision Care",
-    "testimonials": "Stories · 1234 Ortho-K Vision Care"
+    "testimonials": "Stories · 1234 Ortho-K Vision Care",
+    "community": "Community · 1234 Ortho-K Vision Care"
   },
   "band": {
     "sceneLabel": "Illustration: off to school, no glasses.",
@@ -138,11 +140,7 @@
     "eyebrow": "Stories",
     "title": "What families say",
     "lead": "Reviews from patients and parents of 1234 Ortho-K Vision Care.",
-    "listTitle": "Reviews",
-    "r1": "I am a user of the CRT lenses and it's tough to find an optometry office that knows them well. It's even harder to find an office that specializes in them, so I was lucky to have been introduced to 1234 Ortho-K. I actually had no idea what an ortho-k lens was, but it turns out it’s just a different name for the CRT lenses. At 1234 the staff and Dr. Woo walked me through the pros and cons and the benefits of newer lenses. The staff seems well trained and all are very attentive and quick to answer questions or call for help from other members. Dr. Woo is thoughtful, knowledgeable, and doesn't mind explaining what he's doing and why. He also has a good sense of humor and bedside manner.",
-    "r2": "I've been going here for 16 years, ever since I was a blind-as-a-bat 4th grader. Now I've graduated from college and am working full time in Seattle and I still come back for Dr. Woo's appointments! The ortho-k lenses have always been really important to me because it's made my life so much easier! I don't have to struggle to see presentations in class and at work, and I'm never freaking out about misplacing my glasses! I highly recommend you stop by here and give Dr. Woo a shot! He's very easy to work with and you won't regret it!",
-    "r3": "Dr. Woo has been my optometrist for half a decade, and I've only ever had positive experiences! I used to get new glasses here every year before switching to contact lenses, and they always have tons of pretty frames in lots of styles and colors. Not to mention the nose rests actually fit Asian faces (if you've ever had sunglasses slide down your face all day, you know how non-negotiable this is!) Everyone here is always very friendly and professional when I come in, and all my appointments have been super smooth and efficient. Plus, the whole staff speaks various dialects of Chinese in addition to English.",
-    "r4": "The staff is friendly and Dr. Woo answers all my questions. I feel comfortable making an appointment whenever I have eye issues, and they are happy to accommodate my schedule. The wait is short even on Saturday, and the staff is efficient so I don't waste a lot of time waiting to see a doctor."
+    "listTitle": "Reviews"
   },
   "contact": {
     "eyebrow": "Contact",
@@ -167,5 +165,20 @@
       "network": "We couldn't send your request. Please try again, or call (800) 991-8881."
     },
     "previewLabel": "Preview"
+  },
+  "community": {
+    "eyebrow": "Community",
+    "title": "Out in the community",
+    "lead": "Photos from talks, screenings and events with Dr. Woo and the team.",
+    "label": "Photos from community events",
+    "tv": "Dr. Woo in a TV studio interview",
+    "signing": "A signing ceremony for a US–China youth myopia prevention partnership",
+    "expoTalk": "Dr. Woo giving a talk on an expo stage",
+    "expoStage": "Dr. Woo speaking to visitors at an expo",
+    "auditorium": "A team member with a guest at a school auditorium event",
+    "lionsAward": "Lions Club members at a district awards event, with a student holding a certificate",
+    "colleagues": "Dr. Woo with two colleagues in an office",
+    "screening": "Team members and Lions Club volunteers at a KidSight vision screening",
+    "lecture": "A doctor from the team giving a talk to a community group"
   }
 }

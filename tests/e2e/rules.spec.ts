@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 const LOCALES = ['en', 'zh-hans', 'zh-hant'];
-const PAGES = ['', 'about/', 'ortho-k/', 'contact/', 'testimonials/'];
+const PAGES = ['', 'about/', 'ortho-k/', 'contact/', 'testimonials/', 'community/'];
 const ALL = LOCALES.flatMap((l) => PAGES.map((p) => `/${l}/${p}`));
 
 test.beforeEach(async ({ page }) => {
@@ -40,10 +40,10 @@ for (const path of ALL) {
       expect(r.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
     });
 
-    if (path.startsWith('/zh')) {
+    {
       test('Chinese body >= 17px, line-height >= 1.7', async ({ page }) => {
         await page.goto(path);
-        const bad = await page.$$eval('main p', (ps) =>
+        const bad = await page.$$eval('main p:lang(zh)', (ps) =>
           ps
             .map((p) => {
               const s = getComputedStyle(p);

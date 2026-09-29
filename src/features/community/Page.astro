@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import { makeT } from '../../i18n/t';
+import type { Lang } from '../../i18n/locales';
+import { legacyImage } from '../../lib/images';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = makeT(lang);
+const EVENTS = [
+  ['1234orthok-com-008.jpg', 'expoTalk'],
+  ['1234orthok-com-015.jpg', 'screening'],
+  ['1234orthok-com-004.jpg', 'tv'],
+  ['1234orthok-com-038.jpg', 'expoStage'],
+  ['1234orthok-com-066.jpg', 'lionsAward'],
+  ['1234orthok-com-009.jpg', 'lecture'],
+  ['1234orthok-com-007.jpg', 'signing'],
+  ['1234orthok-com-072.jpg', 'colleagues'],
+  ['1234orthok-com-054.jpg', 'auditorium'],
+] as const;
+---
+<BaseLayout lang={lang} page="community" title={t('meta.community')}>
+  <main>
+    <Hero lang={lang} short eyebrow={t('community.eyebrow')} title={t('community.title')} lead={t('community.lead')} />
+    <section class="ui-section c-paper" id="events">
+      <div class="ui-wrap">
+        <ul class="c-events" aria-label={t('community.label')}>
+          {EVENTS.map(([file, key]) => (
+            <li><Image src={legacyImage(file)} alt={t(`community.${key}`)} widths={[360, 720]} sizes="(max-width: 767px) 90vw, 380px" /></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-events { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-3); }
+  .c-events img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: calc(var(--radius-xl) - 12px); }
+</style>
