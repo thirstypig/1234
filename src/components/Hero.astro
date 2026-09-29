@@ -27,7 +27,7 @@ const t = makeT(lang);
       {lead && <p class="ui-lead">{lead}</p>}
       <div class="ui-btn-row">
         <Button href={bookHref(lang)} icon="calendar" cta="book">{t('cta.book')}</Button>
-        <Button href={MESSAGE_HREF} variant="secondary" icon="chat" cta="message">{t('cta.message')}</Button>
+        <Button href={MESSAGE_HREF} variant="secondary" icon="phone" cta="message">{t('cta.message')}</Button>
       </div>
       {trust && <p class="c-trust-chip"><Icon name="eye" /><span>{trust}</span></p>}
     </div>

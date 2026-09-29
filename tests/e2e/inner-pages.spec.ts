@@ -142,3 +142,12 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
     await expect(s.locator('[data-disclosure]')).toHaveCount(1);
   });
 }
+
+for (const l of ['en', 'zh-hant']) {
+  test(`/${l}/ every Call to book button shows a phone icon`, async ({ page }) => {
+    await page.goto(`/${l}/`);
+    const buttons = page.locator('[data-cta="message"]');
+    expect(await buttons.count()).toBeGreaterThan(0);
+    await expect(page.locator('[data-cta="message"] svg[data-icon="phone"]')).toHaveCount(await buttons.count());
+  });
+}
