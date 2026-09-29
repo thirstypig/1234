@@ -11,7 +11,9 @@
     "contact": "Contact",
     "menu": "Menu",
     "language": "Language",
-    "community": "〔中文内容待提供〕"
+    "community": "〔中文内容待提供〕",
+    "eye-exams": "Eye exams",
+    "eye-surface": "Eye surface"
   },
   "cta": {
     "book": "Book a consultation",
@@ -54,7 +56,9 @@
     "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
     "contact": "Contact · 1234 Ortho-K Vision Care",
     "testimonials": "Stories · 1234 Ortho-K Vision Care",
-    "community": "〔中文内容待提供〕"
+    "community": "〔中文内容待提供〕",
+    "eye-exams": "〔中文内容待提供〕",
+    "eye-surface": "〔中文内容待提供〕"
   },
   "band": {
     "sceneLabel": "〔中文内容待提供〕",
@@ -129,7 +133,9 @@
       "huddle": "〔中文内容待提供〕",
       "car": "〔中文内容待提供〕",
       "cake": "〔中文内容待提供〕",
-      "flowers": "〔中文内容待提供〕"
+      "flowers": "〔中文内容待提供〕",
+      "birthday": "〔中文内容待提供〕",
+      "teamBanner": "〔中文内容待提供〕"
     }
   },
   "ortho": {
@@ -179,6 +185,24 @@
     "lionsAward": "〔中文内容待提供〕",
     "colleagues": "〔中文内容待提供〕",
     "screening": "〔中文内容待提供〕",
-    "lecture": "〔中文内容待提供〕"
+    "lecture": "〔中文内容待提供〕",
+    "banner": "〔中文内容待提供〕",
+    "book": "〔中文内容待提供〕",
+    "training": "〔中文内容待提供〕",
+    "booth": "〔中文内容待提供〕",
+    "expoDuo": "〔中文内容待提供〕",
+    "consultant": "〔中文内容待提供〕",
+    "flyer": "〔中文内容待提供〕",
+    "dogs": "〔中文内容待提供〕"
+  },
+  "oldPages": {
+    "eye-exams": {
+      "title": "Children’s Eye Exams",
+      "lead": "〔中文内容待提供〕"
+    },
+    "eye-surface": {
+      "title": "Eye Surface Therapy",
+      "lead": "〔中文内容待提供〕"
+    }
   }
 }

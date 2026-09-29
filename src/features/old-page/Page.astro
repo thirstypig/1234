@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import { makeT } from '../../i18n/t';
+import type { Lang } from '../../i18n/locales';
+import pages from '../../content/old-pages.json';
+
+/** Old-site pages kept word for word; the source text is Traditional Chinese on every locale. */
+interface Props { lang: Lang; slug: 'eye-exams' | 'eye-surface' }
+const { lang, slug } = Astro.props;
+const t = makeT(lang);
+const blocks = pages[slug];
+// Group consecutive list items into one <ul>.
+const groups: { type: string; items: string[] }[] = [];
+for (const b of blocks) {
+  const last = groups[groups.length - 1];
+  if (b.type === 'li' && last?.type === 'li') last.items.push(b.text);
+  else groups.push({ type: b.type, items: [b.text] });
+}
+const lead = t(`oldPages.${slug}.lead`);
+---
+<BaseLayout lang={lang} page={slug} title={t(`meta.${slug}`)}>
+  <main>
+    <Hero lang={lang} short title={t(`oldPages.${slug}.title`)} lead={lead || undefined} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap">
+        <article class="c-old ui-stack-lg" lang="zh-Hant">
+          {groups.map((g) =>
+            g.type === 'h2' ? <h2 class="ui-h2">{g.items[0]}</h2>
+            : g.type === 'h3' ? <h3 class="ui-h3">{g.items[0]}</h3>
+            : g.type === 'li' ? <ul class="c-old-list">{g.items.map((i) => <li>{i}</li>)}</ul>
+            : <p class="ui-body">{g.items[0]}</p>
+          )}
+        </article>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-old { max-width: 46em; }
+  .c-old-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
+</style>

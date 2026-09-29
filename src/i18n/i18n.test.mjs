@@ -8,7 +8,7 @@ test('pathFor builds language-prefixed paths', () => {
   assert.strictEqual(pathFor('zh-hans', 'contact'), '/zh-hans/contact/');
 });
 test('every locale x page has a path', () => {
-  assert.strictEqual(LOCALES.flatMap((l) => PAGES.map((p) => pathFor(l, p))).length, 18);
+  assert.strictEqual(LOCALES.flatMap((l) => PAGES.map((p) => pathFor(l, p))).length, 24);
 });
 test('t throws on a missing key', () => {
   const t = makeT('en');

@@ -11,7 +11,9 @@
     "contact": "Contact",
     "menu": "Menu",
     "language": "Language",
-    "community": "Community"
+    "community": "Community",
+    "eye-exams": "Eye exams",
+    "eye-surface": "Eye surface"
   },
   "cta": {
     "book": "Book a consultation",
@@ -54,7 +56,9 @@
     "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
     "contact": "Contact · 1234 Ortho-K Vision Care",
     "testimonials": "Stories · 1234 Ortho-K Vision Care",
-    "community": "Community · 1234 Ortho-K Vision Care"
+    "community": "Community · 1234 Ortho-K Vision Care",
+    "eye-exams": "Children’s Eye Exams · 1234 Ortho-K Vision Care",
+    "eye-surface": "Eye Surface Therapy · 1234 Ortho-K Vision Care"
   },
   "band": {
     "sceneLabel": "Illustration: off to school, no glasses.",
@@ -129,7 +133,9 @@
       "huddle": "The team cheering together in a circle",
       "car": "The clinic car with the 1234 Ortho-K logo",
       "cake": "Six team members sharing cake at the front desk",
-      "flowers": "Three team members celebrating with flowers and a cake"
+      "flowers": "Three team members celebrating with flowers and a cake",
+      "birthday": "A team member celebrating a birthday at the front desk",
+      "teamBanner": "The team at the front desk under the 1234 Ortho-K sign"
     }
   },
   "ortho": {
@@ -179,6 +185,24 @@
     "lionsAward": "Lions Club members at a district awards event, with a student holding a certificate",
     "colleagues": "Dr. Woo with two colleagues in an office",
     "screening": "Team members and Lions Club volunteers at a KidSight vision screening",
-    "lecture": "A doctor from the team giving a talk to a community group"
+    "lecture": "A doctor from the team giving a talk to a community group",
+    "banner": "Banner from the practice’s old website",
+    "book": "Cover of the practice’s ortho-k introduction book",
+    "training": "The team learning a new instrument during a training session",
+    "booth": "The team’s booth at a community expo",
+    "expoDuo": "Two team members at an expo",
+    "consultant": "A vision consultant with the team in the clinic",
+    "flyer": "Flyer for an “I Love My Eyes” children’s eye screening with the Lions Club",
+    "dogs": "Two dogs relaxing on the grass"
+  },
+  "oldPages": {
+    "eye-exams": {
+      "title": "Children’s Eye Exams",
+      "lead": "This page is in Traditional Chinese, as on our old website. An English version is coming."
+    },
+    "eye-surface": {
+      "title": "Eye Surface Therapy",
+      "lead": "This page is in Traditional Chinese, as on our old website. An English version is coming."
+    }
   }
 }

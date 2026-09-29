@@ -17,7 +17,10 @@ const t = makeT(lang);
         <h2 class="ui-h2">{t('stories.listTitle')}</h2>
         <div class="c-quotes">
           {reviews.map((r) => (
-            <blockquote class="c-quote" lang={r.lang}>{r.text.split('\n').map((para) => <p class="ui-body">{para}</p>)}</blockquote>
+            <figure class="c-review">
+              <blockquote class="c-quote" lang={r.lang}>{r.text.split('\n').map((para) => <p class="ui-body">{para}</p>)}</blockquote>
+              <figcaption class="c-byline" lang="en">— {r.name}</figcaption>
+            </figure>
           ))}
         </div>
       </div>
@@ -27,6 +30,8 @@ const t = makeT(lang);
 </BaseLayout>
 <style>
   .c-quotes { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .c-review { margin: 0; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; gap: var(--space-2); }
+  .c-quote { margin: 0; }
   .c-quote p + p { margin-top: var(--space-2); }
-  .c-quote { margin: 0; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
+  .c-byline { font-weight: var(--w-label); }
 </style>

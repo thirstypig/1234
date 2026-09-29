@@ -312,7 +312,7 @@
     "alt": "",
     "context": "-046.png\" > <div id=\"el-0101\" class=\"inner-pic previe",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "banner with Dr. Woo and \"Since 1996\""
   },
@@ -330,7 +330,7 @@
     "alt": "",
     "context": "046.png\" > <div id=\"el-0192\" class=\"inner-pic preview-",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -345,7 +345,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "staff training, but a $499 price banner is visible"
   },
@@ -536,7 +536,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -568,7 +568,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -769,7 +769,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -808,7 +808,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "event flyer with text and faces"
   },
@@ -1237,7 +1237,7 @@
     "alt": "",
     "context": "046.png\" > <a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "pets, possibly from the Memories page"
   },

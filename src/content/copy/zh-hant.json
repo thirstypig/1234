@@ -11,7 +11,9 @@
     "contact": "聯絡我們",
     "menu": "選單",
     "language": "語言",
-    "community": "〔中文內容待提供〕"
+    "community": "〔中文內容待提供〕",
+    "eye-exams": "兒童視力檢查",
+    "eye-surface": "眼表異物"
   },
   "cta": {
     "book": "預約諮詢",
@@ -54,7 +56,9 @@
     "ortho-k": "如何運作 · 1234兒童視力矯正中心",
     "contact": "聯絡我們 · 1234兒童視力矯正中心",
     "testimonials": "Stories · 1234兒童視力矯正中心",
-    "community": "〔中文內容待提供〕"
+    "community": "〔中文內容待提供〕",
+    "eye-exams": "兒童視力檢查 · 1234 Ortho-K Vision Care",
+    "eye-surface": "眼表異物 · 1234 Ortho-K Vision Care"
   },
   "band": {
     "sceneLabel": "〔中文內容待提供〕",
@@ -129,7 +133,9 @@
       "huddle": "〔中文內容待提供〕",
       "car": "〔中文內容待提供〕",
       "cake": "〔中文內容待提供〕",
-      "flowers": "〔中文內容待提供〕"
+      "flowers": "〔中文內容待提供〕",
+      "birthday": "〔中文內容待提供〕",
+      "teamBanner": "〔中文內容待提供〕"
     }
   },
   "ortho": {
@@ -179,6 +185,24 @@
     "lionsAward": "〔中文內容待提供〕",
     "colleagues": "〔中文內容待提供〕",
     "screening": "〔中文內容待提供〕",
-    "lecture": "〔中文內容待提供〕"
+    "lecture": "〔中文內容待提供〕",
+    "banner": "〔中文內容待提供〕",
+    "book": "〔中文內容待提供〕",
+    "training": "〔中文內容待提供〕",
+    "booth": "〔中文內容待提供〕",
+    "expoDuo": "〔中文內容待提供〕",
+    "consultant": "〔中文內容待提供〕",
+    "flyer": "〔中文內容待提供〕",
+    "dogs": "〔中文內容待提供〕"
+  },
+  "oldPages": {
+    "eye-exams": {
+      "title": "兒童視力檢查",
+      "lead": ""
+    },
+    "eye-surface": {
+      "title": "眼表異物",
+      "lead": ""
+    }
   }
 }

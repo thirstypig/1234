@@ -20,7 +20,9 @@ const GALLERY = [
   [legacyImage('1234orthok-com-065.jpg'), 'doctors'],
   [legacyImage('1234orthok-com-057.jpg'), 'huddle'],
   [practicePhoto('staff-flowers.jpg'), 'flowers', 'center 75%'],
+  [legacyImage('1234orthok-com-012.jpg'), 'birthday'],
   [legacyImage('1234orthok-com-060.jpg'), 'car'],
+  [legacyImage('1234orthok-com-073.jpg'), 'teamBanner', 'center 30%'],
 ] as const;
 ---
 <BaseLayout lang={lang} page="about" title={t('meta.about')}>
@@ -52,7 +54,7 @@ const GALLERY = [
         </div>
         <ul class="c-gallery" aria-label={t('about.gallery.label')}>
           {GALLERY.map(([image, key, focus]) => (
-            <li><Image src={image} alt={t(`about.gallery.${key}`)} style={focus && `object-position: ${focus}`} widths={[360, 720]} sizes="(max-width: 767px) 90vw, 290px" /></li>
+            <li><figure><Image src={image} alt={t(`about.gallery.${key}`)} style={focus && `object-position: ${focus}`} widths={[360, 720]} sizes="(max-width: 767px) 90vw, 290px" /><figcaption>{t(`about.gallery.${key}`)}</figcaption></figure></li>
           ))}
         </ul>
       </div>
@@ -62,5 +64,8 @@ const GALLERY = [
 </BaseLayout>
 <style>
   .c-gallery { list-style: none; margin: var(--space-6) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-3); }
+  .c-gallery figure { margin: 0; }
+  .c-gallery figcaption { margin-top: var(--space-1); font-size: 15px; line-height: 1.5; }
+  :global(:lang(zh)) .c-gallery figcaption { font-size: 17px; line-height: 1.7; }
   .c-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 25%; border-radius: calc(var(--radius-xl) - 12px); }
 </style>

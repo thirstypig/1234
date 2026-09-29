@@ -11,7 +11,7 @@ import { legacyImage } from '../lib/images';
 interface Props { lang: Lang; page: PageId }
 const { lang, page } = Astro.props;
 const t = makeT(lang);
-const NAV: PageId[] = ['about', 'ortho-k', 'testimonials', 'contact'];
+const NAV: PageId[] = ['about', 'ortho-k', 'eye-exams', 'eye-surface', 'testimonials', 'contact'];
 const menuId = `ui-menu-${lang}`;
 ---
 <div class="ui-utility"><div class="ui-wrap ui-utility-in"><LanguageSwitcher lang={lang} page={page} /></div></div>
@@ -53,4 +53,10 @@ const menuId = `ui-menu-${lang}`;
   .c-brand-logo { display: block; line-height: 0; }
   .c-brand-logo img { display: block; height: 52px; width: auto; }
   @media (max-width: 767px) { .c-brand-logo img { height: 40px; } }
+  /* Six nav tabs need more room than Concept C's 1024px breakpoint allows. */
+  @media (max-width: 1139px) {
+    :global(.ui-nav), :global(.ui-header-tools > a.ui-btn) { display: none; }
+    :global(.ui-header-tools) { margin-left: auto; }
+    :global(.ui-menu-btn) { display: inline-flex; }
+  }
 </style>
