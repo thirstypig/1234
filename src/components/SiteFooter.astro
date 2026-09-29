@@ -24,10 +24,11 @@ const t = makeT(lang);
     </div>
     <div class="ui-footer-legal">
       <span>{t('footer.copyright')}</span>
-      <span aria-disabled="true">{t('footer.privacy')}</span>
-      <span aria-disabled="true">{t('footer.privacyNotice')}</span>
-      <span aria-disabled="true">{t('footer.accessibility')}</span>
-      <span aria-disabled="true">{t('footer.terms')}</span>
+      <a href={pathFor(lang, 'privacy')}>{t('footer.privacy')}</a>
+      <a href={pathFor(lang, 'notice-of-privacy-practices')}>{t('footer.privacyNotice')}</a>
+      <a href={pathFor(lang, 'accessibility')}>{t('footer.accessibility')}</a>
+      <a href={pathFor(lang, 'terms')}>{t('footer.terms')}</a>
+      <a href={pathFor(lang, 'nondiscrimination')}>{t('footer.nondiscrimination')}</a>
     </div>
   </div>
 </footer>
