@@ -40,10 +40,11 @@ there unmodified.
 
 ## The site (`src/`)
 
-Astro, 5 pages × 3 locales from `src/pages/[lang]/`. All text lives in
+Astro, 13 pages × 3 locales from `src/pages/[lang]/` (the two eye-care pages nest under `ortho-k/`; the five notices come from `src/content/legal/`). All text lives in
 `src/content/copy/{en,zh-hans,zh-hant}.json`; pages hold no literal
-copy, and a key missing from any locale fails the build. Chinese body
-copy is placeholder (`〔中文內容待提供〕`) until the client supplies it.
+copy, and a key missing from any locale fails the build. The Chinese
+copy is Claude's draft translation awaiting the client's approval
+(`docs/copy-review.md`, N-2).
 
 Copy from the old site that makes a claim is held in
 `docs/copy-review.md` (ids `F-…`, mockup changes `M-…`). It renders
@@ -91,7 +92,7 @@ the concepts-only site over the real one.
 ## Tests
 
 - `npm run test:unit`: scripts, i18n parity, image guards
-- `npm run test:e2e`: Playwright + axe over all 15 pages (serves `dist/`
+- `npm run test:e2e`: Playwright + axe over all 39 pages (serves `dist/`
   via `scripts/serve-dist.mjs`; `astro preview` detaches in Astro 7).
   A rare `page.goto` timeout is Google Fonts, not the site: rerun.
 - `npm run test:deploy`: assembled Pages layout (old concept URLs,
