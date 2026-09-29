@@ -13,7 +13,12 @@ Rules:
   client supplies a vector file; the footer keeps the plain-text name.
 - Use only client-provided copy.
 - Never add statistics, success rates, patient counts, or
-  "best/most effective" claims.
+  "best/most effective" claims. Exception (owner decision,
+  2026-09-28): the old site's patient reviews appear word for word on
+  the Stories page (`src/content/reviews.json`), claims included.
+- Every image is accounted for in `docs/photo-inventory.md` (a test
+  enforces it). Patient photos live only on the private patient-photos
+  page, never in this repo.
 - All text WCAG AA.
 - "Book a consultation" in the first screen and at the bottom.
 - Mobile sticky Book/Message bar.

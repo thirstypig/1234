@@ -21,3 +21,10 @@ test('only listed staff or office photos are tracked in assets/practice', () => 
     .split('\n').filter((f) => /\.(png|jpe?g|gif|webp|heic)$/i.test(f));
   assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
 });
+
+// Every old-site image must be accounted for in docs/photo-inventory.md.
+test('every catalog image is listed in the photo inventory', () => {
+  const catalog = JSON.parse(readFileSync('assets/legacy/catalog.json', 'utf8'));
+  const inventory = readFileSync('docs/photo-inventory.md', 'utf8');
+  assert.deepStrictEqual(catalog.map((e) => e.file).filter((f) => !inventory.includes(`| \`${f}\` |`)), []);
+});

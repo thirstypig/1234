@@ -110,7 +110,7 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **M-2** WeChat / LINE / WhatsApp buttons left out of "Book a visit at either clinic" until the client gives the account links.
 - [ ] **M-3** "Dr. Paul T. Woo, OD · 30 years of ortho-k experience" (hero badge and doctor section) shows only after **F-home-1** is approved.
 - [ ] **M-4** The zh-Hant mockup gives Dr. Woo's Chinese name as 胡超 — please confirm before any Chinese page uses it.
-- [ ] **M-5** Testimonials page shows 4 reviews that describe the visit experience only. Reviews with outcome claims ("saving my vision", a child's 20/20 result, a failed LASIK story) and the 9 flagged ones are held back; see `docs/legacy-copy/testimonials.reviews.txt`.
+- [x] **M-5** *Decided by the owner 2026-09-28: all 21 old-site reviews now appear word for word (18 English, 3 Chinese); see T-1.* Previously: Testimonials page showed 4 reviews that describe the visit experience only. Reviews with outcome claims ("saving my vision", a child's 20/20 result, a failed LASIK story) and the 9 flagged ones are held back; see `docs/legacy-copy/testimonials.reviews.txt`.
 - [ ] **M-6** About page leaves out outcome sentences from the old bio ("more confident and outgoing", "do better in school", "successful in their profession and careers").
 - [ ] **M-7** About → "Our team" uses photo #074, which shows an "iDream Space" sign — confirm that's the practice's building.
 - [ ] **M-8** English text taken from the Concept C mockup (not from the old site) makes outcome statements. Please approve or rewrite: "Clear vision all day. No glasses at school." (homepage hero), "Ortho-k may also help slow down nearsightedness as they grow." (hero lead), and "Wear at night. See clearly all day." (how-it-works step 3).
@@ -121,3 +121,14 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **P-1** Chinese alt text (the description screen readers read out) for the new photos is still a placeholder: the About gallery (8 photos), the Ortho-K exam room, and the Alhambra clinic sign. English versions are in `src/content/copy/en.json` under `about.gallery`, `ortho.examAlt` and `locations.alhambra.photoAlt`.
 - [ ] **P-2** Patient photos are not on the site. To use any, the practice needs a signed photo release (and HIPAA marketing authorization) for each patient, from a parent for anyone under 18. The photo of a girl holding her lens record card would also need the card blurred, since it shows visit dates and prescription values. The photos, the reason they're held back, and the release form (English, 繁體, 简体) are on the private patient-photos page; ask Jimmy for the link and password.
 - [ ] **P-3** The Walnut clinic card has no photo yet — please send one when the office is ready.
+- [ ] **P-4** Chinese captions for the 9 Community-page photos are placeholders; English versions are under `community` in `src/content/copy/en.json`.
+
+## Testimonials
+
+- [ ] **T-1** All 21 old-site reviews are shown word for word, including outcome statements ("saving my vision", a child's 20/20, the LASIK story) and superlatives ("the best"). Health-advertising rules can apply to testimonials a practice publishes, so please include these in the attorney review along with the photo-release form. Two old-site entries were near-duplicates (a shorter edit of the "I started seeing Dr. Woo over a year ago" review) and were left out; one review split across two blocks on the old site is shown joined.
+
+## Old-site pages not carried over
+
+- [ ] **O-1** "Children's Eye Exams" (`consultant.html`): a Traditional Chinese Q&A on eye exams, dilation drops, amblyopia and strabismus. Keep or drop? If kept, please supply English (and Simplified) text.
+- [ ] **O-2** "Eye Surface Therapy" (`therapy.html`): Traditional Chinese text about conjunctival stones and eye-surface irritation. It cites statistics ("more than half", "7%"), which the site rules don't allow. Keep (rewritten without statistics), or drop?
+- [ ] **O-3** Every old page carried two credential lines that are held back: "First Asian doctor to lecture in Global Orthokeratology conference meeting" and "Award of excellence for top non-surgical vision correction center." Approve with a source, or leave off?
