@@ -121,14 +121,14 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **P-1** Chinese alt text (the description screen readers read out) for the new photos is still a placeholder: the About gallery (8 photos), the Ortho-K exam room, and the Alhambra clinic sign. English versions are in `src/content/copy/en.json` under `about.gallery`, `ortho.examAlt` and `locations.alhambra.photoAlt`.
 - [ ] **P-2** Patient photos are not on the site. To use any, the practice needs a signed photo release (and HIPAA marketing authorization) for each patient, from a parent for anyone under 18. The photo of a girl holding her lens record card would also need the card blurred, since it shows visit dates and prescription values. The photos, the reason they're held back, and the release form (English, 繁體, 简体) are on the private patient-photos page; ask Jimmy for the link and password.
 - [ ] **P-3** The Walnut clinic card has no photo yet — please send one when the office is ready.
-- [ ] **P-4** Chinese captions for the 9 Community-page photos are placeholders; English versions are under `community` in `src/content/copy/en.json`.
+- [ ] **P-4** Chinese captions for the 17 Community-page photos and the 10 About-gallery photos are placeholders; English versions are under `community` in `src/content/copy/en.json`.
 
 ## Testimonials
 
-- [ ] **T-1** All 21 old-site reviews are shown word for word, including outcome statements ("saving my vision", a child's 20/20, the LASIK story) and superlatives ("the best"). Health-advertising rules can apply to testimonials a practice publishes, so please include these in the attorney review along with the photo-release form. Two old-site entries were near-duplicates (a shorter edit of the "I started seeing Dr. Woo over a year ago" review) and were left out; one review split across two blocks on the old site is shown joined.
+- [ ] **T-1** All 21 old-site reviews are shown word for word with the reviewer's name as on the old site ("— Keith K."), including outcome statements ("saving my vision", a child's 20/20, the LASIK story) and superlatives ("the best"). Health-advertising rules can apply to testimonials a practice publishes, so please include these in the attorney review along with the photo-release form. Emily Z.'s and Fausto K.'s reviews open with the same two sentences on the old site; both are shown as they were.
 
 ## Old-site pages not carried over
 
-- [ ] **O-1** "Children's Eye Exams" (`consultant.html`): a Traditional Chinese Q&A on eye exams, dilation drops, amblyopia and strabismus. Keep or drop? If kept, please supply English (and Simplified) text.
-- [ ] **O-2** "Eye Surface Therapy" (`therapy.html`): Traditional Chinese text about conjunctival stones and eye-surface irritation. It cites statistics ("more than half", "7%"), which the site rules don't allow. Keep (rewritten without statistics), or drop?
+- [ ] **O-1** "Children's Eye Exams" (`consultant.html`) is now on the site word for word in Traditional Chinese, in the main menu (owner decision 2026-09-28). Please supply English and Simplified Chinese text; until then those versions show the Traditional text with a note.
+- [ ] **O-2** "Eye Surface Therapy" (`therapy.html`) is now on the site word for word in Traditional Chinese, in the main menu (owner decision 2026-09-28), including its statistics ("more than half", "7%"). Please supply English and Simplified text, and include the statistics in the attorney review.
 - [ ] **O-3** Every old page carried two credential lines that are held back: "First Asian doctor to lecture in Global Orthokeratology conference meeting" and "Award of excellence for top non-surgical vision correction center." Approve with a source, or leave off?
