@@ -145,6 +145,12 @@
       "title": "其他眼睛照護",
       "examsDesc": "孩子沒通過學校視力篩檢時，接下來會怎麼進行。",
       "surfaceDesc": "眼睛異物、倒睫與結膜結石。"
+    },
+    "lenses": {
+      "title": "我們驗配的鏡片",
+      "body": "我們驗配 VIPOK 角膜塑型鏡片。",
+      "disclosure": "胡醫師是 VIPOK 公司的所有人之一。",
+      "logoAlt": "VIPOK 公司標誌"
     }
   },
   "stories": {

@@ -145,6 +145,12 @@
       "title": "其他眼部护理",
       "examsDesc": "孩子没通过学校视力筛查时，接下来会怎么做。",
       "surfaceDesc": "眼部异物、倒睫和结膜结石。"
+    },
+    "lenses": {
+      "title": "我们验配的镜片",
+      "body": "我们验配 VIPOK 角膜塑形镜。",
+      "disclosure": "胡医生是 VIPOK 公司的所有人之一。",
+      "logoAlt": "VIPOK 公司标志"
     }
   },
   "stories": {

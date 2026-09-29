@@ -145,6 +145,12 @@
       "title": "Other eye care",
       "examsDesc": "What to expect when a child doesn’t pass a school vision screening.",
       "surfaceDesc": "Foreign bodies, ingrown eyelashes, and conjunctival stones."
+    },
+    "lenses": {
+      "title": "The lenses we fit",
+      "body": "We fit VIPOK ortho-k lenses.",
+      "disclosure": "Dr. Woo is an owner of VIPOK Inc.",
+      "logoAlt": "VIPOK Inc. logo"
     }
   },
   "stories": {

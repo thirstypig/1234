@@ -132,3 +132,13 @@ for (const path of ['/en/', '/en/ortho-k/']) {
     await expect(faq).toContainText('(626) 282-5388');
   });
 }
+
+for (const l of ['en', 'zh-hans', 'zh-hant']) {
+  test(`/${l}/ortho-k/ shows the VIPOK logo with Dr. Woo's ownership disclosed`, async ({ page }) => {
+    await page.goto(`/${l}/ortho-k/`);
+    const s = page.locator('#lenses');
+    await expect(s.locator('img')).toHaveCount(1);
+    await expect(s).toContainText('VIPOK');
+    await expect(s.locator('[data-disclosure]')).toHaveCount(1);
+  });
+}

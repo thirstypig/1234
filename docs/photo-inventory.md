@@ -5,8 +5,8 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Where | Count |
 |---|---|
 | Not used | 14 |
-| Private page | 46 |
-| Site | 26 |
+| Private page | 45 |
+| Site | 27 |
 | **Total** | **86** |
 
 "Private page" means the password-protected patient-photos page (not part of this repo). Patient photos are never stored in this repo. Every photo, stock image and logo is on the site or the private page; "Not used" is only duplicates, layout icons, a text graphic and the old intro-book PDF.
@@ -54,7 +54,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-038.jpg` | needs-review | Site — Community page | Events, captioned (owner approved 2026-09-28) |
 | `1234orthok-com-039.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-040.png` | third-party-logo | Private page — L-02 | Yelp badge; needs permission |
-| `1234orthok-com-041.png` | third-party-logo | Private page — L-03 | VIPOK logo; needs permission |
+| `1234orthok-com-041.png` | third-party-logo | Site — How it works (The lenses we fit) | VIPOK logo; Dr. Woo is an owner of VIPOK (ownership disclosed on the page) |
 | `1234orthok-com-042.jpg` | patient-photo | Private page — P-16 | Patient photo; needs a signed release |
 | `1234orthok-com-043.jpg` | practice-photo | Site — Ortho-K, first visit | Exam room |
 | `1234orthok-com-044.jpg` | needs-review | Private page — P-25 | Crowd of children; needs releases |
