@@ -1,0 +1,39 @@
+---
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+import NightScene from './scenes/NightScene.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+import { bookHref, MESSAGE_HREF } from '../lib/cta';
+
+interface Props {
+  lang: Lang;
+  eyebrow?: string;
+  title: string;
+  mark?: string;
+  lead?: string;
+  trust?: string;
+  /** Short hero for inner pages: no scene art. */
+  short?: boolean;
+}
+const { lang, eyebrow, title, mark, lead, trust, short = false } = Astro.props;
+const t = makeT(lang);
+---
+<section class="ui-hero c-night">
+  <div class="ui-wrap ui-hero-grid">
+    <div class="ui-hero-text">
+      {eyebrow && <p class="ui-eyebrow"><Icon name="eye" /><span>{eyebrow}</span></p>}
+      <h1 class="ui-display">{title}{mark && <Fragment><br /><span class="ui-mark">{mark}</span></Fragment>}</h1>
+      {lead && <p class="ui-lead">{lead}</p>}
+      <div class="ui-btn-row">
+        <Button href={bookHref(lang)} icon="calendar" cta="book">{t('cta.book')}</Button>
+        <Button href={MESSAGE_HREF} variant="secondary" icon="chat" cta="message">{t('cta.message')}</Button>
+      </div>
+      {trust && <p class="c-trust-chip"><Icon name="eye" /><span>{trust}</span></p>}
+    </div>
+    {!short && (
+      <div class="ui-hero-art"><div class="c-hero-art"><NightScene label={t('scenes.night')} /><p class="c-story-cap"><Icon name="moon" /><span>{t('scenes.nightCap')}</span></p></div></div>
+    )}
+  </div>
+  <div class="c-hills" aria-hidden="true"></div>
+</section>

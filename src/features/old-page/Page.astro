@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import Icon from '../../components/Icon.astro';
+import { makeT } from '../../i18n/t';
+import { HTML_LANG, pathFor, type Lang } from '../../i18n/locales';
+import pages from '../../content/old-pages.json';
+
+/** Old-site pages (originally Traditional Chinese only), now in all three languages under How it works. */
+interface Props { lang: Lang; slug: 'eye-exams' | 'eye-surface' }
+const { lang, slug } = Astro.props;
+const t = makeT(lang);
+// Group consecutive list items into one <ul>.
+const groups: { type: string; items: string[] }[] = [];
+for (const b of pages[slug][lang]) {
+  const last = groups[groups.length - 1];
+  if (b.type === 'li' && last?.type === 'li') last.items.push(b.text);
+  else groups.push({ type: b.type, items: [b.text] });
+}
+---
+<BaseLayout lang={lang} page={slug} title={t(`meta.${slug}`)}>
+  <main>
+    <Hero lang={lang} short eyebrow={t('nav.ortho-k')} title={t(`oldPages.${slug}.title`)} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap">
+        <p class="c-back"><a href={pathFor(lang, 'ortho-k')}><Icon name="arrow" /><span>{t('nav.ortho-k')}</span></a></p>
+        <article class="c-old ui-stack-lg" lang={HTML_LANG[lang]}>
+          {groups.map((g) =>
+            g.type === 'h2' ? <h2 class="ui-h2">{g.items[0]}</h2>
+            : g.type === 'h3' ? <h3 class="ui-h3">{g.items[0]}</h3>
+            : g.type === 'li' ? <ul class="c-old-list">{g.items.map((i) => <li>{i}</li>)}</ul>
+            : <p class="ui-body">{g.items[0]}</p>
+          )}
+        </article>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-old { max-width: 46em; }
+  .c-old-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
+  .c-back { margin: 0 0 var(--space-4); }
+  .c-back a { display: inline-flex; align-items: center; gap: 6px; font-weight: var(--w-label); }
+  .c-back :global(svg) { transform: rotate(180deg); }
+</style>

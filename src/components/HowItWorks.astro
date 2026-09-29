@@ -1,0 +1,24 @@
+---
+import Icon, { type IconName } from './Icon.astro';
+import MorningScene from './scenes/MorningScene.astro';
+import type { Lang } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+
+interface Props { lang: Lang; headingLevel?: 'h1' | 'h2' }
+const { lang } = Astro.props;
+const t = makeT(lang);
+const STEPS: IconName[] = ['eye', 'lens', 'moon'];
+---
+<section class="ui-section c-dawn" id="how">
+  <div class="ui-wrap">
+    <div class="ui-how-head">
+      <h2 class="ui-h2">{t('how.title')}</h2>
+      <div class="c-how-art"><MorningScene label={t('scenes.morning')} /><p class="c-story-cap"><Icon name="sun" /><span>{t('scenes.morningCap')}</span></p></div>
+    </div>
+    <ol class="ui-steps">
+      {STEPS.map((icon, i) => (
+        <li class="ui-step"><span class="c-stepnum" aria-hidden="true">{i + 1}</span><span class="c-stepico"><Icon name={icon} /></span><h3 class="ui-h3">{t(`how.step${i + 1}`)}</h3></li>
+      ))}
+    </ol>
+  </div>
+</section>

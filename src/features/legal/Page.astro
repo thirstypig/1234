@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import Hero from '../../components/Hero.astro';
+import { HTML_LANG, type Lang, type LegalId } from '../../i18n/locales';
+
+interface Block { type: string; text: string }
+interface Doc { title: string; effective: string; blocks: Block[] }
+const docs = import.meta.glob<{ default: Record<Lang, Doc> }>('../../content/legal/*.json', { eager: true });
+
+/** Required notices (privacy, NPP, accessibility, terms, nondiscrimination) in all three languages. */
+interface Props { lang: Lang; slug: LegalId }
+const { lang, slug } = Astro.props;
+const mod = docs[`../../content/legal/${slug}.json`];
+if (!mod) throw new Error(`Missing src/content/legal/${slug}.json`);
+const doc = mod.default[lang];
+// Group consecutive list items into one <ul>.
+const groups: { type: string; items: string[] }[] = [];
+for (const b of doc.blocks) {
+  const last = groups[groups.length - 1];
+  if (b.type === 'li' && last?.type === 'li') last.items.push(b.text);
+  else groups.push({ type: b.type, items: [b.text] });
+}
+---
+<BaseLayout lang={lang} page={slug} title={`${doc.title} · 1234 Ortho-K Vision Care`}>
+  <main>
+    <Hero lang={lang} short title={doc.title} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap">
+        <article class="c-legal ui-stack-lg" lang={HTML_LANG[lang]}>
+          <p class="c-effective">{doc.effective}</p>
+          {groups.map((g) =>
+            g.type === 'h2' ? <h2 class="ui-h2">{g.items[0]}</h2>
+            : g.type === 'h3' ? <h3 class="ui-h3">{g.items[0]}</h3>
+            : g.type === 'li' ? <ul class="c-legal-list">{g.items.map((i) => <li>{i}</li>)}</ul>
+            : <p class="ui-body">{g.items[0]}</p>
+          )}
+        </article>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-legal { max-width: 46em; }
+  .c-effective { font-weight: var(--w-label); }
+  .c-legal-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
+</style>

@@ -1,0 +1,214 @@
+{
+  "en": {
+    "title": "Website Privacy Policy",
+    "effective": "Draft — effective date to be set by the practice",
+    "blocks": [
+      {"type": "p", "text": "This policy explains how 1234 Ortho-K Vision Care (\"we,\" \"us,\" or \"our\") handles information from people who visit this website. It covers this website only."},
+      {"type": "p", "text": "If you are our patient, the health information we hold as your eye care provider is covered by our separate Notice of Privacy Practices, not by this policy. You can ask our office for a copy at any time."},
+
+      {"type": "h2", "text": "Information we collect"},
+      {"type": "h3", "text": "Information you give us"},
+      {"type": "p", "text": "You can browse this website without telling us who you are. If you use our booking request form, we collect:"},
+      {"type": "li", "text": "The parent's or guardian's name"},
+      {"type": "li", "text": "A phone number"},
+      {"type": "li", "text": "The office location you prefer"},
+      {"type": "li", "text": "The day or time you prefer"},
+      {"type": "p", "text": "The form does not ask for medical details. Please do not include health information in the form. If you have questions about your child's eyes, call our office instead."},
+      {"type": "h3", "text": "Information collected automatically"},
+      {"type": "p", "text": "Like most websites, the services that run this site receive some technical information when your browser loads a page. This includes your IP address, browser type, device type, the page you asked for, and the date and time. These services use it to deliver pages, keep the site secure, and fix problems."},
+      {"type": "p", "text": "We do not use analytics tools, advertising cookies, or tracking pixels. We do not create user accounts, and we do not take payments on this website."},
+
+      {"type": "h2", "text": "How we use your information"},
+      {"type": "p", "text": "We use the information from the booking request form only to:"},
+      {"type": "li", "text": "Call you back about your request"},
+      {"type": "li", "text": "Schedule a consultation or appointment"},
+      {"type": "li", "text": "Answer the questions you ask us"},
+      {"type": "p", "text": "We do not use it for advertising, and we do not add you to a mailing list."},
+
+      {"type": "h2", "text": "When we share information"},
+      {"type": "p", "text": "We do not sell or rent your personal information. We do not share it with anyone for their own marketing."},
+      {"type": "p", "text": "We use a small number of service providers to run this website. They handle information only to provide their service to us:"},
+      {"type": "li", "text": "GitHub (GitHub Pages) hosts the website's pages."},
+      {"type": "li", "text": "Cloudflare runs the program (a Cloudflare Worker) that receives your booking request and passes it to our office."},
+      {"type": "li", "text": "Google Fonts supplies the typefaces the site uses. When a page loads, your browser asks Google's servers for the fonts, so Google receives your IP address and basic browser information. Google's own privacy policy covers that information."},
+      {"type": "p", "text": "We may also share information if the law requires it, such as to answer a court order, or to protect the safety of our patients, staff, or the public."},
+
+      {"type": "h2", "text": "Other websites and services"},
+      {"type": "p", "text": "Apart from the services listed above, we do not allow other companies to collect information on this website about what you do over time or across other websites. This website may link to other websites, such as a map or a social media page. Those sites have their own privacy policies, and we are not responsible for them."},
+
+      {"type": "h2", "text": "How long we keep information"},
+      {"type": "p", "text": "We keep booking requests only as long as we need them to reach you and schedule your visit, and then we delete them. If your child becomes our patient, the information becomes part of the patient record and is kept as the law requires under our Notice of Privacy Practices."},
+      {"type": "p", "text": "Our service providers keep their technical logs for their own limited periods, as described in their privacy policies."},
+
+      {"type": "h2", "text": "How we protect information"},
+      {"type": "p", "text": "This website uses an encrypted connection (HTTPS), so information you send through the form is protected while it travels. We limit access to booking requests to office staff who need them to do their jobs."},
+      {"type": "p", "text": "No website or internet connection is completely secure, so we cannot promise that information will never be lost or misused. If you have a sensitive question, please call us."},
+
+      {"type": "h2", "text": "Children's privacy"},
+      {"type": "p", "text": "Our practice cares for children, but this website is meant for parents and guardians. It is not directed to children, and we do not knowingly collect personal information from children under 13 through this website."},
+      {"type": "p", "text": "The booking request form should be filled out by a parent or guardian. If we learn that a child under 13 has sent us personal information through the website, we will delete it. If you believe this has happened, please contact us."},
+
+      {"type": "h2", "text": "Do Not Track signals"},
+      {"type": "p", "text": "Some web browsers let you send a \"Do Not Track\" signal to the websites you visit. There is no common standard for how websites should respond to this signal, so this website does not change how it works when it receives one."},
+      {"type": "p", "text": "Because we do not use analytics or advertising tracking, we do not follow your activity over time or across other websites, whether or not your browser sends this signal."},
+
+      {"type": "h2", "text": "Your choices"},
+      {"type": "li", "text": "You can use this website without sending us any personal information."},
+      {"type": "li", "text": "You can call us instead of using the booking request form."},
+      {"type": "li", "text": "You can ask us to see, correct, or delete the information you sent through the form."},
+      {"type": "li", "text": "You can set your browser to block web fonts from outside sources. The site will still work, but the text may look different."},
+
+      {"type": "h2", "text": "Changes to this policy"},
+      {"type": "p", "text": "We may update this policy from time to time. When we do, we will post the new version on this page and change the effective date at the top. If we make an important change, we will also place a notice on our home page for a reasonable time."},
+
+      {"type": "h2", "text": "How to contact us"},
+      {"type": "p", "text": "If you have questions about this policy, or want to review, correct, or delete information you sent us, please contact:"},
+      {"type": "p", "text": "Privacy Officer, 1234 Ortho-K Vision Care"},
+      {"type": "p", "text": "1234 S. Garfield Ave. #105, Alhambra, CA 91801"},
+      {"type": "p", "text": "Phone: (626) 282-5388"},
+      {"type": "p", "text": "Toll-free: (800) 991-8881"}
+    ]
+  },
+
+  "zh-hant": {
+    "title": "網站隱私權政策",
+    "effective": "草稿——生效日期由本診所訂定",
+    "blocks": [
+      {"type": "p", "text": "本政策說明1234兒童視力矯正中心（以下稱「本診所」或「我們」）如何處理網站訪客的資料。本政策只適用於本網站。"},
+      {"type": "p", "text": "如果您是本診所的病患，我們以眼科照護提供者身分所保存的健康資料，是由另行提供的《隱私權實務通知》（Notice of Privacy Practices）規範，而不適用本政策。您可以隨時向診所索取一份。"},
+
+      {"type": "h2", "text": "我們收集哪些資料"},
+      {"type": "h3", "text": "您主動提供的資料"},
+      {"type": "p", "text": "您不需要表明身分，就可以瀏覽本網站。如果您使用預約申請表單，我們會收集："},
+      {"type": "li", "text": "家長或監護人的姓名"},
+      {"type": "li", "text": "聯絡電話"},
+      {"type": "li", "text": "希望就診的診所地點"},
+      {"type": "li", "text": "希望就診的日期或時段"},
+      {"type": "p", "text": "表單不會詢問任何醫療細節。請不要在表單中填寫健康狀況。如果您對孩子的視力有疑問，請直接打電話到診所。"},
+      {"type": "h3", "text": "自動收集的資料"},
+      {"type": "p", "text": "和大多數網站一樣，當您的瀏覽器載入網頁時，支援本網站運作的服務會收到一些技術資料，包括您的IP位址、瀏覽器類型、裝置類型、您瀏覽的頁面，以及日期和時間。這些服務用這些資料來傳送網頁、維護網站安全和排除問題。"},
+      {"type": "p", "text": "我們不使用網站分析工具、廣告Cookie或追蹤像素。本網站不需要註冊帳號，也不在網站上收費。"},
+
+      {"type": "h2", "text": "我們如何使用您的資料"},
+      {"type": "p", "text": "預約申請表單中的資料，我們只會用來："},
+      {"type": "li", "text": "回電與您聯絡您的預約申請"},
+      {"type": "li", "text": "安排諮詢或看診時間"},
+      {"type": "li", "text": "回答您提出的問題"},
+      {"type": "p", "text": "我們不會把這些資料用於廣告，也不會把您加入任何郵寄名單。"},
+
+      {"type": "h2", "text": "我們何時會分享資料"},
+      {"type": "p", "text": "我們不會出售或出租您的個人資料，也不會提供給任何人做行銷用途。"},
+      {"type": "p", "text": "我們透過少數幾家服務供應商來經營本網站。他們只會為了替我們提供服務而處理資料："},
+      {"type": "li", "text": "GitHub（GitHub Pages）：負責存放及提供網站頁面。"},
+      {"type": "li", "text": "Cloudflare：執行接收預約申請的程式（Cloudflare Worker），並將申請轉交給診所。"},
+      {"type": "li", "text": "Google Fonts：提供網站使用的字型。網頁載入時，您的瀏覽器會向Google的伺服器下載字型，因此Google會收到您的IP位址和基本的瀏覽器資料。這些資料受Google本身的隱私權政策規範。"},
+      {"type": "p", "text": "如果法律有所要求（例如法院命令），或為了保護病患、員工或大眾的安全，我們也可能分享資料。"},
+
+      {"type": "h2", "text": "其他網站與服務"},
+      {"type": "p", "text": "除了上面列出的服務之外，我們不允許其他公司在本網站上收集您長期或跨網站的活動資料。本網站可能會連結到其他網站，例如地圖或社群媒體頁面。這些網站有各自的隱私權政策，本診所不對其負責。"},
+
+      {"type": "h2", "text": "資料保存多久"},
+      {"type": "p", "text": "預約申請只會保存到我們聯絡上您並安排好看診為止，之後就會刪除。如果您的孩子成為本診所的病患，相關資料會成為病歷的一部分，並依法律規定及《隱私權實務通知》保存。"},
+      {"type": "p", "text": "服務供應商會依照各自的隱私權政策，在有限期間內保存技術紀錄。"},
+
+      {"type": "h2", "text": "我們如何保護資料"},
+      {"type": "p", "text": "本網站使用加密連線（HTTPS），您透過表單送出的資料在傳輸過程中會受到保護。只有因工作需要的診所人員才能查看預約申請。"},
+      {"type": "p", "text": "沒有任何網站或網路連線是絕對安全的，因此我們無法保證資料絕不會遺失或遭到濫用。如果您有較敏感的問題，請直接打電話給我們。"},
+
+      {"type": "h2", "text": "兒童隱私"},
+      {"type": "p", "text": "本診所的服務對象是兒童，但本網站是寫給家長和監護人看的。本網站並非以兒童為對象，我們也不會在知情的情況下，透過本網站收集13歲以下兒童的個人資料。"},
+      {"type": "p", "text": "預約申請表單應由家長或監護人填寫。如果我們發現有13歲以下的兒童透過本網站提供了個人資料，我們會將其刪除。如果您認為發生了這種情況，請與我們聯絡。"},
+
+      {"type": "h2", "text": "「請勿追蹤」訊號"},
+      {"type": "p", "text": "有些瀏覽器可以向您造訪的網站發出「請勿追蹤」（Do Not Track）訊號。目前網站應如何回應這種訊號並沒有統一的標準，所以本網站收到這種訊號時，運作方式不會改變。"},
+      {"type": "p", "text": "由於我們不使用分析或廣告追蹤工具，無論您的瀏覽器是否發出這種訊號，我們都不會追蹤您長期或跨網站的活動。"},
+
+      {"type": "h2", "text": "您的選擇"},
+      {"type": "li", "text": "您可以使用本網站，而不提供任何個人資料。"},
+      {"type": "li", "text": "您可以直接打電話，不必使用預約申請表單。"},
+      {"type": "li", "text": "您可以要求查看、更正或刪除您透過表單提供的資料。"},
+      {"type": "li", "text": "您可以在瀏覽器中封鎖外部網站的字型。網站仍然可以使用，但文字外觀可能會不同。"},
+
+      {"type": "h2", "text": "本政策的修訂"},
+      {"type": "p", "text": "我們可能會不定期更新本政策。更新時，我們會在本頁面公布新版本，並修改頁首的生效日期。如果有重大變更，我們也會在首頁張貼通知一段合理的時間。"},
+
+      {"type": "h2", "text": "聯絡我們"},
+      {"type": "p", "text": "如果您對本政策有任何疑問，或想查看、更正或刪除您提供給我們的資料，請聯絡："},
+      {"type": "p", "text": "1234兒童視力矯正中心 隱私權負責人（Privacy Officer）"},
+      {"type": "p", "text": "地址：1234 S. Garfield Ave. #105, Alhambra, CA 91801"},
+      {"type": "p", "text": "電話：(626) 282-5388"},
+      {"type": "p", "text": "免付費電話：(800) 991-8881"}
+    ]
+  },
+
+  "zh-hans": {
+    "title": "网站隐私政策",
+    "effective": "草稿——生效日期由本诊所确定",
+    "blocks": [
+      {"type": "p", "text": "本政策说明1234儿童视力矫正中心（以下简称“本诊所”或“我们”）如何处理网站访客的信息。本政策仅适用于本网站。"},
+      {"type": "p", "text": "如果您是本诊所的患者，我们作为您的眼科医疗服务提供者所保存的健康信息，由另行提供的《隐私做法通知》（Notice of Privacy Practices）规范，不适用本政策。您可以随时向诊所索取一份。"},
+
+      {"type": "h2", "text": "我们收集哪些信息"},
+      {"type": "h3", "text": "您主动提供的信息"},
+      {"type": "p", "text": "您无需表明身份即可浏览本网站。如果您使用预约申请表，我们会收集："},
+      {"type": "li", "text": "家长或监护人的姓名"},
+      {"type": "li", "text": "联系电话"},
+      {"type": "li", "text": "希望就诊的诊所地点"},
+      {"type": "li", "text": "希望就诊的日期或时间段"},
+      {"type": "p", "text": "表单不会询问任何医疗细节。请不要在表单中填写健康状况。如果您对孩子的视力有疑问，请直接致电诊所。"},
+      {"type": "h3", "text": "自动收集的信息"},
+      {"type": "p", "text": "和大多数网站一样，当您的浏览器加载网页时，支持本网站运行的服务会收到一些技术信息，包括您的IP地址、浏览器类型、设备类型、您访问的页面以及日期和时间。这些服务用这些信息来传送网页、保障网站安全和排查问题。"},
+      {"type": "p", "text": "我们不使用网站分析工具、广告Cookie或跟踪像素。本网站无需注册账户，也不在网站上收费。"},
+
+      {"type": "h2", "text": "我们如何使用您的信息"},
+      {"type": "p", "text": "预约申请表中的信息，我们只会用于："},
+      {"type": "li", "text": "回电与您沟通预约申请"},
+      {"type": "li", "text": "安排咨询或就诊时间"},
+      {"type": "li", "text": "解答您提出的问题"},
+      {"type": "p", "text": "我们不会把这些信息用于广告，也不会把您加入任何邮寄名单。"},
+
+      {"type": "h2", "text": "我们何时会共享信息"},
+      {"type": "p", "text": "我们不会出售或出租您的个人信息，也不会提供给任何人用于营销。"},
+      {"type": "p", "text": "我们通过少数几家服务提供商来运营本网站。他们只会为了向我们提供服务而处理信息："},
+      {"type": "li", "text": "GitHub（GitHub Pages）：负责托管网站页面。"},
+      {"type": "li", "text": "Cloudflare：运行接收预约申请的程序（Cloudflare Worker），并将申请转交给诊所。"},
+      {"type": "li", "text": "Google Fonts：提供网站使用的字体。网页加载时，您的浏览器会从Google的服务器下载字体，因此Google会收到您的IP地址和基本的浏览器信息。这些信息受Google自己的隐私政策约束。"},
+      {"type": "p", "text": "如果法律要求（例如法院命令），或为了保护患者、员工或公众的安全，我们也可能共享信息。"},
+
+      {"type": "h2", "text": "其他网站和服务"},
+      {"type": "p", "text": "除了上面列出的服务以外，我们不允许其他公司在本网站上收集您长期或跨网站的活动信息。本网站可能会链接到其他网站，例如地图或社交媒体页面。这些网站有各自的隐私政策，本诊所不对其负责。"},
+
+      {"type": "h2", "text": "信息保存多久"},
+      {"type": "p", "text": "预约申请只会保存到我们联系上您并安排好就诊为止，之后就会删除。如果您的孩子成为本诊所的患者，相关信息将成为病历的一部分，并按照法律规定及《隐私做法通知》保存。"},
+      {"type": "p", "text": "服务提供商会按照各自的隐私政策，在有限期限内保存技术日志。"},
+
+      {"type": "h2", "text": "我们如何保护信息"},
+      {"type": "p", "text": "本网站使用加密连接（HTTPS），您通过表单提交的信息在传输过程中会受到保护。只有因工作需要的诊所人员才能查看预约申请。"},
+      {"type": "p", "text": "没有任何网站或网络连接是绝对安全的，因此我们无法保证信息绝不会丢失或被滥用。如果您有比较敏感的问题，请直接致电我们。"},
+
+      {"type": "h2", "text": "儿童隐私"},
+      {"type": "p", "text": "本诊所的服务对象是儿童，但本网站是面向家长和监护人的。本网站并非以儿童为对象，我们也不会在知情的情况下通过本网站收集13岁以下儿童的个人信息。"},
+      {"type": "p", "text": "预约申请表应由家长或监护人填写。如果我们发现有13岁以下的儿童通过本网站提交了个人信息，我们会将其删除。如果您认为发生了这种情况，请与我们联系。"},
+
+      {"type": "h2", "text": "“请勿跟踪”信号"},
+      {"type": "p", "text": "有些浏览器可以向您访问的网站发出“请勿跟踪”（Do Not Track）信号。目前对于网站应如何回应这种信号还没有统一的标准，所以本网站收到这种信号时，运行方式不会改变。"},
+      {"type": "p", "text": "由于我们不使用分析或广告跟踪工具，无论您的浏览器是否发出这种信号，我们都不会跟踪您长期或跨网站的活动。"},
+
+      {"type": "h2", "text": "您的选择"},
+      {"type": "li", "text": "您可以使用本网站，而不提供任何个人信息。"},
+      {"type": "li", "text": "您可以直接打电话，不必使用预约申请表。"},
+      {"type": "li", "text": "您可以要求查看、更正或删除您通过表单提交的信息。"},
+      {"type": "li", "text": "您可以在浏览器中屏蔽外部网站的字体。网站仍然可以使用，但文字外观可能会有所不同。"},
+
+      {"type": "h2", "text": "本政策的修改"},
+      {"type": "p", "text": "我们可能会不定期更新本政策。更新时，我们会在本页面发布新版本，并修改页首的生效日期。如有重大变更，我们还会在首页张贴通知一段合理的时间。"},
+
+      {"type": "h2", "text": "联系我们"},
+      {"type": "p", "text": "如果您对本政策有任何疑问，或想查看、更正或删除您提供给我们的信息，请联系："},
+      {"type": "p", "text": "1234儿童视力矫正中心 隐私负责人（Privacy Officer）"},
+      {"type": "p", "text": "地址：1234 S. Garfield Ave. #105, Alhambra, CA 91801"},
+      {"type": "p", "text": "电话：(626) 282-5388"},
+      {"type": "p", "text": "免费电话：(800) 991-8881"}
+    ]
+  }
+}

@@ -1,43 +1,32 @@
-# Astro Starter Kit: Minimal
+# 1234 Ortho-K Vision Care
 
-```sh
-npm create astro@latest -- --template minimal
-```
+New website for 1234 Ortho-K Vision Care (Dr. Paul T. Woo, OD; Alhambra
+and Walnut, CA), built from design Concept C ("Picture Book"). Preview:
+<https://1234.pasadenaworks.com/en/> (password-protected, not indexed).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Commands
 
-## 🚀 Project Structure
+| Command | Action |
+| :-- | :-- |
+| `npm install` | Install dependencies (Node ≥ 22.12) |
+| `npm run dev` | Dev server at `localhost:4321` |
+| `npm run build` | Build the site to `dist/` |
+| `bash scripts/assemble.sh` | Build the full GitHub Pages output (site + concepts + catalog) |
+| `npm test` | Unit tests, then Playwright + axe on all 39 pages |
+| `npm run test:deploy` | Check the assembled Pages layout |
+| `npm run harvest` | Re-download images from the old 1234orthok.com |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Layout
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/pages/[lang]/        13 pages × en / zh-hans / zh-hant
+src/features/<page>/     page compositions
+src/components/          one component per Concept C component
+src/content/copy/        all page text, one JSON file per language
+assets/legacy/           old-site image catalog (originals stay local)
+design/concepts/         the five design concepts (never edited)
+workers/comments/        Cloudflare Worker: review comments + booking requests
+docs/copy-review.md      old-site claims and copy changes awaiting client sign-off
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+See `CLAUDE.md` for the project rules.

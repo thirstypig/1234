@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingBand from '../../components/BookingBand.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import FirstVisit from '../../components/FirstVisit.astro';
+import Hero from '../../components/Hero.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import { makeT } from '../../i18n/t';
+import { legacyImage } from '../../lib/images';
+import { pathFor } from '../../i18n/locales';
+import { Image } from 'astro:assets';
+import type { Lang } from '../../i18n/locales';
+
+const { lang } = Astro.props as { lang: Lang };
+const t = makeT(lang);
+const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1' : 'faq.placeholder') }));
+---
+<BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')}>
+  <main>
+    <Hero lang={lang} title={t('ortho.title')} lead={t('home.lead')} />
+    <section class="ui-section c-paper">
+      <div class="ui-wrap ui-grid">
+        <div class="ui-span-6"><h2 class="ui-h1">{t('home.introTitle')}</h2></div>
+        <p class="ui-lead ui-at-8">{t('home.introLead')}</p>
+      </div>
+    </section>
+    <HowItWorks lang={lang} />
+    <FirstVisit lang={lang} photo={{ image: legacyImage('1234orthok-com-043.jpg'), alt: t('ortho.examAlt') }} />
+    <section class="ui-section c-paper" id="lenses">
+      <div class="ui-wrap c-lenses">
+        <Image src={legacyImage('1234orthok-com-041.png')} alt={t('ortho.lenses.logoAlt')} widths={[220, 440]} sizes="220px" />
+        <div class="ui-stack">
+          <h2 class="ui-h2">{t('ortho.lenses.title')}</h2>
+          <p class="ui-body">{t('ortho.lenses.body')}</p>
+          <p class="ui-body" data-disclosure>{t('ortho.lenses.disclosure')}</p>
+        </div>
+      </div>
+    </section>
+    <FaqAccordion title={t('faq.title')} items={faq} />
+    <section class="ui-section c-paper" id="other-care">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('ortho.other.title')}</h2>
+        <ul class="c-other">
+          {(['eye-exams', 'eye-surface'] as const).map((slug) => (
+            <li><a href={pathFor(lang, slug)}><strong>{t(`oldPages.${slug}.title`)}</strong><span>{t(slug === 'eye-exams' ? 'ortho.other.examsDesc' : 'ortho.other.surfaceDesc')}</span></a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+    <BookingBand lang={lang} />
+  </main>
+</BaseLayout>
+<style>
+  .c-lenses { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); }
+  .c-lenses img { width: 220px; height: auto; background: #fff; padding: 12px; border-radius: var(--radius-lg); }
+  .c-other { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+  .c-other a { display: flex; flex-direction: column; gap: 6px; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); color: inherit; text-decoration: none; }
+  .c-other a:hover strong, .c-other a:focus-visible strong { text-decoration: underline; }
+  .c-other strong { font-size: 19px; }
+</style>
