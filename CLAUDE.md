@@ -16,9 +16,11 @@ Rules:
   "best/most effective" claims. Exceptions (owner decisions,
   2026-09-28), kept word for word from the old site, claims included:
   the patient reviews with their names on the Stories page
-  (`src/content/reviews.json`), and the Traditional Chinese
-  Children's Eye Exams and Eye Surface Therapy pages
-  (`src/content/old-pages.json`).
+  (`src/content/reviews.json`), and the statistics on the Eye Surface
+  Therapy page. That page and Children's Eye Exams
+  (`src/content/old-pages.json`) sit under How it works
+  (`/<lang>/ortho-k/...`); their Traditional Chinese was cleaned up and
+  the English and Simplified versions are drafts for the practice to check.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
   enforces it). Patient photos live only on the private patient-photos
   page, never in this repo.

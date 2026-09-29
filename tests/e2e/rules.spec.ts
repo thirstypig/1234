@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 const LOCALES = ['en', 'zh-hans', 'zh-hant'];
-const PAGES = ['', 'about/', 'ortho-k/', 'contact/', 'testimonials/', 'community/', 'eye-exams/', 'eye-surface/'];
+const PAGES = ['', 'about/', 'ortho-k/', 'contact/', 'testimonials/', 'community/', 'ortho-k/eye-exams/', 'ortho-k/eye-surface/'];
 const ALL = LOCALES.flatMap((l) => PAGES.map((p) => `/${l}/${p}`));
 
 test.beforeEach(async ({ page }) => {

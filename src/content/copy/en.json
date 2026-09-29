@@ -11,9 +11,7 @@
     "contact": "Contact",
     "menu": "Menu",
     "language": "Language",
-    "community": "Community",
-    "eye-exams": "Eye exams",
-    "eye-surface": "Eye surface"
+    "community": "Community"
   },
   "cta": {
     "book": "Book a consultation",
@@ -140,7 +138,12 @@
   },
   "ortho": {
     "title": "Ortho-k for children, ages 7–18",
-    "examAlt": "An exam room at the Alhambra clinic, with a handprint mural on the wall"
+    "examAlt": "An exam room at the Alhambra clinic, with a handprint mural on the wall",
+    "other": {
+      "title": "Other eye care",
+      "examsDesc": "What to expect when a child doesn’t pass a school vision screening.",
+      "surfaceDesc": "Foreign bodies, ingrown eyelashes and conjunctival stones."
+    }
   },
   "stories": {
     "eyebrow": "Stories",
@@ -197,12 +200,10 @@
   },
   "oldPages": {
     "eye-exams": {
-      "title": "Children’s Eye Exams",
-      "lead": "This page is in Traditional Chinese, as on our old website. An English version is coming."
+      "title": "Children’s Eye Exams"
     },
     "eye-surface": {
-      "title": "Eye Surface Therapy",
-      "lead": "This page is in Traditional Chinese, as on our old website. An English version is coming."
+      "title": "Eye Surface Therapy"
     }
   }
 }

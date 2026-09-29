@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Button from './Button.astro';
 import Icon from './Icon.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
-import { pathFor, type Lang, type PageId } from '../i18n/locales';
+import { pathFor, PARENT, type Lang, type PageId } from '../i18n/locales';
 import { makeT } from '../i18n/t';
 import { bookHref, MESSAGE_HREF } from '../lib/cta';
 import { legacyImage } from '../lib/images';
@@ -11,7 +11,8 @@ import { legacyImage } from '../lib/images';
 interface Props { lang: Lang; page: PageId }
 const { lang, page } = Astro.props;
 const t = makeT(lang);
-const NAV: PageId[] = ['about', 'ortho-k', 'eye-exams', 'eye-surface', 'testimonials', 'contact'];
+const NAV: PageId[] = ['about', 'ortho-k', 'testimonials', 'contact'];
+const current = PARENT[page] ?? page;
 const menuId = `ui-menu-${lang}`;
 ---
 <div class="ui-utility"><div class="ui-wrap ui-utility-in"><LanguageSwitcher lang={lang} page={page} /></div></div>
@@ -19,7 +20,7 @@ const menuId = `ui-menu-${lang}`;
   <div class="ui-wrap ui-header-in">
     <a class="ui-brand c-brand-logo" href={pathFor(lang, 'home')}><Image src={legacyImage('1234orthok-com-051.png')} alt={lang === 'en' ? t('site.name') : `${t('site.name')} ${t('site.nameZh')}`} widths={[180, 360, 540]} sizes="(max-width: 767px) 134px, 174px" loading="eager" /></a>
     <nav class="ui-nav" aria-label="Main">
-      {NAV.map((p) => <a href={pathFor(lang, p)} aria-current={p === page ? 'page' : undefined}>{t(`nav.${p}`)}</a>)}
+      {NAV.map((p) => <a href={pathFor(lang, p)} aria-current={p === current ? 'page' : undefined}>{t(`nav.${p}`)}</a>)}
     </nav>
     <div class="ui-header-tools">
       <Button href={bookHref(lang)} size="sm" cta="book">{t('cta.book')}</Button>
@@ -29,7 +30,7 @@ const menuId = `ui-menu-${lang}`;
   <div class="ui-wrap" id={menuId} hidden style="padding-bottom:16px">
     <div class="ui-sheet">
       <ul class="ui-sheet-links">
-        {(['home', ...NAV] as PageId[]).map((p) => <li><a href={pathFor(lang, p)} aria-current={p === page ? 'page' : undefined}>{t(`nav.${p}`)}<Icon name="arrow" /></a></li>)}
+        {(['home', ...NAV] as PageId[]).map((p) => <li><a href={pathFor(lang, p)} aria-current={p === current ? 'page' : undefined}>{t(`nav.${p}`)}<Icon name="arrow" /></a></li>)}
       </ul>
       <div class="ui-sheet-foot ui-stack">
         <Button href={bookHref(lang)} block icon="calendar" cta="book">{t('cta.book')}</Button>
@@ -53,10 +54,4 @@ const menuId = `ui-menu-${lang}`;
   .c-brand-logo { display: block; line-height: 0; }
   .c-brand-logo img { display: block; height: 52px; width: auto; }
   @media (max-width: 767px) { .c-brand-logo img { height: 40px; } }
-  /* Six nav tabs need more room than Concept C's 1024px breakpoint allows. */
-  @media (max-width: 1139px) {
-    :global(.ui-nav), :global(.ui-header-tools > a.ui-btn) { display: none; }
-    :global(.ui-header-tools) { margin-left: auto; }
-    :global(.ui-menu-btn) { display: inline-flex; }
-  }
 </style>

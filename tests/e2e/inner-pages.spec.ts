@@ -67,15 +67,25 @@ test('the About gallery includes the two remaining practice photos', async ({ pa
   await expect(page.locator('main .c-gallery img')).toHaveCount(10);
 });
 
-for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  for (const [slug, zh] of [['eye-exams', '兒童視力檢查不良'], ['eye-surface', '眼睛表面有異物的刺激']]) {
-    test(`/${l}/${slug}/ shows the old-site Chinese text and is in the main nav`, async ({ page }) => {
-      await page.goto(`/${l}/${slug}/`);
+const OLD_PAGES = {
+  'eye-exams': { en: 'Why does my child need dilating eye drops?', 'zh-hans': '为什么要做散瞳检查？', 'zh-hant': '為什麼要做散瞳檢查？' },
+  'eye-surface': { en: 'Eye stones, also called conjunctival stones', 'zh-hans': '眼结石也称为结膜结石', 'zh-hant': '眼結石也稱為結膜結石' },
+} as const;
+const HTML_LANG = { en: 'en', 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant' } as const;
+for (const l of ['en', 'zh-hans', 'zh-hant'] as const) {
+  for (const slug of ['eye-exams', 'eye-surface'] as const) {
+    test(`/${l}/ortho-k/${slug}/ is translated and sits under How it works`, async ({ page }) => {
+      await page.goto(`/${l}/ortho-k/${slug}/`);
       await expect(page.locator('h1')).toHaveCount(1);
-      await expect(page.locator('main [lang="zh-Hant"]').filter({ hasText: zh }).first()).toBeVisible();
-      await expect(page.locator(`header nav a[href="/${l}/${slug}/"]`)).toHaveCount(1);
+      await expect(page.locator(`main [lang="${HTML_LANG[l]}"]`).filter({ hasText: OLD_PAGES[slug][l] }).first()).toBeVisible();
+      await expect(page.locator(`header nav a[href*="${slug}"]`)).toHaveCount(0);
+      await expect(page.locator(`header nav a[href="/${l}/ortho-k/"]`)).toHaveAttribute('aria-current', 'page');
     });
   }
+  test(`/${l}/ortho-k/ links to both other-eye-care pages`, async ({ page }) => {
+    await page.goto(`/${l}/ortho-k/`);
+    for (const slug of ['eye-exams', 'eye-surface']) await expect(page.locator(`main a[href="/${l}/ortho-k/${slug}/"]`)).toHaveCount(1);
+  });
 }
 
 for (const w of [1024, 1100, 1200, 1280]) {

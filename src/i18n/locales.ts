@@ -5,8 +5,13 @@ export type PageId = (typeof PAGES)[number];
 export const HTML_LANG: Record<Lang, string> = { en: 'en', 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant' };
 export const SWITCHER_LABEL: Record<Lang, string> = { en: 'EN', 'zh-hans': '简体', 'zh-hant': '繁體' };
 
+/** Pages that live under another page in the URL and the menu. */
+export const PARENT: Partial<Record<PageId, PageId>> = { 'eye-exams': 'ortho-k', 'eye-surface': 'ortho-k' };
+
 export function pathFor(lang: Lang, page: PageId): string {
-  return page === 'home' ? `/${lang}/` : `/${lang}/${page}/`;
+  if (page === 'home') return `/${lang}/`;
+  const parent = PARENT[page];
+  return parent ? `/${lang}/${parent}/${page}/` : `/${lang}/${page}/`;
 }
 
 export function getLangStaticPaths() {

@@ -11,9 +11,7 @@
     "contact": "聯絡我們",
     "menu": "選單",
     "language": "語言",
-    "community": "〔中文內容待提供〕",
-    "eye-exams": "兒童視力檢查",
-    "eye-surface": "眼表異物"
+    "community": "〔中文內容待提供〕"
   },
   "cta": {
     "book": "預約諮詢",
@@ -58,7 +56,7 @@
     "testimonials": "Stories · 1234兒童視力矯正中心",
     "community": "〔中文內容待提供〕",
     "eye-exams": "兒童視力檢查 · 1234 Ortho-K Vision Care",
-    "eye-surface": "眼表異物 · 1234 Ortho-K Vision Care"
+    "eye-surface": "眼表治療 · 1234 Ortho-K Vision Care"
   },
   "band": {
     "sceneLabel": "〔中文內容待提供〕",
@@ -140,7 +138,12 @@
   },
   "ortho": {
     "title": "〔中文內容待提供〕",
-    "examAlt": "〔中文內容待提供〕"
+    "examAlt": "〔中文內容待提供〕",
+    "other": {
+      "title": "其他眼睛照護",
+      "examsDesc": "孩子學校視力檢查沒通過時，檢查會做些什麼。",
+      "surfaceDesc": "角膜異物、倒睫毛與結膜結石。"
+    }
   },
   "stories": {
     "eyebrow": "〔中文內容待提供〕",
@@ -197,12 +200,10 @@
   },
   "oldPages": {
     "eye-exams": {
-      "title": "兒童視力檢查",
-      "lead": ""
+      "title": "兒童視力檢查"
     },
     "eye-surface": {
-      "title": "眼表異物",
-      "lead": ""
+      "title": "眼表治療"
     }
   }
 }

@@ -1,126 +1,378 @@
 {
-  "eye-exams": [
-    {
-      "type": "h2",
-      "text": "兒童視力檢查不良"
-    },
-    {
-      "type": "p",
-      "text": "主訴：學童學校視力檢查異常"
-    },
-    {
-      "type": "p",
-      "text": "症狀：斜眼看電視、黑板；斜頭觀看電視物品."
-    },
-    {
-      "type": "p",
-      "text": "主要可能疾病： 屈光異常（近視、遠視、散光）、斜視、弱視、小兒白內障、視網膜疾病."
-    },
-    {
-      "type": "h3",
-      "text": "檢驗程序:"
-    },
-    {
-      "type": "li",
-      "text": "遮眼眼位判定檢查 （用以檢查是否有斜視）"
-    },
-    {
-      "type": "li",
-      "text": "睫狀肌鬆弛前鬆弛後電腦驗光儀檢查（用以檢查是否有屈光異常）"
-    },
-    {
-      "type": "li",
-      "text": "睫狀肌鬆弛前鬆弛後鏡片矯正前矯正後視力評量（用以檢查是否有弱視）"
-    },
-    {
-      "type": "li",
-      "text": "散瞳後水晶體裂隙燈檢查（用以檢查是否有白內障）"
-    },
-    {
-      "type": "li",
-      "text": "散瞳後眼底鏡視網膜檢查（用以檢查是否有視網膜疾病）"
-    },
-    {
-      "type": "h3",
-      "text": "Q:爲什麼要做散瞳的檢查？"
-    },
-    {
-      "type": "p",
-      "text": "A:因為兒童的睫狀肌的調節能力很強收縮比較敏感，所以必須點睫狀肌麻痺劑，讓睫狀肌鬆弛，如此測量出來的屈光度數才會準確，但是目前睫狀肌麻痺的眼藥水同時也會讓瞳孔放大，若是單純為了屈光的檢查是不需要散瞳，只需要睫狀肌麻痺就可以了，不過目前還沒有單純可以讓睫狀肌麻痺而不會產生散瞳效果的眼藥水。"
-    },
-    {
-      "type": "p",
-      "text": "另一方面，瞳孔放大後，眼底的檢查就可以更詳細完整。如:視網膜、玻璃體及視神經...等的檢查。"
-    },
-    {
-      "type": "h3",
-      "text": "Q:點散瞳的眼藥水會有什麼副作用？"
-    },
-    {
-      "type": "p",
-      "text": "A:點睫狀肌麻痺劑會有微微刺痛感，近距離視物會有模糊感；另外，因瞳孔放大，所以會有畏光的情況。讀書、寫字請稍加注意，如要考試，請先告訴醫護人員。約八小時後，待藥效過後即可恢復正常。"
-    },
-    {
-      "type": "h3",
-      "text": "Q:什麼是弱視? 如何治療？"
-    },
-    {
-      "type": "p",
-      "text": "A:弱視是指視力不良，無法用眼鏡矯正視力（配鏡矯正後的視力無法達到0.7），經過眼科詳細檢查，找不出器官上的變化。人類的視力有一段最重要的發育期，一般為出生後至四、五歲之間。"
-    },
-    {
-      "type": "p",
-      "text": "在視力發育的過程中，眼睛與大腦中的視覺中樞需要接受適度的光線與視覺刺激，才能發育完整。高度的屈光異常(高度近視、遠視或亂視)，因光線進入眼球後無法正確地成像，就可能造成弱視。其它如斜視、眼瞼下垂、白內障、角膜白斑…等疾病，如果發生在這段發育期，阻礙光線在眼球內正確地成像，都有引起弱視之可能。"
-    },
-    {
-      "type": "h3",
-      "text": "弱視治療："
-    },
-    {
-      "type": "p",
-      "text": "針對弱視的原因作有效的治療，例如屈光異常引起的屈光性弱視，則必須先戴上適度的眼鏡來矯正屈光異常，刺激視力的發育。先天性白內障或眼瞼下垂引起的廢用性弱視，則須先以手術的方法摘除白內障或矯正眼瞼下垂; 斜視引起的弱視則依其斜視的情況接受手術或眼鏡矯正。"
-    },
-    {
-      "type": "h3",
-      "text": "Q: 什麼是斜視 ？如何治療？"
-    },
-    {
-      "type": "p",
-      "text": "A:斜視是由於兩眼眼位不正，分別注視於不同方向而引起的。可分為內斜視、外斜視、上下斜視。大多數的斜視成因不明，但在小孩子，某些腦部的疾病會造成斜視，如腦性麻痺、唐氏症、小腦症及腦瘤，另外某些會影響視力的眼疾如白內障或眼睛外傷也會造成斜視。"
-    },
-    {
-      "type": "p",
-      "text": "治療：程度輕微的，或可以配戴稜鏡鏡片；程度較為嚴重的，以手術調整外眼肌的強度與附著點的位置，使眼位趨於正常。"
-    }
-  ],
-  "eye-surface": [
-    {
-      "type": "h2",
-      "text": "眼睛表面有異物的刺激（角膜異物、倒睫毛、結膜結石等）"
-    },
-    {
-      "type": "p",
-      "text": "淚水產生是由眼皮下隱藏的淚腺所分泌出來，經過眼球表面，眨眼時由眼皮擠壓淚水進入 眼表異物 (角膜異物、倒睫毛、結膜結石)要根據發生原因來治療: 異物移除、眼瞼外翻矯正手術、角結膜炎以藥物治療、乾眼症則依 淚道的阻塞: 淚小點狹窄可用手術稍微將開口剪大，淚小管、鼻淚管狹窄宜採矽管置放術治療。"
-    },
-    {
-      "type": "p",
-      "text": "聽過牙結石、腎結石、胃結石，但你知道眼睛也會結石嗎？其實，根據統計，台灣眼科門診患者中，有高達一半以上的人有眼結石，但只有7%的人會有症狀產生；不過，由於近期台灣環境日趨惡化，刺激眼睛的物質愈來愈多，誘發眼結石症狀的人也與日俱增，需要民眾特別注意。"
-    },
-    {
-      "type": "p",
-      "text": "眼結石也稱為結膜結石，因其結石主要分布在眼瞼結膜底下，是一種相當常見的眼科疾病。所謂的結石，外觀是一顆顆細小、呈白色或黃色的圓點，因看似石頭而稱為結石；這些結石的形成，是因為結膜受到慢性刺激或慢性發炎，導致上皮細胞增生與結膜線體改變，脫落的細胞碎片與黏液性的分泌物混合形成透明狀結膜凝塊。因此，眼結石的成分為磷脂質（phospholipid）和彈性蛋白（elastin），和一般人體結石含多量的鈣不同。"
-    },
-    {
-      "type": "p",
-      "text": "醫師表示，那些在戶外工作、騎車通勤、居住地風沙多、常戴隱形眼鏡、睫毛易掉者，由於經常受到風沙或異物刺激眼睛，便很容易產生眼結石；另外，像過敏性結膜炎、砂眼、乾眼症患者、長期點眼藥水者以及老人家，也都是眼結石的高危險群。"
-    },
-    {
-      "type": "p",
-      "text": "一般而言，結石藏在結膜下而沒有突出結膜表面時，並不會有感覺，也不一定要找醫師處理，但是當結石增大導致摩擦到角膜時，便會開始產生症狀，感到眼睛刺痛、有異物感，且無法隨淚水排出，嚴重者甚至會造成角膜破皮，因此需要求助眼科醫師處理，用針頭將結石挑掉，並遵照醫師指示用藥與複診。另外，挑結石的時候還要注意結石大小、是否適合挑除，避免因傷口過大而結疤，造成結膜表面不平。"
-    },
-    {
-      "type": "p",
-      "text": "醫生提醒，眼結石並非嚴重疾病，但若置之不理，就有可能因長期發炎導致惡性循環，因此症狀產生時千萬要記得求助醫師。另外，眼結石的預防也可以從日常做起，保護好眼睛，避免讓眼睛時常受到刺激，就能預防結石的產生；像是隱形眼鏡的清潔與保養、機車通勤族選擇全罩式透明面罩的安全帽、專心治療眼疾等，都可以幫助減少眼結石產生的機率。"
-    }
-  ]
+  "eye-exams": {
+    "en": [
+      {
+        "type": "h2",
+        "text": "When a child doesn’t pass a school vision screening"
+      },
+      {
+        "type": "p",
+        "text": "Reason for the visit: the child did not pass a vision screening at school."
+      },
+      {
+        "type": "p",
+        "text": "Signs to watch for: looking at the TV or the board out of the corner of the eye, or tilting the head to look at the TV or other things."
+      },
+      {
+        "type": "p",
+        "text": "Possible causes: refractive errors (nearsightedness, farsightedness, astigmatism), strabismus, amblyopia, childhood cataracts, and retinal disease."
+      },
+      {
+        "type": "h3",
+        "text": "What the exam includes:"
+      },
+      {
+        "type": "li",
+        "text": "A cover test of how the eyes line up, to check for strabismus"
+      },
+      {
+        "type": "li",
+        "text": "Computerized refraction before and after the eye’s focusing muscles are relaxed, to check for refractive errors"
+      },
+      {
+        "type": "li",
+        "text": "Vision testing before and after the focusing muscles are relaxed, with and without corrective lenses, to check for amblyopia"
+      },
+      {
+        "type": "li",
+        "text": "A slit-lamp exam of the lens after the pupils are dilated, to check for cataracts"
+      },
+      {
+        "type": "li",
+        "text": "An exam of the retina with an ophthalmoscope after the pupils are dilated, to check for retinal disease"
+      },
+      {
+        "type": "h3",
+        "text": "Why does my child need dilating eye drops?"
+      },
+      {
+        "type": "p",
+        "text": "Children’s focusing muscles (the ciliary muscles) are strong and react quickly, so we use drops that relax them. That way, the prescription we measure is accurate. These drops also widen (dilate) the pupils. Checking the prescription alone only requires relaxing the focusing muscles, not dilating the pupils, but no eye drop available today does one without the other."
+      },
+      {
+        "type": "p",
+        "text": "Dilated pupils also let us examine the back of the eye more completely, including the retina, the vitreous and the optic nerve."
+      },
+      {
+        "type": "h3",
+        "text": "Do the drops have side effects?"
+      },
+      {
+        "type": "p",
+        "text": "The drops may sting a little, and things up close will look blurry for a while. Because the pupils are wider, bright light may feel uncomfortable. Take extra care with reading and writing, and if your child has a test coming up, please tell our staff first. The effects wear off in about eight hours."
+      },
+      {
+        "type": "h3",
+        "text": "What is amblyopia, and how is it treated?"
+      },
+      {
+        "type": "p",
+        "text": "Amblyopia (“lazy eye”) means vision that glasses cannot correct to normal (below 0.7 on the decimal scale, about 20/30), even though a detailed eye exam finds nothing physically wrong with the eye. The most important period for vision development is from birth to about age four or five."
+      },
+      {
+        "type": "p",
+        "text": "While vision develops, the eyes and the brain’s visual centers need clear light and images to develop fully. A high refractive error (high nearsightedness, farsightedness or astigmatism) keeps light from focusing properly in the eye, which can cause amblyopia. Other conditions during this period, such as strabismus, a drooping eyelid, cataracts or corneal scarring, can also block a clear image and lead to amblyopia."
+      },
+      {
+        "type": "h3",
+        "text": "Treating amblyopia"
+      },
+      {
+        "type": "p",
+        "text": "Treatment depends on the cause. Amblyopia caused by a refractive error is treated first with glasses of the right strength, which correct the error and encourage vision to develop. Amblyopia caused by a congenital cataract or a drooping eyelid needs surgery first, to remove the cataract or correct the eyelid. Amblyopia caused by strabismus is treated with surgery or glasses, depending on the strabismus."
+      },
+      {
+        "type": "h3",
+        "text": "What is strabismus, and how is it treated?"
+      },
+      {
+        "type": "p",
+        "text": "Strabismus means the two eyes are not aligned and point in different directions. An eye may turn inward, outward, up or down. Most cases have no known cause, but in children, some brain conditions can cause strabismus, such as cerebral palsy, Down syndrome, microcephaly and brain tumors. Eye conditions that affect vision, such as cataracts or an eye injury, can also cause it."
+      },
+      {
+        "type": "p",
+        "text": "Treatment: mild cases may be treated with prism lenses; more severe cases may need surgery to adjust the strength and position of the eye muscles so that the eyes line up."
+      }
+    ],
+    "zh-hans": [
+      {
+        "type": "h2",
+        "text": "学校视力检查没通过时"
+      },
+      {
+        "type": "p",
+        "text": "主诉：学童在学校的视力检查结果异常。"
+      },
+      {
+        "type": "p",
+        "text": "症状：斜眼看电视或黑板；歪着头看电视或物品。"
+      },
+      {
+        "type": "p",
+        "text": "可能的疾病：屈光异常（近视、远视、散光）、斜视、弱视、小儿白内障、视网膜疾病。"
+      },
+      {
+        "type": "h3",
+        "text": "检查项目："
+      },
+      {
+        "type": "li",
+        "text": "遮眼测试判定眼位（检查是否有斜视）"
+      },
+      {
+        "type": "li",
+        "text": "睫状肌放松前、后的电脑验光（检查是否有屈光异常）"
+      },
+      {
+        "type": "li",
+        "text": "睫状肌放松前、后，以及配戴矫正镜片前、后的视力评估（检查是否有弱视）"
+      },
+      {
+        "type": "li",
+        "text": "散瞳后以裂隙灯检查晶状体（检查是否有白内障）"
+      },
+      {
+        "type": "li",
+        "text": "散瞳后以眼底镜检查视网膜（检查是否有视网膜疾病）"
+      },
+      {
+        "type": "h3",
+        "text": "为什么要做散瞳检查？"
+      },
+      {
+        "type": "p",
+        "text": "因为儿童睫状肌的调节能力很强、收缩较敏感，所以必须点睫状肌麻痹剂让睫状肌放松，这样测出来的屈光度数才会准确。目前的睫状肌麻痹眼药水也会让瞳孔放大；若只是为了检查屈光度数，其实不需要散瞳，只要让睫状肌麻痹即可，但目前还没有只让睫状肌麻痹、而不会同时散瞳的眼药水。"
+      },
+      {
+        "type": "p",
+        "text": "另一方面，瞳孔放大后，眼底检查也能更详细完整，例如检查视网膜、玻璃体及视神经等。"
+      },
+      {
+        "type": "h3",
+        "text": "散瞳眼药水有什么副作用？"
+      },
+      {
+        "type": "p",
+        "text": "点睫状肌麻痹剂时会有轻微刺痛感，看近的东西会模糊；另外，因为瞳孔放大，会有怕光的情形。读书、写字时请稍加注意；如果近期有考试，请先告诉医护人员。约八小时后药效消退，即可恢复正常。"
+      },
+      {
+        "type": "h3",
+        "text": "什么是弱视？如何治疗？"
+      },
+      {
+        "type": "p",
+        "text": "弱视是指视力不良，即使配戴眼镜也无法矫正到正常（矫正后视力未达0.7），而经过详细的眼科检查，也找不出眼睛构造上的异常。人类视力发育最重要的时期，一般是从出生到四、五岁之间。"
+      },
+      {
+        "type": "p",
+        "text": "在视力发育的过程中，眼睛与大脑的视觉中枢需要接受适当的光线与视觉刺激，才能发育完整。高度的屈光异常（高度近视、远视或散光）会使光线进入眼球后无法正确成像，就可能造成弱视。其他如斜视、眼睑下垂、白内障、角膜白斑等疾病，如果发生在这段发育期、阻碍光线在眼球内正确成像，也都可能引起弱视。"
+      },
+      {
+        "type": "h3",
+        "text": "弱视的治疗"
+      },
+      {
+        "type": "p",
+        "text": "要针对造成弱视的原因治疗。例如屈光异常引起的屈光性弱视，必须先配戴度数适当的眼镜来矫正屈光异常，刺激视力发育；先天性白内障或眼睑下垂引起的废用性弱视，须先以手术摘除白内障或矫正眼睑下垂；斜视引起的弱视，则依斜视的情况接受手术或眼镜矫正。"
+      },
+      {
+        "type": "h3",
+        "text": "什么是斜视？如何治疗？"
+      },
+      {
+        "type": "p",
+        "text": "斜视是指两眼的眼位不正，分别注视不同的方向，可分为内斜视、外斜视及上下斜视。大多数斜视的成因不明，但在儿童身上，某些脑部疾病会造成斜视，例如脑性麻痹、唐氏症、小头症及脑瘤；另外，一些会影响视力的眼疾，如白内障或眼睛外伤，也可能造成斜视。"
+      },
+      {
+        "type": "p",
+        "text": "治疗：程度轻微的，可以配戴棱镜镜片；程度较严重的，则以手术调整眼外肌的强度与附着点位置，使眼位恢复正常。"
+      }
+    ],
+    "zh-hant": [
+      {
+        "type": "h2",
+        "text": "學校視力檢查沒通過時"
+      },
+      {
+        "type": "p",
+        "text": "主訴：學童在學校的視力檢查結果異常。"
+      },
+      {
+        "type": "p",
+        "text": "症狀：斜眼看電視或黑板；歪著頭看電視或物品。"
+      },
+      {
+        "type": "p",
+        "text": "可能的疾病：屈光異常（近視、遠視、散光）、斜視、弱視、小兒白內障、視網膜疾病。"
+      },
+      {
+        "type": "h3",
+        "text": "檢查項目："
+      },
+      {
+        "type": "li",
+        "text": "遮眼測試判定眼位（檢查是否有斜視）"
+      },
+      {
+        "type": "li",
+        "text": "睫狀肌放鬆前、後的電腦驗光（檢查是否有屈光異常）"
+      },
+      {
+        "type": "li",
+        "text": "睫狀肌放鬆前、後，以及配戴矯正鏡片前、後的視力評估（檢查是否有弱視）"
+      },
+      {
+        "type": "li",
+        "text": "散瞳後以裂隙燈檢查水晶體（檢查是否有白內障）"
+      },
+      {
+        "type": "li",
+        "text": "散瞳後以眼底鏡檢查視網膜（檢查是否有視網膜疾病）"
+      },
+      {
+        "type": "h3",
+        "text": "為什麼要做散瞳檢查？"
+      },
+      {
+        "type": "p",
+        "text": "因為兒童睫狀肌的調節能力很強、收縮較敏感，所以必須點睫狀肌麻痺劑讓睫狀肌放鬆，這樣測出來的屈光度數才會準確。目前的睫狀肌麻痺眼藥水也會讓瞳孔放大；若只是為了檢查屈光度數，其實不需要散瞳，只要讓睫狀肌麻痺即可，但目前還沒有只讓睫狀肌麻痺、而不會同時散瞳的眼藥水。"
+      },
+      {
+        "type": "p",
+        "text": "另一方面，瞳孔放大後，眼底檢查也能更詳細完整，例如檢查視網膜、玻璃體及視神經等。"
+      },
+      {
+        "type": "h3",
+        "text": "散瞳眼藥水有什麼副作用？"
+      },
+      {
+        "type": "p",
+        "text": "點睫狀肌麻痺劑時會有輕微刺痛感，看近的東西會模糊；另外，因為瞳孔放大，會有怕光的情形。讀書、寫字時請稍加注意；如果近期有考試，請先告訴醫護人員。約八小時後藥效消退，即可恢復正常。"
+      },
+      {
+        "type": "h3",
+        "text": "什麼是弱視？如何治療？"
+      },
+      {
+        "type": "p",
+        "text": "弱視是指視力不良，即使配戴眼鏡也無法矯正到正常（矯正後視力未達0.7），而經過詳細的眼科檢查，也找不出眼睛構造上的異常。人類視力發育最重要的時期，一般是從出生到四、五歲之間。"
+      },
+      {
+        "type": "p",
+        "text": "在視力發育的過程中，眼睛與大腦的視覺中樞需要接受適當的光線與視覺刺激，才能發育完整。高度的屈光異常（高度近視、遠視或散光）會使光線進入眼球後無法正確成像，就可能造成弱視。其他如斜視、眼瞼下垂、白內障、角膜白斑等疾病，如果發生在這段發育期、阻礙光線在眼球內正確成像，也都可能引起弱視。"
+      },
+      {
+        "type": "h3",
+        "text": "弱視的治療"
+      },
+      {
+        "type": "p",
+        "text": "要針對造成弱視的原因治療。例如屈光異常引起的屈光性弱視，必須先配戴度數適當的眼鏡來矯正屈光異常，刺激視力發育；先天性白內障或眼瞼下垂引起的廢用性弱視，須先以手術摘除白內障或矯正眼瞼下垂；斜視引起的弱視，則依斜視的情況接受手術或眼鏡矯正。"
+      },
+      {
+        "type": "h3",
+        "text": "什麼是斜視？如何治療？"
+      },
+      {
+        "type": "p",
+        "text": "斜視是指兩眼的眼位不正，分別注視不同的方向，可分為內斜視、外斜視及上下斜視。大多數斜視的成因不明，但在兒童身上，某些腦部疾病會造成斜視，例如腦性麻痺、唐氏症、小頭症及腦瘤；另外，一些會影響視力的眼疾，如白內障或眼睛外傷，也可能造成斜視。"
+      },
+      {
+        "type": "p",
+        "text": "治療：程度輕微的，可以配戴稜鏡鏡片；程度較嚴重的，則以手術調整眼外肌的強度與附著點位置，使眼位恢復正常。"
+      }
+    ]
+  },
+  "eye-surface": {
+    "en": [
+      {
+        "type": "h2",
+        "text": "Irritation from something on the eye’s surface (corneal foreign bodies, ingrown eyelashes, conjunctival stones)"
+      },
+      {
+        "type": "p",
+        "text": "Tears are made by the tear glands under the eyelids. They flow across the surface of the eye, and each blink pushes them into the tear ducts to drain. Problems on the eye’s surface (a foreign body on the cornea, ingrown eyelashes, conjunctival stones) are treated according to their cause: removing the foreign body, surgery to correct an outward-turning eyelid, medication for keratoconjunctivitis, and treatment of dry eye based on its cause. For blocked tear ducts, a narrow tear-duct opening can be widened slightly with minor surgery, and a narrowed tear canal or nasolacrimal duct is best treated by placing a silicone tube."
+      },
+      {
+        "type": "p",
+        "text": "You’ve heard of tartar on teeth, kidney stones and stomach stones, but did you know the eyes can form stones too? According to statistics, more than half of eye-clinic patients in Taiwan have eye stones, but only 7% have symptoms. As the environment in Taiwan has worsened in recent years and more irritants reach the eyes, more and more people are developing symptoms, so it is worth paying attention to."
+      },
+      {
+        "type": "p",
+        "text": "Eye stones, also called conjunctival stones, are a very common eye condition. They form mainly under the conjunctiva that lines the inside of the eyelids and look like tiny white or yellow dots, which is why they are called stones. They form when the conjunctiva is irritated or inflamed over a long time: surface cells multiply, the conjunctival glands change, and shed cell debris mixes with mucus to form clear clumps. That is why eye stones are made of phospholipids and elastin, unlike most stones in the body, which contain a lot of calcium."
+      },
+      {
+        "type": "p",
+        "text": "Doctors note that people who work outdoors, commute by scooter, live in windy or dusty areas, wear contact lenses often, or lose eyelashes easily are more likely to develop eye stones, because wind, dust or particles often irritate their eyes. People with allergic conjunctivitis, trachoma or dry eye, people who use eye drops for a long time, and older adults are also at higher risk."
+      },
+      {
+        "type": "p",
+        "text": "In general, stones that stay under the conjunctiva without breaking through the surface can’t be felt and don’t necessarily need treatment. But when a stone grows and rubs against the cornea, it starts to cause symptoms: stinging, a feeling that something is in the eye, and irritation that tears can’t wash away. In severe cases it can scratch the cornea. At that point, see an eye doctor to have the stone removed with a fine needle, then use the prescribed medication and return for follow-up visits. Before removing a stone, the doctor also considers its size and whether it is suitable to remove, to avoid a large wound that could scar and leave the surface of the conjunctiva uneven."
+      },
+      {
+        "type": "p",
+        "text": "Eye stones are not a serious condition, but if they are ignored, long-term inflammation can create a vicious cycle, so be sure to see a doctor when symptoms appear. You can also help prevent eye stones in daily life by protecting your eyes from frequent irritation: clean and care for contact lenses properly, wear a full-face helmet with a clear visor when riding a scooter, and treat eye conditions promptly. All of these help lower the chance of eye stones forming."
+      }
+    ],
+    "zh-hans": [
+      {
+        "type": "h2",
+        "text": "眼睛表面异物的刺激（角膜异物、倒睫毛、结膜结石等）"
+      },
+      {
+        "type": "p",
+        "text": "泪水由眼皮下的泪腺分泌，流经眼球表面，眨眼时再由眼皮挤压进入泪道排出。眼表异物（角膜异物、倒睫毛、结膜结石）要根据发生原因来治疗：移除异物、眼睑外翻矫正手术、以药物治疗角结膜炎，干眼症则依病因治疗。泪道阻塞方面：泪小点狭窄可以手术将开口稍微扩大；泪小管或鼻泪管狭窄，则宜采用硅胶管置入术治疗。"
+      },
+      {
+        "type": "p",
+        "text": "听过牙结石、肾结石、胃结石，但你知道眼睛也会长结石吗？根据统计，台湾眼科门诊患者中，有一半以上的人有眼结石，但只有7%的人会出现症状。不过，由于近年台湾环境日趋恶化，刺激眼睛的物质愈来愈多，出现眼结石症状的人也与日俱增，需要特别注意。"
+      },
+      {
+        "type": "p",
+        "text": "眼结石也称为结膜结石，因为主要分布在眼睑结膜底下，是相当常见的眼科疾病。所谓的结石，外观是一颗颗细小、呈白色或黄色的圆点，因为看起来像石头而得名。结石形成的原因，是结膜受到慢性刺激或慢性发炎，导致上皮细胞增生与结膜腺体改变，脱落的细胞碎片与黏液性分泌物混合，形成透明状的结膜凝块。因此，眼结石的成分是磷脂质（phospholipid）和弹性蛋白（elastin），与一般人体结石含有大量钙质不同。"
+      },
+      {
+        "type": "p",
+        "text": "医生表示，在户外工作、骑电动车通勤、住在风沙多的地方、常戴隐形眼镜或容易掉睫毛的人，由于眼睛经常受到风沙或异物刺激，很容易产生眼结石；另外，过敏性结膜炎、砂眼、干眼症患者、长期点眼药水的人以及年长者，也都是眼结石的高危险群。"
+      },
+      {
+        "type": "p",
+        "text": "一般而言，结石藏在结膜下、没有突出结膜表面时，并不会有感觉，也不一定需要找医生处理。但是当结石变大、摩擦到角膜时，便会开始出现症状，例如眼睛刺痛、有异物感，而且无法随泪水排出，严重时甚至会造成角膜破皮。这时就需要请眼科医生用针头将结石挑除，并遵照医生指示用药与回诊。另外，挑除结石时还要注意结石的大小、是否适合挑除，避免伤口过大而结疤，造成结膜表面不平整。"
+      },
+      {
+        "type": "p",
+        "text": "医生提醒，眼结石并不是严重的疾病，但若置之不理，可能因长期发炎而形成恶性循环，因此出现症状时一定要记得就医。眼结石的预防也可以从日常生活做起：保护好眼睛，避免眼睛经常受到刺激，就能减少结石产生。例如正确清洁与保养隐形眼镜、骑电动车时选择全罩式透明面罩的头盔、积极治疗眼疾等，都有助于降低眼结石产生的概率。"
+      }
+    ],
+    "zh-hant": [
+      {
+        "type": "h2",
+        "text": "眼睛表面異物的刺激（角膜異物、倒睫毛、結膜結石等）"
+      },
+      {
+        "type": "p",
+        "text": "淚水由眼皮下的淚腺分泌，流經眼球表面，眨眼時再由眼皮擠壓進入淚道排出。眼表異物（角膜異物、倒睫毛、結膜結石）要根據發生原因來治療：移除異物、眼瞼外翻矯正手術、以藥物治療角結膜炎，乾眼症則依病因治療。淚道阻塞方面：淚小點狹窄可以手術將開口稍微擴大；淚小管或鼻淚管狹窄，則宜採用矽管置放術治療。"
+      },
+      {
+        "type": "p",
+        "text": "聽過牙結石、腎結石、胃結石，但你知道眼睛也會長結石嗎？根據統計，台灣眼科門診患者中，有一半以上的人有眼結石，但只有7%的人會出現症狀。不過，由於近年台灣環境日趨惡化，刺激眼睛的物質愈來愈多，出現眼結石症狀的人也與日俱增，需要特別注意。"
+      },
+      {
+        "type": "p",
+        "text": "眼結石也稱為結膜結石，因為主要分布在眼瞼結膜底下，是相當常見的眼科疾病。所謂的結石，外觀是一顆顆細小、呈白色或黃色的圓點，因為看起來像石頭而得名。結石形成的原因，是結膜受到慢性刺激或慢性發炎，導致上皮細胞增生與結膜腺體改變，脫落的細胞碎片與黏液性分泌物混合，形成透明狀的結膜凝塊。因此，眼結石的成分是磷脂質（phospholipid）和彈性蛋白（elastin），與一般人體結石含有大量鈣質不同。"
+      },
+      {
+        "type": "p",
+        "text": "醫師表示，在戶外工作、騎機車通勤、住在風沙多的地方、常戴隱形眼鏡或容易掉睫毛的人，由於眼睛經常受到風沙或異物刺激，很容易產生眼結石；另外，過敏性結膜炎、砂眼、乾眼症患者、長期點眼藥水的人以及年長者，也都是眼結石的高危險群。"
+      },
+      {
+        "type": "p",
+        "text": "一般而言，結石藏在結膜下、沒有突出結膜表面時，並不會有感覺，也不一定需要找醫師處理。但是當結石變大、摩擦到角膜時，便會開始出現症狀，例如眼睛刺痛、有異物感，而且無法隨淚水排出，嚴重時甚至會造成角膜破皮。這時就需要請眼科醫師用針頭將結石挑除，並遵照醫師指示用藥與回診。另外，挑除結石時還要注意結石的大小、是否適合挑除，避免傷口過大而結疤，造成結膜表面不平整。"
+      },
+      {
+        "type": "p",
+        "text": "醫師提醒，眼結石並不是嚴重的疾病，但若置之不理，可能因長期發炎而形成惡性循環，因此出現症狀時一定要記得就醫。眼結石的預防也可以從日常生活做起：保護好眼睛，避免眼睛經常受到刺激，就能減少結石產生。例如正確清潔與保養隱形眼鏡、騎機車時選擇全罩式透明面罩的安全帽、積極治療眼疾等，都有助於降低眼結石產生的機率。"
+      }
+    ]
+  }
 }

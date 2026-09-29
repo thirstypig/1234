@@ -11,9 +11,7 @@
     "contact": "Contact",
     "menu": "Menu",
     "language": "Language",
-    "community": "〔中文内容待提供〕",
-    "eye-exams": "Eye exams",
-    "eye-surface": "Eye surface"
+    "community": "〔中文内容待提供〕"
   },
   "cta": {
     "book": "Book a consultation",
@@ -57,8 +55,8 @@
     "contact": "Contact · 1234 Ortho-K Vision Care",
     "testimonials": "Stories · 1234 Ortho-K Vision Care",
     "community": "〔中文内容待提供〕",
-    "eye-exams": "〔中文内容待提供〕",
-    "eye-surface": "〔中文内容待提供〕"
+    "eye-exams": "儿童视力检查 · 1234 Ortho-K Vision Care",
+    "eye-surface": "眼表治疗 · 1234 Ortho-K Vision Care"
   },
   "band": {
     "sceneLabel": "〔中文内容待提供〕",
@@ -140,7 +138,12 @@
   },
   "ortho": {
     "title": "〔中文内容待提供〕",
-    "examAlt": "〔中文内容待提供〕"
+    "examAlt": "〔中文内容待提供〕",
+    "other": {
+      "title": "其他眼睛护理",
+      "examsDesc": "孩子学校视力检查没通过时，检查会做些什么。",
+      "surfaceDesc": "角膜异物、倒睫毛与结膜结石。"
+    }
   },
   "stories": {
     "eyebrow": "〔中文内容待提供〕",
@@ -197,12 +200,10 @@
   },
   "oldPages": {
     "eye-exams": {
-      "title": "Children’s Eye Exams",
-      "lead": "〔中文内容待提供〕"
+      "title": "儿童视力检查"
     },
     "eye-surface": {
-      "title": "Eye Surface Therapy",
-      "lead": "〔中文内容待提供〕"
+      "title": "眼表治疗"
     }
   }
 }
