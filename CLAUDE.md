@@ -85,6 +85,15 @@ requests, 30-day TTL; name, phone, location and preferred time only).
 Deploying it (`npx wrangler deploy`) and pushing to a deploy branch are
 production actions: ask first.
 
+`main` is production (PRs #8–#10 merged 2026-09-28). Both `main` and
+`site/concept-c` deploy to the same Pages site, so new work goes on a
+branch and a PR into `main`; keep `site/concept-c` fast-forwarded to it.
+
+Held-back patient photos, questionable photos, stock images, other
+organizations' logos, the review claims and the attorney-review packet
+live on a separate private Worker (private repo
+`thirstypig/1234-patient-photos`), never in this repo.
+
 The old `deploy-review-site.yml` still exists on `design/concepts-import`
 (PR #8) but is disabled in Actions. Don't re-enable it; it would publish
 the concepts-only site over the real one.
@@ -92,7 +101,10 @@ the concepts-only site over the real one.
 ## Tests
 
 - `npm run test:unit`: scripts, i18n parity, image guards
-- `npm run test:e2e`: Playwright + axe over all 39 pages (serves `dist/`
+- `npm run test:e2e`: Playwright + axe over all 39 pages. Stop any
+  `astro dev` first (`npx astro dev stop`): Playwright reuses whatever is
+  on port 4321, and the dev toolbar's shadow DOM adds extra `h1`s that
+  fail the one-h1 tests. (serves `dist/`
   via `scripts/serve-dist.mjs`; `astro preview` detaches in Astro 7).
   A rare `page.goto` timeout is Google Fonts, not the site: rerun.
 - `npm run test:deploy`: assembled Pages layout (old concept URLs,
