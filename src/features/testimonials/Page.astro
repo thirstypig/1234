@@ -20,7 +20,7 @@ const t = makeT(lang);
         <h2 class="ui-h2">{t('stories.gallery.title')}</h2>
         <p class="ui-body">{t('stories.gallery.lead')}</p>
         <ul class="c-gallery" aria-label={t('stories.gallery.label')}>
-          {patients.map((p) => (
+          {patients.filter((p) => !('page' in p)).map((p) => (
             <li><Image src={patientPhoto(p.file)} alt={t(`stories.gallery.p${p.id.slice(2)}`)} widths={[320, 640]} sizes="(max-width: 767px) 45vw, 300px" /></li>
           ))}
         </ul>

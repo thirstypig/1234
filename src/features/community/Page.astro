@@ -5,7 +5,7 @@ import BookingBand from '../../components/BookingBand.astro';
 import Hero from '../../components/Hero.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
-import { legacyImage } from '../../lib/images';
+import { legacyImage, patientPhoto } from '../../lib/images';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
@@ -16,13 +16,19 @@ const EVENTS = [
   ['1234orthok-com-038.jpg', 'expoStage'],
   ['1234orthok-com-066.jpg', 'lionsAward'],
   ['1234orthok-com-009.jpg', 'lecture'],
+  ['P-26.jpg', 'donation'],
   ['1234orthok-com-007.jpg', 'signing'],
+  ['P-25.jpg', 'assembly'],
   ['1234orthok-com-072.jpg', 'colleagues'],
   ['1234orthok-com-054.jpg', 'auditorium'],
+  ['P-24.jpg', 'seniors'],
   ['1234orthok-com-049.jpg', 'flyer'],
+  ['1234orthok-com-033.jpg', 'booth'],
   ['1234orthok-com-035.jpg', 'expoDuo'],
+  ['1234orthok-com-022.jpg', 'training'],
   ['1234orthok-com-047.jpg', 'consultant'],
   ['1234orthok-com-021.jpg', 'book'],
+  ['1234orthok-com-020.jpg', 'banner', '20% center'],
   ['1234orthok-com-075.jpg', 'dogs'],
 ] as const;
 ---
@@ -32,8 +38,8 @@ const EVENTS = [
     <section class="ui-section c-paper" id="events">
       <div class="ui-wrap">
         <ul class="c-events" aria-label={t('community.label')}>
-          {EVENTS.map(([file, key]) => (
-            <li><figure><Image src={legacyImage(file)} alt={t(`community.${key}`)} widths={[360, 720]} sizes="(max-width: 767px) 90vw, 380px" /><figcaption>{t(`community.${key}`)}</figcaption></figure></li>
+          {EVENTS.map(([file, key, focus]) => (
+            <li><figure><Image src={file.startsWith('P-') ? patientPhoto(file) : legacyImage(file)} alt={t(`community.${key}`)} style={focus && `object-position: ${focus}`} widths={[360, 720]} sizes="(max-width: 767px) 90vw, 380px" /><figcaption>{t(`community.${key}`)}</figcaption></figure></li>
           ))}
         </ul>
       </div>

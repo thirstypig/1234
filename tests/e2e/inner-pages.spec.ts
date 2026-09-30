@@ -41,13 +41,13 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
 }
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/community/ shows the 14 public community photos, each described and captioned`, async ({ page }) => {
+  test(`/${l}/community/ shows the 20 public community photos, each described and captioned`, async ({ page }) => {
     await page.goto(`/${l}/community/`);
     await expect(page.locator('h1')).toHaveCount(1);
     const imgs = page.locator('main .c-events img');
-    await expect(imgs).toHaveCount(14);
+    await expect(imgs).toHaveCount(20);
     for (const alt of await imgs.evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''))) expect(alt.trim()).not.toBe('');
-    await expect(page.locator('main .c-events figure figcaption')).toHaveCount(14);
+    await expect(page.locator('main .c-events figure figcaption')).toHaveCount(20);
   });
 
   test(`/${l}/testimonials/ shows the 23 cleared patient photos, each described`, async ({ page }) => {

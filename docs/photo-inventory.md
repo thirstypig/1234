@@ -5,11 +5,11 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Where | Count |
 |---|---|
 | Not used | 14 |
-| Private page | 19 |
-| Site | 53 |
+| Private page | 13 |
+| Site | 59 |
 | **Total** | **86** |
 
-"Private page" means the password-protected patient-photos page (not part of this repo). Patient photos P-01 to P-23 are on the Stories page (owner confirmed permission 2026-09-29, `assets/patients/`); the other patient photos stay off this repo. Every photo, stock image and logo is on the site or the private page; "Not used" is only duplicates, layout icons, a text graphic and the old intro-book PDF.
+"Private page" means the password-protected patient-photos page (not part of this repo). Patient photos P-01 to P-23 are on the Stories page and P-24 to P-26 on Community (owner confirmed permission 2026-09-29/30, `assets/patients/`); the other patient photos stay off this repo. Every photo, stock image and logo is on the site or the private page; "Not used" is only duplicates, layout icons, a text graphic and the old intro-book PDF.
 
 ## Old website images
 
@@ -33,9 +33,9 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-017.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-018.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-019.png` | practice-logo | Not used | Smaller copy of logo 051 |
-| `1234orthok-com-020.jpg` | needs-review | Private page — H-06 | Child being examined and "Since 1998" |
+| `1234orthok-com-020.jpg` | needs-review | Site — Community page (H-06) | Owner approved 2026-09-30 |
 | `1234orthok-com-021.jpg` | needs-review | Site — Community page | Old-site photos, captioned (owner approved 2026-09-28) |
-| `1234orthok-com-022.jpg` | needs-review | Private page — H-01 | Price and refund-guarantee sign; held back 2026-09-28 |
+| `1234orthok-com-022.jpg` | needs-review | Site — Community page (H-01) | Owner approved 2026-09-30 |
 | `1234orthok-com-023.jpg` | likely-stock | Private page — S-02 | Stock photo; license unknown |
 | `1234orthok-com-024.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-025.jpg` | needs-review | Not used | Duplicate of 022 (shown on Community) |
@@ -46,7 +46,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-030.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-031.jpg` | patient-photo | Site — Stories gallery (P-15) | Owner confirmed permission 2026-09-29; `assets/patients/P-15.jpg` |
 | `1234orthok-com-032.jpg` | practice-photo | Not used | Duplicate of 011 (shown in About gallery) |
-| `1234orthok-com-033.jpg` | needs-review | Private page — H-02 | "USA NO.1 EFFECTIVE" banner and "Since 1998"; held back |
+| `1234orthok-com-033.jpg` | needs-review | Site — Community page (H-02) | Owner approved 2026-09-30 |
 | `1234orthok-com-034.jpg` | likely-stock | Private page — S-03 | Stock photo; license unknown |
 | `1234orthok-com-035.jpg` | needs-review | Site — Community page | Old-site photos, captioned (owner approved 2026-09-28) |
 | `1234orthok-com-036.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
@@ -57,7 +57,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-041.png` | third-party-logo | Site — How it works (The lenses we fit) | VIPOK logo; Dr. Woo is an owner of VIPOK (ownership disclosed on the page) |
 | `1234orthok-com-042.jpg` | patient-photo | Site — Stories gallery (P-16) | Owner confirmed permission 2026-09-29; `assets/patients/P-16.jpg` |
 | `1234orthok-com-043.jpg` | practice-photo | Site — Ortho-K, first visit | Exam room |
-| `1234orthok-com-044.jpg` | needs-review | Private page — P-25 | Crowd of children; needs releases |
+| `1234orthok-com-044.jpg` | needs-review | Site — Community page (P-25) | Owner confirmed permission 2026-09-30; `assets/patients/P-25.jpg` |
 | `1234orthok-com-045.jpg` | patient-photo | Site — Stories gallery (P-17) | Owner confirmed permission 2026-09-29; `assets/patients/P-17.jpg` |
 | `1234orthok-com-046.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-047.jpg` | needs-review | Site — Community page | Old-site photos, captioned (owner approved 2026-09-28) |
@@ -69,7 +69,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-053.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-054.jpg` | needs-review | Site — Community page | Events, captioned (owner approved 2026-09-28) |
 | `1234orthok-com-055.jpg` | practice-photo | Site — Alhambra location card | Clinic sign |
-| `1234orthok-com-056.jpg` | needs-review | Private page — P-24 | Members of the public at a talk; needs releases |
+| `1234orthok-com-056.jpg` | needs-review | Site — Community page (P-24) | Owner confirmed permission 2026-09-30; `assets/patients/P-24.jpg` |
 | `1234orthok-com-057.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-058.png` | third-party-logo | Private page — L-04 | Paragon CRT logo; needs permission |
 | `1234orthok-com-059.jpg` | likely-stock | Private page — S-04 | Stock photo; license unknown |
@@ -82,7 +82,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-066.jpg` | needs-review | Site — Community page (H-04) | Owner approved 2026-09-29 |
 | `1234orthok-com-067.jpg` | patient-photo | Site — Stories gallery (P-22) | Owner confirmed permission 2026-09-29; `assets/patients/P-22.jpg` |
 | `1234orthok-com-068.jpg` | patient-photo | Site — Stories gallery (P-23) | Owner confirmed permission 2026-09-29; `assets/patients/P-23.jpg` |
-| `1234orthok-com-069.jpg` | needs-review | Private page — P-26 | Crowd of children; needs releases |
+| `1234orthok-com-069.jpg` | needs-review | Site — Community page (P-26) | Owner confirmed permission 2026-09-30; `assets/patients/P-26.jpg` |
 | `1234orthok-com-070.png` | third-party-logo | Private page — L-05 | EyeDream logo; needs permission |
 | `1234orthok-com-071.png` | likely-stock | Private page — S-08 | Stock icon; license unknown |
 | `1234orthok-com-072.jpg` | needs-review | Site — Community page (H-05) | Owner approved 2026-09-29 |

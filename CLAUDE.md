@@ -32,9 +32,10 @@ Rules:
   About. The clinic opened in 1998; Dr. Woo has over 30 years of
   experience (he practiced in Taiwan before that). Add no new claims.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
-  enforces it). Only patient photos P-01 to P-23 may be published
+  enforces it). Only patient photos P-01 to P-26 may be published
   (owner confirmed permission 2026-09-29): prepared, metadata-free copies
-  in `assets/patients/`, on the Stories page via `patientPhoto()`. All
+  in `assets/patients/`, on Stories (P-01 to P-23) and Community (P-24 to
+  P-26) via `patientPhoto()`. All
   other patient photos stay on the private patient-photos page.
 - All text WCAG AA.
 - "Book a consultation" in the first screen and at the bottom.
@@ -71,7 +72,7 @@ images tagged `practice-photo` or marked `approved: true` in
 `legacyImage()` (`src/lib/images.ts`), which fails the build for
 anything else. A unit test fails if any other image is tracked.
 Never commit any other patient photo; git history is permanent once
-pushed. Patient photos P-01 to P-23 are the exception: they live in
+pushed. Patient photos P-01 to P-26 are the exception: they live in
 `assets/patients/`, listed in `photos.json` (a unit test enforces it),
 with the P-01 record card blurred and P-07/P-08 cropped.
 
@@ -102,7 +103,7 @@ production actions: ask first.
 `site/concept-c` deploy to the same Pages site, so new work goes on a
 branch and a PR into `main`; keep `site/concept-c` fast-forwarded to it.
 
-Held-back patient photos (P-24 to P-26 and the rest), questionable photos, stock images, other
+Held-back patient photos, questionable photos, stock images, other
 organizations' logos, the review claims and the attorney-review packet
 live on a separate private Worker (private repo
 `thirstypig/1234-patient-photos`), never in this repo.
