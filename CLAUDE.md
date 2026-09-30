@@ -20,8 +20,9 @@ Rules:
 - Never add statistics, success rates, patient counts, or
   "best/most effective" claims. Exceptions (owner decisions,
   2026-09-28), kept word for word from the old site, claims included:
-  the patient reviews with their names on the Stories page
-  (`src/content/reviews.json`), and the statistics on the Eye Surface
+  all 21 patient reviews with their names on the Stories page
+  (`src/content/reviews.json`; the owner approved the 9 once held back,
+  2026-09-29), and the statistics on the Eye Surface
   Therapy page. That page and Children's Eye Exams
   (`src/content/old-pages.json`) sit under How it works
   (`/<lang>/ortho-k/...`); their Traditional Chinese was cleaned up and

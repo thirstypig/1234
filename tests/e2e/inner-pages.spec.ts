@@ -31,10 +31,10 @@ test('testimonials are shown as quotes', async ({ page }) => {
 });
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/testimonials/ shows the 12 public reviews and the results note`, async ({ page }) => {
+  test(`/${l}/testimonials/ shows all 21 old-site reviews and the results note`, async ({ page }) => {
     await page.goto(`/${l}/testimonials/`);
-    await expect(page.locator('main blockquote.c-quote')).toHaveCount(12);
-    await expect(page.locator('main blockquote.c-quote[lang="en"]')).toHaveCount(12);
+    await expect(page.locator('main blockquote.c-quote')).toHaveCount(21);
+    await expect(page.locator('main blockquote.c-quote[lang="en"]')).toHaveCount(18);
     await expect(page.locator('main .c-disclaimer')).toHaveCount(1);
     await expect(page.locator('main blockquote.c-quote').filter({ hasText: 'saving my vision' })).toHaveCount(1);
   });
@@ -65,14 +65,15 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
 
 test('every review is attributed to its author, as on the old site', async ({ page }) => {
   await page.goto('/en/testimonials/');
-  await expect(page.locator('main figure.c-review figcaption')).toHaveCount(12);
+  await expect(page.locator('main figure.c-review figcaption')).toHaveCount(21);
   const martin = page.locator('main figure.c-review').filter({ hasText: 'saving my vision' });
   await expect(martin.locator('figcaption')).toHaveText(/Martin M\./);
   const johnny = page.locator('main figure.c-review').filter({ hasText: 'Dr. Woo then explained the technology' });
   await expect(johnny.locator('figcaption')).toHaveText(/Johnny C\./);
   const colin = page.locator('main figure.c-review').filter({ hasText: 'laboratory work' });
   await expect(colin.locator('figcaption')).toHaveText(/Colin C\./);
-  await expect(page.locator('main figure.c-review').filter({ hasText: 'VIPOK' })).toHaveCount(0);
+  // Owner approved all 21 reviews (2026-09-29), including Fausto K.'s mention of VIPOK (see copy-review N-7).
+  await expect(page.locator('main figure.c-review').filter({ hasText: 'VIPOK' }).locator('figcaption')).toHaveText(/Fausto K\./);
 });
 
 test('the About gallery includes the two remaining practice photos', async ({ page }) => {
