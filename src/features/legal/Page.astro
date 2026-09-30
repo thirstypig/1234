@@ -42,7 +42,8 @@ for (const b of doc.blocks) {
   </main>
 </BaseLayout>
 <style>
-  .c-legal { max-width: 46em; }
+  /* Long web addresses (e.g. the HHS complaint portal) must wrap, or the page scrolls sideways on phones. */
+  .c-legal { max-width: 46em; overflow-wrap: anywhere; }
   .c-effective { font-weight: var(--w-label); }
   .c-legal-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
 </style>

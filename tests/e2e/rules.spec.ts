@@ -65,5 +65,12 @@ for (const path of ALL) {
       await expect(page.locator('[data-sticky-bar] [data-cta="message"]')).toBeInViewport();
       await expect(page.locator('[data-sticky-bar] [data-cta="message"]')).toHaveAttribute('href', /^(tel|sms):/);
     });
+
+    test('no sideways scrolling at phone width', async ({ page }) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      await page.goto(path);
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      expect(overflow).toBeLessThanOrEqual(1);
+    });
   });
 }
