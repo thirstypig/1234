@@ -101,6 +101,11 @@ origin.
 `workers/comments/` (Cloudflare Worker + KV) serves `/comments` (keys
 `<concept>:<page>`, concept must start A–E) and `/booking` (booking
 requests, 30-day TTL; name, phone, location and preferred time only).
+Nothing reads `/booking` back: requests sit in KV, the office never sees
+them, and no alert goes out. Before launch they must reach the office
+through a service covered by a BAA (the practice has to name it; question 2
+in the private page's `src/email.ts`), and the privacy notice, which
+currently names Cloudflare, must name that service too.
 Deploying it (`npx wrangler deploy`) and pushing to a deploy branch are
 production actions: ask first.
 
@@ -122,9 +127,10 @@ trips Claude Code's auto-mode classifier even with the owner's go-ahead.
 Settle how that step will be approved (`/permissions`, or the user runs
 it) before starting, not halfway through.
 
-The old `deploy-review-site.yml` still exists on `design/concepts-import`
-(PR #8) but is disabled in Actions. Don't re-enable it; it would publish
-the concepts-only site over the real one.
+The only branches are `main` and `site/concept-c`. `design/concepts-import`
+and `docs/concept-c-site` were deleted 2026-09-30, taking the old
+concepts-only `deploy-review-site.yml` with them. The auto-mode classifier
+blocks `git push --delete`: the user runs it with `!`.
 
 ## Tests
 
