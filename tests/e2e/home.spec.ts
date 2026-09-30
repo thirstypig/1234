@@ -12,9 +12,10 @@ test('home has every Concept C section, in order', async ({ page }) => {
   expect(marks).toEqual(['ui-hero', 'intro', 'how', 'doctor', 'visit', 'faq', 'locations', 'ui-section--band']);
 });
 
-test('unapproved "30 years" claim is not shown', async ({ page }) => {
+test('approved credentials are shown on the doctor card', async ({ page }) => {
   await page.goto('/en/');
-  await expect(page.locator('main')).not.toContainText('30 years');
+  await expect(page.locator('#doctor')).toContainText('Over 30 years');
+  await expect(page.locator('#doctor')).toContainText('Global Orthokeratology');
 });
 
 test('Dr. Woo photo comes from the approved legacy catalog', async ({ page }) => {

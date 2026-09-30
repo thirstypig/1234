@@ -808,7 +808,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "event flyer with text and faces"
   },
@@ -1088,7 +1088,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false
   },
   {
@@ -1189,7 +1189,7 @@
     "alt": "",
     "context": "<a class=\"image-link top-layer not-wrappi",
     "tag": "needs-review",
-    "approved": false,
+    "approved": true,
     "orphan": false,
     "note": "unclear whether the people are patients"
   },

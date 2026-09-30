@@ -8,10 +8,27 @@ import PhotoFrame from '../../components/PhotoFrame.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
 import { legacyImage, practicePhoto } from '../../lib/images';
+import { isApproved } from '../../lib/claims';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
 const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
+/** Old-site claims (docs/copy-review.md), each shown once its id is approved. */
+const claim = (id: string, key: string) => (isApproved(id) ? [t(`claims.${key}`)] : []);
+const BIO = [
+  t('about.bio1'),
+  ...claim('F-about-12', 'clinic'),
+  ...claim('F-about-13', 'focus'),
+  ...claim('F-about-14', 'pilots'),
+  t('about.bio2'),
+  ...claim('F-about-9', 'experienced'),
+  ...claim('F-about-10', 'patients'),
+  ...claim('F-about-11', 'youngest'),
+  t('about.bio3'),
+  t('about.bio4'),
+];
+const CREDS = [...(isApproved('F-about-2') ? [t('doctor.years')] : []), ...claim('F-about-3', 'firstAsian'), ...claim('F-about-4', 'award')];
+const CLINIC = [...claim('F-about-6', 'mission'), ...claim('F-about-7', 'equipment')];
 const GALLERY = [
   [legacyImage('1234orthok-com-011.jpg'), 'frontDesk'],
   [legacyImage('1234orthok-com-017.jpg'), 'consult'],
@@ -34,7 +51,8 @@ const GALLERY = [
           <PhotoFrame image={legacyImage('1234orthok-com-003.jpg')} alt={t('doctor.photoAlt')} placeholder={t('doctor.photoAlt')} />
           <div class="ui-doctor-text ui-stack-lg">
             <h2 class="ui-h2">{t('about.bioTitle')}</h2>
-            {[1, 2, 3, 4].map((n) => <p class="ui-body">{t(`about.bio${n}`)}</p>)}
+            {CREDS.length > 0 && <ul class="c-creds" aria-label={t('claims.credentialsLabel')}>{CREDS.map((c) => <li>{c}</li>)}</ul>}
+            {BIO.map((p) => <p class="ui-body">{p}</p>)}
             <p class="ui-lead">{t('doctor.languages')}</p>
             <ul class="ui-chips" aria-label={t('doctor.languagesLabel')}>
               {LANGS.map((l) => <li class="ui-chip"><Icon name="chat" />{t(`doctor.lang.${l}`)}</li>)}
@@ -49,6 +67,7 @@ const GALLERY = [
           <PhotoFrame image={legacyImage('1234orthok-com-074.jpg')} alt={t('about.teamAlt')} placeholder={t('about.teamAlt')} />
           <div class="ui-doctor-text ui-stack-lg">
             <h2 class="ui-h2">{t('about.staffTitle')}</h2>
+            {CLINIC.map((p) => <p class="ui-body">{p}</p>)}
             <p class="ui-lead">{t('about.staff')}</p>
           </div>
         </div>
@@ -63,6 +82,7 @@ const GALLERY = [
   </main>
 </BaseLayout>
 <style>
+  .c-creds { margin: 0; padding-left: 1.2em; display: grid; gap: var(--space-1); font-weight: var(--w-label); }
   .c-gallery { list-style: none; margin: var(--space-6) 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-3); }
   .c-gallery figure { margin: 0; }
   .c-gallery figcaption { margin-top: var(--space-1); font-size: 15px; line-height: 1.5; }

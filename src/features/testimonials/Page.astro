@@ -1,10 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
 import Hero from '../../components/Hero.astro';
 import { makeT } from '../../i18n/t';
 import type { Lang } from '../../i18n/locales';
 import reviews from '../../content/reviews.json';
+import patients from '../../../assets/patients/photos.json';
+import { patientPhoto } from '../../lib/images';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
@@ -12,6 +15,17 @@ const t = makeT(lang);
 <BaseLayout lang={lang} page="testimonials" title={t('meta.testimonials')}>
   <main>
     <Hero lang={lang} short eyebrow={t('stories.eyebrow')} title={t('stories.title')} lead={t('stories.lead')} />
+    <section class="ui-section" id="photos">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('stories.gallery.title')}</h2>
+        <p class="ui-body">{t('stories.gallery.lead')}</p>
+        <ul class="c-gallery" aria-label={t('stories.gallery.label')}>
+          {patients.map((p) => (
+            <li><Image src={patientPhoto(p.file)} alt={t(`stories.gallery.p${p.id.slice(2)}`)} widths={[320, 640]} sizes="(max-width: 767px) 45vw, 300px" /></li>
+          ))}
+        </ul>
+      </div>
+    </section>
     <section class="ui-section c-paper" id="reviews">
       <div class="ui-wrap ui-stack-lg">
         <h2 class="ui-h2">{t('stories.listTitle')}</h2>
@@ -35,4 +49,6 @@ const t = makeT(lang);
   .c-quote { margin: 0; }
   .c-quote p + p { margin-top: var(--space-2); }
   .c-byline { font-weight: var(--w-label); }
+  .c-gallery { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(45%, 240px), 1fr)); gap: var(--space-2); }
+  .c-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: calc(var(--radius-xl) - 12px); }
 </style>

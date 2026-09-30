@@ -11,9 +11,9 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 
 ## home
 
-- [ ] **F-home-1** (number): ​Over 30 years of Ortho-K treatment experience.
-- [ ] **F-home-2** (superlative): First Asian doctor to lecture in Global Orthokeratology conference meeting.
-- [ ] **F-home-3** (superlative): Award of excellence for top non-surgical vision correction center.
+- [x] **F-home-1** *(kept, owner 2026-09-29)* (number): ​Over 30 years of Ortho-K treatment experience.
+- [x] **F-home-2** *(kept, owner 2026-09-29)* (superlative): First Asian doctor to lecture in Global Orthokeratology conference meeting.
+- [x] **F-home-3** *(kept, owner 2026-09-29)* (superlative): Award of excellence for top non-surgical vision correction center.
 - [ ] **F-home-4** (number): 1234 Ortho K Introduction Book
 - [ ] **F-home-5** (superlative, number): The mission of 1234 Eyecare & Optometric Center is to provide the best non-surgical means of vision correction for both children and adults through Orthokeratology.
 - [ ] **F-home-6** (superlative): Our clinic utilizes the finest equipment, the newest technology and the most fitting lens designs for each patient to achieve the best vision improvement.
@@ -21,19 +21,19 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 ## about
 
 - [ ] **F-about-1** (number): 1234 Orthok - About Us
-- [ ] **F-about-2** (number): ​Over 30 years of Ortho-K treatment experience.
-- [ ] **F-about-3** (superlative): First Asian doctor to lecture in Global Orthokeratology conference meeting.
-- [ ] **F-about-4** (superlative): Award of excellence for top non-surgical vision correction center.
+- [x] **F-about-2** *(kept, owner 2026-09-29)* (number): ​Over 30 years of Ortho-K treatment experience.
+- [x] **F-about-3** *(kept, owner 2026-09-29)* (superlative): First Asian doctor to lecture in Global Orthokeratology conference meeting.
+- [x] **F-about-4** *(kept, owner 2026-09-29)* (superlative): Award of excellence for top non-surgical vision correction center.
 - [ ] **F-about-5** (number): 1234 ORTHO-K VISION CARE
-- [ ] **F-about-6** (superlative, number): The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through Orthokeratology.
-- [ ] **F-about-7** (superlative): Our clinic utilizes the finest equipment, the newest technology and the most fitting lens designs for each patient to achieve the best vision improvement.
+- [x] **F-about-6** *(kept, owner 2026-09-29)* (superlative, number): The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through Orthokeratology.
+- [x] **F-about-7** *(kept, owner 2026-09-29)* (superlative): Our clinic utilizes the finest equipment, the newest technology and the most fitting lens designs for each patient to achieve the best vision improvement.
 - [ ] **F-about-8** (number): Woo is the founder and clinical director of 1234 Ortho-K Vision Care.
-- [ ] **F-about-9** (superlative): He is one of the most experienced certified Orthokeratology doctors in the United States.
-- [ ] **F-about-10** (patient-count, number): Since 1988, Dr. Woo has treated over 9,000 patients and is still seeing and treating patients on a daily basis.
-- [ ] **F-about-11** (number): Children as young as 5 years old have been treated by Dr. Woo.
-- [ ] **F-about-12** (number): Since graduation he worked in many different modes of practice and finally started his own clinic in 1988.
-- [ ] **F-about-13** (number): He always specialized in contact lenses and was already focused on Orthokeratology by 1990.
-- [ ] **F-about-14** (number): He was fitting pilots and firemen who wanted to pass vision testing requirements early in the 90’s.
+- [x] **F-about-9** *(kept, owner 2026-09-29)* (superlative): He is one of the most experienced certified Orthokeratology doctors in the United States.
+- [x] **F-about-10** *(kept, owner 2026-09-29)* (patient-count, number): Since 1988, Dr. Woo has treated over 9,000 patients and is still seeing and treating patients on a daily basis.
+- [x] **F-about-11** *(kept, owner 2026-09-29)* (number): Children as young as 5 years old have been treated by Dr. Woo.
+- [x] **F-about-12** *(kept, owner 2026-09-29)* (number): Since graduation he worked in many different modes of practice and finally started his own clinic in 1988.
+- [x] **F-about-13** *(kept, owner 2026-09-29)* (number): He always specialized in contact lenses and was already focused on Orthokeratology by 1990.
+- [x] **F-about-14** *(kept, owner 2026-09-29)* (number): He was fitting pilots and firemen who wanted to pass vision testing requirements early in the 90’s.
 
 ## ortho-k
 
@@ -139,6 +139,12 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 - [ ] **N-2 Chinese translations of the whole site** were drafted by Claude. Please confirm: 胡醫師 / 胡医生 for Dr. Woo (and any Chinese given name); the Chinese names used for the Southern California College of Optometry and the San Gabriel Valley Optometric Association; the Stories menu label (心得分享 / 评价分享); both phone numbers.
 - [ ] **N-3 Safety FAQ** ("Is ortho-k safe for kids?") has a real answer now (infection risk, hygiene, when to call). The other three FAQ answers are still placeholders and need the practice's words (age to start, how kids handle the lenses, cost).
 - [ ] **N-4 Reviews**: 9 of the 21 old-site reviews were moved off the public site (children's details, a review naming another practice, and two reviews that share paragraphs) and are listed on the private page with the reason and how to bring them back. The 12 public reviews have a "results vary" note; their highlighted claims are on the private page for the attorney.
-- [ ] **N-5 Photos moved to the private page**: six Community photos (price/guarantee sign, "USA NO.1" banner, a flyer with a child and a statistic, a possible minor, people who may be patients, and the old banner with a child and "Since 1998"), plus the stock images and other organizations' logos. Each has its reason and what's needed on the private page. Note: those six photos were public in this repository's history before they were removed.
-- [ ] **N-6 "Since 1998"** appears on old banners; the bio says 1988. Which is right?
+- [x] **N-5** *Decided by the owner 2026-09-29: H-03, H-04 and H-05 are back on Community; H-01, H-02 and H-06 are not needed; patient photos P-01 to P-23 are on the Stories page (permission confirmed by the owner). History scrub dropped.* Previously: **Photos moved to the private page**: six Community photos (price/guarantee sign, "USA NO.1" banner, a flyer with a child and a statistic, a possible minor, people who may be patients, and the old banner with a child and "Since 1998"), plus the stock images and other organizations' logos. Each has its reason and what's needed on the private page. Note: those six photos were public in this repository's history before they were removed.
+- [x] **N-6** *1998 (owner, 2026-09-29): the clinic opened in 1998; Dr. Woo has over 30 years of experience, including practice in Taiwan before 1998.* The About page now says "opened his own clinic in 1998" and "Since 1998, … over 9,000 patients".
 - [ ] **N-7 VIPOK** logo is on How it works ("The lenses we fit") with "Dr. Woo is an owner of VIPOK Inc." Attorney to confirm the wording meets Bus. & Prof. Code §654.2 (financial-interest disclosure), and whether patients also need a written disclosure when VIPOK lenses are recommended.
+
+## Added 2026-09-29 (owner direction) — please review
+
+- [ ] **N-8 Old-site claims now on the site**: the owner approved all real claims. Shown on the Home doctor card (30+ years, first Asian doctor to lecture at the Global Orthokeratology conference, Award of Excellence) and the About page (bio lines, 9,000 patients since 1998, youngest patients age 5, mission, equipment). Duplicates of these lines on other old pages (F-ortho-k-2…4, F-contact-2…4, F-testimonials-2…4, F-home-5/6) are covered by the About versions. Not added: the research citations (F-ortho-k-5…8), which are footnotes without their sentences, and the old address and hours (F-contact-5…13), which the site replaces with the current ones. Chinese versions are Claude's drafts. Please include the claims in the attorney review.
+- [ ] **N-9 Patient count**: the old English site said over 9,000 patients, the old Chinese site 一萬多名 (over 10,000). All three languages now say 9,000. Which is right?
+- [ ] **N-10 Reviews**: the owner approved showing all 21 reviews (they come from Yelp and similar sites). The 9 held back (N-4) still need to be copied onto the site.
