@@ -22,6 +22,12 @@ const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
         <p class="ui-eyebrow"><Icon name="eye" /><span>{t('doctor.eyebrow')}</span></p>
         <Heading class="ui-h1">{t('doctor.name')}</Heading>
         {isApproved('F-home-1') && <p class="ui-lead">{t('doctor.years')}</p>}
+        {(isApproved('F-home-2') || isApproved('F-home-3')) && (
+          <ul class="c-creds" aria-label={t('claims.credentialsLabel')}>
+            {isApproved('F-home-2') && <li>{t('claims.firstAsian')}</li>}
+            {isApproved('F-home-3') && <li>{t('claims.award')}</li>}
+          </ul>
+        )}
         <p class="ui-lead">{t('doctor.languages')}</p>
         <ul class="ui-chips" aria-label={t('doctor.languagesLabel')}>
           {LANGS.map((l) => <li class="ui-chip"><Icon name="chat" />{t(`doctor.lang.${l}`)}</li>)}
@@ -32,3 +38,6 @@ const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
     </div>
   </div>
 </section>
+<style>
+  .c-creds { margin: 0; padding-left: 1.2em; display: grid; gap: var(--space-1); }
+</style>

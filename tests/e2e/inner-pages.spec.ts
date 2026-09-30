@@ -1,4 +1,8 @@
 import { test, expect } from '@playwright/test';
+import en from '../../src/content/copy/en.json' with { type: 'json' };
+
+// Old-site claims the owner approved (2026-09-29, src/content/approved-claims.json) are exempt.
+const APPROVED = [...Object.values(en.claims).filter((v) => v !== en.claims.credentialsLabel), en.doctor.years];
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('1234-review-unlocked', 'true'));
@@ -11,11 +15,12 @@ for (const p of ['about/', 'ortho-k/', 'testimonials/']) {
     await expect(page.locator('main > section')).toHaveCount(await page.locator('main > section').count());
     expect(await page.locator('main > section').count()).toBeGreaterThanOrEqual(3);
     // Word-for-word patient reviews are exempt (owner decision 2026-09-28); everything else is checked.
-    const text = await page.locator('main').evaluate((m) => {
+    let text = await page.locator('main').evaluate((m) => {
       const c = m.cloneNode(true) as HTMLElement;
       c.querySelectorAll('blockquote.c-quote').forEach((q) => q.remove());
       return c.innerText;
     });
+    for (const claim of APPROVED) text = text.replaceAll(claim, '');
     expect(text).not.toMatch(/\d+\s*%|success rate|most \w+|\bbest\b|\bfinest\b|\d[\d,]* patients/i);
   });
 }
@@ -36,13 +41,20 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
 }
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/community/ shows the 11 public community photos, each described and captioned`, async ({ page }) => {
+  test(`/${l}/community/ shows the 14 public community photos, each described and captioned`, async ({ page }) => {
     await page.goto(`/${l}/community/`);
     await expect(page.locator('h1')).toHaveCount(1);
     const imgs = page.locator('main .c-events img');
-    await expect(imgs).toHaveCount(11);
+    await expect(imgs).toHaveCount(14);
     for (const alt of await imgs.evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''))) expect(alt.trim()).not.toBe('');
-    await expect(page.locator('main .c-events figure figcaption')).toHaveCount(11);
+    await expect(page.locator('main .c-events figure figcaption')).toHaveCount(14);
+  });
+
+  test(`/${l}/testimonials/ shows the 23 cleared patient photos, each described`, async ({ page }) => {
+    await page.goto(`/${l}/testimonials/`);
+    const imgs = page.locator('main .c-gallery img');
+    await expect(imgs).toHaveCount(23);
+    for (const alt of await imgs.evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''))) expect(alt.trim()).not.toBe('');
   });
 
   test(`/${l}/ links to the Community page from the footer`, async ({ page }) => {

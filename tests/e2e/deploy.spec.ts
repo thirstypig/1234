@@ -22,7 +22,7 @@ test('legacy catalog is gated, shows images, and filters by tag', async ({ page 
   await expect(first).toBeVisible();
   expect(await first.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
   await page.click('button[data-f="practice-photo"]');
-  await expect(page.locator('.card:visible')).toHaveCount(12);
+  await expect(page.locator('.card:visible')).toHaveCount(14);
 });
 
 test('site root redirects to /en/ and is gated', async ({ page }) => {

@@ -93,7 +93,7 @@
     "photoAlt": "Dr. Paul T. Woo, OD, in his white coat",
     "eyebrow": "Meet the doctor",
     "name": "Dr. Paul T. Woo, OD",
-    "years": "30 years of ortho-k experience.",
+    "years": "Over 30 years of ortho-k experience.",
     "languages": "Speaks English, Mandarin, Cantonese, and Taiwanese.",
     "languagesLabel": "Languages",
     "lang": {
@@ -158,7 +158,35 @@
     "title": "What families say",
     "lead": "Reviews from patients and parents of 1234 Ortho-K Vision Care.",
     "listTitle": "Reviews",
-    "disclaimer": "These reviews are our patients’ and parents’ own words about their experiences. Every child’s eyes are different, and results vary."
+    "disclaimer": "These reviews are our patients’ and parents’ own words about their experiences. Every child’s eyes are different, and results vary.",
+    "gallery": {
+      "title": "Our patients",
+      "lead": "Moments with our patients at the clinic and at community events, shared with each family’s permission.",
+      "label": "Photos of our patients",
+      "p01": "A smiling girl in the clinic holding a card (blurred)",
+      "p02": "A young man giving two thumbs up at the lens-training desk",
+      "p03": "A team member checking a patient’s eyes at the training desk",
+      "p04": "A young woman holding the 1234 sign",
+      "p05": "A child putting in an ortho-k lens",
+      "p06": "Two children at the exam machines with a team member and a parent",
+      "p07": "A patient putting in a lens",
+      "p08": "A young man holding the 1234 sign",
+      "p09": "A boy standing by the clinic window",
+      "p10": "Children gathered in the clinic for a talk",
+      "p11": "A team member helping a patient at an eye-scanning machine",
+      "p12": "A smiling girl in the clinic",
+      "p13": "Two team members checking a boy’s eyes",
+      "p14": "Children and parents in the clinic waiting area",
+      "p15": "A family with team members in the clinic",
+      "p16": "Doctors examining patients in an exam room",
+      "p17": "A team member checking a teenager’s eyes",
+      "p18": "A team member examining a patient’s eyes with a handheld instrument",
+      "p19": "Three children waving outside the clinic",
+      "p20": "Two young patients in front of the 1234 Ortho-K sign",
+      "p21": "Children at a talk in the clinic",
+      "p22": "Families at an eye screening at a community fair",
+      "p23": "A team member giving a child a vision test"
+    }
   },
   "contact": {
     "eyebrow": "Contact",
@@ -197,7 +225,7 @@
     "expoStage": "Dr. Woo speaking to visitors at an expo",
     "auditorium": "A team member with a guest at a school auditorium event",
     "lionsAward": "Lions Club members at a district awards event, with a student holding a certificate",
-    "colleagues": "Dr. Woo with two colleagues in an office",
+    "colleagues": "Dr. Woo with two guests in the office",
     "screening": "Team members and Lions Club volunteers at a KidSight vision screening",
     "lecture": "A doctor from the team giving a talk to a community group",
     "banner": "Banner from the practice’s old website",
@@ -216,5 +244,18 @@
     "eye-surface": {
       "title": "Eye Surface Therapy"
     }
+  },
+  "claims": {
+    "credentialsLabel": "Dr. Woo’s credentials",
+    "firstAsian": "First Asian doctor to lecture at the Global Orthokeratology conference.",
+    "award": "Award of Excellence for top non-surgical vision correction center.",
+    "clinic": "After graduating, he worked in many different kinds of practice and opened his own clinic in 1998.",
+    "focus": "He has always specialized in contact lenses and was already focused on orthokeratology by 1990.",
+    "pilots": "In the early ’90s he was fitting pilots and firefighters who wanted to pass their vision requirements.",
+    "experienced": "He is one of the most experienced certified orthokeratology doctors in the United States.",
+    "patients": "Since 1998, Dr. Woo has treated over 9,000 patients, and he still sees and treats patients every day.",
+    "youngest": "He has treated children as young as 5.",
+    "mission": "The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through orthokeratology.",
+    "equipment": "Our clinic uses the finest equipment, the newest technology, and the best-fitting lens design for each patient to achieve the best vision improvement."
   }
 }

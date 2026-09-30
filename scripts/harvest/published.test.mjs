@@ -28,3 +28,12 @@ test('every catalog image is listed in the photo inventory', () => {
   const inventory = readFileSync('docs/photo-inventory.md', 'utf8');
   assert.deepStrictEqual(catalog.map((e) => e.file).filter((f) => !inventory.includes(`| \`${f}\` |`)), []);
 });
+
+// Patient photos: the owner cleared P-01 to P-23 for the site (2026-09-29); nothing else may be tracked.
+test('only listed patient photos are tracked in assets/patients', () => {
+  const list = JSON.parse(readFileSync('assets/patients/photos.json', 'utf8'));
+  const ok = new Set(list.map((e) => e.file));
+  const tracked = execSync('git ls-files --cached --others --exclude-standard assets/patients', { encoding: 'utf8' })
+    .split('\n').filter((f) => /\.(png|jpe?g|gif|webp|heic)$/i.test(f));
+  assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
+});
