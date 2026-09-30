@@ -74,9 +74,12 @@ built by `scripts/assemble.sh`):
 - `/concepts/` — concept gallery; `/concepts/legacy-images/` — image catalog
 - `/_review/` — gate + comments scripts, copied from `design/concepts/_review/`
 
-The review overlay (password gate + comments/pins) runs only on the five
-homepage mockups (`Concept*-homepage-EN.html`), never on the component
-preview pages. The gate is a browser-side overlay and its password is in
+The review overlay (password gate + comments/pins) runs on the five
+homepage mockups (`Concept*-homepage-EN.html`, via `inject.js`) and on
+every page of the Concept C site (`public/_review/site-review.js`, loaded
+by `BaseLayout.astro`; threads use concept `C-site`, keyed by
+`site-key.js`), never on the component preview pages. Remove it before
+public launch. The gate is a browser-side overlay and its password is in
 the public `gate.js`, so anything deployed is effectively public.
 
 `workers/comments/` (Cloudflare Worker + KV) serves `/comments` (keys

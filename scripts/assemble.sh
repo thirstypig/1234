@@ -4,7 +4,7 @@
 #   /concepts/<X>/...          the five concepts, at the same URLs the client already has
 #   /concepts/                 the concept gallery (links made root-relative in this copy only)
 #   /concepts/legacy-images/   legacy image catalog
-#   /_review/                  review gate + comments scripts (concept homepages load /_review/inject.js)
+#   /_review/                  review gate + comments scripts (concept homepages load inject.js; the site loads site-review.js from public/)
 # Nothing under design/concepts/ is modified.
 set -euo pipefail
 npm run build

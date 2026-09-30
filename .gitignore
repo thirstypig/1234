@@ -28,6 +28,8 @@ design/concepts/_qa/
 design/legacy-catalog/img/
 public/_review/*
 !public/_review/gate-only.js
+!public/_review/site-review.js
+!public/_review/site-key.js
 test-results/
 
 # Legacy originals stay local: the repo is public and many are patient photos.
