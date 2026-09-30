@@ -92,6 +92,11 @@ by `BaseLayout.astro`; threads use concept `C-site`, keyed by
 `site-key.js`), never on the component preview pages. Remove it before
 public launch. The gate is a browser-side overlay and its password is in
 the public `gate.js`, so anything deployed is effectively public.
+`public/_review/*` is git-ignored except for named `!` exceptions, so a
+new script there is silently left out of the deploy until you add one.
+`gate-only.js` stays: the legacy image catalog still loads it. Comments
+don't load on localhost: the Worker's CORS allows only the preview
+origin.
 
 `workers/comments/` (Cloudflare Worker + KV) serves `/comments` (keys
 `<concept>:<page>`, concept must start A–E) and `/booking` (booking
@@ -103,10 +108,19 @@ production actions: ask first.
 `site/concept-c` deploy to the same Pages site, so new work goes on a
 branch and a PR into `main`; keep `site/concept-c` fast-forwarded to it.
 
-Held-back patient photos, questionable photos, stock images, other
-organizations' logos, the review claims and the attorney-review packet
-live on a separate private Worker (private repo
-`thirstypig/1234-patient-photos`), never in this repo.
+A separate private Worker (private repo `thirstypig/1234-patient-photos`,
+server-side password) holds what stays off this repo: the Admin section
+with the pre-launch email to the practice (`src/email.ts`, Copy buttons),
+the attorney-review packet and checklist, the release forms, and the
+unlicensed stock images and other organizations' logos. Since 2026-09-30
+every patient and event photo and every review is on the public site, so
+the private page no longer lists them. Deploying it is a production
+action: ask first.
+
+Moving patient photos or reviews into this repo, or publishing them,
+trips Claude Code's auto-mode classifier even with the owner's go-ahead.
+Settle how that step will be approved (`/permissions`, or the user runs
+it) before starting, not halfway through.
 
 The old `deploy-review-site.yml` still exists on `design/concepts-import`
 (PR #8) but is disabled in Actions. Don't re-enable it; it would publish
@@ -121,6 +135,10 @@ the concepts-only site over the real one.
   fail the one-h1 tests. (serves `dist/`
   via `scripts/serve-dist.mjs`; `astro preview` detaches in Astro 7).
   A rare `page.goto` timeout is Google Fonts, not the site: rerun.
+  Includes a no-sideways-scroll check at 390px on every page (long URLs
+  in the notices once made them 295px too wide).
+  Images lazy-load: a Playwright element screenshot of a long gallery
+  shows blank tiles unless you scroll through the page first.
 - `npm run test:deploy`: assembled Pages layout (old concept URLs,
   gate, patient photos 404)
 - `cd workers/comments && npx vitest run`: Worker
