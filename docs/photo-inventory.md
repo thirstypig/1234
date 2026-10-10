@@ -4,8 +4,8 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 
 | Where | Count |
 |---|---|
-| Not used | 14 |
-| Private page | 13 |
+| Not used | 15 |
+| Private page | 12 |
 | Site | 59 |
 | **Total** | **86** |
 
@@ -25,7 +25,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-009.jpg` | practice-photo | Site — Community page | Events, captioned (owner approved 2026-09-28) |
 | `1234orthok-com-010.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-011.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
-| `1234orthok-com-012.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
+| `1234orthok-com-012.jpg` | practice-photo | Not used | Staff birthday photo; removed from the About gallery (owner, 2026-10-09) |
 | `1234orthok-com-013.jpg` | patient-photo | Site — Stories gallery (P-11) | Owner confirmed permission 2026-09-29; `assets/patients/P-11.jpg` |
 | `1234orthok-com-014.jpg` | likely-stock | Private page — S-01 | Stock photo; license unknown |
 | `1234orthok-com-015.jpg` | needs-review | Site — Community page | Events, captioned (owner approved 2026-09-28) |
@@ -71,7 +71,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-055.jpg` | practice-photo | Site — Alhambra location card | Clinic sign |
 | `1234orthok-com-056.jpg` | needs-review | Site — Community page (P-24) | Owner confirmed permission 2026-09-30; `assets/patients/P-24.jpg` |
 | `1234orthok-com-057.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
-| `1234orthok-com-058.png` | third-party-logo | Private page — L-04 | Paragon CRT logo; needs permission |
+| `1234orthok-com-058.png` | third-party-logo | Site — How it works (The lenses we fit) | Paragon CRT logo; owner approved 2026-10-09 |
 | `1234orthok-com-059.jpg` | likely-stock | Private page — S-04 | Stock photo; license unknown |
 | `1234orthok-com-060.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-061.png` | likely-stock | Private page — S-07 | Stock icon; license unknown |

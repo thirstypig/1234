@@ -4,7 +4,7 @@
     "effective": "Draft — effective date to be set by the practice",
     "blocks": [
       {"type": "p", "text": "This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully."},
-      {"type": "p", "text": "This notice applies to 1234 Ortho-K Vision Care and Dr. Paul T. Woo, OD. It covers all of our offices, including our Walnut office when it opens. Many of our patients are children. When this notice says “you,” it also means a parent or guardian acting for a child who is our patient."},
+      {"type": "p", "text": "This notice applies to 1234 Ortho-K Vision Care and Dr. Paul T. Woo, Optometrist. It covers all of our offices, including our Walnut office when it opens. Many of our patients are children. When this notice says “you,” it also means a parent or guardian acting for a child who is our patient."},
 
       {"type": "h2", "text": "Your Rights"},
       {"type": "p", "text": "When it comes to your health information, you have certain rights. This section explains your rights and some of our responsibilities to help you."},
@@ -103,7 +103,7 @@
     "effective": "草稿——生效日期由本中心訂定",
     "blocks": [
       {"type": "p", "text": "本通知說明您的醫療資訊可能如何被使用及揭露，以及您可以如何取得這些資訊。請仔細閱讀。"},
-      {"type": "p", "text": "本通知適用於1234兒童視力矯正中心及Dr. Paul T. Woo, OD，涵蓋本中心所有診所，包括即將開設的Walnut診所。本中心的病患多為兒童，因此本通知中的「您」，也包括代表兒童病患行事的家長或監護人。"},
+      {"type": "p", "text": "本通知適用於1234兒童視力矯正中心及Dr. Paul T. Woo, Optometrist，涵蓋本中心所有診所，包括即將開設的Walnut診所。本中心的病患多為兒童，因此本通知中的「您」，也包括代表兒童病患行事的家長或監護人。"},
 
       {"type": "h2", "text": "您的權利"},
       {"type": "p", "text": "對於您的健康資訊，您享有一些權利。本節說明您的權利，以及本中心協助您行使這些權利的部分責任。"},
@@ -202,7 +202,7 @@
     "effective": "草稿——生效日期由本中心确定",
     "blocks": [
       {"type": "p", "text": "本通知说明您的医疗信息可能如何被使用和披露，以及您可以如何获取这些信息。请仔细阅读。"},
-      {"type": "p", "text": "本通知适用于1234儿童视力矫正中心及Dr. Paul T. Woo, OD，涵盖本中心所有诊所，包括即将开设的Walnut诊所。本中心的患者大多是儿童，因此本通知中的“您”，也包括代表儿童患者行事的家长或监护人。"},
+      {"type": "p", "text": "本通知适用于1234儿童视力矫正中心及Dr. Paul T. Woo, Optometrist，涵盖本中心所有诊所，包括即将开设的Walnut诊所。本中心的患者大多是儿童，因此本通知中的“您”，也包括代表儿童患者行事的家长或监护人。"},
 
       {"type": "h2", "text": "您的权利"},
       {"type": "p", "text": "对于您的健康信息，您享有一些权利。本节说明您的权利，以及本中心协助您行使这些权利的部分责任。"},

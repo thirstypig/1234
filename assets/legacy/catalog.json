@@ -956,8 +956,9 @@
     "alt": "",
     "context": "",
     "tag": "third-party-logo",
-    "approved": false,
-    "orphan": false
+    "approved": true,
+    "orphan": false,
+    "note": "Paragon CRT logo (owner approved 2026-10-09)"
   },
   {
     "file": "1234orthok-com-059.jpg",
