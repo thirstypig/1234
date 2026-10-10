@@ -37,6 +37,19 @@ Rules:
   in `assets/patients/`, on Stories (P-01 to P-23) and Community (P-24 to
   P-26) via `patientPhoto()`. All
   other patient photos stay on the private patient-photos page.
+- Wording the owner set on 2026-10-09 (`docs/copy-review.md`, N-11 to
+  N-15): write "Ortho-K", never "ortho-k", except inside patient
+  reviews, which stay word for word. Dr. Woo is "Dr. Paul T. Woo,
+  Optometrist", never "OD", including in the notices. He speaks English,
+  Mandarin and Cantonese. The English Eye Surface Therapy page says
+  "calcium deposits", not "eye stones"; the Chinese pages keep 眼結石.
+- Parent questions (the FAQ) are on How it works only, not Home.
+- Lens brands named: VIPOK, CRT, Abiliti. The VIPOK and Paragon CRT
+  logos are approved in the catalog and shown; the Abiliti logo waits
+  on a file from the practice.
+- Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
+  Alhambra sign photo. Its hours are not known yet, so the card still
+  says "Hours coming soon" and "Opening soon".
 - All text WCAG AA.
 - "Book a consultation" in the first screen and at the bottom.
 - Mobile sticky Book/Message bar.
@@ -141,6 +154,11 @@ blocks `git push --delete`: the user runs it with `!`.
   fail the one-h1 tests. (serves `dist/`
   via `scripts/serve-dist.mjs`; `astro preview` detaches in Astro 7).
   A rare `page.goto` timeout is Google Fonts, not the site: rerun.
+  The full run takes about 11 minutes (`npx playwright test --workers=4`),
+  longer than a foreground command may run: start it in the background
+  and write the output to a file rather than piping it to `tail`.
+  `npx playwright test home inner-pages` (66 tests, about a minute)
+  covers page content.
   Includes a no-sideways-scroll check at 390px on every page (long URLs
   in the notices once made them 295px too wide).
   Images lazy-load: a Playwright element screenshot of a long gallery
