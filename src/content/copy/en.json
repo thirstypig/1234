@@ -31,20 +31,21 @@
       "name": "Alhambra",
       "street": "1234 S. Garfield Ave., #105",
       "city": "Alhambra, CA 91801",
-      "hours": "Tue & Fri 12–6 pm, Sat 12–4 pm",
+      "hours": "Mon, Tue, Wed & Fri 12–6 pm, Sat 12–4 pm",
       "photoAlt": "The 1234 Ortho-K Vision Care sign on the handprint wall at the Alhambra clinic"
     },
     "walnut": {
       "name": "Walnut",
-      "street": "Address coming soon",
-      "hours": "Hours coming soon"
+      "street": "20265 Valley Blvd., #E",
+      "hours": "Hours coming soon",
+      "city": "Walnut, CA 91789",
+      "photoAlt": "The 1234 Ortho-K Vision Care sign on a handprint wall"
     },
     "title": "Book a visit at either clinic",
     "contactLead": "Book or call — whatever is easiest",
     "call": "Call",
     "bookOnline": "Book online",
     "map": "Map",
-    "mapSoon": "Map coming soon",
     "bookHere": "Book here",
     "directions": "Directions",
     "openingSoon": "Opening soon"
@@ -73,8 +74,8 @@
     "eyebrow": "Ortho-k for children, ages 7–18",
     "title": "Clear vision all day.",
     "mark": "No glasses at school.",
-    "lead": "Your child wears special lenses while they sleep. In the morning, they take them out and see clearly. Ortho-k may also help slow down nearsightedness as they grow.",
-    "trust": "Dr. Paul T. Woo, OD",
+    "lead": "Your child wears special rigid contact lenses while they sleep. In the morning, they take them out and see clearly. Ortho-K may also help slow down nearsightedness as they grow.",
+    "trust": "Dr. Paul T. Woo, Optometrist",
     "introTitle": "Is your child’s prescription going up every year?",
     "introLead": "Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don’t slow the change.",
     "visitTitle": "What happens at the first visit",
@@ -84,37 +85,36 @@
     "visit3": "Dr. Woo explains the results and answers your questions."
   },
   "how": {
-    "title": "How ortho-k works",
+    "title": "How Ortho-K works",
     "step1": "Full eye exam and a map of the eye",
     "step2": "Custom lenses made for your child",
     "step3": "Wear at night. See clearly all day."
   },
   "doctor": {
-    "photoAlt": "Dr. Paul T. Woo, OD, in his white coat",
+    "photoAlt": "Dr. Paul T. Woo, Optometrist, in his white coat",
     "eyebrow": "Meet the doctor",
-    "name": "Dr. Paul T. Woo, OD",
-    "years": "Over 30 years of ortho-k experience.",
-    "languages": "Speaks English, Mandarin, Cantonese, and Taiwanese.",
+    "name": "Dr. Paul T. Woo, Optometrist",
+    "years": "Over 30 years of Ortho-K experience.",
+    "languages": "Speaks English, Mandarin, and Cantonese.",
     "languagesLabel": "Languages",
     "lang": {
       "english": "English",
       "mandarin": "Mandarin",
-      "cantonese": "Cantonese",
-      "taiwanese": "Taiwanese"
+      "cantonese": "Cantonese"
     }
   },
   "faq": {
     "title": "Parent questions",
-    "q1": "Is ortho-k safe for kids?",
+    "q1": "Is Ortho-K safe for kids?",
     "q2": "What age can my child start?",
     "q3": "Is it hard for kids to put in the lenses?",
     "q4": "How much does it cost?",
     "placeholder": "Placeholder answer. Dr. Woo’s team will write this in plain words for parents.",
-    "a1": "Ortho-k can be a safe choice for children when an eye doctor fits the lenses and your family cares for them exactly as instructed. Like any contact lens worn overnight, it carries a small risk of eye infection, which can be serious. You can keep that risk low: wash your hands before touching the lenses; clean and store them only with the solutions we give you, never with tap water; replace the case and lenses on schedule; and come to every follow-up visit so Dr. Woo can check your child’s eyes. If your child has eye pain, redness, sensitivity to light, discharge, or blurry vision that doesn’t clear, take the lenses out and call us right away at (626) 282-5388."
+    "a1": "Ortho-K is a safe choice for children when an eye doctor fits the lenses and your family cares for them exactly as instructed. Like any contact lens worn overnight, it carries a small risk of eye infection, which can be serious. You can keep that risk low by washing your hands before touching the lenses; cleaning and storing them only with the solutions we give you, never with tap water; replacing the case and lenses on schedule; and coming to every follow-up visit so Dr. Woo can check your child’s eyes. If your child has eye pain, redness, sensitivity to light, discharge, or blurry vision that doesn’t clear, take the lenses out and call us right away at (626) 282-5388."
   },
   "about": {
     "eyebrow": "Meet the doctor",
-    "title": "Dr. Paul T. Woo, OD",
+    "title": "Dr. Paul T. Woo, Optometrist",
     "lead": "Dr. Woo is the founder and clinical director of 1234 Ortho-K Vision Care.",
     "bioTitle": "About Dr. Woo",
     "bio1": "Dr. Woo graduated with a bachelor’s degree from the University of California, Irvine, and went on to earn his Doctor of Optometry degree from the Southern California College of Optometry.",
@@ -129,13 +129,12 @@
       "frontDesk": "Dr. Woo and two team members at the front desk",
       "consult": "Dr. Woo going over a report with another doctor",
       "training": "Dr. Woo training the team on an eye-scanning machine",
-      "doctors": "Dr. Woo with two other doctors in an exam room",
+      "doctors": "Dr. Woo with two other doctors during a training visit",
       "huddle": "The team cheering together in a circle",
-      "car": "The clinic car with the 1234 Ortho-K logo",
-      "cake": "Six team members sharing cake at the front desk",
+      "car": "The clinic car providing pickup and drop-off service",
+      "cake": "Team members enjoying cake while celebrating a birthday",
       "flowers": "Three team members celebrating with flowers and a cake",
-      "birthday": "A team member celebrating a birthday at the front desk",
-      "teamBanner": "The team at the front desk under the 1234 Ortho-K sign"
+      "teamBanner": "The team welcoming patients as they arrive"
     }
   },
   "ortho": {
@@ -144,13 +143,14 @@
     "other": {
       "title": "Other eye care",
       "examsDesc": "What to expect when a child doesn’t pass a school vision screening.",
-      "surfaceDesc": "Foreign bodies, ingrown eyelashes, and conjunctival stones."
+      "surfaceDesc": "Foreign bodies, ingrown eyelashes, and conjunctival calcium deposits."
     },
     "lenses": {
       "title": "The lenses we fit",
-      "body": "We fit VIPOK ortho-k lenses.",
+      "body": "We fit VIPOK, CRT, Abiliti, and other Ortho-K lenses.",
       "disclosure": "Dr. Woo is an owner of VIPOK Inc.",
-      "logoAlt": "VIPOK Inc. logo"
+      "logoAlt": "VIPOK Inc. logo",
+      "crtLogoAlt": "Paragon CRT logo"
     }
   },
   "stories": {
@@ -167,7 +167,7 @@
       "p02": "A young man giving two thumbs up at the lens-training desk",
       "p03": "A team member checking a patient’s eyes at the training desk",
       "p04": "A young woman holding the 1234 sign",
-      "p05": "A child putting in an ortho-k lens",
+      "p05": "A child putting in an Ortho-K lens",
       "p06": "Two children at the exam machines with a team member and a parent",
       "p07": "A patient putting in a lens",
       "p08": "A young man holding the 1234 sign",
@@ -229,7 +229,7 @@
     "screening": "Team members and Lions Club volunteers at a KidSight vision screening",
     "lecture": "A doctor from the team giving a talk to a community group",
     "banner": "Banner from the practice’s old website",
-    "book": "Cover of the practice’s ortho-k introduction book",
+    "book": "Cover of the practice’s Ortho-K introduction book",
     "training": "The team learning a new instrument during a training session",
     "booth": "The team’s booth at a community expo",
     "expoDuo": "Two team members at an expo",

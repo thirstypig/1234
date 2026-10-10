@@ -12,7 +12,7 @@ interface Props { lang: Lang; headingTag?: 'h1' | 'h2' }
 const { lang, headingTag = 'h2' } = Astro.props;
 const t = makeT(lang);
 const Heading = headingTag;
-const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
+const LANGS = ['english', 'mandarin', 'cantonese'];
 ---
 <section class="ui-section c-paper" id="doctor">
   <div class="ui-wrap">

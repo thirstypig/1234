@@ -13,17 +13,13 @@ const t = makeT(lang);
 const en = makeT('en');
 const zh = makeT('zh-hant');
 const open = id === 'alhambra';
-const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('1234 S. Garfield Ave. #105, Alhambra, CA 91801');
+const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(`${en(`locations.${id}.street`)}, ${en(`locations.${id}.city`)}`.replace('., #', '. #'));
 ---
 <article class="ui-loc">
-  {open ? (
-    <Image class="ui-map c-loc-photo" src={legacyImage('1234orthok-com-055.jpg')} alt={t(`locations.${id}.photoAlt`)} widths={[400, 800]} sizes="(max-width: 767px) 90vw, 560px" />
-  ) : (
-    <div class="ui-map c-map" role="img" aria-label={t('locations.mapSoon')}><Icon name="map" /><span>{t('locations.mapSoon')}</span></div>
-  )}
+  <Image class="ui-map c-loc-photo" src={legacyImage('1234orthok-com-055.jpg')} alt={t(`locations.${id}.photoAlt`)} widths={[400, 800]} sizes="(max-width: 767px) 90vw, 560px" />
   <div class="ui-loc-body">
     <div class="ui-loc-name"><h3 class="ui-h3">{en(`locations.${id}.name`)}</h3><span class="ui-loc-alt" lang="zh-Hant">{zh(`locations.${id}.name`)}</span></div>
-    <div class="ui-kv"><Icon name="pin" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.street`)}{open && <Fragment><br />{t('locations.alhambra.city')}</Fragment>}</p></div>
+    <div class="ui-kv"><Icon name="pin" /><p class="ui-body">{t(`locations.${id}.street`)}<br />{t(`locations.${id}.city`)}</p></div>
     <div class="ui-kv"><Icon name="clock" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.hours`)}</p></div>
     <div class="ui-kv"><Icon name="phone" /><p class="ui-body"><a class="ui-nowrap" href="tel:18009918881">(800) 991-8881</a> · <a class="ui-nowrap" href="tel:16262825388">(626) 282-5388</a></p></div>
     <div class="ui-btn-row">
@@ -33,7 +29,10 @@ const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeUR
           <Button href={directions} variant="secondary" size="sm" icon="map">{t('locations.directions')}</Button>
         </Fragment>
       ) : (
-        <span class="ui-btn ui-btn--secondary ui-btn--sm is-disabled" aria-disabled="true">{t('locations.openingSoon')}</span>
+        <Fragment>
+          <span class="ui-btn ui-btn--secondary ui-btn--sm is-disabled" aria-disabled="true">{t('locations.openingSoon')}</span>
+          <Button href={directions} variant="secondary" size="sm" icon="map">{t('locations.directions')}</Button>
+        </Fragment>
       )}
     </div>
   </div>
