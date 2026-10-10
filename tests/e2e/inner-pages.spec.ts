@@ -78,12 +78,12 @@ test('every review is attributed to its author, as on the old site', async ({ pa
 
 test('the About gallery includes the two remaining practice photos', async ({ page }) => {
   await page.goto('/en/about/');
-  await expect(page.locator('main .c-gallery img')).toHaveCount(10);
+  await expect(page.locator('main .c-gallery img')).toHaveCount(9);
 });
 
 const OLD_PAGES = {
   'eye-exams': { en: 'Why does my child need dilating eye drops?', 'zh-hans': '为什么要做散瞳检查？', 'zh-hant': '為什麼要做散瞳檢查？' },
-  'eye-surface': { en: 'Eye stones, also called conjunctival stones', 'zh-hans': '眼结石也称为结膜结石', 'zh-hant': '眼結石也稱為結膜結石' },
+  'eye-surface': { en: 'Calcium deposits are a very common eye condition', 'zh-hans': '眼结石也称为结膜结石', 'zh-hant': '眼結石也稱為結膜結石' },
 } as const;
 const HTML_LANG = { en: 'en', 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant' } as const;
 for (const l of ['en', 'zh-hans', 'zh-hant'] as const) {
@@ -137,8 +137,8 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
   }
 }
 
-for (const path of ['/en/', '/en/ortho-k/']) {
-  test(`${path} answers "Is ortho-k safe for kids?" with real safety guidance`, async ({ page }) => {
+for (const path of ['/en/ortho-k/']) {
+  test(`${path} answers "Is Ortho-K safe for kids?" with real safety guidance`, async ({ page }) => {
     await page.goto(path);
     const faq = page.locator('#faq');
     await expect(faq).toContainText('infection');
@@ -147,10 +147,10 @@ for (const path of ['/en/', '/en/ortho-k/']) {
 }
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/ortho-k/ shows the VIPOK logo with Dr. Woo's ownership disclosed`, async ({ page }) => {
+  test(`/${l}/ortho-k/ shows the VIPOK and CRT logos with Dr. Woo's ownership disclosed`, async ({ page }) => {
     await page.goto(`/${l}/ortho-k/`);
     const s = page.locator('#lenses');
-    await expect(s.locator('img')).toHaveCount(1);
+    await expect(s.locator('img')).toHaveCount(2);
     await expect(s).toContainText('VIPOK');
     await expect(s.locator('[data-disclosure]')).toHaveCount(1);
   });

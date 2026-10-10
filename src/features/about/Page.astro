@@ -12,7 +12,7 @@ import { isApproved } from '../../lib/claims';
 
 const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
-const LANGS = ['english', 'mandarin', 'cantonese', 'taiwanese'];
+const LANGS = ['english', 'mandarin', 'cantonese'];
 /** Old-site claims (docs/copy-review.md), each shown once its id is approved. */
 const claim = (id: string, key: string) => (isApproved(id) ? [t(`claims.${key}`)] : []);
 const BIO = [
@@ -37,7 +37,6 @@ const GALLERY = [
   [legacyImage('1234orthok-com-065.jpg'), 'doctors'],
   [legacyImage('1234orthok-com-057.jpg'), 'huddle'],
   [practicePhoto('staff-flowers.jpg'), 'flowers', 'center 75%'],
-  [legacyImage('1234orthok-com-012.jpg'), 'birthday'],
   [legacyImage('1234orthok-com-060.jpg'), 'car'],
   [legacyImage('1234orthok-com-073.jpg'), 'teamBanner', 'center 30%'],
 ] as const;
