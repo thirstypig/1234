@@ -32,9 +32,10 @@ Rules:
   About. The clinic opened in 1998; Dr. Woo has over 30 years of
   experience (he practiced in Taiwan before that). Add no new claims.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
-  enforces it). Only patient photos P-01 to P-26 may be published
-  (owner confirmed permission 2026-09-29): prepared, metadata-free copies
-  in `assets/patients/`, on Stories (P-01 to P-23) and Community (P-24 to
+  enforces it). Only patient photos P-01 to P-27 may be published
+  (owner confirmed permission 2026-09-29, and 2026-10-10 for
+  P-27): prepared, metadata-free copies
+  in `assets/patients/`, on Stories (P-01 to P-23, P-27) and Community (P-24 to
   P-26) via `patientPhoto()`. All
   other patient photos stay on the private patient-photos page.
 - Wording the owner set on 2026-10-09 (`docs/copy-review.md`, N-11 to
@@ -46,7 +47,9 @@ Rules:
 - Parent questions (the FAQ) are on How it works only, not Home.
 - Lens brands named: VIPOK, CRT, Abiliti. The VIPOK and Paragon CRT
   logos are approved in the catalog and shown; the Abiliti logo waits
-  on a file from the practice.
+  on a file from the practice. The owner removed the sentence "Dr. Woo is
+  an owner of VIPOK Inc." from How it works on 2026-10-10 (`docs/copy-review.md`,
+  N-7, still open for the attorney): don't put it back unasked.
 - Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
   Alhambra sign photo. Its hours are not known yet, so the card still
   says "Hours coming soon" and "Opening soon".
@@ -85,7 +88,7 @@ images tagged `practice-photo` or marked `approved: true` in
 `legacyImage()` (`src/lib/images.ts`), which fails the build for
 anything else. A unit test fails if any other image is tracked.
 Never commit any other patient photo; git history is permanent once
-pushed. Patient photos P-01 to P-26 are the exception: they live in
+pushed. Patient photos P-01 to P-27 are the exception: they live in
 `assets/patients/`, listed in `photos.json` (a unit test enforces it),
 with the P-01 record card blurred and P-07/P-08 cropped.
 

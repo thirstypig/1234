@@ -50,10 +50,10 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
     await expect(page.locator('main .c-events figure figcaption')).toHaveCount(20);
   });
 
-  test(`/${l}/testimonials/ shows the 23 cleared patient photos, each described`, async ({ page }) => {
+  test(`/${l}/testimonials/ shows the 24 cleared patient photos, each described`, async ({ page }) => {
     await page.goto(`/${l}/testimonials/`);
     const imgs = page.locator('main .c-gallery img');
-    await expect(imgs).toHaveCount(23);
+    await expect(imgs).toHaveCount(24);
     for (const alt of await imgs.evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''))) expect(alt.trim()).not.toBe('');
   });
 
@@ -147,12 +147,11 @@ for (const path of ['/en/ortho-k/']) {
 }
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/ortho-k/ shows the VIPOK and CRT logos with Dr. Woo's ownership disclosed`, async ({ page }) => {
+  test(`/${l}/ortho-k/ shows the VIPOK and CRT logos`, async ({ page }) => {
     await page.goto(`/${l}/ortho-k/`);
     const s = page.locator('#lenses');
     await expect(s.locator('img')).toHaveCount(2);
     await expect(s).toContainText('VIPOK');
-    await expect(s.locator('[data-disclosure]')).toHaveCount(1);
   });
 }
 

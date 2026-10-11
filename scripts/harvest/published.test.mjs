@@ -29,7 +29,7 @@ test('every catalog image is listed in the photo inventory', () => {
   assert.deepStrictEqual(catalog.map((e) => e.file).filter((f) => !inventory.includes(`| \`${f}\` |`)), []);
 });
 
-// Patient photos: the owner cleared P-01 to P-23 for the site (2026-09-29); nothing else may be tracked.
+// Patient photos: the owner cleared the photos listed in photos.json (P-01 to P-27); nothing else may be tracked.
 test('only listed patient photos are tracked in assets/patients', () => {
   const list = JSON.parse(readFileSync('assets/patients/photos.json', 'utf8'));
   const ok = new Set(list.map((e) => e.file));

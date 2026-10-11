@@ -71,7 +71,7 @@
     "morningCap": "Morning"
   },
   "home": {
-    "eyebrow": "Ortho-k for children, ages 7–18",
+    "eyebrow": "Ortho-K for children, ages 7–18",
     "title": "Clear vision all day.",
     "mark": "No glasses at school.",
     "lead": "Your child wears special rigid contact lenses while they sleep. In the morning, they take them out and see clearly. Ortho-K may also help slow down nearsightedness as they grow.",
@@ -138,7 +138,7 @@
     }
   },
   "ortho": {
-    "title": "Ortho-k for children, ages 7–18",
+    "title": "Ortho-K for children, ages 7–18",
     "examAlt": "An exam room at the Alhambra clinic, with a handprint mural on the wall",
     "other": {
       "title": "Other eye care",
@@ -148,7 +148,6 @@
     "lenses": {
       "title": "The lenses we fit",
       "body": "We fit VIPOK, CRT, Abiliti, and other Ortho-K lenses.",
-      "disclosure": "Dr. Woo is an owner of VIPOK Inc.",
       "logoAlt": "VIPOK Inc. logo",
       "crtLogoAlt": "Paragon CRT logo"
     }
@@ -185,7 +184,8 @@
       "p20": "Two young patients in front of the 1234 Ortho-K sign",
       "p21": "Children at a talk in the clinic",
       "p22": "Families at an eye screening at a community fair",
-      "p23": "A team member giving a child a vision test"
+      "p23": "A team member giving a child a vision test",
+      "p27": "A smiling girl holding the round 1234 Vision Care sign"
     }
   },
   "contact": {
