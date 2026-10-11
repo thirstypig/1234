@@ -28,7 +28,7 @@ export function practicePhoto(file: string): ImageMetadata {
 
 const patientFiles = import.meta.glob<{ default: ImageMetadata }>('../../assets/patients/*.jpg', { eager: true });
 
-/** Patient and event photos the owner cleared for publication (2026-09-29, P-01 to P-26); each must be listed in assets/patients/photos.json. */
+/** Patient and event photos the owner cleared for publication (2026-09-29, P-01 to P-26; P-27 added 2026-10-10); each must be listed in assets/patients/photos.json. */
 export function patientPhoto(file: string): ImageMetadata {
   if (!(patients as { file: string }[]).some((p) => p.file === file)) throw new Error(`Photo "${file}" is not listed in assets/patients/photos.json`);
   const mod = patientFiles[`../../assets/patients/${file}`];

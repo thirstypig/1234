@@ -9,7 +9,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Site | 59 |
 | **Total** | **86** |
 
-"Private page" means the password-protected patient-photos page (not part of this repo). Patient photos P-01 to P-23 are on the Stories page and P-24 to P-26 on Community (owner confirmed permission 2026-09-29/30, `assets/patients/`); the other patient photos stay off this repo. Every photo, stock image and logo is on the site or the private page; "Not used" is only duplicates, layout icons, a text graphic and the old intro-book PDF.
+"Private page" means the password-protected patient-photos page (not part of this repo). Patient photos P-01 to P-23 and P-27 are on the Stories page and P-24 to P-26 on Community (owner confirmed permission 2026-09-29/30; P-27 2026-10-10; `assets/patients/`); the other patient photos stay off this repo. Every photo, stock image and logo is on the site or the private page; "Not used" is only duplicates, layout icons, a text graphic and the old intro-book PDF.
 
 ## Old website images
 
@@ -106,3 +106,4 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Client photo 7 | Site — Stories gallery (P-07) | Owner confirmed permission 2026-09-29; `assets/patients/P-07.jpg` (cropped) |
 | Client photo 8 | Site — Stories gallery (P-08) | Owner confirmed permission 2026-09-29; `assets/patients/P-08.jpg` (cropped) |
 | Client photo 9 | Site — Stories gallery (P-09) | Owner confirmed permission 2026-09-29; `assets/patients/P-09.jpg` |
+| Client photo 10 (sent 2026-10-10) | Site — Stories gallery (P-27) | Owner confirmed permission 2026-10-10; `assets/patients/P-27.jpg` |
