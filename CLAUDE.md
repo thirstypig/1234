@@ -125,6 +125,14 @@ currently names Cloudflare, must name that service too.
 Deploying it (`npx wrangler deploy`) and pushing to a deploy branch are
 production actions: ask first.
 
+Working through the owner's feedback: read each thread with
+`curl -G <Worker>/comments --data-urlencode concept=C-site --data-urlencode page=<lang>[/<path>]`
+(39 pages; curl is not subject to the CORS limit). The Worker has no
+delete route, so a thread is cleared by deleting its KV key from
+`workers/comments/`: `npx wrangler kv key delete "C-site:<page>"
+--namespace-id <id in wrangler.toml> --remote`. A pin left on one
+language usually means all three.
+
 `main` is production (PRs #8–#10 merged 2026-09-28). Both `main` and
 `site/concept-c` deploy to the same Pages site, so new work goes on a
 branch and a PR into `main`; keep `site/concept-c` fast-forwarded to it.
@@ -141,7 +149,9 @@ action: ask first.
 Moving patient photos or reviews into this repo, or publishing them,
 trips Claude Code's auto-mode classifier even with the owner's go-ahead.
 Settle how that step will be approved (`/permissions`, or the user runs
-it) before starting, not halfway through.
+it) before starting, not halfway through. On 2026-10-10 (P-27) it
+blocked `git commit` and `gh pr create` but not `git push`: give the user
+those two commands to run with `!`.
 
 The only branches are `main` and `site/concept-c`. `design/concepts-import`
 and `docs/concept-c-site` were deleted 2026-09-30, taking the old
