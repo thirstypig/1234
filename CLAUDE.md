@@ -30,13 +30,18 @@ Rules:
   Also (owner, 2026-09-29): the old-site claims listed in
   `src/content/approved-claims.json`, shown on the Home doctor card and
   About. The clinic opened in 1998; Dr. Woo has over 30 years of
-  experience (he practiced in Taiwan before that). Add no new claims.
+  experience (he practiced in Taiwan before that). Also (owner's review
+  comments, 2026-10-27; `docs/copy-review.md`, N-16): the Home hero
+  ("30 years", "prescription does not increase", "highly effective",
+  "best option", ages 5–45) and About's 41,879 patients, which replaced
+  9,000. Add no new claims.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
   enforces it). Only patient photos P-01 to P-27 may be published
   (owner confirmed permission 2026-09-29, and 2026-10-10 for
   P-27): prepared, metadata-free copies
   in `assets/patients/`, on Stories (P-01 to P-23, P-27) and Community (P-24 to
-  P-26) via `patientPhoto()`. All
+  P-26) via `patientPhoto()`. The owner took P-09, P-11, P-14, P-21 and
+  P-22 off Stories on 2026-10-27; their files were deleted. All
   other patient photos stay on the private patient-photos page.
 - Wording the owner set on 2026-10-09 (`docs/copy-review.md`, N-11 to
   N-15): write "Ortho-K", never "ortho-k", except inside patient
