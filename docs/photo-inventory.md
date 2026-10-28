@@ -26,7 +26,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-010.png` | decorative | Not used | Old-site layout icons (arrows, close, download) — not photos |
 | `1234orthok-com-011.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-012.jpg` | practice-photo | Not used | Staff birthday photo; removed from the About gallery (owner, 2026-10-09) |
-| `1234orthok-com-013.jpg` | patient-photo | Site — Stories gallery (P-11) | Owner confirmed permission 2026-09-29; `assets/patients/P-11.jpg` |
+| `1234orthok-com-013.jpg` | patient-photo | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-11; was `assets/patients/P-11.jpg`) |
 | `1234orthok-com-014.jpg` | likely-stock | Private page — S-01 | Stock photo; license unknown |
 | `1234orthok-com-015.jpg` | needs-review | Site — Community page | Events, captioned (owner approved 2026-09-28) |
 | `1234orthok-com-016.jpg` | patient-photo | Site — Stories gallery (P-12) | Owner confirmed permission 2026-09-29; `assets/patients/P-12.jpg` |
@@ -41,7 +41,7 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-025.jpg` | needs-review | Not used | Duplicate of 022 (shown on Community) |
 | `1234orthok-com-026.jpg` | patient-photo | Site — Stories gallery (P-13) | Owner confirmed permission 2026-09-29; `assets/patients/P-13.jpg` |
 | `1234orthok-com-027.png` | likely-stock | Private page — S-05 | Stock icon; license unknown |
-| `1234orthok-com-028.jpg` | patient-photo | Site — Stories gallery (P-14) | Owner confirmed permission 2026-09-29; `assets/patients/P-14.jpg` |
+| `1234orthok-com-028.jpg` | patient-photo | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-14; was `assets/patients/P-14.jpg`) |
 | `1234orthok-com-029.jpg` | third-party-logo | Private page — L-01 | Lions KidSight logo; needs permission |
 | `1234orthok-com-030.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-031.jpg` | patient-photo | Site — Stories gallery (P-15) | Owner confirmed permission 2026-09-29; `assets/patients/P-15.jpg` |
@@ -77,10 +77,10 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | `1234orthok-com-061.png` | likely-stock | Private page — S-07 | Stock icon; license unknown |
 | `1234orthok-com-062.jpg` | patient-photo | Site — Stories gallery (P-19) | Owner confirmed permission 2026-09-29; `assets/patients/P-19.jpg` |
 | `1234orthok-com-063.jpg` | patient-photo | Site — Stories gallery (P-20) | Owner confirmed permission 2026-09-29; `assets/patients/P-20.jpg` |
-| `1234orthok-com-064.jpg` | patient-photo | Site — Stories gallery (P-21) | Owner confirmed permission 2026-09-29; `assets/patients/P-21.jpg` |
+| `1234orthok-com-064.jpg` | patient-photo | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-21; was `assets/patients/P-21.jpg`) |
 | `1234orthok-com-065.jpg` | practice-photo | Site — About gallery | Staff and office, captioned |
 | `1234orthok-com-066.jpg` | needs-review | Site — Community page (H-04) | Owner approved 2026-09-29 |
-| `1234orthok-com-067.jpg` | patient-photo | Site — Stories gallery (P-22) | Owner confirmed permission 2026-09-29; `assets/patients/P-22.jpg` |
+| `1234orthok-com-067.jpg` | patient-photo | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-22; was `assets/patients/P-22.jpg`) |
 | `1234orthok-com-068.jpg` | patient-photo | Site — Stories gallery (P-23) | Owner confirmed permission 2026-09-29; `assets/patients/P-23.jpg` |
 | `1234orthok-com-069.jpg` | needs-review | Site — Community page (P-26) | Owner confirmed permission 2026-09-30; `assets/patients/P-26.jpg` |
 | `1234orthok-com-070.png` | third-party-logo | Private page — L-05 | EyeDream logo; needs permission |
@@ -105,5 +105,5 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Client photo 6 | Site — Stories gallery (P-06) | Owner confirmed permission 2026-09-29; `assets/patients/P-06.jpg` |
 | Client photo 7 | Site — Stories gallery (P-07) | Owner confirmed permission 2026-09-29; `assets/patients/P-07.jpg` (cropped) |
 | Client photo 8 | Site — Stories gallery (P-08) | Owner confirmed permission 2026-09-29; `assets/patients/P-08.jpg` (cropped) |
-| Client photo 9 | Site — Stories gallery (P-09) | Owner confirmed permission 2026-09-29; `assets/patients/P-09.jpg` |
+| Client photo 9 | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-09; was `assets/patients/P-09.jpg`) |
 | Client photo 10 (sent 2026-10-10) | Site — Stories gallery (P-27) | Owner confirmed permission 2026-10-10; `assets/patients/P-27.jpg` |

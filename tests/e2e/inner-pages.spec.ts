@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import en from '../../src/content/copy/en.json' with { type: 'json' };
 
 // Old-site claims the owner approved (2026-09-29, src/content/approved-claims.json) are exempt.
-const APPROVED = [...Object.values(en.claims).filter((v) => v !== en.claims.credentialsLabel), en.doctor.years];
+// So is the hero paragraph the owner rewrote on 2026-10-27 (docs/copy-review.md, N-16), which How it works reuses.
+const APPROVED = [...Object.values(en.claims).filter((v) => v !== en.claims.credentialsLabel), en.doctor.years, en.home.lead];
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('1234-review-unlocked', 'true'));
@@ -50,10 +51,10 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
     await expect(page.locator('main .c-events figure figcaption')).toHaveCount(20);
   });
 
-  test(`/${l}/testimonials/ shows the 24 cleared patient photos, each described`, async ({ page }) => {
+  test(`/${l}/testimonials/ shows the 19 cleared patient photos, each described`, async ({ page }) => {
     await page.goto(`/${l}/testimonials/`);
     const imgs = page.locator('main .c-gallery img');
-    await expect(imgs).toHaveCount(24);
+    await expect(imgs).toHaveCount(19);
     for (const alt of await imgs.evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''))) expect(alt.trim()).not.toBe('');
   });
 
@@ -142,7 +143,7 @@ for (const path of ['/en/ortho-k/']) {
     await page.goto(path);
     const faq = page.locator('#faq');
     await expect(faq).toContainText('infection');
-    await expect(faq).toContainText('(626) 282-5388');
+    await expect(faq).toContainText('(800) 991-8881');
   });
 }
 
