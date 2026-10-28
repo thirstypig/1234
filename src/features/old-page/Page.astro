@@ -6,6 +6,7 @@ import Icon from '../../components/Icon.astro';
 import { makeT } from '../../i18n/t';
 import { HTML_LANG, pathFor, type Lang } from '../../i18n/locales';
 import pages from '../../content/old-pages.json';
+import documents from '../../content/documents.json';
 
 /** Old-site pages (originally Traditional Chinese only), now in all three languages under How it works. */
 interface Props { lang: Lang; slug: 'eye-exams' | 'eye-surface' }
@@ -19,7 +20,7 @@ for (const b of pages[slug][lang]) {
   else groups.push({ type: b.type, items: [b.text] });
 }
 ---
-<BaseLayout lang={lang} page={slug} title={t(`meta.${slug}`)}>
+<BaseLayout lang={lang} page={slug} title={t(`meta.${slug}`)} description={slug === 'eye-exams' ? t('metaDesc.eye-exams') : undefined}>
   <main>
     <Hero lang={lang} short eyebrow={t('nav.ortho-k')} title={t(`oldPages.${slug}.title`)} />
     <section class="ui-section c-paper">
@@ -33,6 +34,13 @@ for (const b of pages[slug][lang]) {
             : <p class="ui-body">{g.items[0]}</p>
           )}
         </article>
+        {slug === 'eye-exams' && (
+          <div class="c-downloads ui-stack" id="poster">
+            <h2 class="ui-h2">{t('documents.title')}</h2>
+            <p class="ui-body">{t('documents.lead')}</p>
+            <ul>{documents.map((d) => <li><a href={`/documents/${d.file}`} download><Icon name="arrow" /><span>{t(`documents.${d.lang}`)}</span></a></li>)}</ul>
+          </div>
+        )}
       </div>
     </section>
     <BookingBand lang={lang} />
@@ -41,6 +49,9 @@ for (const b of pages[slug][lang]) {
 <style>
   .c-old { max-width: 46em; }
   .c-old-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
+  .c-downloads { margin-top: var(--space-6); max-width: 46em; }
+  .c-downloads ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .c-downloads a { display: inline-flex; align-items: center; gap: 6px; font-weight: var(--w-label); }
   .c-back { margin: 0 0 var(--space-4); }
   .c-back a { display: inline-flex; align-items: center; gap: 6px; font-weight: var(--w-label); }
   .c-back :global(svg) { transform: rotate(180deg); }

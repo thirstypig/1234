@@ -164,3 +164,25 @@ for (const l of ['en', 'zh-hant']) {
     await expect(page.locator('[data-cta="message"] svg[data-icon="phone"]')).toHaveCount(await buttons.count());
   });
 }
+
+for (const l of ['en', 'zh-hans', 'zh-hant']) {
+  test(`/${l}/ortho-k/eye-exams/ covers amblyopia and links both posters`, async ({ page, request }) => {
+    await page.goto(`/${l}/ortho-k/eye-exams/`);
+    expect(await page.locator('main h2').count()).toBeGreaterThanOrEqual(4);
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /3/);
+    const links = page.locator('#poster a[download]');
+    await expect(links).toHaveCount(2);
+    for (const href of await links.evaluateAll((els) => els.map((e) => e.getAttribute('href') ?? ''))) {
+      expect((await request.get(href)).status()).toBe(200);
+    }
+  });
+
+  test(`/${l}/ortho-k/ shows the six treatment steps and the services`, async ({ page }) => {
+    await page.goto(`/${l}/ortho-k/`);
+    await expect(page.locator('#visit ol > li')).toHaveCount(6);
+    await expect(page.locator('#visit .ui-draft')).toHaveCount(0);
+    await expect(page.locator('#services .c-service')).toHaveCount(3);
+    await expect(page.locator('meta[name="description"]')).toHaveCount(1);
+  });
+}
+

@@ -8,8 +8,9 @@ interface Props {
   lang: Lang;
   page: PageId;
   title: string;
+  description?: string;
 }
-const { lang, page, title } = Astro.props;
+const { lang, page, title, description } = Astro.props;
 const site = Astro.site?.origin ?? 'https://1234.pasadenaworks.com';
 ---
 <!doctype html>
@@ -19,6 +20,7 @@ const site = Astro.site?.origin ?? 'https://1234.pasadenaworks.com';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>{title}</title>
+    {description && <meta name="description" content={description} />}
     {LOCALES.map((l) => <link rel="alternate" hreflang={HTML_LANG[l]} href={site + pathFor(l, page)} />)}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
