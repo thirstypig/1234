@@ -92,6 +92,86 @@
       {
         "type": "p",
         "text": "Treatment: mild cases may be treated with prism lenses; more severe cases may need surgery to adjust the strength and position of the eye muscles so that the eyes line up."
+      },
+      {
+        "type": "h2",
+        "text": "Causes of amblyopia"
+      },
+      {
+        "type": "p",
+        "text": "When a young child’s vision still cannot reach 0.8 (on the decimal scale) with glasses or contact lenses, the child has amblyopia."
+      },
+      {
+        "type": "li",
+        "text": "Congenital refractive problems, such as high farsightedness or nearsightedness"
+      },
+      {
+        "type": "li",
+        "text": "Strabismus (a turned eye): an eye that turns inward may cause amblyopia in that eye"
+      },
+      {
+        "type": "li",
+        "text": "Congenital cataract, which affects how vision develops"
+      },
+      {
+        "type": "h2",
+        "text": "Types of amblyopia"
+      },
+      {
+        "type": "h3",
+        "text": "Strabismic amblyopia"
+      },
+      {
+        "type": "p",
+        "text": "When the two eyes are not lined up, the brain suppresses the turned eye to avoid double vision, and this leads to amblyopia."
+      },
+      {
+        "type": "h3",
+        "text": "A large difference between the two eyes"
+      },
+      {
+        "type": "p",
+        "text": "When the two eyes’ prescriptions are very different, vision in one eye may not develop well."
+      },
+      {
+        "type": "h3",
+        "text": "Refractive amblyopia"
+      },
+      {
+        "type": "p",
+        "text": "Usually caused by high nearsightedness, farsightedness or astigmatism, which affects how vision develops."
+      },
+      {
+        "type": "h3",
+        "text": "Visual deprivation amblyopia"
+      },
+      {
+        "type": "p",
+        "text": "A drooping eyelid or a congenital cataract blocks light from entering the eye, so the image on the retina is blurry."
+      },
+      {
+        "type": "h2",
+        "text": "Do eyes need regular check-ups?"
+      },
+      {
+        "type": "p",
+        "text": "A vision test only measures central vision. Other exams are needed to check the health of the eyes. Good eyesight does not mean healthy eyes."
+      },
+      {
+        "type": "p",
+        "text": "Many eye diseases have no obvious symptoms at first. By the time symptoms appear, they may already have seriously damaged the eyes."
+      },
+      {
+        "type": "p",
+        "text": "We recommend a routine eye exam once a year for young children, starting at age 3."
+      },
+      {
+        "type": "p",
+        "text": "If there are no problems, come back once a year for a check-up. If there are, more advanced exams are needed to confirm how the condition is progressing and to start treatment as early as possible."
+      },
+      {
+        "type": "p",
+        "text": "People over 40, people with high nearsightedness, people with high blood pressure, high blood sugar or high cholesterol, and heavy users of computers, phones and other screens are all at high risk of eye disease. Be sure to have regular check-ups."
       }
     ],
     "zh-hans": [
@@ -186,6 +266,86 @@
       {
         "type": "p",
         "text": "治疗：程度轻微的，可以配戴棱镜镜片；程度较严重的，则以手术调整眼外肌的强度与附着点位置，使眼位恢复正常。"
+      },
+      {
+        "type": "h2",
+        "text": "弱视的成因"
+      },
+      {
+        "type": "p",
+        "text": "当视力不良的幼儿，矫正后视力仍无法达到0.8时，就属于弱视。"
+      },
+      {
+        "type": "li",
+        "text": "先天性屈光问题：如高度近视或远视"
+      },
+      {
+        "type": "li",
+        "text": "斜视：内斜视可能引起单眼弱视"
+      },
+      {
+        "type": "li",
+        "text": "先天性白内障：因白内障影响视力发育"
+      },
+      {
+        "type": "h2",
+        "text": "弱视的种类与原因"
+      },
+      {
+        "type": "h3",
+        "text": "斜视性弱视"
+      },
+      {
+        "type": "p",
+        "text": "两眼视线不平行，大脑会抑制斜视眼的发育，从而导致弱视。"
+      },
+      {
+        "type": "h3",
+        "text": "两眼视差太大"
+      },
+      {
+        "type": "p",
+        "text": "两眼的度数差异太大，导致单眼视力发育不良。"
+      },
+      {
+        "type": "h3",
+        "text": "非正式性弱视"
+      },
+      {
+        "type": "p",
+        "text": "通常是有高度近视、高度远视或高度散光，影响视力的发育。"
+      },
+      {
+        "type": "h3",
+        "text": "视觉剥夺性弱视"
+      },
+      {
+        "type": "p",
+        "text": "由于眼睑下垂或先天性白内障，阻挡光线进入，导致视网膜的影像模糊。"
+      },
+      {
+        "type": "h2",
+        "text": "眼睛需要定期检查吗？"
+      },
+      {
+        "type": "p",
+        "text": "视力检查只能测出中心视力，需要通过其他检查来评估眼睛的健康状况。视力好不代表眼睛健康！"
+      },
+      {
+        "type": "p",
+        "text": "许多眼病初期症状不明显，等到症状明显时，可能已经对眼睛造成严重伤害。"
+      },
+      {
+        "type": "p",
+        "text": "建议幼儿从3岁起，每年进行一次眼科常规检查。"
+      },
+      {
+        "type": "p",
+        "text": "如果没有病况，建议每年复查一次；如果有病况，则需要进行进一步检查，确认病情发展并尽早治疗。"
+      },
+      {
+        "type": "p",
+        "text": "40岁以上、高度近视、“三高”患者以及电子产品重度使用者，都是眼病高危人群，一定要定期检查！"
       }
     ],
     "zh-hant": [
@@ -280,6 +440,86 @@
       {
         "type": "p",
         "text": "治療：程度輕微的，可以配戴稜鏡鏡片；程度較嚴重的，則以手術調整眼外肌的強度與附著點位置，使眼位恢復正常。"
+      },
+      {
+        "type": "h2",
+        "text": "弱視的成因"
+      },
+      {
+        "type": "p",
+        "text": "當視力不良的幼兒，矯正後視力仍無法達到 0.8 時，就屬於弱視。"
+      },
+      {
+        "type": "li",
+        "text": "先天性屈光問題：如高度近視或遠視"
+      },
+      {
+        "type": "li",
+        "text": "斜視：內斜視可能引起單眼弱視"
+      },
+      {
+        "type": "li",
+        "text": "先天性白內障：因白內障影響視力發展"
+      },
+      {
+        "type": "h2",
+        "text": "弱視的種類與原因"
+      },
+      {
+        "type": "h3",
+        "text": "斜視性弱視"
+      },
+      {
+        "type": "p",
+        "text": "兩眼視線不平行，大腦會抑制斜視眼的發育，即導致弱視。"
+      },
+      {
+        "type": "h3",
+        "text": "兩眼視差太大"
+      },
+      {
+        "type": "p",
+        "text": "兩眼的度數差異太大，導致單眼視力發育不良。"
+      },
+      {
+        "type": "h3",
+        "text": "非正式性弱視"
+      },
+      {
+        "type": "p",
+        "text": "通常是有高度近視、高度遠視或高度散光，影響視力的發育。"
+      },
+      {
+        "type": "h3",
+        "text": "視覺剝奪性弱視"
+      },
+      {
+        "type": "p",
+        "text": "由於眼瞼下垂或先天性白內障，阻擋光線進入，導致視網膜的影像模糊。"
+      },
+      {
+        "type": "h2",
+        "text": "眼睛需要定期檢查嗎？"
+      },
+      {
+        "type": "p",
+        "text": "視力檢查僅能量出中心視力，需由其他檢查以評估眼睛的健康狀況。視力好不代表眼睛健康！"
+      },
+      {
+        "type": "p",
+        "text": "許多眼疾初期症狀不明顯，待症狀明顯時，恐已造成嚴重的眼睛傷害。"
+      },
+      {
+        "type": "p",
+        "text": "建議幼兒自 3 歲起，每一年進行一次眼科例行性檢查。"
+      },
+      {
+        "type": "p",
+        "text": "病人若無病況，建議每年一次回診追蹤；若有病況，則需進行進階檢查，確認病程發展並盡早治療。"
+      },
+      {
+        "type": "p",
+        "text": "40 歲以上、高度近視、三高患者、3C 重度使用者，都是眼疾高危險群，一定要定期檢查喔！"
       }
     ]
   },

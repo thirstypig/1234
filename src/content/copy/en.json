@@ -255,5 +255,47 @@
     "youngest": "He has treated children as young as 5.",
     "mission": "The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through orthokeratology.",
     "equipment": "Our clinic uses the finest equipment, the newest technology, and the best-fitting lens design for each patient to achieve the best vision improvement."
+  },
+  "metaDesc": {
+    "ortho-k": "How Ortho-K works at 1234 Ortho-K Vision Care in Alhambra: the treatment steps, our eye exams, myopia correction with Ortho-K, atropine and vision therapy, and dry eye care.",
+    "eye-exams": "Children’s eye exams in Alhambra: what the exam includes, the causes and types of amblyopia (lazy eye), and why a yearly eye exam from age 3 matters."
+  },
+  "documents": {
+    "title": "Download the poster",
+    "lead": "Amblyopia and eye check-ups, as a printable poster.",
+    "en": "English (PNG)",
+    "zh-hant": "繁體中文 (PDF)"
+  },
+  "steps": {
+    "title": "Your treatment, step by step",
+    "s1t": "Screening",
+    "s1": "You fill in a full medical history form, and we measure your child’s eyes with computerized refraction.",
+    "s2t": "Full eye exam",
+    "s2": "A slit-lamp exam and a dilated eye exam. Dr. Woo talks with you about your needs and sets the direction of treatment.",
+    "s3t": "Your results",
+    "s3": "You go over the report with our consultant and settle the treatment plan and fees.",
+    "s4t": "Getting ready",
+    "s4": "Dilating drops or lenses custom-designed for your child, and lessons in eye and lens hygiene.",
+    "s5t": "Treatment begins",
+    "s5": "The correction phase lasts three to six months, with routine checks to adjust the lenses.",
+    "s6t": "Treatment completed",
+    "s6": "We book regular follow-up visits to keep track of your child’s eyes."
+  },
+  "services": {
+    "title": "Our services",
+    "examsTitle": "Complete eye health exams",
+    "exams1": "Children’s eye care",
+    "exams2": "Light-wave imaging to measure the eye’s length",
+    "exams3": "Myopia tracking",
+    "exams4": "Treatment for strabismus (crossed eyes) and amblyopia (lazy eye) in young children",
+    "myopiaTitle": "Myopia correction",
+    "myopia1": "Ortho-K: orthokeratology lenses worn while your child sleeps",
+    "myopia2": "Atropine: customized myopia management",
+    "myopia3": "Flipper vision therapy: eye-muscle training",
+    "dryTitle": "Dry eye evaluation and treatment, for children and adults",
+    "dry1": "Tear film stability test",
+    "dry2": "Flushing the tear ducts and under the eyelids",
+    "dry3": "Tear duct blockage procedure",
+    "insurance": "We work with EyeMed Vision Care, MES Vision and Allied Physicians IPA. Easy interest-free payment plans are available."
   }
 }

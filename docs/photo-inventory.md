@@ -107,3 +107,14 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 | Client photo 8 | Site — Stories gallery (P-08) | Owner confirmed permission 2026-09-29; `assets/patients/P-08.jpg` (cropped) |
 | Client photo 9 | Not used — the owner removed it from the Stories gallery on 2026-10-27 (P-09; was `assets/patients/P-09.jpg`) |
 | Client photo 10 (sent 2026-10-10) | Site — Stories gallery (P-27) | Owner confirmed permission 2026-10-10; `assets/patients/P-27.jpg` |
+
+## Client documents (sent 2026-10-28)
+
+Downloadable files in `public/documents/`, listed in `src/content/documents.json` (a unit test enforces it), linked from Children's Eye Exams.
+
+| Document | Where | Why |
+|---|---|---|
+| `amblyopia-poster-en.png` (`1234 OrthoK BACK 240130.png`) | Site — Children's Eye Exams, download | Practice's own amblyopia and check-up poster, English |
+| `amblyopia-poster-zh-hant.pdf` (`1234 poster.pdf`) | Site — Children's Eye Exams, download | Same poster, Traditional Chinese |
+| `1234 OrthoK FRONT 240130.png`, `Z0162RA (1).jpg` (2024 flyers, EN and 繁體) | Not published | Claims, third-party logos, a stock photo and patient thumbnails; only the treatment steps, services, insurance and payment plan are on How it works, as text |
+| `1234_DrWoo_Flyer_Proof.pdf` | Not published | Same text as the About page (which has 1998, not the flyer's 1988) |
