@@ -142,7 +142,7 @@
     "examAlt": "An exam room at the Alhambra clinic, with a handprint mural on the wall",
     "other": {
       "title": "Other eye care",
-      "examsDesc": "What to expect when a child doesn’t pass a school vision screening.",
+      "examsDesc": "Amblyopia (lazy eye), what the exam checks, and a yearly exam from age 3.",
       "surfaceDesc": "Foreign bodies, ingrown eyelashes, and conjunctival calcium deposits."
     },
     "lenses": {
@@ -237,7 +237,8 @@
   },
   "oldPages": {
     "eye-exams": {
-      "title": "Children’s Eye Exams"
+      "title": "Children’s Eye Exams",
+      "callout": "Bring your child for a first eye exam at age 3, then once a year."
     },
     "eye-surface": {
       "title": "Eye Surface Therapy"
@@ -264,7 +265,8 @@
     "title": "Download the poster",
     "lead": "Amblyopia and eye check-ups, as a printable poster.",
     "en": "English (PNG)",
-    "zh-hant": "繁體中文 (PDF)"
+    "zh-hant": "繁體中文 (PDF)",
+    "causesAlt": "Poster: Causes of amblyopia. 01 Congenital refractive problems, 02 Squint, 03 Congenital cataract."
   },
   "steps": {
     "title": "Your treatment, step by step",

@@ -2,6 +2,7 @@ import type { ImageMetadata } from 'astro';
 import catalog from '../../assets/legacy/catalog.json';
 import practice from '../../assets/practice/photos.json';
 import patients from '../../assets/patients/photos.json';
+import art from '../../assets/client/art.json';
 import { assertUsable, type Entry } from './images-guard';
 
 const files = import.meta.glob<{ default: ImageMetadata }>('../../assets/legacy/site/*.{png,jpg,jpeg,webp,gif}', { eager: true });
@@ -33,5 +34,15 @@ export function patientPhoto(file: string): ImageMetadata {
   if (!(patients as { file: string }[]).some((p) => p.file === file)) throw new Error(`Photo "${file}" is not listed in assets/patients/photos.json`);
   const mod = patientFiles[`../../assets/patients/${file}`];
   if (!mod) throw new Error(`Photo "${file}" is listed but missing from assets/patients`);
+  return mod.default;
+}
+
+const artFiles = import.meta.glob<{ default: ImageMetadata }>('../../assets/client/*.webp', { eager: true });
+
+/** Drawings from the practice's own printed materials (the amblyopia poster, 2026-10-28); each must be listed in assets/client/art.json. */
+export function clientArt(file: string): ImageMetadata {
+  if (!(art as { file: string }[]).some((a) => a.file === file)) throw new Error(`Drawing "${file}" is not listed in assets/client/art.json`);
+  const mod = artFiles[`../../assets/client/${file}`];
+  if (!mod) throw new Error(`Drawing "${file}" is listed but missing from assets/client`);
   return mod.default;
 }

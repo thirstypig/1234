@@ -38,6 +38,14 @@ test('only listed patient photos are tracked in assets/patients', () => {
   assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
 });
 
+// Poster drawings: every image in assets/client must be listed in art.json.
+test('only listed poster drawings are tracked in assets/client', () => {
+  const ok = new Set(JSON.parse(readFileSync('assets/client/art.json', 'utf8')).map((e) => e.file));
+  const tracked = execSync('git ls-files --cached --others --exclude-standard assets/client', { encoding: 'utf8' })
+    .split('\n').filter((f) => /\.(png|jpe?g|gif|webp|heic)$/i.test(f));
+  assert.deepStrictEqual(tracked.filter((f) => !ok.has(basename(f))), []);
+});
+
 // Client documents: every file in public/documents must be listed in src/content/documents.json.
 test('only listed client documents are tracked in public/documents', () => {
   const ok = new Set(JSON.parse(readFileSync('src/content/documents.json', 'utf8')).map((e) => e.file));
