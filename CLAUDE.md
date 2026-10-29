@@ -34,7 +34,9 @@ Rules:
   comments, 2026-10-27; `docs/copy-review.md`, N-16): the Home hero
   ("30 years", "prescription does not increase", "highly effective",
   "best option", ages 5–45) and About's 41,879 patients, which replaced
-  9,000. Add no new claims.
+  9,000. Add no new claims. The two age ranges are deliberate (owner,
+  2026-10-28): Home says 5–45 (children and adults), and How it works
+  keeps "Ortho-K for children, ages 7–18" (`ortho.title`); don't align them.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
   enforces it). Only patient photos P-01 to P-27 may be published
   (owner confirmed permission 2026-09-29, and 2026-10-10 for
@@ -164,7 +166,14 @@ those two commands to run with `!`.
 The only branches are `main` and `site/concept-c`. `design/concepts-import`
 and `docs/concept-c-site` were deleted 2026-09-30, taking the old
 concepts-only `deploy-review-site.yml` with them. The auto-mode classifier
-blocks `git push --delete`: the user runs it with `!`.
+blocks `git push --delete`: the user runs it with `!`. Since 2026-10-28 it
+also blocks `gh pr merge` into `main` and the `site/concept-c` fast-forward
+("Production Deploy"), even when the user said to merge: open the PR, then
+give the user `! gh pr merge <n> --merge --delete-branch` and
+`! git push origin main:site/concept-c`, and check the deploy run after.
+Stacked PRs: merging the bottom one with `--delete-branch` closes the PR
+stacked on it, and a closed PR can't be retargeted; open a new PR from
+the same branch.
 
 ## Tests
 
