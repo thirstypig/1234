@@ -112,6 +112,8 @@ Every image from the old site (`assets/legacy/catalog.json`, 75) and every photo
 
 Downloadable files in `public/documents/`, listed in `src/content/documents.json` (a unit test enforces it), linked from Children's Eye Exams.
 
+The poster's 13 drawings are also on Children's Eye Exams, as cards beside the matching text: `assets/client/*.webp`, listed in `assets/client/art.json` and used only through `clientArt()` (a unit test enforces it). They were cut from `1234 poster.pdf` rendered with its text removed (Ghostscript `-dFILTERTEXT`), so they carry no words in any language; two empty labels were painted out. The practice supplied the poster as its own material (Dr. Woo and Elaine, 2026-10-28). Under the "Causes of amblyopia" heading the page also shows that panel of the poster as printed, words included: `poster-causes-en.webp` (from the English PNG) on the English page and `poster-causes-zh-hant.webp` (from the 繁體 PDF) on both Chinese pages, since there is no 简体 poster; its alt text gives the panel's words in the page's language. The 2024 flyers' photos (Dr. Woo outdoors, the clinic interiors) are too small to cut from the flyers; the originals have been requested.
+
 | Document | Where | Why |
 |---|---|---|
 | `amblyopia-poster-en.png` (`1234 OrthoK BACK 240130.png`) | Site — Children's Eye Exams, download | Practice's own amblyopia and check-up poster, English |

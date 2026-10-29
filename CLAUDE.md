@@ -43,6 +43,9 @@ Rules:
   P-26) via `patientPhoto()`. The owner took P-09, P-11, P-14, P-21 and
   P-22 off Stories on 2026-10-27; their files were deleted. All
   other patient photos stay on the private patient-photos page.
+  Drawings from the practice's amblyopia poster (owner, 2026-10-28:
+  the practice owns its poster and flyer artwork) live in
+  `assets/client/`, listed in `art.json`, used via `clientArt()`.
 - Wording the owner set on 2026-10-09 (`docs/copy-review.md`, N-11 to
   N-15): write "Ortho-K", never "ortho-k", except inside patient
   reviews, which stay word for word. Dr. Woo is "Dr. Paul T. Woo,

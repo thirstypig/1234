@@ -95,23 +95,28 @@
       },
       {
         "type": "h2",
-        "text": "Causes of amblyopia"
+        "text": "Causes of amblyopia",
+        "poster": "causes"
       },
       {
         "type": "p",
-        "text": "When a young child’s vision still cannot reach 0.8 (on the decimal scale) with glasses or contact lenses, the child has amblyopia."
+        "text": "When a young child’s vision still cannot reach 0.8 (on the decimal scale) with glasses or contact lenses, the child has amblyopia.",
+        "art": "amblyopia-check.webp"
       },
       {
         "type": "li",
-        "text": "Congenital refractive problems, such as high farsightedness or nearsightedness"
+        "text": "Congenital refractive problems, such as high farsightedness or nearsightedness",
+        "art": "cause-refractive.webp"
       },
       {
         "type": "li",
-        "text": "Strabismus (a turned eye): an eye that turns inward may cause amblyopia in that eye"
+        "text": "Strabismus (a turned eye): an eye that turns inward may cause amblyopia in that eye",
+        "art": "cause-strabismus.webp"
       },
       {
         "type": "li",
-        "text": "Congenital cataract, which affects how vision develops"
+        "text": "Congenital cataract, which affects how vision develops",
+        "art": "cause-cataract.webp"
       },
       {
         "type": "h2",
@@ -119,7 +124,8 @@
       },
       {
         "type": "h3",
-        "text": "Strabismic amblyopia"
+        "text": "Strabismic amblyopia",
+        "art": "type-strabismic.webp"
       },
       {
         "type": "p",
@@ -127,7 +133,8 @@
       },
       {
         "type": "h3",
-        "text": "A large difference between the two eyes"
+        "text": "A large difference between the two eyes",
+        "art": "type-anisometropic.webp"
       },
       {
         "type": "p",
@@ -135,7 +142,8 @@
       },
       {
         "type": "h3",
-        "text": "Refractive amblyopia"
+        "text": "Refractive amblyopia",
+        "art": "type-refractive.webp"
       },
       {
         "type": "p",
@@ -143,7 +151,8 @@
       },
       {
         "type": "h3",
-        "text": "Visual deprivation amblyopia"
+        "text": "Visual deprivation amblyopia",
+        "art": "type-deprivation.webp"
       },
       {
         "type": "p",
@@ -155,23 +164,28 @@
       },
       {
         "type": "p",
-        "text": "A vision test only measures central vision. Other exams are needed to check the health of the eyes. Good eyesight does not mean healthy eyes."
+        "text": "A vision test only measures central vision. Other exams are needed to check the health of the eyes. Good eyesight does not mean healthy eyes.",
+        "art": "checkup-girl.webp"
       },
       {
         "type": "p",
-        "text": "Many eye diseases have no obvious symptoms at first. By the time symptoms appear, they may already have seriously damaged the eyes."
+        "text": "Many eye diseases have no obvious symptoms at first. By the time symptoms appear, they may already have seriously damaged the eyes.",
+        "art": "checkup-glaucoma.webp"
       },
       {
         "type": "p",
-        "text": "We recommend a routine eye exam once a year for young children, starting at age 3."
+        "text": "We recommend a routine eye exam once a year for young children, starting at age 3.",
+        "art": "checkup-yearly.webp"
       },
       {
         "type": "p",
-        "text": "If there are no problems, come back once a year for a check-up. If there are, more advanced exams are needed to confirm how the condition is progressing and to start treatment as early as possible."
+        "text": "If there are no problems, come back once a year for a check-up. If there are, more advanced exams are needed to confirm how the condition is progressing and to start treatment as early as possible.",
+        "art": "checkup-doctor.webp"
       },
       {
         "type": "p",
-        "text": "People over 40, people with high nearsightedness, people with high blood pressure, high blood sugar or high cholesterol, and heavy users of computers, phones and other screens are all at high risk of eye disease. Be sure to have regular check-ups."
+        "text": "People over 40, people with high nearsightedness, people with high blood pressure, high blood sugar or high cholesterol, and heavy users of computers, phones and other screens are all at high risk of eye disease. Be sure to have regular check-ups.",
+        "art": "checkup-over40.webp"
       }
     ],
     "zh-hans": [
@@ -269,23 +283,28 @@
       },
       {
         "type": "h2",
-        "text": "弱视的成因"
+        "text": "弱视的成因",
+        "poster": "causes"
       },
       {
         "type": "p",
-        "text": "当视力不良的幼儿，矫正后视力仍无法达到0.8时，就属于弱视。"
+        "text": "当视力不良的幼儿，矫正后视力仍无法达到0.8时，就属于弱视。",
+        "art": "amblyopia-check.webp"
       },
       {
         "type": "li",
-        "text": "先天性屈光问题：如高度近视或远视"
+        "text": "先天性屈光问题：如高度近视或远视",
+        "art": "cause-refractive.webp"
       },
       {
         "type": "li",
-        "text": "斜视：内斜视可能引起单眼弱视"
+        "text": "斜视：内斜视可能引起单眼弱视",
+        "art": "cause-strabismus.webp"
       },
       {
         "type": "li",
-        "text": "先天性白内障：因白内障影响视力发育"
+        "text": "先天性白内障：因白内障影响视力发育",
+        "art": "cause-cataract.webp"
       },
       {
         "type": "h2",
@@ -293,7 +312,8 @@
       },
       {
         "type": "h3",
-        "text": "斜视性弱视"
+        "text": "斜视性弱视",
+        "art": "type-strabismic.webp"
       },
       {
         "type": "p",
@@ -301,7 +321,8 @@
       },
       {
         "type": "h3",
-        "text": "两眼视差太大"
+        "text": "两眼视差太大",
+        "art": "type-anisometropic.webp"
       },
       {
         "type": "p",
@@ -309,7 +330,8 @@
       },
       {
         "type": "h3",
-        "text": "非正式性弱视"
+        "text": "非正式性弱视",
+        "art": "type-refractive.webp"
       },
       {
         "type": "p",
@@ -317,7 +339,8 @@
       },
       {
         "type": "h3",
-        "text": "视觉剥夺性弱视"
+        "text": "视觉剥夺性弱视",
+        "art": "type-deprivation.webp"
       },
       {
         "type": "p",
@@ -329,23 +352,28 @@
       },
       {
         "type": "p",
-        "text": "视力检查只能测出中心视力，需要通过其他检查来评估眼睛的健康状况。视力好不代表眼睛健康！"
+        "text": "视力检查只能测出中心视力，需要通过其他检查来评估眼睛的健康状况。视力好不代表眼睛健康！",
+        "art": "checkup-girl.webp"
       },
       {
         "type": "p",
-        "text": "许多眼病初期症状不明显，等到症状明显时，可能已经对眼睛造成严重伤害。"
+        "text": "许多眼病初期症状不明显，等到症状明显时，可能已经对眼睛造成严重伤害。",
+        "art": "checkup-glaucoma.webp"
       },
       {
         "type": "p",
-        "text": "建议幼儿从3岁起，每年进行一次眼科常规检查。"
+        "text": "建议幼儿从3岁起，每年进行一次眼科常规检查。",
+        "art": "checkup-yearly.webp"
       },
       {
         "type": "p",
-        "text": "如果没有病况，建议每年复查一次；如果有病况，则需要进行进一步检查，确认病情发展并尽早治疗。"
+        "text": "如果没有病况，建议每年复查一次；如果有病况，则需要进行进一步检查，确认病情发展并尽早治疗。",
+        "art": "checkup-doctor.webp"
       },
       {
         "type": "p",
-        "text": "40岁以上、高度近视、“三高”患者以及电子产品重度使用者，都是眼病高危人群，一定要定期检查！"
+        "text": "40岁以上、高度近视、“三高”患者以及电子产品重度使用者，都是眼病高危人群，一定要定期检查！",
+        "art": "checkup-over40.webp"
       }
     ],
     "zh-hant": [
@@ -443,23 +471,28 @@
       },
       {
         "type": "h2",
-        "text": "弱視的成因"
+        "text": "弱視的成因",
+        "poster": "causes"
       },
       {
         "type": "p",
-        "text": "當視力不良的幼兒，矯正後視力仍無法達到 0.8 時，就屬於弱視。"
+        "text": "當視力不良的幼兒，矯正後視力仍無法達到 0.8 時，就屬於弱視。",
+        "art": "amblyopia-check.webp"
       },
       {
         "type": "li",
-        "text": "先天性屈光問題：如高度近視或遠視"
+        "text": "先天性屈光問題：如高度近視或遠視",
+        "art": "cause-refractive.webp"
       },
       {
         "type": "li",
-        "text": "斜視：內斜視可能引起單眼弱視"
+        "text": "斜視：內斜視可能引起單眼弱視",
+        "art": "cause-strabismus.webp"
       },
       {
         "type": "li",
-        "text": "先天性白內障：因白內障影響視力發展"
+        "text": "先天性白內障：因白內障影響視力發展",
+        "art": "cause-cataract.webp"
       },
       {
         "type": "h2",
@@ -467,7 +500,8 @@
       },
       {
         "type": "h3",
-        "text": "斜視性弱視"
+        "text": "斜視性弱視",
+        "art": "type-strabismic.webp"
       },
       {
         "type": "p",
@@ -475,7 +509,8 @@
       },
       {
         "type": "h3",
-        "text": "兩眼視差太大"
+        "text": "兩眼視差太大",
+        "art": "type-anisometropic.webp"
       },
       {
         "type": "p",
@@ -483,7 +518,8 @@
       },
       {
         "type": "h3",
-        "text": "非正式性弱視"
+        "text": "非正式性弱視",
+        "art": "type-refractive.webp"
       },
       {
         "type": "p",
@@ -491,7 +527,8 @@
       },
       {
         "type": "h3",
-        "text": "視覺剝奪性弱視"
+        "text": "視覺剝奪性弱視",
+        "art": "type-deprivation.webp"
       },
       {
         "type": "p",
@@ -503,23 +540,28 @@
       },
       {
         "type": "p",
-        "text": "視力檢查僅能量出中心視力，需由其他檢查以評估眼睛的健康狀況。視力好不代表眼睛健康！"
+        "text": "視力檢查僅能量出中心視力，需由其他檢查以評估眼睛的健康狀況。視力好不代表眼睛健康！",
+        "art": "checkup-girl.webp"
       },
       {
         "type": "p",
-        "text": "許多眼疾初期症狀不明顯，待症狀明顯時，恐已造成嚴重的眼睛傷害。"
+        "text": "許多眼疾初期症狀不明顯，待症狀明顯時，恐已造成嚴重的眼睛傷害。",
+        "art": "checkup-glaucoma.webp"
       },
       {
         "type": "p",
-        "text": "建議幼兒自 3 歲起，每一年進行一次眼科例行性檢查。"
+        "text": "建議幼兒自 3 歲起，每一年進行一次眼科例行性檢查。",
+        "art": "checkup-yearly.webp"
       },
       {
         "type": "p",
-        "text": "病人若無病況，建議每年一次回診追蹤；若有病況，則需進行進階檢查，確認病程發展並盡早治療。"
+        "text": "病人若無病況，建議每年一次回診追蹤；若有病況，則需進行進階檢查，確認病程發展並盡早治療。",
+        "art": "checkup-doctor.webp"
       },
       {
         "type": "p",
-        "text": "40 歲以上、高度近視、三高患者、3C 重度使用者，都是眼疾高危險群，一定要定期檢查喔！"
+        "text": "40 歲以上、高度近視、三高患者、3C 重度使用者，都是眼疾高危險群，一定要定期檢查喔！",
+        "art": "checkup-over40.webp"
       }
     ]
   },

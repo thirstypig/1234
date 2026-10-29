@@ -13,7 +13,7 @@ const title = Astro.props.title ?? t('home.visitTitle');
 <section class="ui-section c-paper" id="visit">
   <div class="ui-wrap ui-grid">
     <div class="ui-span-5 ui-stack-lg"><h2 class="ui-h2">{title}</h2>{!steps && <p style="margin-top:var(--space-2)"><span class="ui-draft">{t('home.visitDraft')}</span></p>}{photo && <div class="c-visit-photo"><PhotoFrame image={photo.image} alt={photo.alt} placeholder={photo.alt} /></div>}</div>
-    <ol class="ui-lines ui-at-7">
+    <ol class:list={["ui-lines ui-at-7", steps && "c-steps"]}>
       {steps
         ? steps.map((s, i) => <li><span class="ui-n">{i + 1}</span><div><h3 class="ui-h3">{s.title}</h3><p class="ui-body">{s.body}</p></div></li>)
         : [1, 2, 3].map((n) => <li><span class="ui-n">{n}</span><p class="ui-body">{t(`home.visit${n}`)}</p></li>)}
@@ -21,5 +21,7 @@ const title = Astro.props.title ?? t('home.visitTitle');
   </div>
 </section>
 <style>
+  /* The treatment steps take the numbered arrows from the practice's 2024 flyer (its #ec008c, darkened for AA contrast). */
+  .c-steps .ui-n { width: 48px; border-radius: 0; background: #d6006f; color: #fff; padding-right: 8px; clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%); }
   .c-visit-photo :global(.ui-photo) { aspect-ratio: 4 / 3; }
 </style>

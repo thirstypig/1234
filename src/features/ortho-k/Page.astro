@@ -26,6 +26,16 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1
         <p class="ui-lead ui-at-8">{t('home.introLead')}</p>
       </div>
     </section>
+    <section class="ui-section" id="other-care">
+      <div class="ui-wrap ui-stack-lg">
+        <h2 class="ui-h2">{t('ortho.other.title')}</h2>
+        <ul class="c-other">
+          {(['eye-exams', 'eye-surface'] as const).map((slug) => (
+            <li><a href={pathFor(lang, slug)}><strong>{t(`oldPages.${slug}.title`)}</strong><span>{t(slug === 'eye-exams' ? 'ortho.other.examsDesc' : 'ortho.other.surfaceDesc')}</span></a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
     <HowItWorks lang={lang} />
     <FirstVisit lang={lang} title={t('steps.title')} steps={steps} photo={{ image: legacyImage('1234orthok-com-043.jpg'), alt: t('ortho.examAlt') }} />
     <section class="ui-section" id="services">
@@ -52,16 +62,6 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1
       </div>
     </section>
     <FaqAccordion title={t('faq.title')} items={faq} />
-    <section class="ui-section c-paper" id="other-care">
-      <div class="ui-wrap ui-stack-lg">
-        <h2 class="ui-h2">{t('ortho.other.title')}</h2>
-        <ul class="c-other">
-          {(['eye-exams', 'eye-surface'] as const).map((slug) => (
-            <li><a href={pathFor(lang, slug)}><strong>{t(`oldPages.${slug}.title`)}</strong><span>{t(slug === 'eye-exams' ? 'ortho.other.examsDesc' : 'ortho.other.surfaceDesc')}</span></a></li>
-          ))}
-        </ul>
-      </div>
-    </section>
     <BookingBand lang={lang} />
   </main>
 </BaseLayout>

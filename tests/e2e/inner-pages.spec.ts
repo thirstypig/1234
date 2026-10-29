@@ -172,6 +172,12 @@ for (const l of ['en', 'zh-hans', 'zh-hant']) {
     await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /3/);
     const links = page.locator('#poster a[download]');
     await expect(links).toHaveCount(2);
+    // The poster's 13 drawings, decorative (the card text says the same thing).
+    const art = page.locator('.c-card img');
+    await expect(art).toHaveCount(13);
+    // The poster's Causes panel itself: English on EN, 繁體 on both Chinese pages.
+    await expect(page.locator('.c-poster img')).toHaveAttribute('src', new RegExp(`poster-causes-${l === 'en' ? 'en' : 'zh-hant'}`));
+    expect(await art.evaluateAll((els) => els.every((e) => e.getAttribute('alt') === ''))).toBe(true);
     for (const href of await links.evaluateAll((els) => els.map((e) => e.getAttribute('href') ?? ''))) {
       expect((await request.get(href)).status()).toBe(200);
     }

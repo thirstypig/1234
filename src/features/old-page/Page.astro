@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
+import { Image } from 'astro:assets';
+import { clientArt } from '../../lib/images';
 import { makeT } from '../../i18n/t';
 import { HTML_LANG, pathFor, type Lang } from '../../i18n/locales';
 import pages from '../../content/old-pages.json';
@@ -12,12 +14,24 @@ import documents from '../../content/documents.json';
 interface Props { lang: Lang; slug: 'eye-exams' | 'eye-surface' }
 const { lang, slug } = Astro.props;
 const t = makeT(lang);
-// Group consecutive list items into one <ul>.
-const groups: { type: string; items: string[] }[] = [];
-for (const b of pages[slug][lang]) {
+// Group consecutive list items into one <ul>. Blocks with a poster drawing become cards,
+// consecutive cards share one grid, and a heading with a drawing takes the paragraph after it.
+// A heading with a poster panel shows that panel (English, or 繁體 for both Chinese pages) under it.
+type Card = { art: string; title?: string; text: string; n?: number };
+const groups: { type: string; items: string[]; cards?: Card[] }[] = [];
+const blocks: { type: string; text: string; art?: string; poster?: string }[] = pages[slug][lang];
+for (let i = 0; i < blocks.length; i++) {
+  const b = blocks[i];
   const last = groups[groups.length - 1];
-  if (b.type === 'li' && last?.type === 'li') last.items.push(b.text);
+  if (b.art) {
+    const card: Card = b.type === 'h3' ? { art: b.art, title: b.text, text: blocks[++i].text } : { art: b.art, text: b.text };
+    // List items keep their order as the poster's numbered badges (01, 02, 03).
+    if (b.type === 'li') card.n = (last?.type === 'cards' ? last.cards!.filter((c) => c.n).length : 0) + 1;
+    if (last?.type === 'cards') last.cards!.push(card);
+    else groups.push({ type: 'cards', items: [], cards: [card] });
+  } else if (b.type === 'li' && last?.type === 'li') last.items.push(b.text);
   else groups.push({ type: b.type, items: [b.text] });
+  if (b.poster) groups.push({ type: 'poster', items: [`poster-${b.poster}-${lang === 'en' ? 'en' : 'zh-hant'}.webp`] });
 }
 ---
 <BaseLayout lang={lang} page={slug} title={t(`meta.${slug}`)} description={slug === 'eye-exams' ? t('metaDesc.eye-exams') : undefined}>
@@ -27,10 +41,24 @@ for (const b of pages[slug][lang]) {
       <div class="ui-wrap">
         <p class="c-back"><a href={pathFor(lang, 'ortho-k')}><Icon name="arrow" /><span>{t('nav.ortho-k')}</span></a></p>
         <article class="c-old ui-stack-lg" lang={HTML_LANG[lang]}>
+          {slug === 'eye-exams' && <p class="c-callout"><Icon name="eye" /><span>{t('oldPages.eye-exams.callout')}</span></p>}
           {groups.map((g) =>
             g.type === 'h2' ? <h2 class="ui-h2">{g.items[0]}</h2>
             : g.type === 'h3' ? <h3 class="ui-h3">{g.items[0]}</h3>
             : g.type === 'li' ? <ul class="c-old-list">{g.items.map((i) => <li>{i}</li>)}</ul>
+            : g.type === 'poster' ? (
+              <figure class="c-poster"><Image src={clientArt(g.items[0])} alt={t('documents.causesAlt')} widths={[800, 1600]} sizes="(max-width: 767px) 92vw, 46em" /></figure>
+            )
+            : g.type === 'cards' ? (
+              <ul class="c-cards">{g.cards!.map((c) => (
+                <li class="c-card ui-stack">
+                  <Image src={clientArt(c.art)} alt="" widths={[320, 640]} sizes="(max-width: 767px) 90vw, 320px" />
+                  {c.n && <span class="c-badge" aria-hidden="true">{String(c.n).padStart(2, '0')}</span>}
+                  {c.title && <h3 class="ui-h3">{c.title}</h3>}
+                  <p class="ui-body">{c.text}</p>
+                </li>
+              ))}</ul>
+            )
             : <p class="ui-body">{g.items[0]}</p>
           )}
         </article>
@@ -48,6 +76,16 @@ for (const b of pages[slug][lang]) {
 </BaseLayout>
 <style>
   .c-old { max-width: 46em; }
+  /* From the practice's print materials: the 2024 flyer's red banner and the poster's yellow number badges (colors darkened or paired for AA contrast). */
+  .c-callout { margin: 0; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-4); background: #c8102e; color: #fff; font-weight: var(--w-head); font-size: 1.15em; border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 0; }
+  .c-callout :global(svg) { flex: none; }
+  .c-card { position: relative; }
+  .c-badge { position: absolute; top: var(--space-2); left: var(--space-2); padding: 2px 10px; background: #ffde17; color: #16264a; font-family: var(--font-en-heading); font-weight: var(--w-head); font-size: 20px; line-height: 1.3; border-radius: var(--radius-sm); }
+  .c-poster { margin: 0 0 var(--space-3); }
+  .c-poster img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #fff; }
+  .c-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+  .c-card { padding: var(--space-3); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); }
+  .c-card img { display: block; width: 100%; height: 170px; object-fit: contain; background: #fff; border-radius: var(--radius-md); }
   .c-old-list { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-1); }
   .c-downloads { margin-top: var(--space-6); max-width: 46em; }
   .c-downloads ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-3); }
