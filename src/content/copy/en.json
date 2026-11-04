@@ -299,5 +299,35 @@
     "dry2": "Flushing the tear ducts and under the eyelids",
     "dry3": "Tear duct blockage procedure",
     "insurance": "We work with EyeMed Vision Care, MES Vision and Allied Physicians IPA. Easy interest-free payment plans are available."
+  },
+  "aftercare": {
+    "title": "Wearing Ortho-K lenses: tips from our office",
+    "adjustTitle": "Common while your eyes adjust",
+    "a1": "Halos or glare at night",
+    "a2": "Blinking more often",
+    "a3": "Discomfort from dust or tissue fibers in the eye",
+    "a3tip": "Take the lens out and clean it again.",
+    "a4": "A lens that moves off center, from rubbing the eyes or moving them quickly",
+    "a5": "A lens that slides up or down",
+    "a5tip": "Keep your eyes open, look down or up to find the lens, and take it out.",
+    "a6": "Itchy eyes",
+    "a6tip1": "Don’t rub your eyes. Use the corneal care drops for quick relief.",
+    "a6tip2": "Place a tissue dampened with water or ice water over the eyes.",
+    "infectTitle": "How to keep eye infections away",
+    "i1": "Always wash your hands before putting in or taking out the lenses, so germs on your hands don’t get onto the lenses.",
+    "i2": "Don’t pour lens-care solution into other bottles, and replace your lens-care supplies regularly.",
+    "i3": "Keep the bathroom sink dry and clean.",
+    "i4": "Two things to keep in your pocket: moisturizing eye drops and lip balm. When your lips feel dry, your body is starting to run short of water. Remember to drink plenty of water!",
+    "i5": "Keep the cornea moist to help fight off germs.",
+    "i6": "Never rub your eyes.",
+    "i7": "Wear sunglasses that block blue light when you go out.",
+    "i8": "After swimming, always use the corneal care drops to moisten the cornea and help it recover.",
+    "i9": "If the eyes look red or bloodshot, stop wearing the lenses right away, rest, and call us.",
+    "flyerAlt": "Our printed aftercare sheet in Traditional Chinese, with cartoon animals. It has the same two lists as this section."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "This page doesn’t exist, or it moved when our website was updated.",
+    "home": "Go to the home page"
   }
 }
