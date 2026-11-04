@@ -1,12 +1,13 @@
 ---
+import { REVIEW, SITE_ORIGIN } from '../lib/site-mode';
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="robots" content="noindex" />
+    {REVIEW && <meta name="robots" content="noindex" />}
     <meta http-equiv="refresh" content="0; url=/en/" />
-    <link rel="canonical" href="/en/" />
+    <link rel="canonical" href={`${SITE_ORIGIN}/en/`} />
     <title>1234 Ortho-K Vision Care</title>
   </head>
   <body><a href="/en/">1234 Ortho-K Vision Care</a></body>
