@@ -102,21 +102,35 @@ pushed. Patient photos P-01 to P-27 are the exception: they live in
 `assets/patients/`, listed in `photos.json` (a unit test enforces it),
 with the P-01 record card blurred and P-07/P-08 cropped.
 
-## Review site and deploy
+## Live site, review copy and deploy
 
-`1234.pasadenaworks.com` (GitHub Pages, `.github/workflows/deploy-site.yml`,
-built by `scripts/assemble.sh`):
-- `/` — the Concept C site (behind the review password, `noindex`)
-- `/concepts/<X>/…` — the five concepts, at their original URLs
-- `/concepts/` — concept gallery; `/concepts/legacy-images/` — image catalog
-- `/_review/` — gate + comments scripts, copied from `design/concepts/_review/`
+One build, two copies (`scripts/assemble.sh`, `SITE_MODE`; `src/lib/site-mode.ts`):
+- **Live: `https://1234orthok.com`** (launched 2026-11-04; default `SITE_MODE=production`).
+  This repo's GitHub Pages, `.github/workflows/deploy-site.yml` on push to `main`.
+  Indexable, no review overlay, canonical/hreflang on 1234orthok.com, `robots.txt` +
+  `sitemap.xml`, and redirect pages for the old Web.com URLs (`/about.html`, `/ortho/`, …;
+  `scripts/site-files.mjs`). DNS is Squarespace (nameservers stay there): four `@` A
+  records to GitHub, `www` CNAME `thirstypig.github.io`; `mail`, `webmail`, MX and SPF
+  are the practice's email: never touch them. The Pages custom domain is set in repo
+  settings (a workflow deploy ignores the CNAME file).
+- **Review: `https://1234.pasadenaworks.com`** (`SITE_MODE=review`), for Dr. Woo and
+  Elaine's comments: the same pages behind the review password, `noindex`, with:
+  - `/concepts/<X>/…` — the five concepts, at their original URLs
+  - `/concepts/` — concept gallery; `/concepts/legacy-images/` — image catalog
+  - `/_review/` — gate + comments scripts, copied from `design/concepts/_review/`
+  It is built from `main` by the separate repo `thirstypig/1234-review` (GitHub allows
+  one Pages site per repo).
+
+The old site is archived in the private repo `thirstypig/1234orthok-old-site`
+(local `~/Projects/1234orthok-old-site`; patient photos inside: keep it private).
 
 The review overlay (password gate + comments/pins) runs on the five
 homepage mockups (`Concept*-homepage-EN.html`, via `inject.js`) and on
 every page of the Concept C site (`public/_review/site-review.js`, loaded
 by `BaseLayout.astro`; threads use concept `C-site`, keyed by
-`site-key.js`), never on the component preview pages. Remove it before
-public launch. The gate is a browser-side overlay and its password is in
+`site-key.js`), never on the component preview pages, and only in the
+review copy: the live build leaves out `site-review.js`, the `noindex` tag and
+`dist/_review/` (`tests/e2e/launch.spec.ts`). The gate is a browser-side overlay and its password is in
 the public `gate.js`, so anything deployed is effectively public.
 `public/_review/*` is git-ignored except for named `!` exceptions, so a
 new script there is silently left out of the deploy until you add one.
@@ -143,9 +157,9 @@ delete route, so a thread is cleared by deleting its KV key from
 --namespace-id <id in wrangler.toml> --remote`. A pin left on one
 language usually means all three.
 
-`main` is production (PRs #8–#10 merged 2026-09-28). Both `main` and
-`site/concept-c` deploy to the same Pages site, so new work goes on a
-branch and a PR into `main`; keep `site/concept-c` fast-forwarded to it.
+`main` is production: a merge deploys 1234orthok.com, so new work goes on a
+branch and a PR into `main`. `site/concept-c` no longer deploys (2026-11-04)
+and can be deleted.
 
 A separate private Worker (private repo `thirstypig/1234-patient-photos`,
 server-side password) holds what stays off this repo: the Admin section
@@ -193,6 +207,7 @@ the same branch.
   in the notices once made them 295px too wide).
   Images lazy-load: a Playwright element screenshot of a long gallery
   shows blank tiles unless you scroll through the page first.
-- `npm run test:deploy`: assembled Pages layout (old concept URLs,
-  gate, patient photos 404)
+- `npm run test:deploy`: the assembled review copy (old concept URLs,
+  gate, patient photos 404); the live build is covered by
+  `tests/e2e/launch.spec.ts` and `scripts/site-files.test.mjs`
 - `cd workers/comments && npx vitest run`: Worker

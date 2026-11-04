@@ -1,8 +1,8 @@
-name: Deploy site to GitHub Pages
+name: Deploy the live site (1234orthok.com) to GitHub Pages
 
 on:
   push:
-    branches: [site/concept-c, main]
+    branches: [main]
 
 permissions:
   contents: read
@@ -28,6 +28,8 @@ jobs:
       - run: npm ci
       - run: npm run test:unit
       - run: bash scripts/assemble.sh
+        env:
+          SITE_MODE: production
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
