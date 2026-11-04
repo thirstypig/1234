@@ -169,3 +169,8 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
 
 - [ ] **N-18 Launched with drafts**: the site went live at 1234orthok.com on 2026-11-04 with the five notices (N-1), the Chinese translations (N-2) and the FAQ answers (N-3, N-12) as Claude's drafts, before attorney review. The owner accepted launching them as they are; the attorney review still applies and changes will be made on the live site. Booking is unchanged: the Contact form says requests are not yet sent to the office and asks parents to call, and the live site cannot send to the Worker (its CORS allows only the review copy).
 
+
+## Added 2026-11-04 (owner direction) — please review
+
+- [ ] **N-19 Ortho-K aftercare flyer**: How it works now has a section "Wearing Ortho-K lenses: tips from our office" (配戴角膜塑型鏡片的注意事項) with the two lists from the practice's printed aftercare flyer, and the flyer itself beside them, cropped above its footer because the footer lists the old Arcadia and Rowland Heights locations and phone numbers. The 繁體 text is the flyer's, word for word, except the heading 教戰手則, written 教戰守則. The English and 简体 versions are Claude's drafts; the section heading is ours in all three languages. For the attorney: the flyer says corneal drops "repair" the cornea (修復角膜) and that keeping it moist helps fight germs; both are kept as printed. Please also send the flyer's original print file so the photo can be replaced.
+- [ ] **N-20 404 page**: a mistyped address on the live site shows "Page not found" in all three languages with a link to each home page (our wording).

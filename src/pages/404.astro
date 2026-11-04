@@ -1,0 +1,35 @@
+---
+// Served by GitHub Pages for any unknown URL. It has no language in its path, so it speaks all three.
+import '../styles/site.css';
+import { LOCALES, HTML_LANG, pathFor } from '../i18n/locales';
+import { makeT } from '../i18n/t';
+const blocks = LOCALES.map((lang) => ({ lang, t: makeT(lang) }));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>{blocks.map((b) => b.t('notFound.title')).join(' · ')} | 1234 Ortho-K Vision Care</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Chiron+GoRound+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="ui-page">
+      <main class="ui-section">
+        <div class="ui-wrap ui-stack-lg">
+          {blocks.map(({ lang, t }, i) => (
+            <section class="ui-stack" lang={HTML_LANG[lang]}>
+              {i === 0 ? <h1 class="ui-h1">{t('notFound.title')}</h1> : <h2 class="ui-h2">{t('notFound.title')}</h2>}
+              <p class="ui-body">{t('notFound.body')}</p>
+              <p><a class="ui-btn ui-btn--primary" href={pathFor(lang, 'home')}>{t('notFound.home')}</a></p>
+            </section>
+          ))}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

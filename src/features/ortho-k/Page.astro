@@ -6,7 +6,7 @@ import FirstVisit from '../../components/FirstVisit.astro';
 import Hero from '../../components/Hero.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import { makeT } from '../../i18n/t';
-import { legacyImage } from '../../lib/images';
+import { clientArt, legacyImage } from '../../lib/images';
 import { pathFor } from '../../i18n/locales';
 import { Image } from 'astro:assets';
 import type { Lang } from '../../i18n/locales';
@@ -15,6 +15,11 @@ const { lang } = Astro.props as { lang: Lang };
 const t = makeT(lang);
 const steps = [1, 2, 3, 4, 5, 6].map((n) => ({ title: t(`steps.s${n}t`), body: t(`steps.s${n}`) }));
 const services = (['exams', 'myopia', 'dry'] as const).map((g) => ({ title: t(`services.${g}Title`), items: (g === 'exams' ? [1, 2, 3, 4] : [1, 2, 3]).map((n) => t(`services.${g}${n}`)) }));
+const adjust = [1, 2, 3, 4, 5, 6].map((n) => ({
+  text: t(`aftercare.a${n}`),
+  tips: n === 3 ? [t('aftercare.a3tip')] : n === 5 ? [t('aftercare.a5tip')] : n === 6 ? [t('aftercare.a6tip1'), t('aftercare.a6tip2')] : [],
+}));
+const infect = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => t(`aftercare.i${n}`));
 const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1' : 'faq.placeholder') }));
 ---
 <BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')} description={t('metaDesc.ortho-k')}>
@@ -49,7 +54,23 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1
         <p class="ui-body">{t('services.insurance')}</p>
       </div>
     </section>
-    <section class="ui-section c-paper" id="lenses">
+    <section class="ui-section c-paper" id="aftercare">
+      <div class="ui-wrap c-aftercare">
+        <div class="ui-stack-lg">
+          <h2 class="ui-h2">{t('aftercare.title')}</h2>
+          <div class="c-service ui-stack">
+            <h3 class="ui-h3">{t('aftercare.adjustTitle')}</h3>
+            <ul>{adjust.map((a) => <li class="ui-body">{a.text}{a.tips.length > 0 && <ul class="c-tips">{a.tips.map((tip) => <li>{tip}</li>)}</ul>}</li>)}</ul>
+          </div>
+          <div class="c-service ui-stack">
+            <h3 class="ui-h3">{t('aftercare.infectTitle')}</h3>
+            <ul>{infect.map((i) => <li class="ui-body">{i}</li>)}</ul>
+          </div>
+        </div>
+        <figure class="c-flyer"><Image src={clientArt('aftercare-flyer-zh-hant.webp')} alt={t('aftercare.flyerAlt')} widths={[480, 960, 1400]} sizes="(max-width: 767px) 92vw, 420px" /></figure>
+      </div>
+    </section>
+    <section class="ui-section" id="lenses">
       <div class="ui-wrap c-lenses">
         <div class="c-lens-logos">
           <Image src={legacyImage('1234orthok-com-041.png')} alt={t('ortho.lenses.logoAlt')} widths={[220, 440]} sizes="220px" />
@@ -72,6 +93,12 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1
   .c-services { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
   .c-service { padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); }
   .c-service ul { margin: 0; padding-left: 1.2em; display: grid; gap: var(--space-1); }
+  .c-aftercare { display: grid; gap: var(--space-4); grid-template-columns: minmax(0, 1fr); align-items: start; }
+  @media (min-width: 1024px) { .c-aftercare { grid-template-columns: minmax(0, 1fr) 420px; } }
+  .c-tips { list-style: none; margin: 6px 0 0; padding-left: 0; display: grid; gap: 4px; }
+  .c-tips li::before { content: '→ '; }
+  .c-flyer { margin: 0; max-width: 420px; justify-self: center; }
+  .c-flyer img { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); }
   .c-other { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
   .c-other a { display: flex; flex-direction: column; gap: 6px; padding: var(--space-4); background: var(--surface); border: var(--border-hairline) solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); color: inherit; text-decoration: none; }
   .c-other a:hover strong, .c-other a:focus-visible strong { text-decoration: underline; }
