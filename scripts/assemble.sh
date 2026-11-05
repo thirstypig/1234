@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds a GitHub Pages artifact in dist/. Two copies of the same site:
 #
-#   SITE_MODE=production (default) — the live site, https://1234orthok.com (this repo's Pages):
+#   SITE_MODE=production (default) — the live site, https://www.1234orthok.com (this repo's Pages):
 #     /                          Astro site, indexable, no review overlay
 #     /<old-page>.html, /<old-page>/   redirects from the old Web.com site's URLs
 #     /robots.txt, /sitemap.xml
@@ -25,7 +25,7 @@ node --import tsx scripts/site-files.mjs "$MODE"
 
 if [ "$MODE" = production ]; then
   rm -rf dist/_review   # copied from public/; the live site never loads it
-  echo "1234orthok.com" > dist/CNAME
+  echo "www.1234orthok.com" > dist/CNAME
   exit 0
 fi
 

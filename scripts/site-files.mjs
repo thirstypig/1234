@@ -6,7 +6,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { LOCALES, PAGES, pathFor } from '../src/i18n/locales.ts';
 
-export const PRODUCTION_ORIGIN = 'https://1234orthok.com';
+export const PRODUCTION_ORIGIN = 'https://www.1234orthok.com';
 
 // Old Web.com site (archived 2026-11-04 in the private thirstypig/1234orthok-old-site) -> new page.
 // It served each page both as /name.html and /name/. consultant and therapy were Chinese-only pages.

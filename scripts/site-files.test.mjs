@@ -23,18 +23,18 @@ test('old pages are covered in both their .html and folder forms, without clobbe
 test('redirect pages refresh to the new path and name the live URL as canonical', () => {
   const html = redirectHtml('/en/about/');
   assert.match(html, /http-equiv="refresh" content="0; url=\/en\/about\/"/);
-  assert.match(html, /rel="canonical" href="https:\/\/1234orthok\.com\/en\/about\/"/);
+  assert.match(html, /rel="canonical" href="https:\/\/www\.1234orthok\.com\/en\/about\/"/);
 });
 
 test('sitemap lists every page in every language on the live domain', () => {
   const xml = sitemapXml();
   assert.equal((xml.match(/<url>/g) || []).length, LOCALES.length * PAGES.length);
-  assert.ok(xml.includes('<loc>https://1234orthok.com/zh-hant/ortho-k/eye-surface/</loc>'));
+  assert.ok(xml.includes('<loc>https://www.1234orthok.com/zh-hant/ortho-k/eye-surface/</loc>'));
   assert.ok(!xml.includes('pasadenaworks'));
 });
 
 test('robots.txt opens the live site and closes the review copy', () => {
-  assert.match(robotsTxt('production'), /Allow: \/\n[\s\S]*Sitemap: https:\/\/1234orthok\.com\/sitemap\.xml/);
+  assert.match(robotsTxt('production'), /Allow: \/\n[\s\S]*Sitemap: https:\/\/www\.1234orthok\.com\/sitemap\.xml/);
   assert.match(robotsTxt('review'), /Disallow: \//);
 });
 

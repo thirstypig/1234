@@ -105,14 +105,14 @@ with the P-01 record card blurred and P-07/P-08 cropped.
 ## Live site, review copy and deploy
 
 One build, two copies (`scripts/assemble.sh`, `SITE_MODE`; `src/lib/site-mode.ts`):
-- **Live: `https://1234orthok.com`** (launched 2026-11-04; default `SITE_MODE=production`).
+- **Live: `https://www.1234orthok.com`** (launched 2026-11-04; default `SITE_MODE=production`; `1234orthok.com` redirects to www).
   This repo's GitHub Pages, `.github/workflows/deploy-site.yml` on push to `main`.
   Indexable, no review overlay, canonical/hreflang on 1234orthok.com, `robots.txt` +
   `sitemap.xml`, and redirect pages for the old Web.com URLs (`/about.html`, `/ortho/`, …;
   `scripts/site-files.mjs`). DNS is Squarespace (nameservers stay there): four `@` A
   records to GitHub, `www` CNAME `thirstypig.github.io`; `mail`, `webmail`, MX and SPF
   are the practice's email: never touch them. The Pages custom domain is set in repo
-  settings (a workflow deploy ignores the CNAME file).
+  settings (a workflow deploy ignores the CNAME file). It is `www.1234orthok.com`, not the bare domain: GitHub's HTTPS certificate for the bare domain stuck in `authorized` for a day (Let's Encrypt had issued it; resets and recreating the Pages site didn't help), and switching to www (2026-11-05) started a fresh request. Don't switch back.
 - **Review: `https://1234.pasadenaworks.com`** (`SITE_MODE=review`), for Dr. Woo and
   Elaine's comments: the same pages behind the review password, `noindex`, with:
   - `/concepts/<X>/…` — the five concepts, at their original URLs
