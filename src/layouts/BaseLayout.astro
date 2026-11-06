@@ -4,6 +4,7 @@ import { LOCALES, HTML_LANG, pathFor, type Lang, type PageId } from '../i18n/loc
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { REVIEW, SITE_ORIGIN } from '../lib/site-mode';
+import Analytics from '../components/Analytics.astro';
 
 interface Props {
   lang: Lang;
@@ -29,6 +30,7 @@ const site = Astro.site?.origin ?? SITE_ORIGIN;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Chiron+GoRound+TC:wght@400;500;700&display=swap" rel="stylesheet" />
     {REVIEW && <script type="module" src="/_review/site-review.js" is:inline></script>}
+    <Analytics />
   </head>
   <body>
     <div class="ui-page" lang={HTML_LANG[lang]}>

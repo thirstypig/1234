@@ -16,7 +16,7 @@
       {"type": "p", "text": "The form does not ask for medical details. Please do not include health information in the form. If you have questions about your child's eyes, call our office instead."},
       {"type": "h3", "text": "Information collected automatically"},
       {"type": "p", "text": "Like most websites, the services that run this site receive some technical information when your browser loads a page. This includes your IP address, browser type, device type, the page you asked for, and the date and time. These services use it to deliver pages, keep the site secure, and fix problems."},
-      {"type": "p", "text": "We do not use analytics tools, advertising cookies, or tracking pixels. We do not create user accounts, and we do not take payments on this website."},
+      {"type": "p", "text": "We use Google Analytics to count visits and see which pages are useful (see \"When we share information\" below). We do not use advertising cookies or tracking pixels. We do not create user accounts, and we do not take payments on this website."},
 
       {"type": "h2", "text": "How we use your information"},
       {"type": "p", "text": "We use the information from the booking request form only to:"},
@@ -31,6 +31,7 @@
       {"type": "li", "text": "GitHub (GitHub Pages) hosts the website's pages."},
       {"type": "li", "text": "Cloudflare runs the program (a Cloudflare Worker) that receives your booking request and passes it to our office."},
       {"type": "li", "text": "Google Fonts supplies the typefaces the site uses. When a page loads, your browser asks Google's servers for the fonts, so Google receives your IP address and basic browser information. Google's own privacy policy covers that information."},
+      {"type": "li", "text": "Google Analytics counts visits and shows us which pages people use. It sets cookies in your browser and receives information such as the pages you view, how long you stay, your approximate location (city level), and your device and browser type. We have turned off Google's advertising features, and we do not send Google your name, your phone number, or anything you type into the booking request form. Google's own privacy policy covers that information."},
       {"type": "p", "text": "We may also share information if the law requires it, such as to answer a court order, or to protect the safety of our patients, staff, or the public."},
 
       {"type": "h2", "text": "Other websites and services"},
@@ -50,13 +51,14 @@
 
       {"type": "h2", "text": "Do Not Track signals"},
       {"type": "p", "text": "Some web browsers let you send a \"Do Not Track\" signal to the websites you visit. There is no common standard for how websites should respond to this signal, so this website does not change how it works when it receives one."},
-      {"type": "p", "text": "Because we do not use analytics or advertising tracking, we do not follow your activity over time or across other websites, whether or not your browser sends this signal."},
+      {"type": "p", "text": "We use Google Analytics only to understand how this website is used. We do not use advertising tracking, and we do not follow your activity across other websites, whether or not your browser sends this signal."},
 
       {"type": "h2", "text": "Your choices"},
       {"type": "li", "text": "You can use this website without sending us any personal information."},
       {"type": "li", "text": "You can call us instead of using the booking request form."},
       {"type": "li", "text": "You can ask us to see, correct, or delete the information you sent through the form."},
       {"type": "li", "text": "You can set your browser to block web fonts from outside sources. The site will still work, but the text may look different."},
+      {"type": "li", "text": "You can block cookies in your browser settings, or install Google's opt-out add-on (tools.google.com/dlpage/gaoptout), to stop Google Analytics from counting your visits."},
 
       {"type": "h2", "text": "Changes to this policy"},
       {"type": "p", "text": "We may update this policy from time to time. When we do, we will post the new version on this page and change the effective date at the top. If we make an important change, we will also place a notice on our home page for a reasonable time."},
@@ -87,7 +89,7 @@
       {"type": "p", "text": "表單不會詢問任何醫療細節。請不要在表單中填寫健康狀況。如果您對孩子的視力有疑問，請直接打電話到診所。"},
       {"type": "h3", "text": "自動收集的資料"},
       {"type": "p", "text": "和大多數網站一樣，當您的瀏覽器載入網頁時，支援本網站運作的服務會收到一些技術資料，包括您的IP位址、瀏覽器類型、裝置類型、您瀏覽的頁面，以及日期和時間。這些服務用這些資料來傳送網頁、維護網站安全和排除問題。"},
-      {"type": "p", "text": "我們不使用網站分析工具、廣告Cookie或追蹤像素。本網站不需要註冊帳號，也不在網站上收費。"},
+      {"type": "p", "text": "我們使用Google Analytics統計造訪次數，了解哪些網頁對訪客有幫助（請見下方「我們何時會分享資料」）。我們不使用廣告Cookie或追蹤像素。本網站不需要註冊帳號，也不在網站上收費。"},
 
       {"type": "h2", "text": "我們如何使用您的資料"},
       {"type": "p", "text": "預約申請表單中的資料，我們只會用來："},
@@ -102,6 +104,7 @@
       {"type": "li", "text": "GitHub（GitHub Pages）：負責存放及提供網站頁面。"},
       {"type": "li", "text": "Cloudflare：執行接收預約申請的程式（Cloudflare Worker），並將申請轉交給診所。"},
       {"type": "li", "text": "Google Fonts：提供網站使用的字型。網頁載入時，您的瀏覽器會向Google的伺服器下載字型，因此Google會收到您的IP位址和基本的瀏覽器資料。這些資料受Google本身的隱私權政策規範。"},
+      {"type": "li", "text": "Google Analytics：統計造訪次數，讓我們了解訪客使用哪些網頁。它會在您的瀏覽器中設定Cookie，並收到您瀏覽的網頁、停留時間、大約位置（城市層級），以及裝置和瀏覽器類型等資料。我們已關閉Google的廣告功能，也不會把您的姓名、電話號碼或您在預約申請表單中填寫的任何內容傳送給Google。這些資料受Google本身的隱私權政策規範。"},
       {"type": "p", "text": "如果法律有所要求（例如法院命令），或為了保護病患、員工或大眾的安全，我們也可能分享資料。"},
 
       {"type": "h2", "text": "其他網站與服務"},
@@ -121,13 +124,14 @@
 
       {"type": "h2", "text": "「請勿追蹤」訊號"},
       {"type": "p", "text": "有些瀏覽器可以向您造訪的網站發出「請勿追蹤」（Do Not Track）訊號。目前網站應如何回應這種訊號並沒有統一的標準，所以本網站收到這種訊號時，運作方式不會改變。"},
-      {"type": "p", "text": "由於我們不使用分析或廣告追蹤工具，無論您的瀏覽器是否發出這種訊號，我們都不會追蹤您長期或跨網站的活動。"},
+      {"type": "p", "text": "我們使用Google Analytics，只是為了了解本網站的使用情形。我們不使用廣告追蹤工具；無論您的瀏覽器是否發出這種訊號，我們都不會追蹤您在其他網站上的活動。"},
 
       {"type": "h2", "text": "您的選擇"},
       {"type": "li", "text": "您可以使用本網站，而不提供任何個人資料。"},
       {"type": "li", "text": "您可以直接打電話，不必使用預約申請表單。"},
       {"type": "li", "text": "您可以要求查看、更正或刪除您透過表單提供的資料。"},
       {"type": "li", "text": "您可以在瀏覽器中封鎖外部網站的字型。網站仍然可以使用，但文字外觀可能會不同。"},
+      {"type": "li", "text": "您可以在瀏覽器設定中封鎖Cookie，或安裝Google提供的停用外掛程式（tools.google.com/dlpage/gaoptout），讓Google Analytics不再統計您的造訪。"},
 
       {"type": "h2", "text": "本政策的修訂"},
       {"type": "p", "text": "我們可能會不定期更新本政策。更新時，我們會在本頁面公布新版本，並修改頁首的生效日期。如果有重大變更，我們也會在首頁張貼通知一段合理的時間。"},
@@ -158,7 +162,7 @@
       {"type": "p", "text": "表单不会询问任何医疗细节。请不要在表单中填写健康状况。如果您对孩子的视力有疑问，请直接致电诊所。"},
       {"type": "h3", "text": "自动收集的信息"},
       {"type": "p", "text": "和大多数网站一样，当您的浏览器加载网页时，支持本网站运行的服务会收到一些技术信息，包括您的IP地址、浏览器类型、设备类型、您访问的页面以及日期和时间。这些服务用这些信息来传送网页、保障网站安全和排查问题。"},
-      {"type": "p", "text": "我们不使用网站分析工具、广告Cookie或跟踪像素。本网站无需注册账户，也不在网站上收费。"},
+      {"type": "p", "text": "我们使用Google Analytics统计访问次数，了解哪些网页对访客有帮助（请见下方“我们何时会共享信息”）。我们不使用广告Cookie或跟踪像素。本网站无需注册账户，也不在网站上收费。"},
 
       {"type": "h2", "text": "我们如何使用您的信息"},
       {"type": "p", "text": "预约申请表中的信息，我们只会用于："},
@@ -173,6 +177,7 @@
       {"type": "li", "text": "GitHub（GitHub Pages）：负责托管网站页面。"},
       {"type": "li", "text": "Cloudflare：运行接收预约申请的程序（Cloudflare Worker），并将申请转交给诊所。"},
       {"type": "li", "text": "Google Fonts：提供网站使用的字体。网页加载时，您的浏览器会从Google的服务器下载字体，因此Google会收到您的IP地址和基本的浏览器信息。这些信息受Google自己的隐私政策约束。"},
+      {"type": "li", "text": "Google Analytics：统计访问次数，让我们了解访客使用哪些网页。它会在您的浏览器中设置Cookie，并收到您浏览的网页、停留时间、大致位置（城市级别），以及设备和浏览器类型等信息。我们已关闭Google的广告功能，也不会把您的姓名、电话号码或您在预约申请表中填写的任何内容发送给Google。这些信息受Google自己的隐私政策约束。"},
       {"type": "p", "text": "如果法律要求（例如法院命令），或为了保护患者、员工或公众的安全，我们也可能共享信息。"},
 
       {"type": "h2", "text": "其他网站和服务"},
@@ -192,13 +197,14 @@
 
       {"type": "h2", "text": "“请勿跟踪”信号"},
       {"type": "p", "text": "有些浏览器可以向您访问的网站发出“请勿跟踪”（Do Not Track）信号。目前对于网站应如何回应这种信号还没有统一的标准，所以本网站收到这种信号时，运行方式不会改变。"},
-      {"type": "p", "text": "由于我们不使用分析或广告跟踪工具，无论您的浏览器是否发出这种信号，我们都不会跟踪您长期或跨网站的活动。"},
+      {"type": "p", "text": "我们使用Google Analytics，只是为了了解本网站的使用情况。我们不使用广告跟踪工具；无论您的浏览器是否发出这种信号，我们都不会跟踪您在其他网站上的活动。"},
 
       {"type": "h2", "text": "您的选择"},
       {"type": "li", "text": "您可以使用本网站，而不提供任何个人信息。"},
       {"type": "li", "text": "您可以直接打电话，不必使用预约申请表。"},
       {"type": "li", "text": "您可以要求查看、更正或删除您通过表单提交的信息。"},
       {"type": "li", "text": "您可以在浏览器中屏蔽外部网站的字体。网站仍然可以使用，但文字外观可能会有所不同。"},
+      {"type": "li", "text": "您可以在浏览器设置中屏蔽Cookie，或安装Google提供的停用插件（tools.google.com/dlpage/gaoptout），让Google Analytics不再统计您的访问。"},
 
       {"type": "h2", "text": "本政策的修改"},
       {"type": "p", "text": "我们可能会不定期更新本政策。更新时，我们会在本页面发布新版本，并修改页首的生效日期。如有重大变更，我们还会在首页张贴通知一段合理的时间。"},

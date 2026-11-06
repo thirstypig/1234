@@ -130,7 +130,7 @@ every page of the Concept C site (`public/_review/site-review.js`, loaded
 by `BaseLayout.astro`; threads use concept `C-site`, keyed by
 `site-key.js`), never on the component preview pages, and only in the
 review copy: the live build leaves out `site-review.js`, the `noindex` tag and
-`dist/_review/` (`tests/e2e/launch.spec.ts`). The gate is a browser-side overlay and its password is in
+`dist/_review/` (`tests/e2e/launch.spec.ts`). Google Analytics 4 (`G-ZS9T686F3W`, `src/components/Analytics.astro`) runs on the live site only, with Google signals and ad personalization off; the privacy notice describes it (N-21), so change both together. The gate is a browser-side overlay and its password is in
 the public `gate.js`, so anything deployed is effectively public.
 `public/_review/*` is git-ignored except for named `!` exceptions, so a
 new script there is silently left out of the deploy until you add one.
