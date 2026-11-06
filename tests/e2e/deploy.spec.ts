@@ -64,3 +64,8 @@ test('site pages stay gated and, once unlocked, have the feedback sidebar with p
   await expect(page).toHaveURL(/\/en\/about\/$/);
   await expect(page.locator('.review-pin-composer')).toBeVisible();
 });
+
+test('the review copy does not load Google Analytics', async ({ request }) => {
+  const html = await (await request.get('/en/')).text();
+  expect(html).not.toContain('googletagmanager.com');
+});

@@ -15,3 +15,10 @@ test('hreflang alternates point at the live domain', async ({ page }) => {
   expect(hrefs).toHaveLength(3);
   for (const h of hrefs) expect(h.startsWith('https://www.1234orthok.com/')).toBe(true);
 });
+
+test('live pages load Google Analytics with Google signals off', async ({ page }) => {
+  await page.goto('/en/');
+  await expect(page.locator('script[src="https://www.googletagmanager.com/gtag/js?id=G-ZS9T686F3W"]')).toHaveCount(1);
+  const inline = await page.locator('script:not([src])').allTextContents();
+  expect(inline.some((t) => t.includes('allow_google_signals: false') && t.includes('allow_ad_personalization_signals: false'))).toBe(true);
+});
