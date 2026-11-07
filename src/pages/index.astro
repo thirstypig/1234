@@ -1,14 +1,18 @@
 ---
+// "/" has no page of its own: it forwards to the English home. GitHub Pages can't send a
+// server redirect, so the script replaces the URL before anything is drawn; the meta refresh
+// and the <noscript> link are fallbacks for browsers without JavaScript.
 import { REVIEW, SITE_ORIGIN } from '../lib/site-mode';
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>location.replace('/en/' + location.search + location.hash);</script>
     {REVIEW && <meta name="robots" content="noindex" />}
     <meta http-equiv="refresh" content="0; url=/en/" />
     <link rel="canonical" href={`${SITE_ORIGIN}/en/`} />
     <title>1234 Ortho-K Vision Care</title>
   </head>
-  <body><a href="/en/">1234 Ortho-K Vision Care</a></body>
+  <body><noscript><a href="/en/">1234 Ortho-K Vision Care</a></noscript></body>
 </html>
