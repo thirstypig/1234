@@ -16,7 +16,8 @@
     "prebuild": "node scripts/sync-review.mjs",
     "test:e2e": "playwright test",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:deploy": "playwright test -c playwright.deploy.config.ts"
+    "test:deploy": "playwright test -c playwright.deploy.config.ts",
+    "fonts": "node scripts/fonts/subset.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5"
@@ -27,9 +28,11 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.63.0",
+    "fontkit": "2.0.4",
     "happy-dom": "^20.14.5",
     "image-size": "^2.0.4",
     "playwright": "^1.63.0",
+    "subset-font": "2.9.0",
     "tsx": "^4.23.15"
   }
 }

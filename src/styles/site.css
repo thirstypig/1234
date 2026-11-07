@@ -2,7 +2,23 @@
 @import '../../design/concepts/concepts/C-picture-book/tokens.local.css';
 @import '../../design/concepts/concepts/C-picture-book/project/components/bundle.css';
 
+/* Chinese: Chiron GoRound TC (OFL), self-hosted and cut down to the characters the site uses
+   (`npm run fonts`, scripts/fonts/subset.mjs). It replaces Google Fonts' ~100 slices, which on phones
+   arrived one by one and left sentences mixing it with the system font. Same family name, so
+   Concept C's tokens pick it up unchanged. */
+@font-face {
+  font-family: "Chiron GoRound TC";
+  src: url('../assets/fonts/chiron-goround-tc.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body { margin: 0; background: var(--background); }
+
+/* The switcher's 简体 / 繁體 labels use Concept C's Latin stack, so they fell back to the system font.
+   Chinese pages only: on English pages this would download the whole Chinese font for two labels. */
+html:not([lang="en"]) .ui-lang a[lang^="zh"] { font-family: var(--font-zh-heading); }
 
 /* CLAUDE.md floor for Chinese body text */
 main p:lang(zh), main li:lang(zh), main dd:lang(zh) { font-size: max(17px, 1em); line-height: 1.8; }

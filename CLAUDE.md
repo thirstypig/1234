@@ -84,6 +84,15 @@ copy, and a key missing from any locale fails the build. The Chinese
 copy is Claude's draft translation awaiting the client's approval
 (`docs/copy-review.md`, N-2).
 
+**Chinese font**: Chiron GoRound TC (OFL) is self-hosted, cut down to the
+characters the site uses (`src/assets/fonts/chiron-goround-tc.woff2`, about
+820 KB, all weights in one variable file). Google Fonts' ~100 slices made phones
+mix it with the system font mid-sentence (2026-11-07). **After adding Chinese
+copy, run `npm run fonts`**: a unit test (`scripts/fonts/subset.test.mjs`, also
+run before every deploy) fails on any character missing from the subset. Don't
+pass `variationAxes` to subset-font: it drops `gvar` and every weight renders as
+regular (the tests check this). English pages don't load the font.
+
 Copy from the old site that makes a claim is held in
 `docs/copy-review.md` (ids `F-…`, mockup changes `M-…`). It renders
 only once its id is in `src/content/approved-claims.json`
