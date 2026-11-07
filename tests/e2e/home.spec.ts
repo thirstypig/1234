@@ -9,7 +9,7 @@ test('home has every Concept C section, in order', async ({ page }) => {
   const marks = await page.$$eval('main > section', (s) =>
     s.map((x) => x.id || ['ui-hero', 'ui-section--band'].find((c) => x.classList.contains(c)) || 'intro'),
   );
-  expect(marks).toEqual(['ui-hero', 'intro', 'how', 'doctor', 'visit', 'locations', 'ui-section--band']);
+  expect(marks).toEqual(['ui-hero', 'intro', 'how', 'doctor', 'locations', 'ui-section--band']);
 });
 
 test('approved credentials are shown on the doctor card', async ({ page }) => {

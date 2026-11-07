@@ -20,7 +20,8 @@ const adjust = [1, 2, 3, 4, 5, 6].map((n) => ({
   tips: n === 3 ? [t('aftercare.a3tip')] : n === 5 ? [t('aftercare.a5tip')] : n === 6 ? [t('aftercare.a6tip1'), t('aftercare.a6tip2')] : [],
 }));
 const infect = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => t(`aftercare.i${n}`));
-const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1' : 'faq.placeholder') }));
+// Only questions the practice has answered; unanswered ones are listed in docs/copy-review.md (N-23).
+const faq = [{ q: t('faq.q1'), a: t('faq.a1') }];
 ---
 <BaseLayout lang={lang} page="ortho-k" title={t('meta.ortho-k')} description={t('metaDesc.ortho-k')}>
   <main>
@@ -51,7 +52,6 @@ const faq = [1, 2, 3, 4].map((n) => ({ q: t(`faq.q${n}`), a: t(n === 1 ? 'faq.a1
             <div class="c-service ui-stack"><h3 class="ui-h3">{g.title}</h3><ul>{g.items.map((i) => <li class="ui-body">{i}</li>)}</ul></div>
           ))}
         </div>
-        <p class="ui-body">{t('services.insurance')}</p>
       </div>
     </section>
     <section class="ui-section c-paper" id="aftercare">
