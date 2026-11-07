@@ -33,8 +33,8 @@ Rules:
   experience (he practiced in Taiwan before that). Also (owner's review
   comments, 2026-10-27; `docs/copy-review.md`, N-16): the Home hero
   ("30 years", "prescription does not increase", "highly effective",
-  "best option", ages 5–45) and About's 41,879 patients, which replaced
-  9,000. Add no new claims. The two age ranges are deliberate (owner,
+  "best option", ages 5–45) and About's "over 40,000 patients" (owner,
+  2026-11-07, N-23; it was 41,879, and 9,000 before that). Add no new claims. The two age ranges are deliberate (owner,
   2026-10-28): Home says 5–45 (children and adults), and How it works
   keeps "Ortho-K for children, ages 7–18" (`ortho.title`); don't align them.
 - Every image is accounted for in `docs/photo-inventory.md` (a test
@@ -61,8 +61,12 @@ Rules:
   an owner of VIPOK Inc." from How it works on 2026-10-10 (`docs/copy-review.md`,
   N-7, still open for the attorney): don't put it back unasked.
 - Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
-  Alhambra sign photo. Its hours are not known yet, so the card still
-  says "Hours coming soon" and "Opening soon".
+  Alhambra sign photo; the card still says "Opening soon".
+- No opening hours anywhere, for either clinic (owner, 2026-11-07, N-23).
+- No placeholder copy and no unanswered questions on the site (owner,
+  2026-11-07): the FAQ shows only answered questions. A separate FAQ page
+  for SEO is planned later. Ortho-K lenses are "semi-hard" (半硬式).
+  The insurance/payment-plan sentence was removed; don't put it back unasked.
 - All text WCAG AA.
 - "Book a consultation" in the first screen and at the bottom.
 - Mobile sticky Book/Message bar.

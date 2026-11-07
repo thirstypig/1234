@@ -31,13 +31,11 @@
       "name": "Alhambra",
       "street": "1234 S. Garfield Ave., #105",
       "city": "Alhambra, CA 91801",
-      "hours": "Mon, Tue, Wed & Fri 12–6 pm, Sat 12–4 pm",
       "photoAlt": "The 1234 Ortho-K Vision Care sign on the handprint wall at the Alhambra clinic"
     },
     "walnut": {
       "name": "Walnut",
       "street": "20265 Valley Blvd., #E",
-      "hours": "Hours coming soon",
       "city": "Walnut, CA 91789",
       "photoAlt": "The 1234 Ortho-K Vision Care sign on a handprint wall"
     },
@@ -74,15 +72,10 @@
     "eyebrow": "Hyperopic reserve program for children and adults, ages 5–45 · Ortho-K: precise corneal reshaping",
     "title": "Clear vision all day, no glasses. 30 years, one focus.",
     "mark": "Building your child’s hyperopic reserve so their prescription stops increasing.",
-    "lead": "Your child sleeps in highly oxygen-permeable, semi-soft lenses. In the morning, they take them out and see clearly. Ortho-K slows nearsightedness as children grow, and for children with a family history of nearsightedness it is the best option for effective control.",
+    "lead": "Your child sleeps in highly oxygen-permeable, semi-hard lenses. In the morning, they take them out and see clearly. Ortho-K slows nearsightedness as children grow, and for children with a family history of nearsightedness it is the best option for effective control.",
     "trust": "Dr. Paul T. Woo, Optometrist",
     "introTitle": "Is your child’s prescription going up every year?",
-    "introLead": "Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don’t slow the change.",
-    "visitTitle": "What happens at the first visit",
-    "visitDraft": "Placeholder copy",
-    "visit1": "We talk with you about your child’s eyes and daily routine.",
-    "visit2": "Your child has a full eye exam and a map of the front of the eye.",
-    "visit3": "Dr. Woo explains the results and answers your questions."
+    "introLead": "Nearsightedness often gets worse during the school years. Stronger glasses fix the blur, but they don’t slow the change."
   },
   "how": {
     "title": "How Ortho-K works",
@@ -106,10 +99,6 @@
   "faq": {
     "title": "Parent questions",
     "q1": "Is Ortho-K safe for kids?",
-    "q2": "What age can my child start?",
-    "q3": "Is it hard for kids to put in the lenses?",
-    "q4": "How much does it cost?",
-    "placeholder": "Placeholder answer. Dr. Woo’s team will write this in plain words for parents.",
     "a1": "Ortho-K is a safe choice for children when an eye doctor fits the lenses and your family cares for them exactly as instructed. Like any contact lens worn overnight, it carries a small risk of eye infection, which can be serious. You can keep that risk low by washing your hands before touching the lenses; cleaning and storing them only with the solutions we give you, never with tap water; replacing the case and lenses on schedule; and coming to every follow-up visit so Dr. Woo can check your child’s eyes. If your child has eye pain, redness, sensitivity to light, discharge, or blurry vision that doesn’t clear, take the lenses out and call us right away at (800) 991-8881."
   },
   "about": {
@@ -252,7 +241,7 @@
     "focus": "He has always specialized in contact lenses and was already focused on orthokeratology by 1990.",
     "pilots": "In the early ’90s he was fitting pilots and firefighters who wanted to pass their vision requirements.",
     "experienced": "He is one of the most experienced certified orthokeratology doctors in the United States.",
-    "patients": "Since 1998, Dr. Woo has treated 41,879 patients and children with nearsightedness, amblyopia and related eye conditions, and he still sees patients every day.",
+    "patients": "Since 1998, Dr. Woo has treated over 40,000 patients and children with nearsightedness, amblyopia and related eye conditions, and he still sees patients every day.",
     "youngest": "He has treated children as young as 5.",
     "mission": "The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through orthokeratology.",
     "equipment": "Our clinic uses the finest equipment, the newest technology, and the best-fitting lens design for each patient to achieve the best vision improvement."
@@ -297,8 +286,7 @@
     "dryTitle": "Dry eye evaluation and treatment, for children and adults",
     "dry1": "Tear film stability test",
     "dry2": "Flushing the tear ducts and under the eyelids",
-    "dry3": "Tear duct blockage procedure",
-    "insurance": "We work with EyeMed Vision Care, MES Vision, and Allied Physicians IPA. Easy interest-free payment plans are available."
+    "dry3": "Tear duct blockage procedure"
   },
   "aftercare": {
     "title": "Wearing Ortho-K lenses: tips from our office",

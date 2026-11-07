@@ -20,7 +20,6 @@ const directions = 'https://www.google.com/maps/search/?api=1&query=' + encodeUR
   <div class="ui-loc-body">
     <div class="ui-loc-name"><h3 class="ui-h3">{en(`locations.${id}.name`)}</h3><span class="ui-loc-alt" lang="zh-Hant">{zh(`locations.${id}.name`)}</span></div>
     <div class="ui-kv"><Icon name="pin" /><p class="ui-body">{t(`locations.${id}.street`)}<br />{t(`locations.${id}.city`)}</p></div>
-    <div class="ui-kv"><Icon name="clock" /><p class:list={['ui-body', !open && 'ui-soon']}>{t(`locations.${id}.hours`)}</p></div>
     <div class="ui-kv"><Icon name="phone" /><p class="ui-body"><a class="ui-nowrap" href="tel:18009918881">(800) 991-8881</a> · <a class="ui-nowrap" href="tel:16262825388">(626) 282-5388</a></p></div>
     <div class="ui-btn-row">
       {open ? (

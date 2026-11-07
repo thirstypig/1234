@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookingBand from '../../components/BookingBand.astro';
 import DoctorCard from '../../components/DoctorCard.astro';
-import FirstVisit from '../../components/FirstVisit.astro';
 import Hero from '../../components/Hero.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
 import Locations from '../../components/Locations.astro';
@@ -25,7 +24,6 @@ const trust = isApproved('F-home-1') ? `${t('home.trust')} · ${t('doctor.years'
     </section>
     <HowItWorks lang={lang} />
     <DoctorCard lang={lang} />
-    <FirstVisit lang={lang} />
     <Locations lang={lang} />
     <BookingBand lang={lang} />
   </main>
