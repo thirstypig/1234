@@ -158,8 +158,7 @@ delete route, so a thread is cleared by deleting its KV key from
 language usually means all three.
 
 `main` is production: a merge deploys 1234orthok.com, so new work goes on a
-branch and a PR into `main`. `site/concept-c` no longer deploys (2026-11-04)
-and can be deleted.
+branch and a PR into `main`.
 
 A separate private Worker (private repo `thirstypig/1234-patient-photos`,
 server-side password) holds what stays off this repo: the Admin section
@@ -177,14 +176,12 @@ it) before starting, not halfway through. On 2026-10-10 (P-27) it
 blocked `git commit` and `gh pr create` but not `git push`: give the user
 those two commands to run with `!`.
 
-The only branches are `main` and `site/concept-c`. `design/concepts-import`
-and `docs/concept-c-site` were deleted 2026-09-30, taking the old
-concepts-only `deploy-review-site.yml` with them. The auto-mode classifier
-blocks `git push --delete`: the user runs it with `!`. Since 2026-10-28 it
-also blocks `gh pr merge` into `main` and the `site/concept-c` fast-forward
+The only long-lived branch is `main` (`site/concept-c` was deleted
+2026-11-06). The auto-mode classifier blocks `git push --delete`: the user
+runs it with `!`. Since 2026-10-28 it also blocks `gh pr merge` into `main`
 ("Production Deploy"), even when the user said to merge: open the PR, then
-give the user `! gh pr merge <n> --merge --delete-branch` and
-`! git push origin main:site/concept-c`, and check the deploy run after.
+give the user `! gh pr merge <n> --merge --delete-branch`, and check the
+deploy run after.
 Stacked PRs: merging the bottom one with `--delete-branch` closes the PR
 stacked on it, and a closed PR can't be retargeted; open a new PR from
 the same branch.
