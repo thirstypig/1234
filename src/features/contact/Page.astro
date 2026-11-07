@@ -5,6 +5,7 @@ import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Locations from '../../components/Locations.astro';
 import { makeT } from '../../i18n/t';
+import { BOOKING_FORM_ENABLED } from '../../lib/cta';
 import type { Lang } from '../../i18n/locales';
 
 const { lang } = Astro.props as { lang: Lang };
@@ -13,7 +14,7 @@ const f = (k: string) => t(`contact.form.${k}`);
 ---
 <BaseLayout lang={lang} page="contact" title={t('meta.contact')}>
   <main>
-    <Hero lang={lang} short eyebrow={t('contact.eyebrow')} title={t('contact.title')} lead={t('contact.lead')} />
+    <Hero lang={lang} short eyebrow={t('contact.eyebrow')} title={t('contact.title')} lead={t(BOOKING_FORM_ENABLED ? 'contact.lead' : 'contact.leadCall')} />
     <section class="ui-section c-dawn" id="call">
       <div class="ui-wrap ui-stack-lg">
         <h2 class="ui-h2">{t('contact.callTitle')}</h2>
@@ -24,6 +25,7 @@ const f = (k: string) => t(`contact.form.${k}`);
         </div>
       </div>
     </section>
+    {BOOKING_FORM_ENABLED && (
     <section class="ui-section c-paper" id="book">
       <div class="ui-wrap ui-stack-lg">
         <h2 class="ui-h2">{t('contact.formTitle')}</h2>
@@ -37,7 +39,7 @@ const f = (k: string) => t(`contact.form.${k}`);
             <legend class="ui-label">{f('location')}</legend>
             <div class="ui-radios">
               <label class="ui-radio is-checked"><input type="radio" name="location" value="alhambra" checked />{f('alhambra')}</label>
-              <label class="ui-radio is-disabled"><input type="radio" name="location" value="walnut" disabled />{f('walnut')}</label>
+              <label class="ui-radio"><input type="radio" name="location" value="walnut" />{f('walnut')}</label>
             </div>
           </fieldset>
           <div class="ui-field"><label class="ui-label" for="bk-time">{f('preferredTime')}</label><input class="ui-input" id="bk-time" name="preferredTime" maxlength="100" aria-describedby="bk-time-hint" /><p class="ui-hint" id="bk-time-hint">{f('preferredTimeHint')}</p></div>
@@ -48,6 +50,7 @@ const f = (k: string) => t(`contact.form.${k}`);
         </form>
       </div>
     </section>
+    )}
     <Locations lang={lang} />
     <BookingBand lang={lang} />
   </main>

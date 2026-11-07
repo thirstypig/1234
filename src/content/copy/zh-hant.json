@@ -41,12 +41,12 @@
     },
     "title": "兩間診所都可以預約",
     "contactLead": "線上預約或來電，選您方便的方式即可",
+    "contactLeadCall": "來電預約，兩間診所皆可",
     "call": "撥打電話",
     "bookOnline": "線上預約",
     "map": "地圖",
     "bookHere": "在此預約",
-    "directions": "路線導航",
-    "openingSoon": "即將開業"
+    "directions": "路線導航"
   },
   "meta": {
     "home": "1234兒童視力矯正中心",
@@ -60,7 +60,8 @@
   },
   "band": {
     "sceneLabel": "插圖：孩子不戴眼鏡去上學。",
-    "body": "歡迎線上預約，或直接打電話給我們。"
+    "body": "歡迎線上預約，或直接打電話給我們。",
+    "bodyCall": "請來電，我們會為您安排合適的時間。"
   },
   "scenes": {
     "night": "插圖：孩子正在睡覺，鏡片盒放在床頭櫃上。",
@@ -176,6 +177,7 @@
     "eyebrow": "聯絡我們",
     "title": "預約諮詢",
     "lead": "送出預約申請後，診所會打電話和您約定時間。您也可以直接來電。",
+    "leadCall": "請來電預約諮詢，兩間診所皆可。",
     "formTitle": "申請預約諮詢",
     "previewNotice": "目前申請還不會傳送到診所。請撥打 (800) 991-8881 預約。",
     "form": {
@@ -184,7 +186,7 @@
       "phoneHint": "我們會打電話和您確認。",
       "location": "希望就診的地點",
       "alhambra": "阿罕布拉",
-      "walnut": "核桃市（即將開業）",
+      "walnut": "核桃市",
       "preferredTime": "希望的日期或時段（選填）",
       "preferredTimeHint": "例如：週二下午",
       "submit": "送出申請",

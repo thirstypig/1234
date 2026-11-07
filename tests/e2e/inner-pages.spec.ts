@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { BOOKING_FORM_ENABLED } from '../../src/lib/cta';
 import en from '../../src/content/copy/en.json' with { type: 'json' };
 
 // Old-site claims the owner approved (2026-09-29, src/content/approved-claims.json) are exempt.
@@ -114,10 +115,10 @@ for (const w of [1024, 1100, 1200, 1280]) {
 }
 
 for (const l of ['en', 'zh-hans', 'zh-hant']) {
-  test(`/${l}/contact/ offers Call to book above the form`, async ({ page }) => {
+  test(`/${l}/contact/ offers Call to book`, async ({ page }) => {
     await page.goto(`/${l}/contact/`);
     await expect(page.locator('#call a[data-call][href="tel:+16262825388"]')).toBeVisible();
-    await expect(page.locator('#book form[data-booking]')).toHaveCount(1);
+    await expect(page.locator('#book form[data-booking]')).toHaveCount(BOOKING_FORM_ENABLED ? 1 : 0);
   });
 
   test(`/${l}/ footer links to all five required notices`, async ({ page }) => {

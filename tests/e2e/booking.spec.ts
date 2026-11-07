@@ -1,4 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
+import { BOOKING_FORM_ENABLED } from '../../src/lib/cta';
+
+// The form is hidden until requests reach the office (N-24); these run again when it is turned back on.
+test.skip(!BOOKING_FORM_ENABLED, 'booking form is hidden (src/lib/cta.ts)');
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('1234-review-unlocked', 'true'));

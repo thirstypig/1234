@@ -41,12 +41,12 @@
     },
     "title": "两家诊所均可预约",
     "contactLead": "在线预约或来电，选择您方便的方式即可",
+    "contactLeadCall": "来电预约，两家诊所均可",
     "call": "拨打电话",
     "bookOnline": "在线预约",
     "map": "地图",
     "bookHere": "在此预约",
-    "directions": "查看路线",
-    "openingSoon": "即将开业"
+    "directions": "查看路线"
   },
   "meta": {
     "home": "1234儿童视力矫正中心",
@@ -60,7 +60,8 @@
   },
   "band": {
     "sceneLabel": "插图：孩子不戴眼镜去上学。",
-    "body": "欢迎在线预约，或直接给我们打电话。"
+    "body": "欢迎在线预约，或直接给我们打电话。",
+    "bodyCall": "请来电，我们会为您安排合适的时间。"
   },
   "scenes": {
     "night": "插图：孩子正在睡觉，镜片盒放在床头柜上。",
@@ -176,6 +177,7 @@
     "eyebrow": "联系我们",
     "title": "预约咨询",
     "lead": "提交预约申请后，诊所会给您打电话确定时间。您也可以直接来电。",
+    "leadCall": "请来电预约咨询，两家诊所均可。",
     "formTitle": "申请预约咨询",
     "previewNotice": "目前申请暂时不会发送到诊所。请拨打(800) 991-8881预约。",
     "form": {
@@ -184,7 +186,7 @@
       "phoneHint": "我们会致电与您确认。",
       "location": "希望就诊的地点",
       "alhambra": "阿罕布拉",
-      "walnut": "核桃市（即将开业）",
+      "walnut": "核桃市",
       "preferredTime": "希望的日期或时间段（选填）",
       "preferredTimeHint": "例如：周二下午",
       "submit": "提交申请",
