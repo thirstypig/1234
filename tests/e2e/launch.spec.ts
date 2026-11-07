@@ -22,3 +22,9 @@ test('live pages load Google Analytics with Google signals off', async ({ page }
   const inline = await page.locator('script:not([src])').allTextContents();
   expect(inline.some((t) => t.includes('allow_google_signals: false') && t.includes('allow_ad_personalization_signals: false'))).toBe(true);
 });
+
+test('"/" forwards straight to the English home without showing a link page', async ({ page }) => {
+  await page.goto('/');
+  await expect(page).toHaveURL(/\/en\/$/);
+  await expect(page.locator('h1')).toHaveCount(1);
+});

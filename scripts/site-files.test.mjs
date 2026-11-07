@@ -23,6 +23,8 @@ test('old pages are covered in both their .html and folder forms, without clobbe
 test('redirect pages refresh to the new path and name the live URL as canonical', () => {
   const html = redirectHtml('/en/about/');
   assert.match(html, /http-equiv="refresh" content="0; url=\/en\/about\/"/);
+  assert.match(html, /location\.replace\("\/en\/about\/" \+ location\.search \+ location\.hash\)/);
+  assert.match(html, /<noscript><a href="\/en\/about\/">/);
   assert.match(html, /rel="canonical" href="https:\/\/www\.1234orthok\.com\/en\/about\/"/);
 });
 

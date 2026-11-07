@@ -39,11 +39,12 @@ export function redirectHtml(to, origin = PRODUCTION_ORIGIN) {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>location.replace(${JSON.stringify(to)} + location.search + location.hash);</script>
     <meta http-equiv="refresh" content="0; url=${href}" />
     <link rel="canonical" href="${escapeAttr(origin + to)}" />
     <title>1234 Ortho-K Vision Care</title>
   </head>
-  <body><a href="${href}">1234 Ortho-K Vision Care</a></body>
+  <body><noscript><a href="${href}">1234 Ortho-K Vision Care</a></noscript></body>
 </html>
 `;
 }
