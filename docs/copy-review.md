@@ -191,3 +191,8 @@ Mark each: **keep** (add its id to `src/content/approved-claims.json`), **cut**,
   - About: "treated 41,879 patients" (N-16) is now "treated over 40,000 patients" (超過 40,000 名 / 超过40,000名).
   - The Home and How it works lead says the lenses are "semi-hard" (半硬式), not "semi-soft" (半軟 / 半软).
   - How it works: the sentence "We work with EyeMed Vision Care, MES Vision, and Allied Physicians IPA. Easy interest-free payment plans are available." is removed (the interest-free payment plans mention went with it).
+
+- [ ] **N-24 Owner's follow-up, 2026-11-07** (all three languages):
+  - Walnut is no longer "Opening soon" (即將開業 / 即将开业): its card is a plain location with the office numbers and a Call button, and the booking form's Walnut option reads "Walnut" (核桃市). Walnut uses the same numbers as Alhambra, (800) 991-8881 and (626) 282-5388.
+  - The booking form is hidden (`BOOKING_FORM_ENABLED` in `src/lib/cta.ts`) until requests reach the office through a service covered by a BAA. Every "Book a consultation" link goes to the Call section of the contact page. New call-only drafts: the contact lead "Call either clinic to book a consultation." (請來電預約諮詢，兩間診所皆可。/ 请来电预约咨询，两家诊所均可。), the locations line "Call either clinic to book" (來電預約，兩間診所皆可 / 来电预约，两家诊所均可) and the booking band "Call either clinic and we’ll find a time that works for your family." (請來電，我們會為您安排合適的時間。/ 请来电，我们会为您安排合适的时间。).
+  - The privacy, terms and accessibility notices still describe the booking form; they are left as they are for the attorney and change when the practice names the service.

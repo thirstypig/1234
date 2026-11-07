@@ -61,7 +61,8 @@ Rules:
   an owner of VIPOK Inc." from How it works on 2026-10-10 (`docs/copy-review.md`,
   N-7, still open for the attorney): don't put it back unasked.
 - Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
-  Alhambra sign photo; the card still says "Opening soon".
+  Alhambra sign photo; a plain location with the office numbers and a
+  Call button, never "Opening soon" (owner, 2026-11-07, N-24).
 - No opening hours anywhere, for either clinic (owner, 2026-11-07, N-23).
 - No placeholder copy and no unanswered questions on the site (owner,
   2026-11-07): the FAQ shows only answered questions. A separate FAQ page
@@ -154,7 +155,10 @@ origin.
 `workers/comments/` (Cloudflare Worker + KV) serves `/comments` (keys
 `<concept>:<page>`, concept must start A–E) and `/booking` (booking
 requests, 30-day TTL; name, phone, location and preferred time only).
-Nothing reads `/booking` back: requests sit in KV, the office never sees
+The booking form is hidden on the site (`BOOKING_FORM_ENABLED = false` in
+`src/lib/cta.ts`, owner 2026-11-07, N-24): "Book" links go to the contact page's
+Call section and the form's tests skip. Turn it back on only once requests reach
+the office. Nothing reads `/booking` back: requests sit in KV, the office never sees
 them, and no alert goes out. Before launch they must reach the office
 through a service covered by a BAA (the practice has to name it; question 2
 in the private page's `src/email.ts`), and the privacy notice, which

@@ -41,12 +41,12 @@
     },
     "title": "Book a visit at either clinic",
     "contactLead": "Book or call — whatever is easiest",
+    "contactLeadCall": "Call either clinic to book",
     "call": "Call",
     "bookOnline": "Book online",
     "map": "Map",
     "bookHere": "Book here",
-    "directions": "Directions",
-    "openingSoon": "Opening soon"
+    "directions": "Directions"
   },
   "meta": {
     "home": "1234 Ortho-K Vision Care",
@@ -60,7 +60,8 @@
   },
   "band": {
     "sceneLabel": "Illustration: off to school, no glasses.",
-    "body": "Book online, or give us a call."
+    "body": "Book online, or give us a call.",
+    "bodyCall": "Call either clinic and we’ll find a time that works for your family."
   },
   "scenes": {
     "night": "Illustration: a child asleep; the lens case waits on the nightstand.",
@@ -176,6 +177,7 @@
     "eyebrow": "Contact",
     "title": "Book a consultation",
     "lead": "Send a request and the office will call you to set a time. Or call us directly.",
+    "leadCall": "Call either clinic to book a consultation.",
     "formTitle": "Request a consultation",
     "previewNotice": "Requests are not yet sent to the office. Please call (800) 991-8881 to book.",
     "form": {
@@ -184,7 +186,7 @@
       "phoneHint": "We’ll call to confirm.",
       "location": "Preferred location",
       "alhambra": "Alhambra",
-      "walnut": "Walnut (opening soon)",
+      "walnut": "Walnut",
       "preferredTime": "Preferred day or time (optional)",
       "preferredTimeHint": "For example: Tuesday afternoon",
       "submit": "Send request",

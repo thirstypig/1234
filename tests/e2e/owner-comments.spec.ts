@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { BOOKING_FORM_ENABLED } from '../../src/lib/cta';
 
 // The owner's comments of 2026-11-07 (docs/copy-review.md, N-23).
 const LANGS = ['en', 'zh-hans', 'zh-hant'] as const;
@@ -17,8 +18,8 @@ for (const l of LANGS) {
       expect(text).not.toMatch(/placeholder|暫定|暂定/i);
       expect(text).not.toMatch(/EyeMed|MES Vision|Allied Physicians/);
       expect(text).not.toContain('41,879');
-      // Contact keeps its "Preview" label on the booking notice (requests don't reach the office yet).
-      if (p !== 'contact/') await expect(page.locator('.ui-draft')).toHaveCount(0);
+      // Contact's booking form carries a "Preview" label while it is shown.
+      if (p !== 'contact/' || !BOOKING_FORM_ENABLED) await expect(page.locator('.ui-draft')).toHaveCount(0);
     });
   }
 
