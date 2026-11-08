@@ -18,6 +18,13 @@ for (const l of LANGS) {
     expect(await page.locator('body').innerText()).not.toMatch(/opening soon|即將開業|即将开业/i);
   });
 
+  for (const slug of ['terms', 'notice-of-privacy-practices']) {
+    test(`/${l}/${slug}/ treats Walnut as open`, async ({ page }) => {
+      await page.goto(`/${l}/${slug}/`);
+      expect(await page.locator('main').innerText()).not.toMatch(/opening soon|when it opens|即將|即将/i);
+    });
+  }
+
   test.describe(() => {
     test.skip(BOOKING_FORM_ENABLED, 'only while the form is hidden');
 
