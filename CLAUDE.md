@@ -64,6 +64,9 @@ Rules:
   Alhambra sign photo; a plain location with the office numbers and a
   Call button, never "Opening soon" (owner, 2026-11-07, N-24).
 - No opening hours anywhere, for either clinic (owner, 2026-11-07, N-23).
+- When the owner changes or removes wording, grep `src/content/legal/` too:
+  the five notices repeat site facts (Walnut "opening soon" survived there
+  after the cards were fixed, 2026-11-07).
 - No placeholder copy and no unanswered questions on the site (owner,
   2026-11-07): the FAQ shows only answered questions. A separate FAQ page
   for SEO is planned later. Ortho-K lenses are "semi-hard" (半硬式).
