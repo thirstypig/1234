@@ -225,3 +225,7 @@ the same branch.
   gate, patient photos 404); the live build is covered by
   `tests/e2e/launch.spec.ts` and `scripts/site-files.test.mjs`
 - `cd workers/comments && npx vitest run`: Worker
+
+## Status file
+
+STATUS.md is read by Jimmy's claude.ai assistant as the source of truth. Whenever a change affects scope, stack, hosting, URLs, shipped features, open bugs, or next phases, update STATUS.md and its Last updated date in the SAME commit.
