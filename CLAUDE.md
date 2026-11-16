@@ -139,7 +139,12 @@ One build, two copies (`scripts/assemble.sh`, `SITE_MODE`; `src/lib/site-mode.ts
   one Pages site per repo).
 
 The old site is archived in the private repo `thirstypig/1234orthok-old-site`
-(local `~/Projects/1234orthok-old-site`; patient photos inside: keep it private).
+(not cloned locally; patient photos inside: keep it private).
+
+Local layout (2026-11-15): `~/Projects/1234-orthok/site/` (this repo) and
+`~/Projects/1234-orthok/patient-photos/` (the private Worker, which reads
+`../site/src/content/legal`). Never nest them: this repo is public. Clone
+`1234-review` or the old site only when you need them.
 
 The review overlay (password gate + comments/pins) runs on the five
 homepage mockups (`Concept*-homepage-EN.html`, via `inject.js`) and on
