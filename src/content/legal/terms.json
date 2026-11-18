@@ -161,7 +161,7 @@
       },
       {
         "type": "p",
-        "text": "A second office in Walnut, California, is opening soon. We will add its details here when it opens."
+        "text": "Our second office: 20265 Valley Blvd. #E, Walnut, CA 91789."
       }
     ]
   },
@@ -327,7 +327,7 @@
       },
       {
         "type": "p",
-        "text": "本診所位於加州核桃市（Walnut）的第二間診所即將開幕，開幕後我們會在此補上相關資訊。"
+        "text": "本診所的第二間診所：20265 Valley Blvd. #E, Walnut, CA 91789（加州核桃市）。"
       }
     ]
   },
@@ -493,7 +493,7 @@
       },
       {
         "type": "p",
-        "text": "本诊所位于加州核桃市（Walnut）的第二家诊所即将开业，开业后我们会在此补充相关信息。"
+        "text": "本诊所的第二家诊所：20265 Valley Blvd. #E, Walnut, CA 91789（加州核桃市）。"
       }
     ]
   }
