@@ -1,6 +1,6 @@
-# 1234 Ortho-K Vision Care
+# 1234 Eye Care Clinic & Optometric Center
 
-New website for 1234 Ortho-K Vision Care (Dr. Paul T. Woo, OD; Alhambra
+New website for 1234 Eye Care Clinic & Optometric Center (Dr. Paul T. Woo, OD; Alhambra
 and Walnut, CA), built from design Concept C ("Picture Book"). Preview:
 <https://1234.pasadenaworks.com/en/> (password-protected, not indexed).
 

@@ -25,3 +25,7 @@ main p:lang(zh), main li:lang(zh), main dd:lang(zh) { font-size: max(17px, 1em);
 
 /* Concept C sets display on some components (e.g. .ui-error), which would override [hidden]. */
 [hidden] { display: none !important; }
+
+/* Concept C keeps .ui-brand on one line; the full practice name (2026-11-18) is wider than a
+   390px phone, so the footer copy wraps. The header shows the logo image, not this text. */
+.ui-brand--footer { white-space: normal; text-wrap: balance; }

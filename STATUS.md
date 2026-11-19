@@ -3,7 +3,7 @@
 **Last updated:** 2026-11-18
 
 ## One-line description
-Website in three languages (EN / 简体 / 繁體) for 1234 Ortho-K Vision Care, an optometry practice in Alhambra and Walnut, CA. Built from design Concept C ("Picture Book").
+Website in three languages (EN / 简体 / 繁體) for 1234 Eye Care Clinic & Optometric Center, an optometry practice in Alhambra and Walnut, CA. Built from design Concept C ("Picture Book").
 
 ## Scope / positioning
 - Replaces the old Web.com site; old URLs redirect to the new pages.
@@ -55,4 +55,5 @@ The whole project falls in this window (first commit 2026-09-24).
 - Chinese font self-hosted as a subset; English still loads Quicksand from Google Fonts (2026-11-07).
 - Opening hours, placeholder copy and unanswered FAQs removed (2026-11-07).
 - `main` is now the only long-lived branch, and it is production (2026-11-06).
+- Practice name changed from "1234 Ortho-K Vision Care" to "1234 Eye Care Clinic & Optometric Center" (matches Google) across the site and notices; Chinese name unchanged (2026-11-18).
 - Walnut no longer "Opening soon"; booking form disabled (2026-11-07); notices rewritten for phone-only booking rather than waiting for a booking service (2026-11-18).

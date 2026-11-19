@@ -30,7 +30,7 @@ for (const path of ALL) {
       await page.goto(path);
       const logo = page.locator('header .ui-brand img');
       await expect(logo).toHaveCount(1);
-      await expect(logo).toHaveAttribute('alt', /1234 Ortho-K Vision Care/);
+      await expect(logo).toHaveAttribute('alt', /1234 Eye Care Clinic & Optometric Center/);
       await expect(page.locator('header .ui-brand')).toHaveAttribute('href', `/${path.split('/')[1]}/`);
     });
 
