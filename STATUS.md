@@ -1,6 +1,6 @@
 # STATUS — 1234
 
-**Last updated:** 2026-11-11
+**Last updated:** 2026-11-18
 
 ## One-line description
 Website in three languages (EN / 简体 / 繁體) for 1234 Ortho-K Vision Care, an optometry practice in Alhambra and Walnut, CA. Built from design Concept C ("Picture Book").
@@ -33,14 +33,17 @@ The whole project falls in this window (first commit 2026-09-24).
 - Launched 2026-11-04; www became the main address; GA4 added.
 - Language audit; self-hosted Chinese font subset.
 - Walnut made a call-only location; booking form hidden.
+- Notices updated: Walnut's address instead of "opening soon"; booking by phone only, with no booking form (N-24, 2026-11-18).
+- Booking endpoint switched off in the Worker (`BOOKING_ENABLED`); it stores nothing (2026-11-18).
+- Attorney-review PDFs rebuilt from the current notices; they last matched the site on 2026-09-28.
 
 ## In progress
 - Most `docs/copy-review.md` items are still awaiting practice or attorney sign-off.
 - Launched with Claude-drafted legal notices, Chinese copy and FAQ answer, before attorney review (N-18).
 
 ## Open bugs / known issues
-- The booking form stays hidden until the practice names a service covered by a BAA (requests sat unread in KV).
-- The legal notices still describe the booking form (N-24).
+- The booking form stays hidden until the practice names a service covered by a BAA (requests sat unread in KV). When it returns, restore the notices' form wording from git history and name the service.
+- Google Business Profile (checked 2026-11-18): two old owner replies to replace (one discusses a patient's payment); listing name "1234 Eye Care Clinic & Optometric Center" differs from the site; no Walnut listing; a separate "Paul T. Woo, OD" listing; 3.7 stars from 35 reviews.
 - Abiliti logo file not yet supplied (N-13).
 - Amblyopia threshold (0.8 vs 0.7) waiting on the practice to confirm (N-17).
 - Attorney questions: VIPOK disclosure (N-7), testimonials (T-1).
@@ -58,3 +61,4 @@ The whole project falls in this window (first commit 2026-09-24).
 - Opening hours, placeholder copy and unanswered FAQs removed (2026-11-07).
 - Walnut no longer "Opening soon"; booking form disabled (2026-11-07).
 - `main` is now the only long-lived branch, and it is production (2026-11-06).
+- Notices rewritten for booking by phone only instead of waiting for the booking service (2026-11-18).

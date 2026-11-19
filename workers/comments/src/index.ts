@@ -3,6 +3,8 @@ import { handleBooking } from './booking';
 export interface Env {
   COMMENTS_KV: KVNamespace;
   ALLOWED_ORIGIN: string;
+  // "true" turns booking requests on. Off while the site books by phone only (N-24).
+  BOOKING_ENABLED?: string;
 }
 
 interface Comment {
