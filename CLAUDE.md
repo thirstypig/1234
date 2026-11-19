@@ -67,6 +67,12 @@ Rules:
 - When the owner changes or removes wording, grep `src/content/legal/` too:
   the five notices repeat site facts (Walnut "opening soon" survived there
   after the cards were fixed, 2026-11-07).
+- After any change to `src/content/legal/`, rebuild the attorney PDFs: in
+  `../patient-photos/`, `npm run docs`, then upload only `upload/docs/*.pdf` to
+  R2 (the docs loop in `scripts/upload.sh`). Nothing does it automatically: the
+  packet went unrebuilt from 2026-09-28 to 2026-11-18 and missed three owner
+  rounds. The checklist (`src/checklist.json`) is on the private page too, so a
+  checklist change also needs that Worker redeployed (ask first).
 - No placeholder copy and no unanswered questions on the site (owner,
   2026-11-07): the FAQ shows only answered questions. A separate FAQ page
   for SEO is planned later. Ortho-K lenses are "semi-hard" (半硬式).
