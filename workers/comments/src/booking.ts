@@ -9,6 +9,10 @@ export async function handleBooking(request: Request, env: Env, headers: Record<
   const json = (status: number, body: unknown) =>
     new Response(JSON.stringify(body), { status, headers: { ...headers, 'Content-Type': 'application/json' } });
 
+  // Off until requests reach the office through a service covered by a BAA (N-24):
+  // nothing is stored, so nothing can sit unread.
+  if (env.BOOKING_ENABLED !== 'true') return json(410, { error: 'Booking requests are closed. Please call (800) 991-8881.' });
+
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
   const rlKey = `rl:${ip}`;
   const count = Number((await env.COMMENTS_KV.get(rlKey)) || 0);

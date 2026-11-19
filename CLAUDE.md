@@ -166,8 +166,10 @@ requests, 30-day TTL; name, phone, location and preferred time only).
 The booking form is hidden on the site (`BOOKING_FORM_ENABLED = false` in
 `src/lib/cta.ts`, owner 2026-11-07, N-24): "Book" links go to the contact page's
 Call section and the form's tests skip. Turn it back on only once requests reach
-the office. Nothing reads `/booking` back: requests sit in KV, the office never sees
-them, and no alert goes out. Before launch they must reach the office
+the office. `/booking` is also off in the Worker: unless `BOOKING_ENABLED = "true"`
+(a `[vars]` entry in `wrangler.toml`) it returns 410 and stores nothing (2026-11-18).
+When it was on, nothing read `/booking` back: requests sat in KV, the office never saw
+them, and no alert went out. Before launch they must reach the office
 through a service covered by a BAA (the practice has to name it; question 2
 in the private page's `src/email.ts`), and the notices must describe the
 form again: they were rewritten for call-only booking (N-24, 2026-11-18), the

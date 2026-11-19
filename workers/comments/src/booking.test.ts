@@ -9,7 +9,7 @@ function kv(initial: Record<string, string> = {}) {
     put: vi.fn(async (k: string, v: string) => { store[k] = v; }),
   } as any;
 }
-const env = (k: any) => ({ COMMENTS_KV: k, ALLOWED_ORIGIN: 'https://1234.pasadenaworks.com' });
+const env = (k: any) => ({ COMMENTS_KV: k, ALLOWED_ORIGIN: 'https://1234.pasadenaworks.com', BOOKING_ENABLED: 'true' });
 const post = (body: unknown, ip = '1.1.1.1') =>
   new Request('https://w/booking', {
     method: 'POST',
@@ -17,6 +17,17 @@ const post = (body: unknown, ip = '1.1.1.1') =>
     headers: { 'CF-Connecting-IP': ip, 'Content-Type': 'application/json' },
   });
 const good = { parentName: 'Ann Lee', phone: '(626) 555-0100', location: 'alhambra', preferredTime: 'Tue afternoon', website: '' };
+
+describe('POST /booking while booking is off', () => {
+  it('returns 410 and stores nothing unless BOOKING_ENABLED is "true"', async () => {
+    for (const flag of [undefined, '', 'false']) {
+      const k = kv();
+      const res = await worker.fetch(post(good), { COMMENTS_KV: k, ALLOWED_ORIGIN: 'https://1234.pasadenaworks.com', BOOKING_ENABLED: flag });
+      expect(res.status).toBe(410);
+      expect(k.put).not.toHaveBeenCalled();
+    }
+  });
+});
 
 describe('POST /booking', () => {
   it('stores a valid request with a 30-day TTL', async () => {
