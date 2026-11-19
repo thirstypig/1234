@@ -15,7 +15,7 @@ Website in three languages (EN / 简体 / 繁體) for 1234 Ortho-K Vision Care, 
 - Astro 7, Node ≥ 22.12; Playwright + axe tests.
 - Live site: GitHub Pages, deployed by `deploy-site.yml` on every push to `main`.
 - Review copy: built by the separate repo `thirstypig/1234-review`.
-- Cloudflare Worker + KV (`workers/comments/`) for review comments and booking requests.
+- Cloudflare Worker + KV (`workers/comments/`): review comments; booking route off.
 - DNS at Squarespace. Google Analytics 4 on the live site only.
 
 ## URLs
@@ -24,41 +24,35 @@ Website in three languages (EN / 简体 / 繁體) for 1234 Ortho-K Vision Care, 
 
 ## Shipped (last 60 days)
 The whole project falls in this window (first commit 2026-09-24).
-- Five design concepts on a review site with a comments sidebar and pins.
-- Concept C site: all pages, two eye-care pages and five legal notices, in three languages.
+- Five design concepts on a review site; Concept C built in three languages.
 - Old-site image harvest, with build-time guards on what can be published.
-- Cleared patient photos, old-site reviews and approved claims published.
-- Owner copy rounds applied (10-09, 10-27, 11-07).
+- Patient photos, old-site reviews and approved claims published; owner copy rounds 10-09, 10-27, 11-07.
 - Amblyopia poster, treatment steps, aftercare flyer, 404 page.
 - Launched 2026-11-04; www became the main address; GA4 added.
 - Language audit; self-hosted Chinese font subset.
-- Walnut made a call-only location; booking form hidden.
-- Notices updated: Walnut's address instead of "opening soon"; booking by phone only, with no booking form (N-24, 2026-11-18).
-- Booking endpoint switched off in the Worker (`BOOKING_ENABLED`); it stores nothing (2026-11-18).
-- Attorney-review PDFs rebuilt from the current notices; they last matched the site on 2026-09-28.
+- Walnut call-only; booking form hidden; notices rewritten for phone-only booking; booking endpoint off (N-24, #37–#40).
+- Attorney PDFs rebuilt (stale since 2026-09-28).
 
 ## In progress
-- Most `docs/copy-review.md` items are still awaiting practice or attorney sign-off.
-- Launched with Claude-drafted legal notices, Chinese copy and FAQ answer, before attorney review (N-18).
+- Most `docs/copy-review.md` items await practice or attorney sign-off; the site launched with Claude-drafted notices, Chinese copy and FAQ answer (N-18).
 
 ## Open bugs / known issues
-- The booking form stays hidden until the practice names a service covered by a BAA (requests sat unread in KV). When it returns, restore the notices' form wording from git history and name the service.
-- Google Business Profile (checked 2026-11-18): two old owner replies to replace (one discusses a patient's payment); listing name "1234 Eye Care Clinic & Optometric Center" differs from the site; no Walnut listing; a separate "Paul T. Woo, OD" listing; 3.7 stars from 35 reviews.
+- No online booking until the practice names a service covered by a BAA.
+- Google profile (2026-11-18): two old review replies to replace (one discusses a patient's payment); its name differs from the site's; no Walnut listing; a duplicate "Paul T. Woo, OD" listing.
 - Abiliti logo file not yet supplied (N-13).
 - Amblyopia threshold (0.8 vs 0.7) waiting on the practice to confirm (N-17).
 - Attorney questions: VIPOK disclosure (N-7), testimonials (T-1).
 
 ## Next phases (in order)
-- Unknown — no roadmap documented. Recorded items:
+- No roadmap documented. Recorded items:
   1. Attorney review; apply changes on the live site.
-  2. Pick a booking service covered by a BAA; re-enable the form and update the notices.
+  2. Pick a booking service covered by a BAA; re-enable the form and Worker, restore the notices' form wording and name the service.
   3. A separate FAQ page for SEO ("planned later").
 
 ## Decisions changed recently
-- Main address moved from the bare domain to www after the bare-domain certificate got stuck (2026-11-05).
+- www became the main address after the bare-domain certificate stuck (2026-11-05).
 - Privacy notice changed from "no analytics" to GA4 (2026-11-05).
-- Google Fonts replaced by a self-hosted Chinese subset (2026-11-07).
+- Chinese font self-hosted as a subset; English still loads Quicksand from Google Fonts (2026-11-07).
 - Opening hours, placeholder copy and unanswered FAQs removed (2026-11-07).
-- Walnut no longer "Opening soon"; booking form disabled (2026-11-07).
 - `main` is now the only long-lived branch, and it is production (2026-11-06).
-- Notices rewritten for booking by phone only instead of waiting for the booking service (2026-11-18).
+- Walnut no longer "Opening soon"; booking form disabled (2026-11-07); notices rewritten for phone-only booking rather than waiting for a booking service (2026-11-18).
