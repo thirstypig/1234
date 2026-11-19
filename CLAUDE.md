@@ -65,6 +65,8 @@ Rules:
   replaced "1234 Ortho-K Vision Care", which stays only where it describes the
   physical sign in a photo (`photoAlt`, `p20`) and inside reviews. The Chinese name
   (`site.nameZh`, 1234兒童視力矯正中心) is unchanged. The domain stays 1234orthok.com.
+  Unconfirmed: the logo and the §3078 permit checklist spell it "Eyecare"; if the
+  permit does, switch site and notices (and the Google listing) to that spelling.
 - Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
   Alhambra sign photo; a plain location with the office numbers and a
   Call button, never "Opening soon" (owner, 2026-11-07, N-24).
