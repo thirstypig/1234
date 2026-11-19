@@ -169,8 +169,9 @@ Call section and the form's tests skip. Turn it back on only once requests reach
 the office. Nothing reads `/booking` back: requests sit in KV, the office never sees
 them, and no alert goes out. Before launch they must reach the office
 through a service covered by a BAA (the practice has to name it; question 2
-in the private page's `src/email.ts`), and the privacy notice, which
-currently names Cloudflare, must name that service too.
+in the private page's `src/email.ts`), and the notices must describe the
+form again: they were rewritten for call-only booking (N-24, 2026-11-18), the
+form wording is in git history, and the privacy notice must name that service.
 Deploying it (`npx wrangler deploy`) and pushing to a deploy branch are
 production actions: ask first.
 
