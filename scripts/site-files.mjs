@@ -42,9 +42,9 @@ export function redirectHtml(to, origin = PRODUCTION_ORIGIN) {
     <script>location.replace(${JSON.stringify(to)} + location.search + location.hash);</script>
     <meta http-equiv="refresh" content="0; url=${href}" />
     <link rel="canonical" href="${escapeAttr(origin + to)}" />
-    <title>1234 Ortho-K Vision Care</title>
+    <title>1234 Eye Care Clinic &amp; Optometric Center</title>
   </head>
-  <body><noscript><a href="${href}">1234 Ortho-K Vision Care</a></noscript></body>
+  <body><noscript><a href="${href}">1234 Eye Care Clinic &amp; Optometric Center</a></noscript></body>
 </html>
 `;
 }

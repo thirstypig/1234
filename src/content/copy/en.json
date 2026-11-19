@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "1234 Ortho-K Vision Care",
+    "name": "1234 Eye Care Clinic & Optometric Center",
     "nameZh": "1234兒童視力矯正中心"
   },
   "nav": {
@@ -19,7 +19,7 @@
   },
   "footer": {
     "contact": "Contact",
-    "copyright": "© 2026 1234 Ortho-K Vision Care",
+    "copyright": "© 2026 1234 Eye Care Clinic & Optometric Center",
     "privacy": "Privacy policy",
     "privacyNotice": "Notice of privacy practices",
     "accessibility": "Accessibility",
@@ -49,14 +49,14 @@
     "directions": "Directions"
   },
   "meta": {
-    "home": "1234 Ortho-K Vision Care",
-    "about": "Dr. Woo · 1234 Ortho-K Vision Care",
-    "ortho-k": "How Ortho-K works · 1234 Ortho-K Vision Care",
-    "contact": "Contact · 1234 Ortho-K Vision Care",
-    "testimonials": "Stories · 1234 Ortho-K Vision Care",
-    "community": "Community · 1234 Ortho-K Vision Care",
-    "eye-exams": "Children’s Eye Exams · 1234 Ortho-K Vision Care",
-    "eye-surface": "Eye Surface Therapy · 1234 Ortho-K Vision Care"
+    "home": "1234 Eye Care Clinic & Optometric Center",
+    "about": "Dr. Woo · 1234 Eye Care Clinic & Optometric Center",
+    "ortho-k": "How Ortho-K works · 1234 Eye Care Clinic & Optometric Center",
+    "contact": "Contact · 1234 Eye Care Clinic & Optometric Center",
+    "testimonials": "Stories · 1234 Eye Care Clinic & Optometric Center",
+    "community": "Community · 1234 Eye Care Clinic & Optometric Center",
+    "eye-exams": "Children’s Eye Exams · 1234 Eye Care Clinic & Optometric Center",
+    "eye-surface": "Eye Surface Therapy · 1234 Eye Care Clinic & Optometric Center"
   },
   "band": {
     "sceneLabel": "Illustration: off to school, no glasses.",
@@ -105,7 +105,7 @@
   "about": {
     "eyebrow": "Meet the doctor",
     "title": "Dr. Paul T. Woo, Optometrist",
-    "lead": "Dr. Woo is the founder and clinical director of 1234 Ortho-K Vision Care.",
+    "lead": "Dr. Woo is the founder and clinical director of 1234 Eye Care Clinic & Optometric Center.",
     "bioTitle": "About Dr. Woo",
     "bio1": "Dr. Woo graduated with a bachelor’s degree from the University of California, Irvine, and went on to earn his Doctor of Optometry degree from the Southern California College of Optometry.",
     "bio2": "As orthokeratology evolved from day wear to night wear, so did Dr. Woo. Today, he treats children who want to keep their myopia from progressing and who are able to see well all day just by wearing lenses while they sleep.",
@@ -113,7 +113,7 @@
     "bio4": "He wants to continue working with other doctors to expand the acceptance and success of orthokeratology, so that more nearsighted patients can protect their vision.",
     "staffTitle": "Our team",
     "staff": "Our friendly, dedicated, and highly trained staff is always happy to serve and help our patients through every step of the process.",
-    "teamAlt": "The 1234 Ortho-K Vision Care team outside the clinic",
+    "teamAlt": "The 1234 Eye Care Clinic & Optometric Center team outside the clinic",
     "gallery": {
       "label": "Photos from the Alhambra clinic",
       "frontDesk": "Dr. Woo and two team members at the front desk",
@@ -145,7 +145,7 @@
   "stories": {
     "eyebrow": "Stories",
     "title": "What families say",
-    "lead": "Reviews from patients and parents of 1234 Ortho-K Vision Care.",
+    "lead": "Reviews from patients and parents of 1234 Eye Care Clinic & Optometric Center.",
     "listTitle": "Reviews",
     "disclaimer": "These reviews are our patients’ and parents’ own words about their experiences. Every child’s eyes are different, and results vary.",
     "gallery": {
@@ -245,11 +245,11 @@
     "experienced": "He is one of the most experienced certified orthokeratology doctors in the United States.",
     "patients": "Since 1998, Dr. Woo has treated over 40,000 patients and children with nearsightedness, amblyopia and related eye conditions, and he still sees patients every day.",
     "youngest": "He has treated children as young as 5.",
-    "mission": "The mission of 1234 Ortho-K Vision Care is to provide the best non-surgical means of vision correction for both children and adults through orthokeratology.",
+    "mission": "The mission of 1234 Eye Care Clinic & Optometric Center is to provide the best non-surgical means of vision correction for both children and adults through orthokeratology.",
     "equipment": "Our clinic uses the finest equipment, the newest technology, and the best-fitting lens design for each patient to achieve the best vision improvement."
   },
   "metaDesc": {
-    "ortho-k": "How Ortho-K works at 1234 Ortho-K Vision Care in Alhambra: the treatment steps, our eye exams, myopia correction with Ortho-K, atropine and vision therapy, and dry eye care.",
+    "ortho-k": "How Ortho-K works at 1234 Eye Care Clinic & Optometric Center in Alhambra: the treatment steps, our eye exams, myopia correction with Ortho-K, atropine and vision therapy, and dry eye care.",
     "eye-exams": "Children’s eye exams in Alhambra: what the exam includes, the causes and types of amblyopia (lazy eye), and why a yearly eye exam from age 3 matters."
   },
   "documents": {

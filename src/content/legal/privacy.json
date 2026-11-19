@@ -3,7 +3,7 @@
     "title": "Website Privacy Policy",
     "effective": "Draft — effective date to be set by the practice",
     "blocks": [
-      {"type": "p", "text": "This policy explains how 1234 Ortho-K Vision Care (\"we,\" \"us,\" or \"our\") handles information from people who visit this website. It covers this website only."},
+      {"type": "p", "text": "This policy explains how 1234 Eye Care Clinic & Optometric Center (\"we,\" \"us,\" or \"our\") handles information from people who visit this website. It covers this website only."},
       {"type": "p", "text": "If you are our patient, the health information we hold as your eye care provider is covered by our separate Notice of Privacy Practices, not by this policy. You can ask our office for a copy at any time."},
 
       {"type": "h2", "text": "Information we collect"},
@@ -52,7 +52,7 @@
 
       {"type": "h2", "text": "How to contact us"},
       {"type": "p", "text": "If you have questions about this policy, please contact:"},
-      {"type": "p", "text": "Privacy Officer, 1234 Ortho-K Vision Care"},
+      {"type": "p", "text": "Privacy Officer, 1234 Eye Care Clinic & Optometric Center"},
       {"type": "p", "text": "1234 S. Garfield Ave. #105, Alhambra, CA 91801"},
       {"type": "p", "text": "Phone: (626) 282-5388"},
       {"type": "p", "text": "Toll-free: (800) 991-8881"}

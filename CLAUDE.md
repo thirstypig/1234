@@ -1,4 +1,4 @@
-# 1234 Ortho-K Vision Care — project notes
+# 1234 Eye Care Clinic & Optometric Center — project notes
 
 ## Design concepts
 
@@ -60,6 +60,11 @@ Rules:
   on a file from the practice. The owner removed the sentence "Dr. Woo is
   an owner of VIPOK Inc." from How it works on 2026-10-10 (`docs/copy-review.md`,
   N-7, still open for the attorney): don't put it back unasked.
+- Practice name (2026-11-18): "1234 Eye Care Clinic & Optometric Center", matching the
+  Google profile, everywhere in English, notices included (`&amp;` in raw HTML). It
+  replaced "1234 Ortho-K Vision Care", which stays only where it describes the
+  physical sign in a photo (`photoAlt`, `p20`) and inside reviews. The Chinese name
+  (`site.nameZh`, 1234兒童視力矯正中心) is unchanged. The domain stays 1234orthok.com.
 - Walnut: 20265 Valley Blvd., #E, Walnut, CA 91789, shown with the
   Alhambra sign photo; a plain location with the office numbers and a
   Call button, never "Opening soon" (owner, 2026-11-07, N-24).
